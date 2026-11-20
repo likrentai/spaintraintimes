@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+figures/
+data/raw/renfe/
+data/raw/ouigo/
+data/raw/iryo/
+data/raw/naturalearth/
+data/raw/fonts/
+_github_upload/
