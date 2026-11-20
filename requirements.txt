@@ -1,0 +1,7 @@
+pandas==3.1.1
+numpy==2.5.5
+matplotlib==3.11.2
+networkx==3.7
+requests==2.34.2
+fonttools==4.68.0
+ipykernel==7.4.0
