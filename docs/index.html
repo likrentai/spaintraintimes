@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Train journey times from Madrid</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/bricolage-grotesque-latin-600-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/bricolage-grotesque-latin-700-normal.woff2") format("woff2"); }
+  :root {
+    --sans: "Bricolage Grotesque", "Segoe UI", Helvetica, Arial, sans-serif;
+    --bg: #12151a;
+    --panel: #1b1f26;
+    --line: #2c333d;
+    --text: #e6e8eb;
+    --muted: #9aa3ad;
+    --faint: #6b7480;
+    --land: #222932;
+    --coast: #56616f;
+    --ring: #3a434f;
+    --accent: #e8e8e8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
+  body { padding: 18px 18px 28px; }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  h1 { font-size: 26px; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.2px; }
+  .stand { color: var(--muted); font-size: 15px; line-height: 1.45; margin: 0 0 14px; max-width: 780px; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; }
+  .mapbox { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; position: relative; }
+  svg#map { width: 100%; height: auto; display: block; touch-action: manipulation; }
+  .side { display: flex; flex-direction: column; gap: 12px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  .controls { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 0; }
+  .controls button { background: #252b34; color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; font-size: 14px; cursor: pointer; min-height: 36px; }
+  .controls button.on { background: var(--accent); color: #12151a; border-color: var(--accent); font-weight: 600; }
+  .controls button.play { min-width: 74px; }
+  .controls .sep { width: 1px; height: 24px; background: var(--line); margin: 0 4px; }
+  .eranote { color: var(--muted); font-size: 14px; margin: 8px 2px 0; min-height: 20px; line-height: 1.4; }
+  .legend div { display: flex; align-items: center; gap: 8px; font-size: 14px; margin: 4px 0; }
+  .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; flex: none; }
+  table.stats { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.stats td { padding: 4px 0; border-bottom: 1px solid var(--line); }
+  table.stats td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .small { color: var(--muted); font-size: 13px; line-height: 1.45; }
+  .centreline { font-size: 15px; margin: 0 0 6px; }
+  .centreline b { color: var(--accent); }
+  button.back { background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font-size: 13px; cursor: pointer; }
+  #info { position: absolute; pointer-events: auto; background: #0d1014; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-size: 14px; line-height: 1.45; max-width: 260px; display: none; box-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+  #info .t { font-weight: 700; font-size: 15px; margin-bottom: 2px; }
+  #info button { margin-top: 8px; background: var(--accent); color: #12151a; border: 0; border-radius: 6px; padding: 6px 10px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  #info .x { position: absolute; top: 4px; right: 8px; color: var(--muted); cursor: pointer; font-size: 16px; }
+  .err { background: #3a1d1d; border: 1px solid #7a3030; color: #ffd9d9; padding: 12px 14px; border-radius: 8px; margin: 12px 0; display: none; }
+  text.lbl { fill: #cfd4da; paint-order: stroke; stroke: #1b1f26; stroke-linejoin: round; }
+  text.ringlbl { fill: var(--faint); }
+  .tablecard { margin-top: 12px; display: none; }
+  .tablecard.open { display: block; }
+  .tablewrap { overflow-x: auto; }
+  table.times { border-collapse: collapse; font-size: 13px; width: 100%; font-variant-numeric: tabular-nums; }
+  table.times th, table.times td { padding: 5px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+  table.times th { color: var(--muted); font-weight: 600; position: sticky; top: 0; background: var(--panel); }
+  table.times th:first-child, table.times td:first-child { text-align: left; }
+  table.times .cur { background: #262d37; color: var(--text); }
+  .calloutlist { display: none; margin: 8px 2px 0; font-size: 14px; line-height: 1.6; }
+  .calloutlist.open { display: block; }
+  .calloutlist b { font-weight: 700; }
+  text.callname { fill: var(--text); font-weight: 700; }
+  text.calltime { fill: #c3c9d0; }
+  g.callouts { transition: opacity 0.6s; }
+  .tick { width: 3px; height: 13px; background: #c3c9d0; display: inline-block; flex: none; margin: 0 4px; border-radius: 1px; }
+  #carcard { display: none; }
+  #carcard.open { display: block; }
+
+  /* Part 2: Marey diagram */
+  .marey { margin-top: 30px; }
+  .marey h2.sec { font-size: 21px; font-weight: 700; margin: 0 0 6px; }
+  .mstats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 0 0 12px; }
+  .mstat .v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .mstat .k { color: var(--muted); font-size: 13px; line-height: 1.4; margin-top: 2px; }
+  .mareybox { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; position: relative; }
+  .mareyscroll { overflow-x: auto; }
+  svg#marey { display: block; width: 100%; touch-action: manipulation; }
+  svg#marey text { font-family: inherit; }
+  .controls button .sw { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+  .controls button.off { opacity: 0.45; }
+  #minfo { position: absolute; background: #0d1014; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; max-width: 280px; display: none; box-shadow: 0 6px 18px rgba(0,0,0,0.45); pointer-events: none; z-index: 2; }
+  #minfo .t { font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+  .mtext { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }
+  .mtext p { margin: 0 0 8px; font-size: 14px; line-height: 1.5; }
+  .mtablecard { margin-top: 12px; display: none; }
+  .mtablecard.open { display: block; }
+  @media (max-width: 860px) {
+    .mstats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mtext { grid-template-columns: minmax(0, 1fr); }
+  }
+  h1, h2, .sub, .controls button, .mstat .v, #info .t, #minfo .t, .centreline b { font-family: var(--sans); }
+  .sub { font-size: 17px; font-weight: 600; color: #c9ced4; margin: 0 0 8px; line-height: 1.35; }
+  .links { font-size: 13px; margin-top: 8px; }
+  .links a { color: #c3c9d0; }
+  footer { color: var(--faint); font-size: 12px; margin-top: 14px; line-height: 1.5; }
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    h1 { font-size: 22px; }
+    body { padding: 12px 10px 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Train journey times from Madrid</h1>
+  <p class="sub">How high-speed rail changed travel times across Spain over the past forty years</p>
+  <p class="stand">Each city keeps its true direction, but its distance on the map is the fastest train time. Watch the high-speed cities rush in while others barely move.</p>
+  <div class="err" id="err"></div>
+  <div class="grid">
+    <div>
+      <div class="mapbox" id="mapbox">
+        <svg id="map" role="img" aria-label="Time map of Spain by train"></svg>
+        <div id="info"></div>
+      </div>
+      <div class="controls" id="controls"></div>
+      <div class="eranote" id="eranote"></div>
+      <div class="calloutlist" id="calloutlist"></div>
+      <div class="card tablecard" id="tablecard">
+        <h2 id="tablehead">Travel time by year</h2>
+        <div class="tablewrap"><table class="times" id="times"></table></div>
+        <p class="small" id="tablenote"></p>
+      </div>
+    </div>
+    <div class="side">
+      <div class="card">
+        <h2>Centre</h2>
+        <p class="centreline" id="centreline"></p>
+        <p class="small" id="centrehelp"></p>
+      </div>
+      <div class="card">
+        <h2 id="statshead">Time from the centre, share of 1985</h2>
+        <table class="stats" id="stats"></table>
+        <p class="small" id="statsnote"></p>
+      </div>
+      <div class="card" id="carcard">
+        <h2 id="carhead">Train against car</h2>
+        <table class="stats" id="carstats"></table>
+        <p class="small" id="carnote"></p>
+      </div>
+      <div class="card legend" id="legend">
+        <h2>Fastest route from Madrid, 2025</h2>
+      </div>
+      <div class="card">
+        <h2>How to read it</h2>
+        <p class="small">Distances are exact only from the centre city: on the map, two other cities look closer than the train really makes them, because most trips between them still go through Madrid. The coastline is a backdrop, stretched between the cities; only the cities are measured. The faint line is the real coast. Rings mark each hour from the centre.</p>
+        <p class="small">In 2025 and 2026, <b>Compare with car</b> adds a grey mark on each city's line at its driving time on today's roads: a dot inside its mark is quicker by train. Dots use a simplified network of key links (60 min per change of train); the info card gives the fastest trip in the timetable, so in a few views away from Madrid a dot can sit on the wrong side of its mark.</p>
+      </div>
+    </div>
+  </div>
+  <section class="marey" id="mareysec">
+    <h2 class="sec">One day on the Madrid to Barcelona line</h2>
+    <p class="stand">Every train between Madrid and Barcelona on Wednesday 25 November 2026, from all three operators. Time runs left to right; Madrid is at the top, Barcelona at the bottom, and every station sits at its distance along the line. Steep lines are fast trains, short flat steps are stops, and where two lines of the same direction cross, one train overtakes the other.</p>
+    <div class="mstats" id="mstats"></div>
+    <div class="mareybox">
+      <div class="mareyscroll" id="mareyscroll"><svg id="marey" role="img" aria-label="Marey diagram: every train between Madrid and Barcelona on 25 November 2026"></svg></div>
+      <div id="minfo"></div>
+    </div>
+    <div class="controls" id="mcontrols"></div>
+    <div class="eranote" id="mnote"></div>
+    <div class="card mtablecard" id="mtablecard">
+      <h2>All trains, Wednesday 25 November 2026</h2>
+      <div class="tablewrap"><table class="times" id="mtable"></table></div>
+    </div>
+    <div class="mtext">
+      <div class="card">
+        <h2>Three operators, one track</h2>
+        <p id="mtext1"></p>
+      </div>
+      <div class="card">
+        <h2>Slower since February 2026</h2>
+        <p id="mtext2"></p>
+      </div>
+    </div>
+  </section>
+  <footer id="footer"></footer>
+  <p class="links"><a href="case-study.html">Case study</a> | <a href="case-study.pdf">Case study (PDF)</a> | <a href="https://github.com/likrentai/spaintraintimes">Code and data on GitHub</a><br>Ouigo timetable (processed): Powered by MITRAMS, <a href="https://www.transportes.gob.es/">Ministerio de Transportes y Movilidad Sostenible</a>, via the Punto de Acceso Nacional.</p>
+</div>
+<script>
+// SETTINGS
+const DATA_URL = "data/timemap.json";  // <- data file written by 06pagedata
+const MORPH_MS = 1400;  // <- VISUAL: length of one morph between eras (ms)
+const PLAY_PAUSE_MS = 1600;  // <- VISUAL: pause on each era while playing (ms)
+const DOT_PX = 5.5;  // <- VISUAL: city dot radius in screen pixels
+const LABEL_PX = 12;  // <- VISUAL: label font size in screen pixels
+const RING_HOURS_MAX = 14;  // <- most hour rings drawn
+const MADRID_EXTENT_KM = 640;  // <- VISUAL: half width of the Madrid view in km (kept the same in every era, so the shrinking shows)
+const ERA_NOTE = {
+  "real": "The real map: distance in kilometres.",
+  "1985": "1985: before high speed. Distance on the map is the fastest train time from the centre.",
+  "1993": "1993: the first high-speed line, Madrid to Sevilla (1992), pulls Andalusia in.",
+  "2001": "2001: little changes; the network is still the 1992 line plus classic lines.",
+  "2010": "2010: lines to Barcelona (2008), Valladolid (2007), Malaga (2007) and Valencia (2010) open.",
+  "2018": "2018: Alicante (2013) and Leon (2015) join. Granada has no train at all (2015 to 2019): AVE plus bus.",
+  "2025": "2025: Galicia (2021), Murcia (2022) and Asturias (2023) are in. Jaen, Almeria and the north coast hardly move.",
+  "2026": "2026: speed restrictions after the Adamuz accident (January 2026) and works stretch some links back out."
+};  // <- notes shown under the map for each era
+const SHOW_REAL_GHOSTS = false;  // <- VISUAL: faint dots at the real positions (off: without lines to their cities they read as noise)
+const CALLOUTS = ["Barcelona", "Teruel", "Jaén", "Almería"];  // <- cities with a callout (1985 time and the shown year's time), Madrid view only
+const CALLOUT_ERAS = ["2025", "2026"];  // <- years in which the callouts appear
+const CALLOUT_GAP_PX = 34;  // <- VISUAL: distance from a dot to its callout, outward from Madrid
+const CALLOUT_MIN_MAP_PX = 600;  // <- VISUAL: on a narrower map the callouts become a list under the map
+const LABEL_PRIORITY = ["Barcelona", "Zaragoza", "Valladolid", "Sevilla", "Valencia", "Jaén", "Almería", "Teruel", "Bilbao", "Málaga", "A Coruña", "Santiago", "Tarragona", "Lleida"];  // <- labels placed first, so these names are the last to be hidden
+const SHOW_REAL_COAST = true;  // <- VISUAL: faint real coastline behind the stretched one (Madrid view)
+const ROAD_URL = "data/railroad.json";  // <- part 3 data (driving times and full timetable times) written by 07road
+const CAR_ERAS = ["2025", "2026"];  // <- years with car marks (today's roads only)
+const CAR_TICK_PX = 7;  // <- VISUAL: half length of a car mark in screen pixels
+const CAR_COLOUR = "#c3c9d0";  // <- VISUAL: car marks
+const CAR_LINK_COLOUR = "#5b6470";  // <- VISUAL: faint line from a city to its car mark
+const CLOSE_SHARE = 0.10;  // <- "about level" when car time / train time is within this share of 1
+
+let DATA = null;
+let N = 0;
+let centre = 0;
+let madridIndex = 0;
+let era = "real";
+let current = null;
+let currentOutline = null;
+let outlineOpacity = 1;
+let anim = null;
+let playing = false;
+let playTimer = null;
+let extentKm = MADRID_EXTENT_KM;
+let ROAD = null;
+let roadIdx = [];
+let showCar = false;
+let carPts = [];
+
+const svg = document.getElementById("map");
+const NS = "http://www.w3.org/2000/svg";
+
+function el(name, attrs, parent) {
+  const node = document.createElementNS(NS, name);
+  for (const key in attrs) {
+    node.setAttribute(key, attrs[key]);
+  }
+  if (parent) {
+    parent.appendChild(node);
+  }
+  return node;
+}
+
+function fmtTime(minutes) {
+  const h = Math.floor(minutes / 60);
+  const m = Math.round(minutes - h * 60);
+  if (h === 0) {
+    return m + " min";
+  }
+  return h + " h " + String(m).padStart(2, "0");
+}
+
+function radiusKm(c, j, e) {
+  if (e === "real") {
+    return DATA.real_km[c][j];
+  }
+  return DATA.km_per_min * DATA.minutes[e][c][j];
+}
+
+function positionsFor(c, e) {
+  const out = [];
+  for (let j = 0; j < N; j++) {
+    const r = radiusKm(c, j, e);
+    const b = DATA.bearing_deg[c][j] * Math.PI / 180;
+    out.push([r * Math.sin(b), -r * Math.cos(b)]);
+  }
+  return out;
+}
+
+function outlineFor(e) {
+  const flat = DATA.outline[e];
+  const pts = [];
+  for (let i = 0; i < flat.length; i += 2) {
+    pts.push([flat[i], -flat[i + 1]]);
+  }
+  return pts;
+}
+
+function extentFor(c) {
+  if (c === madridIndex) {
+    return MADRID_EXTENT_KM;
+  }
+  let maxR = 0;
+  for (const e of ["real"].concat(DATA.eras)) {
+    for (let j = 0; j < N; j++) {
+      maxR = Math.max(maxR, radiusKm(c, j, e));
+    }
+  }
+  return maxR * 1.08 + 40;
+}
+
+// layers
+let gCarLinks, gCars;
+let carTicks = [];
+let carLinks = [];
+let gRings, gReal, realPath, gOutline, gGhosts, gDots, gLeaders, gLabels, gCallouts, outlinePath;
+let leaderNodes = [];
+let calloutBoxes = [];
+let dotNodes = [];
+let ghostNodes = [];
+let labelNodes = [];
+let ringNodes = [];
+
+function buildScene() {
+  svg.innerHTML = "";
+  gRings = el("g", {}, svg);
+  gReal = el("g", {}, svg);
+  realPath = el("path", { fill: "none", stroke: "#3a434f", "stroke-width": 1, "vector-effect": "non-scaling-stroke", "stroke-linejoin": "round" }, gReal);
+  gOutline = el("g", {}, svg);
+  outlinePath = el("path", { fill: "var(--land)", stroke: "var(--coast)", "stroke-width": 1, "vector-effect": "non-scaling-stroke", "stroke-linejoin": "round" }, gOutline);
+  gGhosts = el("g", {}, svg);
+  gCarLinks = el("g", {}, svg);
+  gCars = el("g", {}, svg);
+  gDots = el("g", {}, svg);
+  gLeaders = el("g", {}, svg);
+  gLabels = el("g", {}, svg);
+  gCallouts = el("g", { class: "callouts" }, svg);
+  leaderNodes = [];
+  dotNodes = [];
+  ghostNodes = [];
+  labelNodes = [];
+  carTicks = [];
+  carLinks = [];
+  for (let j = 0; j < N; j++) {
+    carLinks.push(el("line", { stroke: CAR_LINK_COLOUR, "stroke-width": 1, "vector-effect": "non-scaling-stroke", "stroke-dasharray": "2 3" }, gCarLinks));
+    carTicks.push(el("line", { stroke: CAR_COLOUR, "stroke-width": 2.5, "vector-effect": "non-scaling-stroke", "stroke-linecap": "round" }, gCars));
+  }
+  for (let j = 0; j < N; j++) {
+    const city = DATA.cities[j];
+    const ghost = el("circle", { r: 2, fill: "#58606b" }, gGhosts);
+    ghostNodes.push(ghost);
+    const dot = el("circle", { r: 4, fill: DATA.access_colour[city.access], stroke: "#1b1f26", "stroke-width": 1.5, "vector-effect": "non-scaling-stroke", cursor: "pointer" }, gDots);
+    dot.addEventListener("click", function (ev) { ev.stopPropagation(); showInfo(j); });
+    dot.addEventListener("mouseenter", function () { if (!pinned) { showInfo(j, true); } });
+    dot.addEventListener("mouseleave", function () { if (!pinned) { hideInfo(); } });
+    dotNodes.push(dot);
+    const label = el("text", { class: "lbl" }, gLabels);
+    label.textContent = city.name;
+    labelNodes.push(label);
+    const leader = el("line", { stroke: "#6b7480", "stroke-width": 1, "vector-effect": "non-scaling-stroke" }, gLeaders);
+    leaderNodes.push(leader);
+  }
+}
+
+function pxPerKm() {
+  const w = svg.clientWidth || 800;
+  return w / (2 * extentKm);
+}
+
+function setViewBox() {
+  const h = extentKm * 0.86;
+  svg.setAttribute("viewBox", (-extentKm) + " " + (-h) + " " + (2 * extentKm) + " " + (2 * h));
+  sizeMarks();
+}
+
+function sizeMarks() {
+  const k = pxPerKm();
+  for (let j = 0; j < N; j++) {
+    const big = j === centre ? 1.35 : 1;
+    dotNodes[j].setAttribute("r", DOT_PX * big / k);
+    ghostNodes[j].setAttribute("r", 1.8 / k);
+    labelNodes[j].setAttribute("font-size", LABEL_PX / k);
+    labelNodes[j].setAttribute("stroke-width", 3 / k);
+  }
+  drawCarTicks();
+  drawRings();
+}
+
+function drawRings() {
+  gRings.innerHTML = "";
+  ringNodes = [];
+  const k = pxPerKm();
+  const step = DATA.km_per_min * 60;
+  const opacity = centre === madridIndex ? 0.5 : 1;
+  for (let h = 1; h <= RING_HOURS_MAX; h++) {
+    const r = h * step;
+    if (r > extentKm * 1.25) {
+      break;
+    }
+    const c = current ? current[centre] : [0, 0];
+    el("circle", { cx: c[0], cy: c[1], r: r, fill: "none", stroke: "var(--ring)", "stroke-width": 1, "vector-effect": "non-scaling-stroke", "stroke-dasharray": "3 4", opacity: opacity }, gRings);
+    const t = el("text", { x: c[0], y: c[1] - r - 3 / k, "text-anchor": "middle", "font-size": 10.5 / k, class: "ringlbl", opacity: opacity }, gRings);
+    t.textContent = h + " h";
+  }
+  gRings.style.display = era === "real" ? "none" : "";
+}
+
+function pathFrom(pts) {
+  let d = "M" + pts[0][0].toFixed(1) + " " + pts[0][1].toFixed(1);
+  for (let i = 1; i < pts.length; i++) {
+    d += "L" + pts[i][0].toFixed(1) + " " + pts[i][1].toFixed(1);
+  }
+  return d + "Z";
+}
+
+function draw(pos, outlinePts, opacityOutline) {
+  for (let j = 0; j < N; j++) {
+    dotNodes[j].setAttribute("cx", pos[j][0]);
+    dotNodes[j].setAttribute("cy", pos[j][1]);
+  }
+  if (outlinePts) {
+    outlinePath.setAttribute("d", pathFrom(outlinePts));
+  }
+  gOutline.style.opacity = opacityOutline;
+  drawCarLinks(pos);
+  placeLabels(pos, false);
+}
+
+// labels: important names first; try right, left, above, below, then further out with a leader line; hide a label only if every place overlaps
+let labelPlan = null;
+
+function overlaps(box, boxes) {
+  for (const b of boxes) {
+    if (box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function labelOrder() {
+  const rank = function (j) {
+    if (j === centre) { return -1; }
+    const i = LABEL_PRIORITY.indexOf(DATA.cities[j].name);
+    return i < 0 ? 100 : i;
+  };
+  return [...Array(N).keys()].sort(function (a, b) { return rank(a) - rank(b); });
+}
+
+function planLabels(pos) {
+  const k = pxPerKm();
+  const placed = calloutBoxes.slice();
+  const plan = [];
+  const dotBoxes = pos.map(function (p) { const r = (DOT_PX + 1) / k; return [p[0] - r, p[1] - r, p[0] + r, p[1] + r]; });
+  const withCallout = calloutsOnMap() ? calloutCities() : new Set();
+  for (let j = 0; j < N; j++) {
+    plan.push(null);
+  }
+  for (const j of labelOrder()) {
+    if (withCallout.has(j)) {
+      continue;
+    }
+    const w = (DATA.cities[j].name.length * LABEL_PX * 0.56) / k;
+    const h = LABEL_PX / k;
+    const g = (DOT_PX + 3) / k;
+    const far = 22 / k;
+    const p = pos[j];
+    const options = [
+      { dx: g, dy: h * 0.35, anchor: "start", box: [p[0] + g, p[1] - h * 0.65, p[0] + g + w, p[1] + h * 0.35], leader: false },
+      { dx: -g, dy: h * 0.35, anchor: "end", box: [p[0] - g - w, p[1] - h * 0.65, p[0] - g, p[1] + h * 0.35], leader: false },
+      { dx: 0, dy: -g, anchor: "middle", box: [p[0] - w / 2, p[1] - g - h, p[0] + w / 2, p[1] - g], leader: false },
+      { dx: 0, dy: g + h * 0.8, anchor: "middle", box: [p[0] - w / 2, p[1] + g, p[0] + w / 2, p[1] + g + h], leader: false }
+    ];
+    for (const sx of [1, -1]) {
+      for (const sy of [-1, 1]) {
+        const ax = p[0] + sx * far;
+        const ay = p[1] + sy * far;
+        const box = sx > 0 ? [ax + 2 / k, ay - h * 0.65, ax + 2 / k + w, ay + h * 0.35] : [ax - 2 / k - w, ay - h * 0.65, ax - 2 / k, ay + h * 0.35];
+        options.push({ dx: sx * (far + 2 / k), dy: sy * far + h * 0.35, anchor: sx > 0 ? "start" : "end", box: box, leader: true, lx: sx * far, ly: sy * far });
+      }
+    }
+    for (const o of options) {
+      const others = dotBoxes.filter(function (b, i) { return i !== j; });
+      if (!overlaps(o.box, placed) && !overlaps(o.box, others)) {
+        plan[j] = o;
+        placed.push(o.box);
+        break;
+      }
+    }
+  }
+  labelPlan = plan;
+}
+
+function placeLabels(pos) {
+  if (!labelPlan) {
+    return;
+  }
+  const k = pxPerKm();
+  for (let j = 0; j < N; j++) {
+    const o = labelPlan[j];
+    const node = labelNodes[j];
+    const leader = leaderNodes[j];
+    if (!o) {
+      node.style.display = "none";
+      leader.style.display = "none";
+      continue;
+    }
+    node.style.display = "";
+    node.setAttribute("x", pos[j][0] + o.dx);
+    node.setAttribute("y", pos[j][1] + o.dy);
+    node.setAttribute("text-anchor", o.anchor);
+    if (o.leader) {
+      const len = Math.hypot(o.lx, o.ly);
+      const start = (DOT_PX + 1) / k / len;
+      leader.style.display = "";
+      leader.setAttribute("x1", pos[j][0] + o.lx * start);
+      leader.setAttribute("y1", pos[j][1] + o.ly * start);
+      leader.setAttribute("x2", pos[j][0] + o.lx);
+      leader.setAttribute("y2", pos[j][1] + o.ly);
+    } else {
+      leader.style.display = "none";
+    }
+  }
+}
+
+// callouts: name, 1985 time and the shown year's time, outward from Madrid; numbers come from the data
+function calloutsOnMap() {
+  return (svg.clientWidth || 800) >= CALLOUT_MIN_MAP_PX;
+}
+
+function calloutCities() {
+  const set = new Set();
+  if (centre !== madridIndex || CALLOUT_ERAS.indexOf(era) < 0) {
+    return set;
+  }
+  for (const name of CALLOUTS) {
+    const j = DATA.cities.findIndex(function (c) { return c.name === name; });
+    if (j >= 0) {
+      set.add(j);
+    }
+  }
+  return set;
+}
+
+function buildCallouts(pos) {
+  gCallouts.innerHTML = "";
+  calloutBoxes = [];
+  const k = pxPerKm();
+  const first = DATA.eras[0];
+  const list = document.getElementById("calloutlist");
+  const chosen = calloutCities();
+  if (!calloutsOnMap()) {
+    let html = "";
+    for (const j of chosen) {
+      html += "<div><span class='dot' style='background:" + DATA.access_colour[DATA.cities[j].access] + "'></span> <b>" + DATA.cities[j].name + "</b>: " + first + " " + fmtTime(DATA.minutes[first][centre][j]) + ", " + era + " " + fmtTime(DATA.minutes[era][centre][j]) + "</div>";
+    }
+    list.innerHTML = html;
+    list.classList.toggle("open", chosen.size > 0);
+    return;
+  }
+  list.classList.remove("open");
+  for (const j of chosen) {
+    const p = pos[j];
+    const len = Math.hypot(p[0], p[1]) || 1;
+    const ux = p[0] / len;
+    const uy = p[1] / len;
+    const gap = CALLOUT_GAP_PX / k;
+    const ax = p[0] + ux * gap;
+    const ay = p[1] + uy * gap;
+    const name = DATA.cities[j].name;
+    const line2 = first + " " + fmtTime(DATA.minutes[first][centre][j]) + "  ·  " + era + " " + fmtTime(DATA.minutes[era][centre][j]);
+    const fs = 12.5 / k;
+    const h = 2.3 * fs;
+    const start = (DOT_PX + 1) / k;
+    el("line", { x1: p[0] + ux * start, y1: p[1] + uy * start, x2: ax, y2: ay, stroke: "#c3c9d0", "stroke-width": 1, "vector-effect": "non-scaling-stroke" }, gCallouts);
+    const t1 = el("text", { x: 0, y: 0, "font-size": fs * 1.04, class: "callname lbl" }, gCallouts);
+    t1.textContent = name;
+    t1.setAttribute("stroke-width", 3 / k);
+    const t2 = el("text", { x: 0, y: 0, "font-size": fs * 0.92, class: "calltime lbl" }, gCallouts);
+    t2.textContent = line2;
+    t2.setAttribute("stroke-width", 3 / k);
+    const w = Math.max(t1.getComputedTextLength(), t2.getComputedTextLength());
+    let right = ux >= -0.15;
+    if (right && ax + 3 / k + w > extentKm) {
+      right = false;
+    }
+    if (!right && ax - 3 / k - w < -extentKm) {
+      right = true;
+    }
+    const bx = right ? ax + 3 / k : ax - 3 / k - w;
+    const by = ay - h / 2;
+    const anchor = right ? "start" : "end";
+    const tx = right ? bx : bx + w;
+    t1.setAttribute("x", tx);
+    t1.setAttribute("y", by + fs * 0.95);
+    t1.setAttribute("text-anchor", anchor);
+    t2.setAttribute("x", tx);
+    t2.setAttribute("y", by + fs * 2.1);
+    t2.setAttribute("text-anchor", anchor);
+    calloutBoxes.push([bx, by, bx + w, by + h]);
+  }
+}
+
+// car marks (part 3): driving time on today's roads, on each city's own line from the centre
+function carVisible() {
+  return ROAD !== null && showCar && CAR_ERAS.indexOf(era) >= 0;
+}
+
+function roadMin(c, j) {
+  return ROAD.road_min[roadIdx[c]][roadIdx[j]];
+}
+
+function railMin(e, c, j) {
+  return ROAD.rail_min[e][roadIdx[c]][roadIdx[j]];
+}
+
+function usesBus(e, c, j) {
+  const list = (ROAD.bus && ROAD.bus[e]) || [];
+  const a = DATA.cities[c].name;
+  const b = DATA.cities[j].name;
+  return list.some(function (p) { return p[0] === a && p[1] === b; });
+}
+
+function verdict(ratio) {
+  if (ratio >= 1 + CLOSE_SHARE) { return "train"; }
+  if (ratio <= 1 - CLOSE_SHARE) { return "car"; }
+  return "level";
+}
+
+function computeCarPts() {
+  carPts = [];
+  if (ROAD === null) { return; }
+  for (let j = 0; j < N; j++) {
+    const r = j === centre ? 0 : DATA.km_per_min * roadMin(centre, j);
+    const b = DATA.bearing_deg[centre][j] * Math.PI / 180;
+    carPts.push([r * Math.sin(b), -r * Math.cos(b), b]);
+  }
+}
+
+function drawCarTicks() {
+  if (ROAD === null || carTicks.length === 0) { return; }
+  const k = pxPerKm();
+  const half = CAR_TICK_PX / k;
+  const show = carVisible();
+  gCars.style.display = show ? "" : "none";
+  gCarLinks.style.display = show ? "" : "none";
+  if (!show) { return; }
+  for (let j = 0; j < N; j++) {
+    const t = carTicks[j];
+    if (j === centre || !carPts[j]) {
+      t.style.display = "none";
+      continue;
+    }
+    const p = carPts[j];
+    const vx = Math.cos(p[2]);
+    const vy = Math.sin(p[2]);
+    t.style.display = "";
+    t.setAttribute("x1", p[0] - vx * half);
+    t.setAttribute("y1", p[1] - vy * half);
+    t.setAttribute("x2", p[0] + vx * half);
+    t.setAttribute("y2", p[1] + vy * half);
+  }
+}
+
+function drawCarLinks(pos) {
+  if (!carVisible() || carPts.length === 0) { return; }
+  for (let j = 0; j < N; j++) {
+    const line = carLinks[j];
+    if (j === centre) {
+      line.style.display = "none";
+      continue;
+    }
+    line.style.display = "";
+    line.setAttribute("x1", pos[j][0]);
+    line.setAttribute("y1", pos[j][1]);
+    line.setAttribute("x2", carPts[j][0]);
+    line.setAttribute("y2", carPts[j][1]);
+  }
+}
+
+function updateCarCard() {
+  const card = document.getElementById("carcard");
+  if (ROAD === null || CAR_ERAS.indexOf(era) < 0) {
+    card.classList.remove("open");
+    return;
+  }
+  card.classList.add("open");
+  const name = DATA.cities[centre].name;
+  const n = { train: 0, level: 0, car: 0 };
+  const carWins = [];
+  for (let j = 0; j < N; j++) {
+    if (j === centre) { continue; }
+    const v = verdict(roadMin(centre, j) / railMin(era, centre, j));
+    n[v] += 1;
+    if (v === "car") { carWins.push(DATA.cities[j].name); }
+  }
+  document.getElementById("carhead").textContent = "Train against car from " + name + ", " + era;
+  document.getElementById("carstats").innerHTML = "<tr><td>Train faster</td><td class='n'>" + n.train + "</td></tr><tr><td>About level (within " + Math.round(CLOSE_SHARE * 100) + "%)</td><td class='n'>" + n.level + "</td></tr><tr><td>Car faster</td><td class='n'>" + n.car + "</td></tr>";
+  let note = "Train: fastest trip in the " + era + " timetable. Car: driving time on today's roads, no traffic or breaks.";
+  if (carWins.length > 0 && carWins.length <= 8) {
+    note += " Car faster to: " + carWins.join(", ") + ".";
+  }
+  document.getElementById("carnote").textContent = note;
+}
+
+function toggleCar(button) {
+  showCar = !showCar;
+  button.classList.toggle("on", showCar);
+  if (showCar && CAR_ERAS.indexOf(era) < 0) {
+    stopPlay();
+    hideInfo();
+    goTo(CAR_ERAS[0], centre);
+    return;
+  }
+  drawCarTicks();
+  drawCarLinks(current);
+}
+
+// table view
+let tableOpen = false;
+
+function renderTable() {
+  const card = document.getElementById("tablecard");
+  card.classList.toggle("open", tableOpen);
+  if (!tableOpen) {
+    return;
+  }
+  const cName = DATA.cities[centre].name;
+  const first = DATA.eras[0];
+  const shareEra = (era === "real" || era === first) ? DATA.story_era : era;
+  document.getElementById("tablehead").textContent = "Fastest train time from " + cName + ", by year";
+  const rows = [];
+  for (let j = 0; j < N; j++) {
+    if (j === centre) { continue; }
+    rows.push({ j: j, share: DATA.minutes[shareEra][centre][j] / DATA.minutes[first][centre][j] });
+  }
+  rows.sort(function (a, b) { return a.share - b.share; });
+  let html = "<thead><tr><th>City</th>";
+  for (const e of DATA.eras) {
+    html += "<th" + (e === era ? " class='cur'" : "") + ">" + e + "</th>";
+  }
+  html += "<th>" + shareEra + " as share of " + first + "</th></tr></thead><tbody>";
+  for (const r of rows) {
+    const c = DATA.cities[r.j];
+    html += "<tr><td><span class='dot' style='background:" + DATA.access_colour[c.access] + "'></span> " + c.name + "</td>";
+    for (const e of DATA.eras) {
+      html += "<td" + (e === era ? " class='cur'" : "") + ">" + fmtTime(DATA.minutes[e][centre][r.j]) + "</td>";
+    }
+    html += "<td>" + Math.round(r.share * 100) + "%</td></tr>";
+  }
+  html += "</tbody>";
+  document.getElementById("times").innerHTML = html;
+  document.getElementById("tablenote").textContent = "Sorted by " + shareEra + " as a share of " + first + " (fastest first). Dot colour: fastest route from Madrid in 2025. Times include 60 min for each change of train; 2010 and 2018 are rebuilt from published times.";
+}
+
+function ease(t) {
+  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+function goTo(newEra, newCentre, instant) {
+  const targetPos = positionsFor(newCentre, newEra);
+  const showOutline = newCentre === madridIndex;
+  const targetOutline = showOutline ? outlineFor(newEra) : currentOutline;
+  const targetOpacity = showOutline ? 1 : 0;
+  const startPos = current ? current.map(function (p) { return p.slice(); }) : targetPos;
+  const startOutline = currentOutline ? currentOutline.map(function (p) { return p.slice(); }) : targetOutline;
+  const startOpacity = outlineOpacity;
+  const oldExtent = extentKm;
+  const newExtent = extentFor(newCentre);
+  const centreChanged = newCentre !== centre;
+  era = newEra;
+  centre = newCentre;
+  for (let j = 0; j < N; j++) {
+    const real = positionsFor(centre, "real")[j];
+    ghostNodes[j].setAttribute("cx", real[0]);
+    ghostNodes[j].setAttribute("cy", real[1]);
+  }
+  gGhosts.style.display = SHOW_REAL_GHOSTS && era !== "real" ? "" : "none";
+  gReal.style.display = SHOW_REAL_COAST && centre === madridIndex && era !== "real" ? "" : "none";
+  extentKm = newExtent;
+  computeCarPts();
+  setViewBox();
+  if (centreChanged && !instant && current) {
+    gCars.style.display = "none";
+    gCarLinks.style.display = "none";
+  }
+  gCallouts.style.opacity = 0;
+  buildCallouts(targetPos);
+  planLabels(targetPos);
+  updatePanels();
+  if (anim) {
+    cancelAnimationFrame(anim);
+  }
+  if (instant || !current) {
+    current = targetPos;
+    currentOutline = targetOutline;
+    outlineOpacity = targetOpacity;
+    draw(current, currentOutline, outlineOpacity);
+    drawRings();
+    drawCarTicks();
+    drawCarLinks(current);
+    gCallouts.style.opacity = 1;
+    return;
+  }
+  const t0 = performance.now();
+  function frame(now) {
+    const t = Math.min(1, (now - t0) / MORPH_MS);
+    const s = ease(t);
+    const pos = startPos.map(function (p, j) { return [p[0] + (targetPos[j][0] - p[0]) * s, p[1] + (targetPos[j][1] - p[1]) * s]; });
+    let out = null;
+    if (startOutline && targetOutline) {
+      out = startOutline.map(function (p, i) { return [p[0] + (targetOutline[i][0] - p[0]) * s, p[1] + (targetOutline[i][1] - p[1]) * s]; });
+    }
+    const op = startOpacity + (targetOpacity - startOpacity) * s;
+    current = pos;
+    currentOutline = out;
+    outlineOpacity = op;
+    draw(pos, out, op);
+    if (centreChanged) {
+      drawRings();
+    }
+    if (t < 1) {
+      anim = requestAnimationFrame(frame);
+    } else {
+      anim = null;
+      drawRings();
+      drawCarTicks();
+      drawCarLinks(current);
+      gCallouts.style.opacity = 1;
+    }
+  }
+  anim = requestAnimationFrame(frame);
+}
+
+// panels
+function median(values) {
+  const v = values.slice().sort(function (a, b) { return a - b; });
+  const n = v.length;
+  if (n === 0) { return NaN; }
+  return n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2;
+}
+
+function updatePanels() {
+  const name = DATA.cities[centre].name;
+  document.getElementById("centreline").innerHTML = "Map seen from <b>" + name + "</b>";
+  const help = document.getElementById("centrehelp");
+  if (centre === madridIndex) {
+    help.innerHTML = "Click or tap any city to see the map from there.";
+  } else {
+    help.innerHTML = "The coastline is drawn only for Madrid, the hub. <button class='back' id='backbtn'>Back to Madrid</button>";
+    document.getElementById("backbtn").addEventListener("click", function () { goTo(era, madridIndex); });
+  }
+  const stats = document.getElementById("stats");
+  stats.innerHTML = "";
+  const head = document.getElementById("statshead");
+  const note = document.getElementById("statsnote");
+  if (era === "real" || era === DATA.eras[0]) {
+    head.textContent = "Time from the centre, share of 1985";
+    note.textContent = "Pick a later year to compare with 1985.";
+  } else {
+    head.textContent = "Time from " + name + ", " + era + " as a share of 1985";
+    for (const g of ["full", "part", "none"]) {
+      const shares = [];
+      for (let j = 0; j < N; j++) {
+        if (j === centre || DATA.cities[j].access !== g) { continue; }
+        shares.push(DATA.minutes[era][centre][j] / DATA.minutes[DATA.eras[0]][centre][j]);
+      }
+      if (shares.length === 0) { continue; }
+      const row = document.createElement("tr");
+      row.innerHTML = "<td><span class='dot' style='background:" + DATA.access_colour[g] + "'></span> " + DATA.access_label[g] + " (" + shares.length + ")</td><td class='n'>" + Math.round(median(shares) * 100) + "%</td>";
+      stats.appendChild(row);
+    }
+    note.textContent = "Median over the cities in each group. Groups are set by the fastest route from Madrid in 2025.";
+  }
+  document.getElementById("eranote").textContent = ERA_NOTE[era] || "";
+  updateCarCard();
+  renderTable();
+  for (const b of document.querySelectorAll(".controls button[data-era]")) {
+    b.classList.toggle("on", b.dataset.era === era);
+  }
+}
+
+// info card
+let pinned = false;
+const info = document.getElementById("info");
+
+function showInfo(j, hover) {
+  const city = DATA.cities[j];
+  const cName = DATA.cities[centre].name;
+  let html = "<span class='x' id='infox'>&times;</span><div class='t'>" + city.name + "</div>";
+  if (j === centre) {
+    html += "<div>Centre of the map.</div>";
+  } else if (era === "real") {
+    html += "<div>" + Math.round(DATA.real_km[centre][j]) + " km from " + cName + " in a straight line.</div>";
+  } else {
+    const now = DATA.minutes[era][centre][j];
+    const first = DATA.minutes[DATA.eras[0]][centre][j];
+    html += "<div>" + fmtTime(now) + " from " + cName + " in " + era + "</div>";
+    html += "<div style='color:var(--muted)'>" + DATA.eras[0] + ": " + fmtTime(first) + " (" + Math.round(now / first * 100) + "% of 1985)</div>";
+  }
+  if (ROAD !== null && j !== centre && CAR_ERAS.indexOf(era) >= 0) {
+    const car = roadMin(centre, j);
+    const tt = railMin(era, centre, j);
+    const ratio = car / tt;
+    const v = verdict(ratio);
+    html += "<div style='margin-top:4px'>By car: " + fmtTime(car) + " (today's roads)</div>";
+    if (Math.abs(tt - DATA.minutes[era][centre][j]) >= 5) {
+      html += "<div>Fastest train in the " + era + " timetable: " + fmtTime(tt) + "</div>";
+    }
+    if (usesBus(era, centre, j)) {
+      html += "<div style='color:var(--muted)'>The train trip " + ROAD.bus_note + ".</div>";
+    }
+    let text = "About level with the car";
+    if (v === "train") { text = "Train " + ratio.toFixed(1) + " times faster than the car"; }
+    if (v === "car") { text = "Car " + (1 / ratio).toFixed(1) + " times faster than the train"; }
+    html += "<div><b>" + text + "</b></div>";
+  }
+  if (centre === madridIndex && city.train) {
+    html += "<div style='color:var(--muted)'>" + DATA.access_label[city.access] + "; fastest 2025 train: " + city.train + "</div>";
+  }
+  if (j !== centre && !hover) {
+    html += "<button id='recentre'>See the map from " + city.name + "</button>";
+  }
+  info.innerHTML = html;
+  info.style.display = "block";
+  const box = document.getElementById("mapbox").getBoundingClientRect();
+  const dot = dotNodes[j].getBoundingClientRect();
+  let left = dot.left - box.left + 14;
+  let top = dot.top - box.top - 10;
+  if (left + 270 > box.width) { left = dot.left - box.left - 274; }
+  if (left < 6) { left = 6; }
+  if (top + info.offsetHeight > box.height - 6) { top = box.height - info.offsetHeight - 6; }
+  if (top < 6) { top = 6; }
+  info.style.left = left + "px";
+  info.style.top = top + "px";
+  pinned = !hover;
+  document.getElementById("infox").addEventListener("click", function (ev) { ev.stopPropagation(); hideInfo(); });
+  const rb = document.getElementById("recentre");
+  if (rb) {
+    rb.addEventListener("click", function (ev) { ev.stopPropagation(); hideInfo(); stopPlay(); goTo(era, j); });
+  }
+}
+
+function hideInfo() {
+  info.style.display = "none";
+  pinned = false;
+}
+
+// controls
+function buildControls() {
+  const box = document.getElementById("controls");
+  const play = document.createElement("button");
+  play.className = "play";
+  play.textContent = "Play";
+  play.addEventListener("click", function () { if (playing) { stopPlay(); } else { startPlay(); } });
+  box.appendChild(play);
+  const sep = document.createElement("span");
+  sep.className = "sep";
+  box.appendChild(sep);
+  for (const e of ["real"].concat(DATA.eras)) {
+    const b = document.createElement("button");
+    b.dataset.era = e;
+    b.textContent = e === "real" ? "Real map" : e;
+    b.addEventListener("click", function () { stopPlay(); hideInfo(); goTo(e, centre); });
+    box.appendChild(b);
+  }
+  const sep2 = document.createElement("span");
+  sep2.className = "sep";
+  box.appendChild(sep2);
+  const tb = document.createElement("button");
+  tb.textContent = "Show as table";
+  tb.addEventListener("click", function () { tableOpen = !tableOpen; tb.textContent = tableOpen ? "Hide table" : "Show as table"; tb.classList.toggle("on", tableOpen); renderTable(); });
+  box.appendChild(tb);
+  if (ROAD !== null) {
+    const cb = document.createElement("button");
+    cb.textContent = "Compare with car";
+    cb.addEventListener("click", function () { toggleCar(cb); });
+    box.appendChild(cb);
+  }
+}
+
+function startPlay() {
+  playing = true;
+  document.querySelector(".controls .play").textContent = "Pause";
+  const seq = ["real"].concat(DATA.eras);
+  let i = seq.indexOf(era);
+  if (i < 0 || i === seq.length - 1) {
+    i = -1;
+  }
+  function step() {
+    if (!playing) { return; }
+    i += 1;
+    if (i >= seq.length) { stopPlay(); return; }
+    goTo(seq[i], centre);
+    playTimer = setTimeout(step, MORPH_MS + PLAY_PAUSE_MS);
+  }
+  step();
+}
+
+function stopPlay() {
+  playing = false;
+  clearTimeout(playTimer);
+  const b = document.querySelector(".controls .play");
+  if (b) { b.textContent = "Play"; }
+}
+
+function buildLegend() {
+  const box = document.getElementById("legend");
+  for (const g of ["hub", "full", "part", "none"]) {
+    const row = document.createElement("div");
+    row.innerHTML = "<span class='dot' style='background:" + DATA.access_colour[g] + "'></span>" + DATA.access_label[g];
+    box.appendChild(row);
+  }
+  if (ROAD !== null) {
+    const row = document.createElement("div");
+    row.innerHTML = "<span class='tick' style='background:" + CAR_COLOUR + "'></span>By car, today's roads (2025, 2026)";
+    box.appendChild(row);
+  }
+}
+
+async function loadRoad() {
+  try {
+    const response = await fetch(ROAD_URL);
+    if (!response.ok) {
+      throw new Error("HTTP " + response.status);
+    }
+    const road = await response.json();
+    const idx = DATA.cities.map(function (c) { return road.cities.indexOf(c.name); });
+    if (idx.some(function (i) { return i < 0; })) {
+      throw new Error("its city list does not match " + DATA_URL);
+    }
+    ROAD = road;
+    roadIdx = idx;
+  } catch (e) {
+    ROAD = null;
+    showError("The car comparison is not available: could not use " + ROAD_URL + " (" + e.message + "). The time map works without it.");
+  }
+}
+
+function showError(message) {
+  const box = document.getElementById("err");
+  box.textContent = message;
+  box.style.display = "block";
+}
+
+// PART 2: MAREY DIAGRAM
+const MAREY_URL = "data/marey.json";  // <- part 2 data written by 09marey
+const MAREY_START_MIN = 330;  // <- VISUAL: left edge of the diagram (5:30)
+const MAREY_END_MIN = 1440;  // <- VISUAL: right edge (24:00)
+const MAREY_MIN_WIDTH = 680;  // <- VISUAL: narrower screens scroll the diagram sideways inside its box
+const MAREY_HEIGHT_PX = 430;  // <- VISUAL: diagram height
+const MAREY_LINE_PX = 1.4;  // <- VISUAL: train line width
+const MAREY_HIT_PX = 12;  // <- VISUAL: invisible hover/tap width around each line
+const MAREY_SHORT = {"Madrid Atocha": "Madrid", "Guadalajara": "Guadalajara", "Calatayud": "Calatayud", "Zaragoza": "Zaragoza", "Lleida": "Lleida", "Tarragona": "Tarragona", "Barcelona Sants": "Barcelona"};  // <- station labels
+
+let MAREY = null;
+let mOps = {};
+let mDir = "both";
+let mTable = false;
+let mLines = [];
+
+function clockOf(minutes) {
+  const m = Math.round(minutes);
+  return Math.floor(m / 60) % 24 + ":" + String(m % 60).padStart(2, "0");
+}
+
+function mStationName(km) {
+  const s = MAREY.stations.find(function (x) { return Math.abs(x.km - km) < 0.05; });
+  return s ? s.name : km + " km";
+}
+
+function mVisible(t) {
+  return mOps[t.op] && (mDir === "both" || t.dir === mDir);
+}
+
+function drawMarey() {
+  const svgM = document.getElementById("marey");
+  while (svgM.firstChild) {
+    svgM.removeChild(svgM.firstChild);
+  }
+  const box = document.getElementById("mareyscroll");
+  const width = Math.max(MAREY_MIN_WIDTH, box.clientWidth);
+  const height = MAREY_HEIGHT_PX;
+  svgM.setAttribute("viewBox", "0 0 " + width + " " + height);
+  svgM.style.width = width + "px";
+  svgM.style.height = height + "px";
+  const left = 86, right = 12, top = 10, bottom = 28;
+  const lineKm = MAREY.stations[MAREY.stations.length - 1].km;
+  const x = function (m) { return left + (m - MAREY_START_MIN) / (MAREY_END_MIN - MAREY_START_MIN) * (width - left - right); };
+  const y = function (km) { return top + km / lineKm * (height - top - bottom); };
+  const grid = el("g", {}, svgM);
+  MAREY.stations.forEach(function (s) {
+    el("line", { x1: left, x2: width - right, y1: y(s.km), y2: y(s.km), stroke: "#2c333d", "stroke-width": 1 }, grid);
+    const t = el("text", { x: left - 8, y: y(s.km) + 4, "text-anchor": "end", "font-size": 12, fill: "#c3c9d0" }, grid);
+    t.textContent = MAREY_SHORT[s.name] || s.name;
+  });
+  const step = width < 900 ? 180 : 120;
+  for (let m = 360; m <= MAREY_END_MIN; m += step) {
+    el("line", { x1: x(m), x2: x(m), y1: top, y2: height - bottom, stroke: "#232932", "stroke-width": 1 }, grid);
+    const anchor = m + step > MAREY_END_MIN ? "end" : "middle";
+    const t = el("text", { x: x(m), y: height - 8, "text-anchor": anchor, "font-size": 12, fill: "#9aa3ad" }, grid);
+    t.textContent = m >= 1440 ? "24:00" : clockOf(m);
+  }
+  const gLines = el("g", {}, svgM);
+  const gHits = el("g", {}, svgM);
+  mLines = [];
+  MAREY.trains.forEach(function (t) {
+    if (!mVisible(t)) {
+      return;
+    }
+    const pts = [];
+    t.stops.forEach(function (s, i) {
+      if (i > 0) {
+        pts.push([x(s[1]), y(s[0])]);
+      }
+      if (i < t.stops.length - 1) {
+        pts.push([x(s[2]), y(s[0])]);
+      }
+    });
+    const d = "M" + pts.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join("L");
+    const line = el("path", { d: d, fill: "none", stroke: MAREY.colours[t.op], "stroke-width": MAREY_LINE_PX, "stroke-linejoin": "round" }, gLines);
+    const hit = el("path", { d: d, fill: "none", stroke: "transparent", "stroke-width": MAREY_HIT_PX, cursor: "pointer" }, gHits);
+    mLines.push({ train: t, line: line });
+    hit.addEventListener("mouseenter", function (ev) { mShow(t, line, ev); });
+    hit.addEventListener("mousemove", function (ev) { mMove(ev); });
+    hit.addEventListener("mouseleave", function () { mHide(); });
+    hit.addEventListener("click", function (ev) { ev.stopPropagation(); mShow(t, line, ev); });
+  });
+}
+
+function mShow(t, line, ev) {
+  mLines.forEach(function (m) { m.line.setAttribute("opacity", m.line === line ? 1 : 0.18); });
+  line.setAttribute("stroke-width", MAREY_LINE_PX * 2);
+  const first = t.stops[0], last = t.stops[t.stops.length - 1];
+  const mid = t.stops.slice(1, -1).map(function (s) { return MAREY_SHORT[mStationName(s[0])] + " " + clockOf(s[1]); });
+  let html = "<div class='t'><span class='dot' style='background:" + MAREY.colours[t.op] + "'></span> " + t.op + " " + t.no + "</div>";
+  html += "<div>" + MAREY_SHORT[mStationName(first[0])] + " " + clockOf(first[2]) + " to " + MAREY_SHORT[mStationName(last[0])] + " " + clockOf(last[1]) + "</div>";
+  html += "<div>" + fmtTime(last[1] - first[2]) + (mid.length ? ", stops at " + mid.join(", ") : ", nonstop") + "</div>";
+  const info = document.getElementById("minfo");
+  info.innerHTML = html;
+  info.style.display = "block";
+  mMove(ev);
+}
+
+function mMove(ev) {
+  const info = document.getElementById("minfo");
+  const box = info.parentNode.getBoundingClientRect();
+  let left = ev.clientX - box.left + 14;
+  let top = ev.clientY - box.top + 14;
+  if (left + info.offsetWidth > box.width - 4) {
+    left = ev.clientX - box.left - info.offsetWidth - 14;
+  }
+  if (top + info.offsetHeight > box.height - 4) {
+    top = ev.clientY - box.top - info.offsetHeight - 14;
+  }
+  info.style.left = Math.max(4, left) + "px";
+  info.style.top = Math.max(4, top) + "px";
+}
+
+function mHide() {
+  document.getElementById("minfo").style.display = "none";
+  mLines.forEach(function (m) { m.line.setAttribute("opacity", 1); m.line.setAttribute("stroke-width", MAREY_LINE_PX); });
+}
+
+function mUpdate() {
+  mHide();
+  drawMarey();
+  const shown = MAREY.trains.filter(mVisible);
+  const box = document.getElementById("mareyscroll");
+  const swipe = box.scrollWidth > box.clientWidth + 2 ? " Swipe the diagram sideways to see the whole day." : "";
+  document.getElementById("mnote").textContent = "Showing " + shown.length + " of " + MAREY.trains.length + " trains. Hover over or tap a line for the train's times and stops." + swipe;
+  buildMareyControls();
+  buildMareyTable();
+}
+
+function buildMareyControls() {
+  const box = document.getElementById("mcontrols");
+  box.innerHTML = "";
+  MAREY.operators.forEach(function (op) {
+    const n = MAREY.trains.filter(function (t) { return t.op === op; }).length;
+    const b = document.createElement("button");
+    b.innerHTML = "<span class='sw' style='background:" + MAREY.colours[op] + "'></span>" + op + " (" + n + ")";
+    b.className = mOps[op] ? "" : "off";
+    b.setAttribute("aria-pressed", mOps[op] ? "true" : "false");
+    b.addEventListener("click", function () {
+      mOps[op] = !mOps[op];
+      if (!MAREY.operators.some(function (o) { return mOps[o]; })) {
+        mOps[op] = true;
+      }
+      mUpdate();
+    });
+    box.appendChild(b);
+  });
+  const sep = document.createElement("span");
+  sep.className = "sep";
+  box.appendChild(sep);
+  [["both", "Both ways"], ["B", "To Barcelona"], ["M", "To Madrid"]].forEach(function (d) {
+    const b = document.createElement("button");
+    b.textContent = d[1];
+    b.className = mDir === d[0] ? "on" : "";
+    b.addEventListener("click", function () { mDir = d[0]; mUpdate(); });
+    box.appendChild(b);
+  });
+  const sep2 = document.createElement("span");
+  sep2.className = "sep";
+  box.appendChild(sep2);
+  const tb = document.createElement("button");
+  tb.textContent = mTable ? "Hide table" : "Show as table";
+  tb.addEventListener("click", function () { mTable = !mTable; mUpdate(); });
+  box.appendChild(tb);
+}
+
+function buildMareyTable() {
+  const card = document.getElementById("mtablecard");
+  card.className = "card mtablecard" + (mTable ? " open" : "");
+  if (!mTable) {
+    return;
+  }
+  const rows = MAREY.trains.filter(mVisible).slice().sort(function (a, b) { return a.stops[0][2] - b.stops[0][2]; });
+  let html = "<tr><th>Leaves</th><th>Arrives</th><th>Time</th><th>Operator</th><th>Train</th><th>Direction</th><th>Stops</th></tr>";
+  rows.forEach(function (t) {
+    const first = t.stops[0], last = t.stops[t.stops.length - 1];
+    const mid = t.stops.slice(1, -1).map(function (s) { return MAREY_SHORT[mStationName(s[0])]; });
+    html += "<tr><td>" + clockOf(first[2]) + "</td><td>" + clockOf(last[1]) + "</td><td>" + fmtTime(last[1] - first[2]) + "</td><td><span class='dot' style='background:" + MAREY.colours[t.op] + "'></span> " + t.op + "</td><td>" + t.no + "</td><td>" + (t.dir === "B" ? "to Barcelona" : "to Madrid") + "</td><td style='text-align:left'>" + (mid.length ? mid.join(", ") : "nonstop") + "</td></tr>";
+  });
+  document.getElementById("mtable").innerHTML = html;
+}
+
+function buildMareyText() {
+  const st = MAREY.stats;
+  const cards = [
+    [String(st.trains_total), "trains on one Wednesday, both directions"],
+    [Math.round(st.share_new_operators * 100) + "%", "run by the two newer operators, Ouigo (since 2021) and Iryo (since 2022)"],
+    [fmtTime(st.fastest_min), "fastest trip in November 2026 (" + fmtTime(st.fastest_min_before) + " in January)"],
+    [String(st.nonstop_trains), "nonstop trains; the rest stop at up to five stations"]
+  ];
+  document.getElementById("mstats").innerHTML = cards.map(function (c) { return "<div class='card mstat'><div class='v'>" + c[0] + "</div><div class='k'>" + c[1] + "</div></div>"; }).join("");
+  document.getElementById("mtext1").textContent = "Renfe runs " + st.trains_renfe + " of the " + st.trains_total + " trains, Iryo " + st.trains_iryo + " and Ouigo " + st.trains_ouigo + ". All three share the same track and the same speed limits, so their typical trip takes about the same time: " + fmtTime(st.median_min) + ". At the busiest times trains leave Madrid only " + st.shortest_gap_barcelona + " minutes apart, and on " + (st.overtakes_barcelona + st.overtakes_madrid) + " occasions a later train arrives before an earlier one that stops more often.";
+  document.getElementById("mtext2").textContent = "In January 2026 the fastest Renfe train took " + fmtTime(st.fastest_min_before) + " and Renfe's typical train " + fmtTime(st.median_min_before_renfe) + ". Since February, temporary speed restrictions set after the Adamuz accident add about 25 minutes on this line: now " + fmtTime(st.fastest_min) + " and " + fmtTime(st.median_min_renfe) + ". The fastest train averages " + st.nonstop_kmh + " km/h between the two stations, against " + st.nonstop_kmh_before + " km/h before. (January figures: Renfe only, from its archived timetable.)";
+}
+
+async function loadMarey() {
+  try {
+    const response = await fetch(MAREY_URL);
+    if (!response.ok) {
+      throw new Error("HTTP " + response.status);
+    }
+    MAREY = await response.json();
+  } catch (e) {
+    document.getElementById("mareysec").style.display = "none";
+    showError("The Madrid to Barcelona diagram is not available: could not use " + MAREY_URL + " (" + e.message + "). The time map works without it.");
+    return;
+  }
+  MAREY.operators.forEach(function (op) { mOps[op] = true; });
+  buildMareyText();
+  mUpdate();
+  document.getElementById("footer").textContent += " Madrid to Barcelona diagram: " + MAREY.credits;
+  document.getElementById("marey").addEventListener("click", function () { mHide(); });
+  window.addEventListener("resize", function () { mHide(); drawMarey(); });
+}
+
+async function start() {
+  if (location.protocol === "file:") {
+    showError("This page was opened as a file, so it cannot read its data. Start a local web server in the docs folder (python -m http.server 8000) and open http://localhost:8000.");
+    return;
+  }
+  let response;
+  try {
+    response = await fetch(DATA_URL);
+  } catch (e) {
+    showError("Could not load " + DATA_URL + ": " + e.message);
+    return;
+  }
+  if (!response.ok) {
+    showError("Could not load " + DATA_URL + " (HTTP " + response.status + ").");
+    return;
+  }
+  try {
+    DATA = await response.json();
+  } catch (e) {
+    showError("The data file " + DATA_URL + " is not valid JSON: " + e.message);
+    return;
+  }
+  N = DATA.cities.length;
+  await loadRoad();
+  madridIndex = DATA.cities.findIndex(function (c) { return c.name === DATA.main_centre; });
+  centre = madridIndex;
+  extentKm = extentFor(centre);
+  buildScene();
+  realPath.setAttribute("d", pathFrom(outlineFor("real")));
+  buildControls();
+  buildLegend();
+  document.getElementById("footer").textContent = DATA.credits + " Times are the fastest scheduled journey on a normal weekday, with a 60 min allowance per change of train; 2010 and 2018 are rebuilt from published times. " + (ROAD !== null ? ROAD.credits + " " : "") + "Independent project, not affiliated with Renfe, Adif, Iryo or Ouigo.";
+  setViewBox();
+  goTo("real", madridIndex, true);
+  svg.addEventListener("click", function () { hideInfo(); });
+  window.addEventListener("resize", function () { setViewBox(); buildCallouts(current); planLabels(current); placeLabels(current); });
+  loadMarey();
+}
+
+start();
+</script>
+</body>
+</html>

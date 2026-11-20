@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Closer by train, but not for everyone: forty years of train journey times from Madrid</title>
+<meta name="description" content="A case study of train journey times from Madrid to 31 Spanish cities, 1985 to 2026: an interactive time map, train against car on today's roads, and one day of Renfe, Iryo and Ouigo trains between Madrid and Barcelona, with eleven Python notebooks.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+/* Fonts are stored next to this page (docs/fonts), both under the SIL Open Font License. */
+@font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage-grotesque-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage-grotesque-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+:root {
+  --ink: #2a2226;        /* body text */
+  --muted: #64595e;      /* captions and notes */
+  --track: #e6d3da;      /* the train path in the margin: pale wine */
+  --head: #6b1f3a;       /* headings: wine */
+  --full: #1d6fa5;       /* high-speed all the way, as on the map */
+  --part: #b8860b;       /* high-speed part of the way */
+  --none: #c2410c;       /* no high-speed */
+  --paper: #ffffff;
+  --rule: #eee4e8;
+  --sans: "Bricolage Grotesque", "Segoe UI", Helvetica, Arial, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); font-size: 19px; line-height: 1.6; }
+a { color: var(--head); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--full); outline-offset: 2px; border-radius: 2px; }
+b { font-weight: 600; }
+
+/* ---------- Opening ---------- */
+.opening { max-width: 1080px; margin: 0 auto; padding: 56px 24px 24px; display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 48px; align-items: start; }
+.opening h1 { font-family: var(--sans); font-weight: 700; font-size: 3.1rem; line-height: 1.06; letter-spacing: -0.02em; margin: 0 0 18px; color: var(--head); }
+.answer { font-family: var(--sans); font-weight: 600; font-size: 1.45rem; line-height: 1.3; color: var(--ink); margin: 0 0 14px; max-width: 30em; }
+.standfirst { font-size: 1.2rem; line-height: 1.5; margin: 0 0 22px; max-width: 34em; }
+.byline { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; color: var(--muted); margin: 0 0 14px; }
+.links { list-style: none; margin: 0; padding: 0; font-family: var(--sans); font-weight: 600; font-size: 0.95rem; }
+.links li { margin: 6px 0; }
+.lead { margin: 0; }
+.lead img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+figcaption { font-size: 0.88rem; line-height: 1.45; color: var(--muted); margin-top: 8px; font-style: italic; }
+
+/* ---------- The margin: one train's path in a Marey diagram, steep between sections, a short stop at each ---------- */
+.line { max-width: 1080px; margin: 0 auto; padding: 8px 24px 64px; }
+.line-inner { position: relative; padding-left: 64px; max-width: 820px; margin-left: -64px; }   /* the path sits in the margin, so text lines up with the title */
+.line-inner::before { content: ""; position: absolute; left: 16px; top: 18px; bottom: 30px; width: 2px; background: var(--track); }   /* plain line if the script does not run */
+.line-inner.drawn::before { display: none; }
+svg.path { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+section { position: relative; margin-top: 48px; }
+h2 { font-family: var(--sans); font-weight: 700; font-size: 1.6rem; line-height: 1.2; color: var(--head); margin: 0 0 12px; position: relative; }
+h3 { font-family: var(--sans); font-weight: 600; font-size: 1.2rem; line-height: 1.3; margin: 34px 0 6px; position: relative; color: var(--ink); }
+p { margin: 0 0 14px; max-width: 40em; }
+.figure-line { font-family: var(--sans); margin: 4px 0 10px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.figure-line b { font-weight: 700; font-size: 2.1rem; line-height: 1; color: var(--head); }
+.figure-line span { font-weight: 600; font-size: 0.95rem; color: var(--muted); max-width: 36em; }
+ul.plain { margin: 0 0 14px; padding-left: 1.1em; max-width: 40em; }
+ul.plain li { margin: 6px 0; }
+.wide { margin: 18px 0 8px; }
+.wide img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.wide.chart { max-width: 760px; }
+table { border-collapse: collapse; font-family: var(--sans); font-size: 0.92rem; margin: 8px 0 16px; }
+th, td { text-align: left; padding: 6px 18px 6px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); }
+td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; max-width: 100%; }
+.terminus { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- Narrow screens ---------- */
+@media (max-width: 1240px) {
+  .line-inner { margin-left: 0; }   /* not enough room to hang the path in the margin */
+}
+@media (max-width: 900px) {
+  .opening { grid-template-columns: 1fr; gap: 28px; padding-top: 32px; }
+  .opening h1 { font-size: 2.4rem; }
+  .lead { max-width: 480px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 18px; }
+  .opening, .line { padding-left: 16px; padding-right: 16px; }
+  .opening h1 { font-size: 2.05rem; }
+  .answer { font-size: 1.25rem; }
+  .line-inner { padding-left: 38px; }
+  .line-inner::before { left: 9px; }
+  table { font-size: 0.85rem; }
+  th, td { padding-right: 10px; }
+}
+
+/* ---------- PDF and printing ---------- */
+@page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+@media print {
+  body { font-size: 10pt; line-height: 1.42; }
+  a { color: var(--ink); text-decoration: none; }
+  .opening { grid-template-columns: minmax(0, 1fr) 72mm; gap: 8mm; padding: 0 0 4mm; max-width: none; }
+  .opening h1 { font-size: 25pt; }
+  .answer { font-size: 13pt; }
+  .standfirst { font-size: 11.5pt; }
+  .web-link { display: none; }
+  .line { padding: 0; max-width: none; }
+  .line-inner { max-width: none; margin-left: 0; }
+  section { margin-top: 4mm; }
+  p, ul.plain li { orphans: 3; widows: 3; }
+  h2 { font-size: 15pt; break-after: avoid; }
+  h3 { font-size: 11.5pt; margin-top: 4mm; break-after: avoid; }
+  .figure-line b { font-size: 17pt; }
+  .wide { break-inside: avoid; }
+  .wide img { max-height: 70mm; width: auto; max-width: 100%; }
+  .wide.tall img { max-height: 92mm; }
+  .wide.pages img { max-height: 88mm; }
+  svg.path { display: none; }   /* the zigzag is laid out for the screen; print shows the plain line */
+  .line-inner.drawn::before { display: block; }
+  tr:first-child { break-after: avoid; }
+  table { break-inside: avoid; font-size: 8.4pt; margin: 1mm 0 3mm; }
+  table.list { break-inside: auto; }
+  tr { break-inside: avoid; }
+  .figure-line { break-inside: avoid; break-after: avoid; }
+  .table-wrap { overflow: visible; }   /* a scrolling box cannot be split across pages */
+  th, td { padding: 1mm 4mm 1mm 0; }
+  .terminus { margin-top: 4mm; padding-top: 2mm; font-size: 8.5pt; }
+  .links a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: 400; color: var(--muted); }
+}
+</style>
+</head>
+<body>
+
+<header class="opening">
+  <div>
+    <h1>Closer by train, but not for everyone</h1>
+    <p class="answer">Train times from Madrid to cities with high-speed track all the way fell to about 40% of their 1985 level. Cities reached only part of the way gained far less, and Jaén, with no high-speed track, is no closer at all.</p>
+    <p class="standfirst">Since its first high-speed line opened in 1992, Spain has built fast track to most of its large cities. Using timetables from 1985 to 2026 for 32 cities, I asked how much closer each city came to Madrid, which cities were left out, whether the train now beats the car, and what happened in 2026, when speed restrictions slowed the busiest line, now shared by three operators.</p>
+    <p class="byline">Lik Ren Tai, November 2026</p>
+    <ul class="links">
+      <li><a href="https://likrentai.github.io/spaintraintimes/">Open the interactive time map and the Madrid to Barcelona diagram (also on phones)</a></li>
+      <li><a href="https://github.com/likrentai/spaintraintimes">Code, notebooks and data notes on GitHub</a></li>
+      <li class="web-link"><a href="case-study.pdf">Download this case study as a PDF</a></li>
+    </ul>
+  </div>
+  <figure class="lead">
+    <img src="images/cs_lead.jpg" width="1560" height="1350" alt="Dark map of Spain stretched by train time from Madrid in 2025: blue dots for cities with high-speed track all the way pulled in close to Madrid, ochre dots for cities reached part of the way further out, a red dot for Jaén; callouts give Barcelona 7 h 21 in 1985 and 2 h 37 in 2025, Teruel 7 h 00 and 5 h 06, Jaén 3 h 59 and 3 h 55, Almería 7 h 12 and 6 h 40">
+    <figcaption>Spain in 2025, seen from Madrid. Each city keeps its true direction, but its distance is the fastest train time (1 minute is drawn as about 1 km). Blue: high-speed track all the way; ochre: part of the way; red: none. The coast is stretched between the cities as a backdrop.</figcaption>
+  </figure>
+</header>
+
+<main class="line">
+<div class="line-inner">
+
+<section>
+  <h2>The question</h2>
+  <p>High-speed rail changes a country's geography in time rather than in kilometres. Madrid to Barcelona took over seven hours by the fastest train in 1985 and under three in 2025. But a network reaches some cities and not others, and the ones it misses can end up relatively further away than before. Spain is the clearest case in Europe: a large, mostly radial network centred on Madrid, built in stages from 1992, with gaps that are well known in Spain but rarely shown.</p>
+  <p>I wanted to measure the change for every large mainland city in one consistent way, show it as a map that shrinks where the trains got faster, and test it two ways: against the car on today's roads, and on the busiest line, Madrid to Barcelona, which three operators have shared since 2022 and which was slowed by safety restrictions in 2026.</p>
+</section>
+
+<section>
+  <h2>The data</h2>
+  <div class="table-wrap"><table class="list">
+    <tr><th>What</th><th>Source</th><th>Period</th></tr>
+    <tr><td>Renfe timetables (GTFS): high-speed, long-distance and regional trains</td><td>Renfe open data; archived copy of 18 Dec 2025 from the Mobility Database</td><td>Wed 14 Jan 2026 (the "2025" year); Wed 25 Nov 2026</td></tr>
+    <tr><td>Historical timetables: fastest train on about 70 key links</td><td>Renfe timetable guides, scanned by the Biblioteca Ferroviaria (Fundación de los Ferrocarriles Españoles)</td><td>1985, 1993, 2001</td></tr>
+    <tr><td>2010 and 2018: the same key links, rebuilt</td><td>2025 links, changed only where a line opened, from published opening times and time savings</td><td>2010, 2018</td></tr>
+    <tr><td>Ouigo and Iryo timetables (GTFS)</td><td>Ouigo: National Access Point (via the Mobility Database); Iryo: community feed by Clément Desouche, built from iryo.eu</td><td>Wed 25 Nov 2026</td></tr>
+    <tr><td>Driving times between the 32 stations</td><td>OSRM routing on OpenStreetMap (FOSSGIS server); checked against RACE route pages</td><td>Fetched 20 Nov 2026</td></tr>
+    <tr><td>Coastline; kilometre points on the Madrid to Barcelona line</td><td>Natural Earth 1:10 million; Wikipedia route diagram</td><td></td></tr>
+  </table></div>
+  <p>The measure is the <b>fastest scheduled train on a normal weekday</b>, station to station. For the map, every year uses the same simple network of <b>key links</b> (Madrid to each city, plus cross-country links), with 60 minutes added for each change of train; on the 2025 timetable this matches the full timetable answer with a median error of about zero, and 64% of city pairs within 30 minutes. The comparison with the car uses the full 2025 and 2026 timetables. <b>2010 and 2018 are reconstructions</b>, and every rebuilt link says so in its data file; where a time is derived rather than published, it is marked as an estimate.</p>
+  <p>Cities are grouped by their <b>access to high-speed track in 2025</b>, from the fastest route from Madrid checked train by train: all the way (21 cities), part of the way, with a conventional line at the end (9), and none (Jaén).</p>
+</section>
+
+<section>
+  <h2>One page, eleven notebooks</h2>
+  <div class="table-wrap"><table class="list">
+    <tr><th>Part</th><th>What it answers</th></tr>
+    <tr><td>Time map</td><td>How far each city is from Madrid by train, year by year from 1985 to 2026: the map morphs between years, with callouts for four cities and a table of every time.</td></tr>
+    <tr><td>Any city as the centre</td><td>Tap a city to see the map from there, with hour rings; a map can be exact only from its centre, because most trips between two other cities still pass through Madrid.</td></tr>
+    <tr><td>Compare with car</td><td>In 2025 and 2026, a grey mark on each city's direction at its driving time, and a count of where the train wins.</td></tr>
+    <tr><td>One day, Madrid to Barcelona</td><td>All 89 trains of Renfe, Iryo and Ouigo on Wednesday 25 November 2026 as a Marey diagram, with each train's times and stops, filters and a table.</td></tr>
+    <tr><td>Notebooks (Python)</td><td>00 to 02 load Renfe's timetables and compute times; 03 builds the key links for every year; 04 and 05 make the map and stretch the coast; 06 writes the page data; 07 compares with the car; 08 and 09 build the Madrid to Barcelona day; 10 makes the charts below.</td></tr>
+  </table></div>
+  <figure class="wide pages">
+    <img src="images/cs_pages.jpg" width="3200" height="2318" alt="Four views of the page. A: the real map of Spain with 32 cities. B: the map seen from Sevilla in 2025, with hour rings. C: the 2025 map with grey car marks on each city's direction. D: the Marey diagram of 89 trains between Madrid and Barcelona from 6:00 to 24:00, in blue, orange and green for Renfe, Iryo and Ouigo">
+    <figcaption>A: the real map. B: the 2025 map seen from Sevilla. C: 2025 with car marks. D: one day on the Madrid to Barcelona line.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>What the data shows</h2>
+
+  <h3>Train times to high-speed cities fell to 40% of 1985</h3>
+  <div class="figure-line"><b>40%, 69%, 98%</b><span>median 2025 train time from Madrid as a share of 1985: high-speed all the way (21 cities), part of the way (9), none (Jaén)</span></div>
+  <p>Most of the change came in two steps. The Sevilla line of 1992 pulled Andalusia in, and between 2001 and 2010 the lines to Valladolid, Málaga, Barcelona and Valencia halved the times for the high-speed group (from 85% to 50% of 1985). Galicia, Murcia and Asturias followed after 2018. By 2025 the cities pulled in most were Tarragona (30% of the 1985 time), Valladolid (32%), Barcelona and Málaga (36%). The cities reached only part of the way stopped gaining after 2010, at about 70%. Jaén, on a conventional line all the way, was at 98% in 2025: 3 h 55 against 3 h 59 in 1985.</p>
+  <figure class="wide chart">
+    <img src="images/cs_f1_groups.png" width="1600" height="920" alt="Line chart of median train time from Madrid as a share of 1985, 1985 to 2026: high-speed all the way falls from 100% to 89% in 1993, 85% in 2001, 50% in 2010, 43% in 2018, 40% in 2025 and 44% in 2026; part of the way falls to about 70% by 2010 and stays there; no high-speed (Jaén) stays near 100% and rises to 113% in 2026">
+    <figcaption>Median train time from Madrid as a share of 1985, by access to high-speed track in 2025. Key-link network; 2010 and 2018 rebuilt.</figcaption>
+  </figure>
+
+  <h3>How far the fast line reaches matters, not only whether it is there</h3>
+  <div class="figure-line"><b>50% against 80%</b><span>2025 time as a share of 1985: Pamplona against Bilbao and San Sebastián, all reached by high-speed track part of the way</span></div>
+  <p>The middle group is not one group. Cities where the conventional line at the end is short shrank almost as much as some high-speed cities: Pamplona to 50% of its 1985 time, Huelva 52%, Cádiz 56%, close to Alicante (50%) and Granada (53%). Where the conventional part is long, the gain is small: Bilbao and San Sebastián 80%, Almería 93%. Teruel (73%) is reached by changing trains at Zaragoza. This is a pattern in nine cities, not a measured relationship: I did not measure the length of each conventional end.</p>
+  <figure class="wide chart tall">
+    <img src="images/cs_f2_cities.png" width="1600" height="1640" alt="Bar chart of each city's 2025 train time from Madrid as a share of 1985, sorted from Tarragona 30% and Valladolid 32% to Bilbao 80%, San Sebastián 80%, Almería 93% and Jaén 98%; blue bars for high-speed all the way mostly at the top, ochre bars for part of the way mostly at the bottom, with Pamplona (50%), Huelva (52%) and Cádiz (56%) among the blue bars">
+    <figcaption>Every city's 2025 train time from Madrid as a share of its 1985 time. Key-link network.</figcaption>
+  </figure>
+
+  <h3>Two to one against the car, where the fast line runs all the way</h3>
+  <div class="figure-line"><b>2.19 against 1.03</b><span>median driving time divided by the fastest train time from Madrid, 2025: high-speed all the way against part of the way</span></div>
+  <p>From Madrid, the fastest train beats free-flowing traffic to 26 of 31 cities. Where high-speed track runs all the way, the drive takes over twice as long (Tarragona 2.88 times, Barcelona 2.58). Where it runs part of the way, train and car are about level, and the car is faster to Teruel (the train takes 1.33 times as long), Bilbao, Badajoz, Almería and, by a minute or two, Jaén. Across all 496 city pairs the train is faster for 315 (64%): for 78% of pairs with a direct train, but only 58% where a change is needed, and it is weakest for trips of two to four hours by car. Adding 30 minutes to every train trip for getting to the station, and a 20-minute break for every two hours of driving, gives 27 of 31 cities from Madrid; scaling the car times to RACE's published times, which are about 5% faster than OSRM's, gives 25.</p>
+  <figure class="wide chart tall">
+    <img src="images/cs_f3_car.png" width="1600" height="1640" alt="Bar chart of driving time divided by fastest train time from Madrid in 2025, sorted from Tarragona 2.88, Ciudad Real 2.76 and Valladolid 2.75 down to Jaén 0.99, Almería 0.95, Badajoz 0.94, Bilbao 0.93 and Teruel 0.75, with a vertical line at 1 marking the same time; blue bars for high-speed cities above 1.4, ochre bars for part-way cities between 0.75 and 1.69">
+    <figcaption>Driving time divided by the fastest train time from Madrid, 2025; above 1 the train is faster. Train: full Renfe timetable. Car: OSRM, free flow, station to station.</figcaption>
+  </figure>
+
+  <h3>2026: the busiest line, slower for every operator</h3>
+  <div class="figure-line"><b>+25 min</b><span>fastest train from Madrid to Barcelona: 2 h 37 on 14 January 2026, 3 h 02 on 25 November 2026</span></div>
+  <p>After the Adamuz accident in January 2026, Adif set temporary speed restrictions on several high-speed lines, and from February it agreed with Renfe, Iryo and Ouigo to add about 25 minutes to Madrid to Barcelona until at least the end of the year. The timetables show exactly that: the fastest train went from 2 h 37 to 3 h 02 and Renfe's typical train from 2 h 53 to 3 h 17. On the map, the 2026 frame stretches the Barcelona line back out (Girona +35 minutes, Barcelona +25, Zaragoza +17), and Jaén, where works also closed the line to Córdoba, is slower than in 1985 (113%). The train still beats the car to Barcelona, but by 2.23 times instead of 2.58.</p>
+  <p>The line itself is busy and shared. On Wednesday 25 November, 89 trains run between Madrid and Barcelona: Renfe 51, Iryo 28 and Ouigo 10, so the two newer operators run 43% of them. All three share the same track and the same restrictions, and their typical trip takes the same time, 3 h 17. At the busiest times trains leave Madrid four minutes apart, and 17 times a day a later train arrives before an earlier one that stops more often.</p>
+  <div class="table-wrap"><table>
+    <tr><th>Madrid to Barcelona</th><th>14 Jan 2026</th><th>25 Nov 2026</th></tr>
+    <tr><td>Fastest train</td><td class="n">2 h 37</td><td class="n">3 h 02</td></tr>
+    <tr><td>Renfe's typical (median) train</td><td class="n">2 h 53</td><td class="n">3 h 17</td></tr>
+    <tr><td>Average speed of the fastest train</td><td class="n">237 km/h</td><td class="n">205 km/h</td></tr>
+    <tr><td>Car time / fastest train time</td><td class="n">2.58</td><td class="n">2.23</td></tr>
+  </table></div>
+  <p>The line is due to be renewed from 2027, starting between Madrid and Calatayud; in November 2026 the government ruled out closing it during the works.</p>
+</section>
+
+<section>
+  <h2>Problems in the data, and how they were handled</h2>
+  <ul class="plain">
+    <li><b>No timetable files before 2025.</b> Renfe's open timetables are archived only from late 2025. The 1985, 1993 and 2001 key links were typed from scanned timetable guides and spot-checked; 2010 and 2018 were rebuilt from 2025 by changing only links whose line changed. The single estimate that matters most, Madrid to Barcelona in 2010, moves 42 of 496 city pairs by 10 minutes or more if changed.</li>
+    <li><b>Newer is not always faster.</b> Some 2025 times are slower than the best of earlier years (Madrid to Sevilla 2 h 38 against 2 h 15 in 2018), because of more stops and works. 2018 uses the published best times, and a 2001 express is kept on a line that did not change, so no city looks falsely slower in 2010.</li>
+    <li><b>Gaps in the guides.</b> The 2001 guide lists long-distance trains only: 11 of its 68 links are carried over from 1993 or 1985 and marked. Narrow-gauge lines on the north coast (Bilbao to Santander and to San Sebastián) are not in Renfe's data and were added by hand.</li>
+    <li><b>Cities without a train.</b> Granada had no train from 2015 to 2019 (AVE plus a Renfe bus in 2018), and in 2026 Córdoba to Jaén is a replacement bus while the line is closed for works. Both count, as Renfe ticketed connections, and are marked.</li>
+    <li><b>A flat map cannot be exact.</b> Trips between two outer cities mostly pass through Madrid, so on the Madrid map they look a median of about two hours shorter than they are. The map is therefore exact only from its centre, and any city can be made the centre. The stretched coastline is a backdrop; only the cities are measured.</li>
+    <li><b>No open Iryo timetable.</b> Iryo publishes no open feed, and it is not on Spain's National Access Point. I used a community feed and checked it against ticket listings: on Wednesday 2 December all 28 Iryo trains matched to the minute, and on 25 November every train on sale matched (three nonstop trains were not on sale that day, probably sold out).</li>
+    <li><b>Small traps in the timetable files.</b> Iryo calls the station "Madrid Atocha" where Renfe and Ouigo say "Puerta de Atocha" (the first run found no Iryo trains), Renfe lists 12 trains twice under the same number and times, and the archived file spells station names differently again. Stations are now matched by code where possible, and counts were checked against ticket listings: Renfe 25 of 25 and Ouigo 5 of 5 departures from Madrid.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Limits</h2>
+  <p>The fastest scheduled train is a best case: it says nothing about how often trains run, what they cost, how punctual they are or how long it takes to reach the station. One weekday stands for each year, and the historical years rest on about 70 key links with a fixed 60 minutes per change rather than on full timetables. The car times assume free-flowing traffic and no parking. Thirty-two cities leave out smaller towns, where losing a conventional service can matter more than gaining a fast one. The 2026 times reflect temporary restrictions and works, not a permanent state.</p>
+</section>
+
+<section>
+  <h2>Where this could be useful</h2>
+  <ul class="plain">
+    <li><b>Transport planners and regional governments:</b> a clear view of which places a network leaves behind, and of how much the last conventional stretch of a route costs, to set priorities between new lines and upgrades.</li>
+    <li><b>Operators, regulators and investors:</b> a repeatable way to compare rail with road and to see what a restriction or a new competitor does to one corridor, from public timetables alone.</li>
+    <li><b>Analytics and communication teams:</b> a worked example of combining modern open data with hand-compiled history, honest about reconstruction, in an interactive map that general readers can explore.</li>
+  </ul>
+  <p>The approach transfers to any country that publishes its timetables, for example Malaysia's ETS and, when it opens, the East Coast Rail Link.</p>
+</section>
+
+<section>
+  <h2>About</h2>
+  <p>Lik Ren Tai applies data science in two fields: environmental science and railway systems. This project was built with Python (pandas, NumPy, networkx, matplotlib, fontTools) and plain HTML and JavaScript.</p>
+  <p class="terminus">Data: Renfe open data (data.renfe.com), Renfe timetables in GTFS; historical timetable guides from the Biblioteca Ferroviaria, Fundación de los Ferrocarriles Españoles; Ouigo España timetable, processed: Powered by MITRAMS, Ministerio de Transportes y Movilidad Sostenible (<a href="https://www.transportes.gob.es/">transportes.gob.es</a>), via the Punto de Acceso Nacional de Transporte Multimodal (nap.transportes.gob.es); Iryo: unofficial community feed by Clément Desouche (clementdesouche.fr/gtfs), CC BY 4.0, timetables from iryo.eu; archived feeds from the Mobility Database (MobilityData); road network © OpenStreetMap contributors, ODbL, routed with OSRM on the FOSSGIS server; reference driving times from RACE; coastline from Natural Earth, public domain; kilometre points from Wikipedia; ticket listings for the timetable check from Kombo. News on the speed restrictions: ARA, El Español, Demócrata. Fonts: Bricolage Grotesque and Newsreader, SIL Open Font License. This is an independent project, not affiliated with or endorsed by Renfe, Adif, Iryo, Ouigo or any of the sources.</p>
+</section>
+
+</div>
+</main>
+<script>
+// SETTINGS
+const PATH_COLOUR = "#e6d3da";  // <- VISUAL: the train path in the margin (pale wine)
+const STOP_COLOUR = "#6b1f3a";  // <- VISUAL: section stations (wine)
+const DOT_COLOUR = "#1d6fa5";  // <- VISUAL: findings (blue, as the high-speed cities)
+const STOP_PX = 10;  // <- VISUAL: length of each stop (flat step) on the path
+
+// One train's path in a Marey diagram, drawn in the margin: steep between sections, a short flat stop at each section heading, a dot at each finding.
+function drawPath() {
+  const box = document.querySelector(".line-inner");
+  const old = box.querySelector("svg.path");
+  if (old) {
+    old.remove();
+  }
+  const narrow = window.innerWidth <= 560;
+  const x0 = narrow ? 4 : 8;
+  const x1 = narrow ? 26 : 44;
+  const heads = Array.from(box.querySelectorAll("h2"));
+  const finds = Array.from(box.querySelectorAll("h3"));
+  if (heads.length === 0) {
+    return;
+  }
+  const top = box.getBoundingClientRect().top;
+  const ys = heads.map(function (h) { return h.getBoundingClientRect().top - top + h.offsetHeight / 2; });
+  const yEnd = box.offsetHeight - 30;
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("class", "path");
+  svg.setAttribute("width", x1 + STOP_PX + 10);
+  svg.setAttribute("height", box.offsetHeight);
+  // zigzag: from one section heading to the next the path crosses the margin, like trains in both directions on a Marey diagram
+  const xs = ys.map(function (y, i) { return i % 2 === 0 ? x0 : x1 - STOP_PX; });
+  let d = "";
+  const points = [];
+  ys.forEach(function (y, i) {
+    const xa = xs[i];
+    const xb = xa + STOP_PX;
+    d += (i === 0 ? "M" : "L") + xa.toFixed(1) + "," + y.toFixed(1) + "L" + xb.toFixed(1) + "," + y.toFixed(1);
+    points.push([xa, xb, y]);
+  });
+  const xEnd = points.length % 2 === 0 ? x0 + STOP_PX : x1;
+  d += "L" + xEnd.toFixed(1) + "," + yEnd.toFixed(1);
+  const path = document.createElementNS(ns, "path");
+  path.setAttribute("d", d);
+  path.setAttribute("fill", "none");
+  path.setAttribute("stroke", PATH_COLOUR);
+  path.setAttribute("stroke-width", 2.5);
+  path.setAttribute("stroke-linejoin", "round");
+  svg.appendChild(path);
+  points.forEach(function (p) {
+    const tick = document.createElementNS(ns, "line");
+    tick.setAttribute("x1", p[0] - 3);
+    tick.setAttribute("x2", p[1] + 3);
+    tick.setAttribute("y1", p[2]);
+    tick.setAttribute("y2", p[2]);
+    tick.setAttribute("stroke", STOP_COLOUR);
+    tick.setAttribute("stroke-width", 4);
+    tick.setAttribute("stroke-linecap", "round");
+    svg.appendChild(tick);
+  });
+  finds.forEach(function (h) {
+    const y = h.getBoundingClientRect().top - top + h.offsetHeight / 2;
+    let i = 0;
+    while (i < points.length - 1 && points[i + 1][2] < y) {
+      i = i + 1;
+    }
+    const xa = points[i][1];
+    const ya = points[i][2];
+    const xb = i + 1 < points.length ? points[i + 1][0] : xEnd;
+    const yb = i + 1 < points.length ? points[i + 1][2] : yEnd;
+    const xd = xa + (xb - xa) * (y - ya) / (yb - ya);
+    const dot = document.createElementNS(ns, "circle");
+    dot.setAttribute("cx", xd);
+    dot.setAttribute("cy", y);
+    dot.setAttribute("r", narrow ? 4 : 5);
+    dot.setAttribute("fill", DOT_COLOUR);
+    dot.setAttribute("stroke", "#ffffff");
+    dot.setAttribute("stroke-width", 2);
+    svg.appendChild(dot);
+  });
+  box.insertBefore(svg, box.firstChild);
+  box.classList.add("drawn");
+}
+
+window.addEventListener("load", drawPath);
+window.addEventListener("resize", drawPath);
+window.addEventListener("beforeprint", drawPath);
+</script>
+</body>
+</html>
