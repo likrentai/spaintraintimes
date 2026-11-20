@@ -1,0 +1,497 @@
+city_a,city_b,road_min,road_km,rail_2025,changes_2025,bus_2025,rail_2026,changes_2026,bus_2026,ratio_2025,train_wins_2025,ratio_sens_2025,ratio_race_2025,ratio_2026,train_wins_2026,ratio_sens_2026,ratio_race_2026
+Madrid,Sevilla,346.878,532.004,158.0,0,False,156.0,0,False,2.195,True,2.058,2.083,2.224,True,2.08,2.11
+Madrid,Córdoba,266.773,392.832,104.0,0,False,104.0,0,False,2.565,True,2.289,2.434,2.565,True,2.289,2.434
+Madrid,Ciudad Real,146.903,189.869,54.0,0,False,53.0,0,False,2.72,True,1.987,2.581,2.772,True,2.011,2.63
+Madrid,Cádiz,425.698,649.418,258.0,0,False,269.0,1,False,1.65,True,1.686,1.566,1.583,True,1.624,1.502
+Madrid,Málaga,359.705,531.811,159.0,0,False,164.0,0,False,2.262,True,2.115,2.147,2.193,True,2.06,2.081
+Madrid,Granada,280.93,415.904,194.0,0,False,203.0,0,False,1.448,True,1.433,1.374,1.384,True,1.377,1.313
+Madrid,Zaragoza,211.998,313.932,78.0,0,False,95.0,0,False,2.718,True,2.148,2.579,2.232,True,1.856,2.118
+Madrid,Lleida,304.578,463.062,122.0,0,False,143.0,0,False,2.497,True,2.267,2.369,2.13,True,1.992,2.021
+Madrid,Tarragona,357.528,536.269,124.0,0,False,147.0,0,False,2.883,True,2.581,2.736,2.432,True,2.246,2.308
+Madrid,Barcelona,405.405,615.547,157.0,0,False,182.0,0,False,2.582,True,2.489,2.45,2.228,True,2.195,2.114
+Madrid,Girona,453.683,688.946,208.0,0,False,243.0,0,False,2.181,True,2.158,2.07,1.867,True,1.882,1.772
+Madrid,Valencia,233.672,353.866,114.0,0,False,114.0,0,False,2.05,True,1.762,1.945,2.05,True,1.762,1.945
+Madrid,Albacete,170.033,253.69,90.0,0,False,90.0,0,False,1.889,True,1.584,1.793,1.889,True,1.584,1.793
+Madrid,Alicante,270.87,416.951,143.0,0,False,143.0,0,False,1.894,True,1.797,1.797,1.894,True,1.797,1.797
+Madrid,Murcia,257.205,396.868,165.0,0,False,165.0,0,False,1.559,True,1.524,1.479,1.559,True,1.524,1.479
+Madrid,Valladolid,148.328,190.56,54.0,0,False,54.0,0,False,2.747,True,2.004,2.606,2.747,True,2.004,2.606
+Madrid,León,230.485,339.688,116.0,0,False,116.0,0,False,1.987,True,1.716,1.885,1.987,True,1.716,1.885
+Madrid,Oviedo,302.177,449.529,188.0,0,False,188.0,0,False,1.607,True,1.57,1.525,1.607,True,1.57,1.525
+Madrid,Ourense,333.243,502.927,134.0,0,False,134.0,0,False,2.487,True,2.276,2.36,2.487,True,2.276,2.36
+Madrid,Santiago,397.093,594.61,180.0,0,False,177.0,0,False,2.206,True,2.177,2.093,2.243,True,2.208,2.129
+Madrid,A Coruña,388.317,592.842,214.0,0,False,214.0,0,False,1.815,True,1.837,1.722,1.815,True,1.837,1.722
+Madrid,Vigo,398.132,593.125,230.0,0,False,235.0,0,False,1.731,True,1.762,1.643,1.694,True,1.729,1.608
+Madrid,Badajoz,263.317,402.395,271.0,0,False,278.0,0,False,0.972,False,1.008,0.922,0.947,False,0.985,0.899
+Madrid,Teruel,217.927,308.918,288.0,1,False,295.0,1,False,0.757,False,0.748,0.718,0.739,False,0.732,0.701
+Madrid,Almería,372.07,541.604,392.0,1,False,404.0,0,False,0.949,False,1.024,0.901,0.921,False,0.996,0.874
+Madrid,Jaén,223.983,330.624,226.0,1,False,225.0,1,True,0.991,False,0.953,0.94,0.995,False,0.957,0.945
+Madrid,Huelva,399.425,618.026,237.0,0,False,250.0,0,False,1.685,True,1.721,1.599,1.598,True,1.641,1.516
+Madrid,Santander,296.675,396.027,256.0,0,False,243.0,0,False,1.159,True,1.177,1.1,1.221,True,1.233,1.158
+Madrid,Bilbao,267.102,396.92,275.0,0,False,275.0,0,False,0.971,False,1.007,0.922,0.971,False,1.007,0.922
+Madrid,San Sebastián,305.11,452.125,300.0,0,False,304.0,0,False,1.017,True,1.046,0.965,1.004,True,1.033,0.952
+Madrid,Pamplona,289.915,392.01,185.0,0,False,204.0,0,False,1.567,True,1.534,1.487,1.421,True,1.41,1.349
+Sevilla,Córdoba,96.648,138.343,41.0,0,False,40.0,0,False,2.357,True,1.361,2.237,2.416,True,1.381,2.293
+Sevilla,Ciudad Real,224.845,324.159,104.0,0,False,98.0,0,False,2.162,True,1.827,2.051,2.294,True,1.913,2.177
+Sevilla,Cádiz,87.818,121.711,84.0,0,False,97.0,0,False,1.045,True,0.77,0.992,0.905,False,0.691,0.859
+Sevilla,Málaga,149.48,209.298,119.0,0,False,120.0,1,False,1.256,True,1.137,1.192,1.246,True,1.13,1.182
+Sevilla,Granada,176.702,247.647,152.0,0,False,157.0,0,False,1.163,True,1.081,1.103,1.125,True,1.052,1.068
+Sevilla,Zaragoza,547.357,840.933,237.0,0,False,249.0,0,False,2.31,True,2.35,2.191,2.198,True,2.249,2.086
+Sevilla,Lleida,641.423,991.88,280.0,0,False,299.0,0,False,2.291,True,2.392,2.174,2.145,True,2.254,2.036
+Sevilla,Tarragona,592.923,909.958,306.0,0,False,333.0,0,False,1.938,True,2.003,1.839,1.781,True,1.854,1.69
+Sevilla,Barcelona,650.917,992.878,340.0,1,False,367.0,1,False,1.914,True,2.03,1.817,1.774,True,1.891,1.683
+Sevilla,Girona,707.52,1086.75,393.0,1,False,427.0,1,False,1.8,True,1.909,1.708,1.657,True,1.767,1.572
+Sevilla,Valencia,430.797,654.675,260.0,0,False,260.0,0,False,1.657,True,1.692,1.572,1.657,True,1.692,1.572
+Sevilla,Albacete,333.92,483.217,266.0,1,False,266.0,1,False,1.255,True,1.263,1.191,1.255,True,1.263,1.191
+Sevilla,Alicante,403.42,595.406,322.0,1,False,322.0,1,False,1.253,True,1.317,1.189,1.253,True,1.317,1.189
+Sevilla,Murcia,356.352,524.689,374.0,1,False,374.0,1,False,0.953,False,0.981,0.904,0.953,False,0.981,0.904
+Sevilla,Valladolid,379.022,581.784,257.0,1,False,257.0,1,False,1.475,True,1.53,1.399,1.475,True,1.53,1.399
+Sevilla,León,433.595,667.961,326.0,1,False,331.0,1,False,1.33,True,1.387,1.262,1.31,True,1.367,1.243
+Sevilla,Oviedo,505.88,777.419,401.0,1,False,401.0,1,False,1.262,True,1.359,1.197,1.262,True,1.359,1.197
+Sevilla,Ourense,524.855,787.296,345.0,1,False,345.0,1,False,1.521,True,1.613,1.444,1.521,True,1.613,1.444
+Sevilla,Santiago,577.105,823.415,387.0,1,False,387.0,1,False,1.491,True,1.576,1.415,1.491,True,1.576,1.415
+Sevilla,A Coruña,590.833,920.479,422.0,1,False,422.0,1,False,1.4,True,1.484,1.329,1.4,True,1.484,1.329
+Sevilla,Vigo,525.105,746.49,461.0,1,False,456.0,2,False,1.139,True,1.232,1.081,1.152,True,1.245,1.093
+Sevilla,Badajoz,161.567,211.235,263.0,1,False,260.0,1,False,0.614,False,0.62,0.583,0.621,False,0.626,0.59
+Sevilla,Teruel,456.092,681.47,468.0,1,False,492.0,2,False,0.975,False,1.036,0.925,0.927,False,0.989,0.88
+Sevilla,Almería,275.71,405.03,354.0,1,False,359.0,1,False,0.779,False,0.822,0.739,0.768,False,0.812,0.729
+Sevilla,Jaén,177.72,249.318,177.0,1,False,178.0,1,True,1.004,True,0.955,0.953,0.998,False,0.951,0.947
+Sevilla,Huelva,70.303,98.504,82.0,0,False,91.0,0,False,0.857,False,0.628,0.814,0.773,False,0.581,0.733
+Sevilla,Santander,535.107,826.416,461.0,1,False,459.0,1,False,1.161,True,1.253,1.101,1.166,True,1.258,1.106
+Sevilla,Bilbao,555.27,860.026,530.0,1,False,512.0,1,False,1.048,True,1.134,0.994,1.085,True,1.172,1.029
+Sevilla,San Sebastián,595.67,916.105,526.0,1,False,514.0,1,False,1.132,True,1.215,1.075,1.159,True,1.242,1.1
+Sevilla,Pamplona,586.44,910.544,381.0,1,False,394.0,1,False,1.539,True,1.622,1.461,1.488,True,1.572,1.412
+Córdoba,Ciudad Real,137.065,190.082,54.0,0,False,54.0,0,False,2.538,True,1.87,2.409,2.538,True,1.87,2.409
+Córdoba,Cádiz,172.432,251.377,147.0,0,False,167.0,0,False,1.173,True,1.087,1.113,1.033,True,0.977,0.98
+Córdoba,Málaga,114.387,163.078,47.0,0,False,52.0,0,False,2.434,True,1.486,2.309,2.2,True,1.395,2.087
+Córdoba,Granada,127.85,161.667,84.0,0,False,89.0,0,False,1.522,True,1.297,1.444,1.437,True,1.242,1.363
+Córdoba,Zaragoza,463.038,698.024,175.0,0,False,193.0,0,False,2.646,True,2.551,2.511,2.399,True,2.345,2.277
+Córdoba,Lleida,555.618,847.154,221.0,0,False,240.0,0,False,2.514,True,2.532,2.386,2.315,True,2.354,2.197
+Córdoba,Tarragona,505.928,776.927,250.0,0,False,270.0,0,False,2.024,True,2.093,1.92,1.874,True,1.953,1.778
+Córdoba,Barcelona,563.922,859.848,285.0,0,False,305.0,0,False,1.979,True,2.044,1.878,1.849,True,1.922,1.754
+Córdoba,Girona,620.525,953.719,342.0,1,False,370.0,1,False,1.814,True,1.937,1.722,1.677,True,1.801,1.591
+Córdoba,Valencia,343.017,520.597,202.0,0,False,202.0,0,False,1.698,True,1.651,1.611,1.698,True,1.651,1.611
+Córdoba,Albacete,246.925,350.187,223.0,1,False,223.0,1,False,1.107,True,1.134,1.051,1.107,True,1.134,1.051
+Córdoba,Alicante,349.828,509.902,279.0,1,False,279.0,1,False,1.254,True,1.262,1.19,1.254,True,1.262,1.19
+Córdoba,Murcia,306.007,435.563,319.0,1,False,319.0,1,False,0.959,False,0.991,0.91,0.959,False,0.991,0.91
+Córdoba,Valladolid,399.912,581.031,207.0,1,False,207.0,1,False,1.932,True,1.941,1.833,1.932,True,1.941,1.833
+Córdoba,León,481.06,729.649,271.0,1,False,274.0,1,False,1.775,True,1.864,1.684,1.756,True,1.846,1.666
+Córdoba,Oviedo,552.752,839.49,353.0,1,False,353.0,1,False,1.566,True,1.652,1.486,1.566,True,1.652,1.486
+Córdoba,Ourense,581.383,841.771,294.0,1,False,297.0,1,False,1.977,True,2.041,1.876,1.958,True,2.023,1.857
+Córdoba,Santiago,633.657,879.142,331.0,1,False,336.0,1,False,1.914,True,2.032,1.817,1.886,True,2.005,1.789
+Córdoba,A Coruña,639.848,983.337,364.0,1,False,369.0,1,False,1.758,True,1.878,1.668,1.734,True,1.854,1.645
+Córdoba,Vigo,582.503,797.13,404.0,1,False,394.0,1,False,1.442,True,1.527,1.368,1.478,True,1.563,1.403
+Córdoba,Badajoz,217.202,265.991,319.0,2,False,315.0,2,False,0.681,False,0.68,0.646,0.69,False,0.688,0.654
+Córdoba,Teruel,368.493,548.133,413.0,1,False,442.0,2,False,0.892,False,0.967,0.847,0.834,False,0.908,0.791
+Córdoba,Almería,225.365,315.904,278.0,0,False,282.0,0,False,0.811,False,0.797,0.769,0.799,False,0.786,0.758
+Córdoba,Jaén,90.725,116.288,102.0,0,False,105.0,0,True,0.889,False,0.687,0.844,0.864,False,0.672,0.82
+Córdoba,Huelva,162.142,234.182,120.0,0,False,134.0,0,False,1.351,True,1.214,1.282,1.21,True,1.111,1.148
+Córdoba,Santander,553.54,786.238,406.0,1,False,409.0,1,False,1.363,True,1.453,1.294,1.353,True,1.443,1.284
+Córdoba,Bilbao,523.967,787.132,446.0,1,False,446.0,1,False,1.175,True,1.269,1.115,1.175,True,1.269,1.115
+Córdoba,San Sebastián,561.818,840.391,464.0,1,False,465.0,1,False,1.211,True,1.299,1.149,1.208,True,1.297,1.146
+Córdoba,Pamplona,541.252,775.824,328.0,1,False,339.0,1,False,1.65,True,1.735,1.566,1.597,True,1.684,1.515
+Ciudad Real,Cádiz,300.628,437.194,206.0,0,False,226.0,0,False,1.459,True,1.443,1.385,1.33,True,1.331,1.262
+Ciudad Real,Málaga,243.987,346.102,107.0,0,False,112.0,0,False,2.28,True,2.073,2.164,2.178,True,2.0,2.067
+Ciudad Real,Granada,190.297,274.111,165.0,1,False,152.0,0,False,1.153,True,1.078,1.094,1.252,True,1.155,1.188
+Ciudad Real,Zaragoza,343.967,505.987,115.0,0,False,134.0,0,False,2.991,True,2.648,2.838,2.567,True,2.341,2.436
+Ciudad Real,Lleida,437.953,657.609,161.0,0,False,181.0,0,False,2.72,True,2.607,2.581,2.42,True,2.36,2.296
+Ciudad Real,Tarragona,390.363,607.31,190.0,0,False,211.0,0,False,2.055,True,2.047,1.95,1.85,True,1.869,1.756
+Ciudad Real,Barcelona,448.357,690.231,225.0,0,False,246.0,0,False,1.993,True,1.994,1.891,1.823,True,1.842,1.729
+Ciudad Real,Girona,504.96,784.102,292.0,1,False,313.0,1,False,1.729,True,1.817,1.641,1.613,True,1.705,1.531
+Ciudad Real,Valencia,228.555,350.797,139.0,0,False,139.0,0,False,1.644,True,1.471,1.56,1.644,True,1.471,1.56
+Ciudad Real,Albacete,142.19,213.148,136.0,0,False,136.0,0,False,1.046,True,0.977,0.992,1.046,True,0.977,0.992
+Ciudad Real,Alicante,245.897,377.009,209.0,1,False,209.0,1,False,1.177,True,1.196,1.116,1.177,True,1.196,1.116
+Ciudad Real,Murcia,231.492,356.17,277.0,1,False,277.0,1,False,0.836,False,0.819,0.793,0.836,False,0.819,0.793
+Ciudad Real,Valladolid,277.985,373.882,156.0,1,False,155.0,1,False,1.782,True,1.71,1.691,1.793,True,1.719,1.702
+Ciudad Real,León,360.325,522.695,233.0,1,False,233.0,1,False,1.546,True,1.598,1.467,1.546,True,1.598,1.467
+Ciudad Real,Oviedo,432.017,632.536,299.0,1,False,299.0,1,False,1.445,True,1.495,1.371,1.445,True,1.495,1.371
+Ciudad Real,Ourense,463.083,685.934,236.0,1,False,236.0,1,False,1.962,True,1.966,1.862,1.962,True,1.966,1.862
+Ciudad Real,Santiago,526.933,777.617,291.0,1,False,291.0,1,False,1.811,True,1.891,1.718,1.811,True,1.891,1.718
+Ciudad Real,A Coruña,517.973,776.164,324.0,1,False,324.0,1,False,1.599,True,1.689,1.517,1.599,True,1.689,1.517
+Ciudad Real,Vigo,527.972,776.132,349.0,1,False,349.0,1,False,1.513,True,1.604,1.435,1.513,True,1.604,1.435
+Ciudad Real,Badajoz,231.192,310.578,269.0,0,False,252.0,0,False,0.859,False,0.84,0.816,0.917,False,0.891,0.871
+Ciudad Real,Teruel,253.532,378.822,365.0,1,False,380.0,2,False,0.695,False,0.743,0.659,0.667,False,0.716,0.633
+Ciudad Real,Almería,281.437,399.812,396.0,2,False,404.0,2,False,0.711,False,0.755,0.674,0.697,False,0.741,0.661
+Ciudad Real,Jaén,133.35,188.832,178.0,1,False,182.0,1,True,0.749,False,0.737,0.711,0.733,False,0.723,0.695
+Ciudad Real,Huelva,290.338,419.998,214.0,1,False,250.0,1,False,1.357,True,1.354,1.287,1.161,True,1.18,1.102
+Ciudad Real,Santander,433.282,595.396,371.0,1,False,356.0,1,False,1.168,True,1.23,1.108,1.217,True,1.278,1.155
+Ciudad Real,Bilbao,403.708,596.289,417.0,2,False,417.0,2,False,0.968,False,1.037,0.919,0.968,False,1.037,0.919
+Ciudad Real,San Sebastián,444.153,650.846,417.0,1,False,430.0,1,False,1.065,True,1.128,1.011,1.033,True,1.096,0.98
+Ciudad Real,Pamplona,421.677,585.875,275.0,1,False,295.0,1,False,1.533,True,1.579,1.455,1.429,True,1.482,1.356
+Cádiz,Málaga,166.257,231.959,230.0,1,False,250.0,1,False,0.723,False,0.716,0.686,0.665,False,0.665,0.631
+Cádiz,Granada,237.135,290.525,290.0,1,False,290.0,1,False,0.818,False,0.804,0.776,0.818,False,0.804,0.776
+Cádiz,Zaragoza,626.602,945.136,359.0,1,False,382.0,2,False,1.745,True,1.868,1.656,1.64,True,1.764,1.556
+Cádiz,Lleida,719.182,1094.266,402.0,1,False,441.0,1,False,1.789,True,1.896,1.698,1.631,True,1.739,1.547
+Cádiz,Tarragona,669.693,1022.687,428.0,1,False,448.0,2,False,1.565,True,1.681,1.485,1.495,True,1.61,1.418
+Cádiz,Barcelona,727.687,1105.607,470.0,1,False,489.0,2,False,1.548,True,1.695,1.469,1.488,True,1.633,1.412
+Cádiz,Girona,784.29,1199.479,525.0,2,False,575.0,2,False,1.494,True,1.629,1.418,1.364,True,1.495,1.294
+Cádiz,Valencia,506.58,767.709,386.0,1,False,390.0,1,False,1.312,True,1.41,1.245,1.299,True,1.397,1.233
+Cádiz,Albacete,410.69,595.946,427.0,1,False,417.0,2,False,0.962,False,1.03,0.913,0.985,False,1.053,0.935
+Cádiz,Alicante,464.683,639.462,478.0,1,False,468.0,2,False,0.972,False,1.033,0.922,0.993,False,1.054,0.942
+Cádiz,Murcia,416.785,567.567,509.0,2,False,509.0,2,False,0.819,False,0.885,0.777,0.819,False,0.885,0.777
+Cádiz,Valladolid,459.73,700.781,377.0,1,False,373.0,2,False,1.219,True,1.277,1.157,1.233,True,1.29,1.17
+Cádiz,León,512.182,784.874,457.0,2,False,451.0,2,False,1.121,True,1.216,1.063,1.136,True,1.231,1.078
+Cádiz,Oviedo,583.873,894.715,527.0,1,False,522.0,2,False,1.108,True,1.192,1.051,1.119,True,1.203,1.061
+Cádiz,Ourense,602.848,904.593,477.0,2,False,477.0,2,False,1.264,True,1.386,1.199,1.264,True,1.386,1.199
+Cádiz,Santiago,655.122,941.963,519.0,2,False,519.0,2,False,1.262,True,1.375,1.198,1.262,True,1.375,1.198
+Cádiz,A Coruña,670.97,1038.562,552.0,1,False,554.0,2,False,1.216,True,1.325,1.153,1.211,True,1.32,1.149
+Cádiz,Vigo,603.968,859.951,592.0,2,False,588.0,1,False,1.02,True,1.132,0.968,1.027,True,1.139,0.975
+Cádiz,Badajoz,240.492,329.086,456.0,2,False,393.0,2,False,0.527,False,0.577,0.5,0.612,False,0.663,0.581
+Cádiz,Teruel,532.057,795.245,617.0,2,False,648.0,2,False,0.862,False,0.946,0.818,0.821,False,0.903,0.779
+Cádiz,Almería,310.75,436.871,482.0,2,False,493.0,2,False,0.645,False,0.685,0.612,0.63,False,0.671,0.598
+Cádiz,Jaén,244.672,324.298,320.0,0,False,289.0,1,True,0.765,False,0.813,0.726,0.847,False,0.892,0.803
+Cádiz,Huelva,147.0,211.299,202.0,1,False,238.0,1,False,0.728,False,0.72,0.691,0.618,False,0.623,0.586
+Cádiz,Santander,613.385,943.577,593.0,1,False,572.0,2,False,1.034,True,1.145,0.982,1.072,True,1.185,1.018
+Cádiz,Bilbao,636.163,978.245,692.0,2,False,692.0,2,False,0.919,False,1.02,0.872,0.919,False,1.02,0.872
+Cádiz,San Sebastián,673.663,1033.401,692.0,2,False,656.0,1,False,0.974,False,1.072,0.924,1.027,True,1.128,0.974
+Cádiz,Pamplona,665.95,1029.438,527.0,2,False,523.0,2,False,1.264,True,1.375,1.199,1.273,True,1.385,1.208
+Málaga,Granada,96.273,128.574,77.0,0,False,82.0,0,False,1.25,True,0.9,1.186,1.174,True,0.86,1.114
+Málaga,Zaragoza,555.97,837.002,252.0,0,False,289.0,0,False,2.206,True,2.255,2.093,1.924,True,1.994,1.825
+Málaga,Lleida,635.598,963.742,295.0,0,False,336.0,0,False,2.155,True,2.263,2.044,1.892,True,2.01,1.795
+Málaga,Tarragona,579.998,880.017,321.0,0,False,366.0,0,False,1.807,True,1.88,1.714,1.585,True,1.667,1.504
+Málaga,Barcelona,637.992,962.937,338.0,0,False,368.0,1,False,1.888,True,2.005,1.791,1.734,True,1.854,1.645
+Málaga,Girona,694.595,1056.808,402.0,1,False,430.0,1,False,1.728,True,1.839,1.64,1.615,True,1.727,1.533
+Málaga,Valencia,402.912,603.398,304.0,1,False,309.0,1,False,1.325,True,1.386,1.258,1.304,True,1.366,1.237
+Málaga,Albacete,323.947,459.193,282.0,0,False,287.0,1,False,1.149,True,1.166,1.09,1.129,True,1.148,1.071
+Málaga,Alicante,322.913,475.532,338.0,0,False,343.0,1,False,0.955,False,0.986,0.907,0.941,False,0.973,0.893
+Málaga,Murcia,275.923,405.617,377.0,1,False,382.0,1,False,0.732,False,0.776,0.694,0.722,False,0.767,0.685
+Málaga,Valladolid,492.843,720.01,259.0,1,False,263.0,1,False,1.903,True,1.982,1.806,1.874,True,1.955,1.778
+Málaga,León,573.992,868.628,326.0,1,False,327.0,1,False,1.761,True,1.837,1.671,1.755,True,1.832,1.666
+Málaga,Oviedo,645.683,978.469,418.0,1,False,423.0,1,False,1.545,True,1.664,1.466,1.526,True,1.646,1.448
+Málaga,Ourense,669.655,994.992,346.0,1,False,351.0,1,False,1.935,True,2.047,1.836,1.908,True,2.02,1.81
+Málaga,Santiago,721.928,1032.362,388.0,1,False,394.0,1,False,1.861,True,2.014,1.766,1.832,True,1.986,1.739
+Málaga,A Coruña,732.78,1122.316,422.0,1,False,427.0,1,False,1.736,True,1.887,1.648,1.716,True,1.866,1.628
+Málaga,Vigo,670.775,950.35,453.0,1,False,448.0,1,False,1.481,True,1.596,1.405,1.497,True,1.612,1.421
+Málaga,Badajoz,307.298,419.485,390.0,2,False,403.0,1,False,0.788,False,0.827,0.748,0.763,False,0.802,0.724
+Málaga,Teruel,461.425,687.112,489.0,1,False,507.0,2,False,0.944,False,1.005,0.895,0.91,False,0.971,0.864
+Málaga,Almería,150.887,203.462,267.0,1,False,259.0,1,False,0.565,False,0.575,0.536,0.583,False,0.591,0.553
+Málaga,Jaén,142.205,189.964,192.0,1,False,188.0,1,True,0.741,False,0.731,0.703,0.756,False,0.744,0.718
+Málaga,Huelva,216.42,305.071,195.0,1,False,237.0,1,False,1.11,True,1.051,1.053,0.913,False,0.885,0.866
+Málaga,Santander,648.273,925.782,497.0,2,False,500.0,1,False,1.304,True,1.42,1.238,1.297,True,1.412,1.23
+Málaga,Bilbao,618.078,925.184,507.0,1,False,512.0,1,False,1.219,True,1.337,1.157,1.207,True,1.325,1.145
+Málaga,San Sebastián,654.75,979.369,526.0,1,False,532.0,1,False,1.245,True,1.357,1.181,1.231,True,1.343,1.168
+Málaga,Pamplona,634.183,914.803,410.0,1,False,419.0,1,False,1.547,True,1.669,1.468,1.514,True,1.635,1.436
+Granada,Zaragoza,477.195,721.095,268.0,0,False,291.0,0,False,1.781,True,1.803,1.69,1.64,True,1.674,1.556
+Granada,Lleida,555.685,836.293,318.0,0,False,341.0,0,False,1.747,True,1.827,1.658,1.63,True,1.713,1.546
+Granada,Tarragona,500.085,752.567,346.0,0,False,375.0,0,False,1.445,True,1.543,1.371,1.334,True,1.432,1.265
+Granada,Barcelona,558.078,835.487,385.0,1,False,415.0,1,False,1.45,True,1.538,1.375,1.345,True,1.434,1.276
+Granada,Girona,614.682,929.358,436.0,1,False,489.0,2,False,1.41,True,1.534,1.338,1.257,True,1.377,1.193
+Granada,Valencia,321.015,477.391,336.0,1,False,340.0,1,False,0.955,False,0.986,0.907,0.944,False,0.976,0.896
+Granada,Albacete,245.072,341.431,334.0,1,False,339.0,1,False,0.734,False,0.783,0.696,0.723,False,0.773,0.686
+Granada,Alicante,241.017,349.524,388.0,1,False,393.0,1,False,0.621,False,0.672,0.589,0.613,False,0.664,0.582
+Granada,Murcia,195.002,278.934,451.0,1,False,456.0,1,False,0.432,False,0.447,0.41,0.428,False,0.442,0.406
+Granada,Valladolid,414.068,604.102,299.0,1,False,308.0,1,False,1.385,True,1.441,1.314,1.344,True,1.403,1.276
+Granada,León,495.217,752.72,376.0,1,False,386.0,1,False,1.317,True,1.417,1.25,1.283,True,1.383,1.217
+Granada,Oviedo,566.908,862.561,446.0,1,False,458.0,1,False,1.271,True,1.359,1.206,1.238,True,1.326,1.175
+Granada,Ourense,597.975,915.959,410.0,1,False,415.0,1,False,1.458,True,1.541,1.384,1.441,True,1.524,1.367
+Granada,Santiago,661.825,1007.642,474.0,2,False,458.0,1,False,1.396,True,1.512,1.325,1.445,True,1.561,1.371
+Granada,A Coruña,654.005,1006.408,509.0,2,False,528.0,2,False,1.285,True,1.399,1.219,1.239,True,1.351,1.175
+Granada,Vigo,662.863,1006.157,530.0,1,False,520.0,1,False,1.251,True,1.362,1.187,1.275,True,1.387,1.21
+Granada,Badajoz,334.52,457.834,477.0,2,False,448.0,2,False,0.701,False,0.739,0.665,0.747,False,0.784,0.709
+Granada,Teruel,382.65,571.204,553.0,2,False,557.0,2,False,0.692,False,0.759,0.657,0.687,False,0.754,0.652
+Granada,Almería,115.13,158.582,159.0,0,False,159.0,0,False,0.724,False,0.609,0.687,0.724,False,0.609,0.687
+Granada,Jaén,66.05,91.086,264.0,1,False,272.0,1,True,0.25,False,0.225,0.237,0.243,False,0.219,0.23
+Granada,Huelva,243.642,343.42,275.0,1,False,263.0,1,False,0.886,False,0.93,0.841,0.926,False,0.968,0.879
+Granada,Santander,569.398,808.02,557.0,1,False,558.0,2,False,1.022,True,1.106,0.97,1.02,True,1.104,0.968
+Granada,Bilbao,539.303,809.276,596.0,1,False,605.0,1,False,0.905,False,0.989,0.859,0.891,False,0.975,0.846
+Granada,San Sebastián,575.975,863.462,596.0,2,False,692.0,1,False,0.966,False,1.048,0.917,0.832,False,0.909,0.79
+Granada,Pamplona,555.408,798.895,426.0,1,False,449.0,1,False,1.304,True,1.393,1.237,1.237,True,1.327,1.174
+Zaragoza,Lleida,104.213,155.725,40.0,0,False,42.0,0,False,2.605,True,1.489,2.472,2.481,True,1.447,2.354
+Zaragoza,Tarragona,156.452,229.342,54.0,0,False,61.0,0,False,2.897,True,2.101,2.749,2.565,True,1.939,2.434
+Zaragoza,Barcelona,204.328,308.62,82.0,0,False,85.0,0,False,2.492,True,2.003,2.364,2.404,True,1.951,2.281
+Zaragoza,Girona,253.318,381.609,134.0,0,False,136.0,0,False,1.89,True,1.789,1.794,1.863,True,1.767,1.767
+Zaragoza,Valencia,213.378,310.766,222.0,1,False,240.0,1,False,0.961,False,0.926,0.912,0.889,False,0.864,0.844
+Zaragoza,Albacete,284.005,390.942,201.0,1,False,220.0,1,False,1.413,True,1.403,1.341,1.291,True,1.296,1.225
+Zaragoza,Alicante,324.585,469.42,255.0,1,False,274.0,1,False,1.273,True,1.279,1.208,1.185,True,1.199,1.124
+Zaragoza,Murcia,349.36,509.132,299.0,1,False,315.0,1,False,1.168,True,1.183,1.109,1.109,True,1.129,1.052
+Zaragoza,Valladolid,281.213,420.589,181.0,1,False,197.0,1,False,1.554,True,1.522,1.474,1.427,True,1.415,1.355
+Zaragoza,León,310.462,467.308,243.0,1,False,259.0,1,False,1.278,True,1.284,1.212,1.199,True,1.213,1.137
+Zaragoza,Oviedo,383.247,580.108,318.0,1,False,334.0,1,False,1.205,True,1.274,1.144,1.147,True,1.218,1.089
+Zaragoza,Ourense,485.952,750.137,272.0,1,False,289.0,1,False,1.787,True,1.874,1.695,1.681,True,1.774,1.596
+Zaragoza,Santiago,514.6,780.238,308.0,1,False,325.0,1,False,1.671,True,1.759,1.585,1.583,True,1.675,1.502
+Zaragoza,A Coruña,504.357,773.398,351.0,1,False,359.0,1,False,1.437,True,1.534,1.363,1.405,True,1.502,1.333
+Zaragoza,Vigo,550.84,840.335,368.0,1,False,385.0,1,False,1.497,True,1.585,1.42,1.431,True,1.52,1.358
+Zaragoza,Badajoz,464.725,711.684,429.0,1,False,453.0,1,False,1.083,True,1.143,1.028,1.026,True,1.086,0.973
+Zaragoza,Teruel,117.22,172.722,168.0,0,False,168.0,0,False,0.698,False,0.592,0.662,0.698,False,0.592,0.662
+Zaragoza,Almería,482.113,711.114,532.0,1,False,542.0,1,False,0.906,False,1.0,0.86,0.89,False,0.983,0.844
+Zaragoza,Jaén,420.248,635.815,305.0,1,False,328.0,1,True,1.378,True,1.434,1.307,1.281,True,1.341,1.216
+Zaragoza,Huelva,601.18,927.277,345.0,1,False,381.0,1,False,1.743,True,1.87,1.653,1.578,True,1.706,1.497
+Zaragoza,Santander,262.563,397.248,404.0,1,False,403.0,1,False,0.65,False,0.697,0.617,0.652,False,0.699,0.618
+Zaragoza,Bilbao,195.038,300.552,287.0,0,False,287.0,0,False,0.68,False,0.678,0.645,0.68,False,0.678,0.645
+Zaragoza,San Sebastián,177.033,260.737,253.0,0,False,253.0,0,False,0.7,False,0.696,0.664,0.7,False,0.696,0.664
+Zaragoza,Pamplona,122.27,178.953,103.0,0,False,103.0,0,False,1.187,True,1.07,1.126,1.187,True,1.07,1.126
+Lleida,Tarragona,70.625,91.742,24.0,0,False,26.0,0,False,2.943,True,1.308,2.792,2.716,True,1.261,2.578
+Lleida,Barcelona,114.027,151.106,58.0,0,False,60.0,0,False,1.966,True,1.296,1.865,1.9,True,1.267,1.803
+Lleida,Girona,155.423,224.787,108.0,0,False,110.0,0,False,1.439,True,1.271,1.366,1.413,True,1.253,1.341
+Lleida,Valencia,233.313,350.073,203.0,1,False,181.0,1,False,1.149,True,1.087,1.091,1.289,True,1.201,1.223
+Lleida,Albacete,346.857,509.563,245.0,1,False,267.0,1,False,1.416,True,1.407,1.343,1.299,True,1.303,1.233
+Lleida,Alicante,349.132,533.346,299.0,1,False,321.0,1,False,1.168,True,1.183,1.108,1.088,True,1.109,1.032
+Lleida,Murcia,374.825,574.153,343.0,1,False,364.0,1,False,1.093,True,1.166,1.037,1.03,True,1.104,0.977
+Lleida,Valladolid,375.337,569.963,225.0,1,False,246.0,1,False,1.668,True,1.707,1.583,1.526,True,1.577,1.448
+Lleida,León,404.585,616.683,289.0,1,False,308.0,1,False,1.4,True,1.456,1.328,1.314,True,1.375,1.246
+Lleida,Oviedo,478.567,730.658,403.0,1,False,406.0,1,False,1.188,True,1.244,1.127,1.179,True,1.235,1.118
+Lleida,Ourense,580.867,895.18,321.0,1,False,338.0,1,False,1.81,True,1.883,1.717,1.719,True,1.796,1.631
+Lleida,Santiago,609.202,925.603,371.0,2,False,375.0,1,False,1.642,True,1.769,1.558,1.625,True,1.751,1.542
+Lleida,A Coruña,598.48,922.773,418.0,1,False,408.0,1,False,1.432,True,1.514,1.359,1.467,True,1.549,1.392
+Lleida,Vigo,645.118,984.545,417.0,1,False,484.0,2,False,1.547,True,1.667,1.468,1.333,True,1.45,1.265
+Lleida,Badajoz,558.32,862.371,473.0,1,False,501.0,1,False,1.18,True,1.269,1.12,1.114,True,1.202,1.057
+Lleida,Teruel,210.605,320.354,237.0,1,False,250.0,1,False,0.889,False,0.864,0.843,0.842,False,0.824,0.799
+Lleida,Almería,507.393,778.078,577.0,1,False,602.0,1,False,0.879,False,0.968,0.834,0.843,False,0.929,0.8
+Lleida,Jaén,512.828,784.945,348.0,1,False,378.0,1,True,1.474,True,1.568,1.398,1.357,True,1.453,1.287
+Lleida,Huelva,694.428,1078.001,389.0,1,False,433.0,1,False,1.785,True,1.896,1.694,1.604,True,1.716,1.522
+Lleida,Santander,358.1,547.774,461.0,1,False,465.0,1,False,0.777,False,0.811,0.737,0.77,False,0.804,0.731
+Lleida,Bilbao,289.162,449.927,354.0,0,False,354.0,0,False,0.817,False,0.857,0.775,0.817,False,0.857,0.775
+Lleida,San Sebastián,268.423,358.343,305.0,0,False,305.0,0,False,0.88,False,0.921,0.835,0.88,False,0.921,0.835
+Lleida,Pamplona,213.758,275.845,169.0,0,False,167.0,1,False,1.265,True,1.175,1.2,1.28,True,1.187,1.215
+Tarragona,Barcelona,81.745,103.363,30.0,0,False,31.0,0,False,2.725,True,1.362,2.586,2.637,True,1.34,2.502
+Tarragona,Girona,139.523,197.85,81.0,0,False,80.0,0,False,1.723,True,1.437,1.634,1.744,True,1.45,1.655
+Tarragona,Valencia,177.713,266.347,131.0,0,False,131.0,0,False,1.357,True,1.228,1.287,1.357,True,1.228,1.287
+Tarragona,Albacete,291.257,425.837,274.0,1,False,275.0,1,False,1.063,True,1.09,1.009,1.059,True,1.086,1.005
+Tarragona,Alicante,293.532,449.62,274.0,0,False,274.0,0,False,1.071,True,1.097,1.017,1.071,True,1.097,1.017
+Tarragona,Murcia,319.225,490.428,359.0,1,False,359.0,1,False,0.889,False,0.923,0.844,0.889,False,0.923,0.844
+Tarragona,Valladolid,428.085,643.953,223.0,1,False,247.0,1,False,1.92,True,1.929,1.822,1.733,True,1.762,1.645
+Tarragona,León,457.812,690.501,317.0,1,False,338.0,1,False,1.444,True,1.492,1.37,1.354,True,1.407,1.285
+Tarragona,Oviedo,530.04,803.835,385.0,1,False,411.0,1,False,1.377,True,1.47,1.306,1.29,True,1.383,1.224
+Tarragona,Ourense,632.745,973.864,331.0,1,False,339.0,1,False,1.912,True,2.03,1.814,1.867,True,1.986,1.771
+Tarragona,Santiago,661.393,1003.965,367.0,1,False,391.0,1,False,1.802,True,1.918,1.71,1.692,True,1.809,1.605
+Tarragona,A Coruña,651.707,996.59,429.0,2,False,438.0,1,False,1.519,True,1.638,1.441,1.488,True,1.606,1.412
+Tarragona,Vigo,697.633,1064.062,427.0,1,False,436.0,1,False,1.634,True,1.745,1.55,1.6,True,1.712,1.518
+Tarragona,Badajoz,610.048,935.831,496.0,1,False,531.0,1,False,1.23,True,1.35,1.167,1.149,True,1.266,1.09
+Tarragona,Teruel,229.502,339.269,271.0,1,False,274.0,1,False,0.847,False,0.829,0.804,0.838,False,0.821,0.795
+Tarragona,Almería,451.793,694.353,603.0,1,False,606.0,1,False,0.749,False,0.809,0.711,0.746,False,0.805,0.707
+Tarragona,Jaén,465.213,714.112,374.0,1,False,412.0,1,True,1.244,True,1.3,1.18,1.129,True,1.188,1.071
+Tarragona,Huelva,659.65,1005.811,433.0,1,False,446.0,1,False,1.523,True,1.641,1.446,1.479,True,1.596,1.403
+Tarragona,Santander,409.357,620.974,497.0,1,False,495.0,1,False,0.824,False,0.891,0.782,0.827,False,0.894,0.785
+Tarragona,Bilbao,342.388,523.745,386.0,0,False,386.0,0,False,0.887,False,0.919,0.842,0.887,False,0.919,0.842
+Tarragona,San Sebastián,323.827,484.464,338.0,0,False,338.0,0,False,0.958,False,0.989,0.909,0.958,False,0.989,0.909
+Tarragona,Pamplona,269.162,401.966,199.0,1,False,196.0,1,False,1.353,True,1.35,1.283,1.373,True,1.368,1.303
+Barcelona,Girona,81.782,103.5,39.0,0,False,39.0,0,False,2.097,True,1.185,1.99,2.097,True,1.185,1.99
+Barcelona,Valencia,235.707,349.267,167.0,0,False,167.0,0,False,1.411,True,1.298,1.339,1.411,True,1.298,1.339
+Barcelona,Albacete,349.25,508.757,298.0,1,False,308.0,1,False,1.172,True,1.187,1.112,1.134,True,1.152,1.076
+Barcelona,Alicante,351.525,532.541,318.0,0,False,318.0,0,False,1.105,True,1.125,1.049,1.105,True,1.125,1.049
+Barcelona,Murcia,377.218,573.348,395.0,1,False,395.0,1,False,0.955,False,1.029,0.906,0.955,False,1.029,0.906
+Barcelona,Valladolid,475.962,723.231,258.0,1,False,281.0,1,False,1.845,True,1.861,1.751,1.694,True,1.723,1.607
+Barcelona,León,506.37,770.038,321.0,1,False,351.0,1,False,1.577,True,1.671,1.497,1.443,True,1.539,1.369
+Barcelona,Oviedo,577.917,883.113,410.0,1,False,433.0,1,False,1.41,True,1.495,1.338,1.335,True,1.421,1.266
+Barcelona,Ourense,680.622,1053.142,360.0,1,False,358.0,1,False,1.891,True,2.002,1.794,1.901,True,2.012,1.804
+Barcelona,Santiago,709.27,1083.243,402.0,1,False,411.0,1,False,1.764,True,1.873,1.674,1.726,True,1.835,1.638
+Barcelona,A Coruña,700.265,1076.127,437.0,1,False,447.0,1,False,1.602,True,1.714,1.521,1.567,True,1.678,1.487
+Barcelona,Vigo,745.51,1143.34,467.0,1,False,469.0,1,False,1.596,True,1.741,1.515,1.59,True,1.734,1.508
+Barcelona,Badajoz,657.925,1015.11,536.0,1,False,575.0,2,False,1.227,True,1.339,1.165,1.144,True,1.253,1.086
+Barcelona,Teruel,287.495,422.189,284.0,1,False,287.0,1,False,1.012,True,1.043,0.961,1.002,True,1.033,0.951
+Barcelona,Almería,509.787,777.273,576.0,1,False,605.0,1,False,0.885,False,0.973,0.84,0.843,False,0.929,0.8
+Barcelona,Jaén,523.207,797.032,416.0,1,False,441.0,2,True,1.258,True,1.352,1.193,1.186,True,1.281,1.126
+Barcelona,Huelva,717.643,1088.731,464.0,1,False,487.0,1,False,1.547,True,1.655,1.468,1.474,True,1.582,1.398
+Barcelona,Santander,457.233,700.253,456.0,1,False,467.0,1,False,1.003,True,1.064,0.951,0.979,False,1.041,0.929
+Barcelona,Bilbao,390.947,603.282,413.0,1,False,413.0,1,False,0.947,False,1.018,0.898,0.947,False,1.018,0.898
+Barcelona,San Sebastián,370.78,509.286,376.0,0,False,376.0,0,False,0.986,False,1.061,0.936,0.986,False,1.061,0.936
+Barcelona,Pamplona,316.115,426.788,239.0,1,False,225.0,1,False,1.323,True,1.324,1.255,1.405,True,1.397,1.333
+Girona,Valencia,292.31,443.139,228.0,0,False,228.0,0,False,1.282,True,1.288,1.217,1.282,True,1.288,1.217
+Girona,Albacete,405.853,602.628,361.0,1,False,361.0,1,False,1.124,True,1.191,1.067,1.124,True,1.191,1.067
+Girona,Alicante,408.128,626.412,375.0,0,False,375.0,0,False,1.088,True,1.156,1.033,1.088,True,1.156,1.033
+Girona,Murcia,433.822,667.219,459.0,2,False,459.0,2,False,0.945,False,1.01,0.897,0.945,False,1.01,0.897
+Girona,Valladolid,524.442,795.848,322.0,1,False,345.0,1,False,1.629,True,1.717,1.545,1.52,True,1.612,1.442
+Girona,León,553.69,842.567,407.0,1,False,413.0,1,False,1.36,True,1.45,1.291,1.341,True,1.43,1.272
+Girona,Oviedo,627.672,956.542,474.0,1,False,497.0,1,False,1.324,True,1.444,1.257,1.263,True,1.381,1.198
+Girona,Ourense,729.972,1121.064,425.0,1,False,425.0,1,False,1.718,True,1.868,1.63,1.718,True,1.868,1.63
+Girona,Santiago,758.307,1151.487,467.0,1,False,494.0,2,False,1.624,True,1.767,1.541,1.535,True,1.676,1.457
+Girona,A Coruña,747.585,1148.657,525.0,2,False,528.0,2,False,1.424,True,1.563,1.351,1.416,True,1.555,1.344
+Girona,Vigo,794.223,1210.429,528.0,1,False,522.0,1,False,1.504,True,1.638,1.427,1.522,True,1.656,1.444
+Girona,Badajoz,707.425,1088.255,591.0,1,False,626.0,2,False,1.197,True,1.3,1.136,1.13,True,1.231,1.072
+Girona,Teruel,344.098,516.061,335.0,1,False,342.0,1,False,1.027,True,1.052,0.975,1.006,True,1.033,0.955
+Girona,Almería,566.39,871.144,680.0,2,False,684.0,2,False,0.833,False,0.91,0.79,0.828,False,0.905,0.786
+Girona,Jaén,579.81,890.903,470.0,2,False,509.0,2,False,1.234,True,1.32,1.171,1.139,True,1.224,1.081
+Girona,Huelva,774.247,1182.602,515.0,1,False,540.0,1,False,1.503,True,1.641,1.427,1.434,True,1.569,1.361
+Girona,Santander,507.223,770.783,507.0,1,False,573.0,2,False,1.0,True,1.094,0.949,0.885,False,0.974,0.84
+Girona,Bilbao,438.267,675.811,464.0,1,False,464.0,1,False,0.945,False,1.009,0.896,0.945,False,1.009,0.896
+Girona,San Sebastián,391.595,636.353,517.0,2,False,455.0,1,False,0.757,False,0.826,0.719,0.861,False,0.931,0.817
+Girona,Pamplona,357.667,500.584,296.0,1,False,296.0,1,False,1.208,True,1.22,1.147,1.208,True,1.22,1.147
+Valencia,Albacete,126.087,185.108,103.0,1,False,103.0,1,False,1.224,True,1.098,1.162,1.224,True,1.098,1.162
+Valencia,Alicante,119.927,175.986,115.0,0,False,115.0,0,False,1.043,True,0.827,0.99,1.043,True,0.827,0.99
+Valencia,Murcia,143.397,215.492,214.0,1,False,214.0,1,False,0.67,False,0.67,0.636,0.67,False,0.67,0.636
+Valencia,Valladolid,379.443,545.723,186.0,0,False,186.0,0,False,2.04,True,2.034,1.936,2.04,True,2.034,1.936
+Valencia,León,462.193,695.487,251.0,0,False,256.0,0,False,1.841,True,1.858,1.747,1.805,True,1.826,1.713
+Valencia,Oviedo,534.633,804.754,342.0,0,False,338.0,1,False,1.563,True,1.652,1.483,1.582,True,1.67,1.501
+Valencia,Ourense,565.7,858.152,276.0,1,False,276.0,1,False,2.05,True,2.11,1.945,2.05,True,2.11,1.945
+Valencia,Santiago,629.55,949.835,336.0,2,False,336.0,2,False,1.874,True,1.993,1.778,1.874,True,1.993,1.778
+Valencia,A Coruña,619.432,948.005,371.0,2,False,371.0,2,False,1.67,True,1.794,1.584,1.67,True,1.794,1.584
+Valencia,Vigo,630.588,948.35,386.0,1,False,394.0,1,False,1.634,True,1.756,1.55,1.6,True,1.723,1.519
+Valencia,Badajoz,457.038,661.696,433.0,1,False,415.0,1,False,1.056,True,1.117,1.002,1.101,True,1.162,1.045
+Valencia,Teruel,103.51,141.991,137.0,0,False,137.0,0,False,0.756,False,0.62,0.717,0.756,False,0.62,0.717
+Valencia,Almería,276.15,417.474,536.0,2,False,544.0,2,False,0.515,False,0.559,0.489,0.508,False,0.551,0.482
+Valencia,Jaén,300.227,458.388,387.0,1,False,388.0,1,True,0.776,False,0.816,0.736,0.774,False,0.814,0.734
+Valencia,Huelva,496.29,750.513,413.0,1,False,426.0,1,False,1.202,True,1.301,1.14,1.165,True,1.264,1.105
+Valencia,Santander,468.928,709.804,396.0,1,False,397.0,1,False,1.184,True,1.242,1.124,1.181,True,1.239,1.121
+Valencia,Bilbao,402.242,612.901,442.0,2,False,461.0,1,False,0.91,False,0.979,0.864,0.873,False,0.941,0.828
+Valencia,San Sebastián,383.398,573.294,459.0,1,False,478.0,1,False,0.835,False,0.907,0.793,0.802,False,0.873,0.761
+Valencia,Pamplona,328.733,490.796,370.0,2,False,377.0,1,False,0.888,False,0.922,0.843,0.872,False,0.906,0.827
+Albacete,Alicante,113.242,166.844,48.0,0,False,48.0,0,False,2.359,True,1.452,2.239,2.359,True,1.452,2.239
+Albacete,Murcia,99.577,146.761,113.0,0,False,113.0,0,False,0.881,False,0.696,0.836,0.881,False,0.696,0.836
+Albacete,Valladolid,315.67,446.096,167.0,0,False,167.0,0,False,1.89,True,1.805,1.794,1.89,True,1.805,1.794
+Albacete,León,396.818,594.714,234.0,0,False,234.0,0,False,1.696,True,1.73,1.609,1.696,True,1.73,1.609
+Albacete,Oviedo,468.51,704.555,320.0,1,False,320.0,1,False,1.464,True,1.51,1.389,1.464,True,1.51,1.389
+Albacete,Ourense,499.577,757.953,244.0,0,False,244.0,0,False,2.047,True,2.115,1.943,2.047,True,2.115,1.943
+Albacete,Santiago,563.427,849.636,294.0,1,False,294.0,1,False,1.916,True,1.986,1.818,1.916,True,1.986,1.818
+Albacete,A Coruña,555.607,848.402,328.0,1,False,328.0,1,False,1.694,True,1.775,1.607,1.694,True,1.775,1.607
+Albacete,Vigo,564.465,848.151,354.0,1,False,354.0,1,False,1.595,True,1.678,1.513,1.595,True,1.678,1.513
+Albacete,Badajoz,371.072,523.742,417.0,1,False,424.0,1,False,0.89,False,0.964,0.844,0.875,False,0.949,0.83
+Albacete,Teruel,168.93,227.755,294.0,2,False,294.0,2,False,0.575,False,0.583,0.545,0.575,False,0.583,0.545
+Albacete,Almería,232.145,350.686,563.0,1,False,583.0,1,False,0.412,False,0.425,0.391,0.398,False,0.411,0.378
+Albacete,Jaén,189.385,263.685,226.0,1,False,258.0,1,False,0.838,False,0.818,0.795,0.734,False,0.727,0.697
+Albacete,Huelva,400.597,576.045,391.0,1,False,404.0,1,False,1.025,True,1.094,0.972,0.992,False,1.061,0.941
+Albacete,Santander,451.82,639.222,399.0,1,False,387.0,0,False,1.132,True,1.193,1.075,1.167,True,1.227,1.108
+Albacete,Bilbao,422.247,640.115,400.0,1,False,400.0,1,False,1.056,True,1.122,1.002,1.056,True,1.122,1.002
+Albacete,San Sebastián,454.025,653.469,436.0,1,False,444.0,1,False,1.041,True,1.103,0.988,1.023,True,1.084,0.97
+Albacete,Pamplona,399.36,570.971,311.0,1,False,332.0,1,False,1.284,True,1.347,1.218,1.203,True,1.269,1.141
+Alicante,Murcia,59.082,81.795,51.0,0,False,50.0,0,False,1.158,True,0.729,1.099,1.182,True,0.739,1.121
+Alicante,Valladolid,416.642,608.809,222.0,0,False,222.0,0,False,1.877,True,1.891,1.781,1.877,True,1.891,1.781
+Alicante,León,499.392,758.573,287.0,0,False,287.0,0,False,1.74,True,1.828,1.651,1.74,True,1.828,1.651
+Alicante,Oviedo,572.217,868.416,376.0,1,False,376.0,1,False,1.522,True,1.606,1.444,1.522,True,1.606,1.444
+Alicante,Ourense,603.283,921.813,294.0,0,False,294.0,0,False,2.052,True,2.171,1.947,2.052,True,2.171,1.947
+Alicante,Santiago,667.133,1013.496,345.0,1,False,345.0,1,False,1.934,True,2.046,1.835,1.934,True,2.046,1.835
+Alicante,A Coruña,656.63,1011.091,379.0,1,False,379.0,1,False,1.733,True,1.85,1.644,1.733,True,1.85,1.644
+Alicante,Vigo,668.172,1012.011,406.0,1,False,406.0,1,False,1.646,True,1.762,1.562,1.646,True,1.762,1.562
+Alicante,Badajoz,474.778,687.603,489.0,1,False,496.0,1,False,0.971,False,1.03,0.921,0.957,False,1.017,0.908
+Alicante,Teruel,209.678,298.208,302.0,1,False,302.0,1,False,0.694,False,0.692,0.659,0.694,False,0.692,0.659
+Alicante,Almería,196.037,291.369,636.0,1,False,640.0,1,False,0.308,False,0.324,0.292,0.306,False,0.322,0.291
+Alicante,Jaén,282.49,407.506,299.0,2,False,337.0,2,False,0.945,False,0.98,0.896,0.838,False,0.879,0.795
+Alicante,Huelva,470.9,692.685,447.0,1,False,460.0,1,False,1.053,True,1.113,1.0,1.024,True,1.083,0.971
+Alicante,Santander,552.222,802.826,450.0,1,False,445.0,0,False,1.227,True,1.317,1.164,1.241,True,1.331,1.178
+Alicante,Bilbao,514.487,772.26,472.0,1,False,472.0,1,False,1.09,True,1.184,1.034,1.09,True,1.184,1.034
+Alicante,San Sebastián,494.605,731.948,490.0,1,False,498.0,1,False,1.009,True,1.105,0.958,0.993,False,1.088,0.942
+Alicante,Pamplona,439.94,649.45,365.0,1,False,386.0,1,False,1.205,True,1.266,1.144,1.14,True,1.202,1.081
+Murcia,Valladolid,402.977,588.726,239.0,0,False,239.0,0,False,1.686,True,1.721,1.6,1.686,True,1.721,1.6
+Murcia,León,485.727,738.49,310.0,1,False,310.0,1,False,1.567,True,1.664,1.487,1.567,True,1.664,1.487
+Murcia,Oviedo,557.812,847.577,377.0,1,False,377.0,1,False,1.48,True,1.567,1.404,1.48,True,1.567,1.404
+Murcia,Ourense,588.878,900.974,344.0,1,False,344.0,1,False,1.712,True,1.788,1.624,1.712,True,1.788,1.624
+Murcia,Santiago,652.728,992.657,386.0,1,False,386.0,1,False,1.691,True,1.809,1.605,1.691,True,1.809,1.605
+Murcia,A Coruña,642.965,991.008,422.0,1,False,422.0,1,False,1.524,True,1.644,1.446,1.524,True,1.644,1.446
+Murcia,Vigo,653.767,991.173,512.0,1,False,457.0,2,False,1.277,True,1.391,1.212,1.431,True,1.548,1.357
+Murcia,Badajoz,460.373,666.764,549.0,1,False,560.0,1,False,0.839,False,0.899,0.796,0.822,False,0.882,0.78
+Murcia,Teruel,234.907,337.975,393.0,1,False,393.0,1,False,0.598,False,0.603,0.567,0.598,False,0.603,0.567
+Murcia,Almería,147.718,219.953,738.0,2,False,742.0,2,False,0.2,False,0.218,0.19,0.199,False,0.217,0.189
+Murcia,Jaén,236.475,336.916,367.0,2,False,405.0,2,False,0.644,False,0.646,0.611,0.584,False,0.59,0.554
+Murcia,Huelva,423.292,620.462,490.0,1,False,502.0,2,False,0.864,False,0.929,0.82,0.843,False,0.908,0.8
+Murcia,Santander,538.557,782.744,491.0,1,False,494.0,1,False,1.097,True,1.187,1.041,1.09,True,1.18,1.034
+Murcia,Bilbao,508.983,783.637,516.0,1,False,550.0,1,False,0.986,False,1.079,0.936,0.925,False,1.015,0.878
+Murcia,San Sebastián,519.38,771.659,540.0,1,False,552.0,1,False,0.962,False,1.052,0.913,0.941,False,1.03,0.893
+Murcia,Pamplona,464.715,689.161,424.0,1,False,449.0,1,False,1.096,True,1.156,1.04,1.035,True,1.095,0.982
+Valladolid,León,125.038,183.062,60.0,0,False,60.0,0,False,2.084,True,1.612,1.977,2.084,True,1.612,1.977
+Valladolid,Oviedo,196.73,292.903,130.0,0,False,130.0,0,False,1.513,True,1.355,1.436,1.513,True,1.355,1.436
+Valladolid,Ourense,227.797,346.301,193.0,1,False,212.0,1,False,1.18,True,1.111,1.12,1.075,True,1.024,1.02
+Valladolid,Santiago,291.647,437.984,235.0,1,False,250.0,1,False,1.241,True,1.251,1.178,1.167,True,1.184,1.107
+Valladolid,A Coruña,283.312,436.766,272.0,1,False,282.0,1,False,1.042,True,1.071,0.988,1.005,True,1.036,0.953
+Valladolid,Vigo,292.685,436.499,320.0,1,False,330.0,1,False,0.915,False,0.951,0.868,0.887,False,0.924,0.842
+Valladolid,Badajoz,285.615,412.355,347.0,1,False,354.0,1,False,0.823,False,0.864,0.781,0.807,False,0.848,0.766
+Valladolid,Teruel,340.572,423.821,387.0,2,False,383.0,2,False,0.88,False,0.913,0.835,0.889,False,0.921,0.844
+Valladolid,Almería,505.208,729.803,527.0,1,False,531.0,1,False,0.959,False,1.051,0.91,0.951,False,1.043,0.903
+Valladolid,Jaén,357.122,518.822,324.0,1,False,351.0,2,False,1.102,True,1.122,1.046,1.017,True,1.042,0.965
+Valladolid,Huelva,432.845,668.128,346.0,1,False,359.0,1,False,1.251,True,1.311,1.187,1.206,True,1.267,1.144
+Valladolid,Santander,169.175,246.967,183.0,0,False,180.0,0,False,0.924,False,0.888,0.877,0.94,False,0.901,0.892
+Valladolid,Bilbao,190.135,281.052,207.0,0,False,207.0,0,False,0.919,False,0.887,0.872,0.919,False,0.887,0.872
+Valladolid,San Sebastián,229.453,336.791,239.0,0,False,243.0,0,False,0.96,False,0.927,0.911,0.944,False,0.914,0.896
+Valladolid,Pamplona,221.305,331.57,228.0,0,False,203.0,0,False,0.971,False,0.935,0.921,1.09,True,1.036,1.034
+León,Oviedo,89.44,121.964,61.0,0,False,61.0,0,False,1.466,True,0.983,1.391,1.466,True,0.983,1.391
+León,Ourense,197.127,298.834,240.0,0,False,241.0,0,False,0.821,False,0.804,0.779,0.818,False,0.801,0.776
+León,Santiago,214.382,314.59,287.0,0,False,290.0,0,False,0.747,False,0.739,0.709,0.739,False,0.732,0.701
+León,A Coruña,205.927,312.928,318.0,0,False,345.0,1,False,0.648,False,0.649,0.614,0.597,False,0.602,0.566
+León,Vigo,262.015,389.032,352.0,0,False,358.0,0,False,0.744,False,0.791,0.706,0.732,False,0.778,0.694
+León,Badajoz,338.305,497.014,425.0,1,False,432.0,1,False,0.796,False,0.831,0.755,0.783,False,0.819,0.743
+León,Teruel,413.605,546.154,459.0,2,False,479.0,2,False,0.901,False,0.969,0.855,0.863,False,0.93,0.819
+León,Almería,586.357,878.421,627.0,2,False,628.0,2,False,0.935,False,1.014,0.887,0.934,False,1.013,0.886
+León,Jaén,438.27,667.441,400.0,1,False,435.0,1,False,1.096,True,1.159,1.04,1.008,True,1.072,0.956
+León,Huelva,485.908,753.482,409.0,1,False,427.0,1,False,1.188,True,1.289,1.127,1.138,True,1.238,1.08
+León,Santander,177.702,264.188,210.0,1,False,210.0,1,False,0.846,False,0.824,0.803,0.846,False,0.824,0.803
+León,Bilbao,220.563,333.706,287.0,1,False,287.0,1,False,0.769,False,0.759,0.729,0.769,False,0.759,0.729
+León,San Sebastián,258.702,383.511,315.0,1,False,315.0,1,False,0.821,False,0.866,0.779,0.821,False,0.866,0.779
+León,Pamplona,250.988,379.548,226.0,0,False,225.0,0,False,1.111,True,1.137,1.054,1.116,True,1.141,1.058
+Oviedo,Ourense,230.575,323.843,349.0,1,False,349.0,1,False,0.661,False,0.661,0.627,0.661,False,0.661,0.627
+Oviedo,Santiago,216.113,323.688,409.0,2,False,409.0,2,False,0.528,False,0.538,0.501,0.528,False,0.538,0.501
+Oviedo,A Coruña,190.965,286.323,444.0,2,False,444.0,2,False,0.43,False,0.445,0.408,0.43,False,0.445,0.408
+Oviedo,Vigo,271.492,408.531,498.0,1,False,484.0,1,False,0.545,False,0.59,0.517,0.561,False,0.606,0.532
+Oviedo,Badajoz,409.997,606.855,495.0,1,False,502.0,1,False,0.828,False,0.895,0.786,0.817,False,0.883,0.775
+Oviedo,Teruel,489.913,662.598,524.0,2,False,648.0,2,False,0.935,False,1.029,0.887,0.756,False,0.841,0.717
+Oviedo,Almería,658.048,988.262,697.0,2,False,700.0,2,False,0.944,False,1.043,0.896,0.94,False,1.038,0.892
+Oviedo,Jaén,509.962,777.282,499.0,1,False,519.0,2,False,1.022,True,1.115,0.97,0.983,False,1.075,0.932
+Oviedo,Huelva,557.6,863.323,550.0,2,False,593.0,2,False,1.014,True,1.099,0.962,0.94,False,1.023,0.892
+Oviedo,Santander,132.112,193.023,331.0,1,False,321.0,2,False,0.399,False,0.421,0.379,0.412,False,0.433,0.391
+Oviedo,Bilbao,197.885,286.586,375.0,2,False,375.0,2,False,0.528,False,0.538,0.501,0.528,False,0.538,0.501
+Oviedo,San Sebastián,263.677,380.63,403.0,2,False,403.0,2,False,0.654,False,0.701,0.621,0.654,False,0.701,0.621
+Oviedo,Pamplona,294.657,433.845,305.0,1,False,305.0,1,False,0.966,False,0.999,0.917,0.966,False,0.999,0.917
+Ourense,Santiago,70.338,98.731,33.0,0,False,33.0,0,False,2.131,True,1.116,2.023,2.131,True,1.116,2.023
+Ourense,A Coruña,114.617,168.948,67.0,0,False,67.0,0,False,1.711,True,1.182,1.623,1.711,True,1.182,1.623
+Ourense,Vigo,72.127,94.109,83.0,0,False,87.0,0,False,0.869,False,0.638,0.825,0.829,False,0.616,0.787
+Ourense,Badajoz,393.665,564.525,468.0,1,False,479.0,1,False,0.841,False,0.911,0.798,0.822,False,0.891,0.78
+Ourense,Teruel,548.875,813.4,474.0,2,False,474.0,2,False,1.158,True,1.248,1.099,1.158,True,1.248,1.099
+Ourense,Almería,689.115,1041.66,627.0,1,False,606.0,1,False,1.099,True,1.201,1.043,1.137,True,1.241,1.079
+Ourense,Jaén,541.028,830.679,419.0,1,False,454.0,1,False,1.291,True,1.383,1.225,1.192,True,1.283,1.131
+Ourense,Huelva,555.482,859.442,495.0,1,False,485.0,1,False,1.122,True,1.21,1.065,1.145,True,1.234,1.087
+Ourense,Santander,339.525,488.745,423.0,1,False,407.0,1,False,0.803,False,0.838,0.762,0.834,False,0.868,0.792
+Ourense,Bilbao,394.795,610.963,537.0,1,False,537.0,1,False,0.735,False,0.802,0.698,0.735,False,0.802,0.698
+Ourense,San Sebastián,434.983,662.008,499.0,1,False,493.0,1,False,0.872,False,0.936,0.827,0.882,False,0.946,0.837
+Ourense,Pamplona,425.965,661.481,387.0,1,False,391.0,1,False,1.101,True,1.165,1.044,1.089,True,1.154,1.034
+Santiago,A Coruña,53.377,72.612,29.0,0,False,29.0,0,False,1.841,True,0.905,1.747,1.841,True,0.905,1.747
+Santiago,Vigo,63.837,87.241,52.0,0,False,52.0,0,False,1.228,True,0.778,1.165,1.228,True,0.778,1.165
+Santiago,Badajoz,418.227,580.164,504.0,1,False,515.0,1,False,0.83,False,0.896,0.787,0.812,False,0.877,0.771
+Santiago,Teruel,612.725,905.083,516.0,2,False,516.0,2,False,1.187,True,1.305,1.127,1.187,True,1.305,1.127
+Santiago,Almería,752.965,1133.343,688.0,2,False,648.0,1,False,1.094,True,1.216,1.038,1.162,True,1.288,1.103
+Santiago,Jaén,604.878,922.362,461.0,1,False,491.0,1,False,1.312,True,1.436,1.245,1.232,True,1.353,1.169
+Santiago,Huelva,569.342,877.11,558.0,2,False,541.0,2,False,1.02,True,1.104,0.968,1.052,True,1.137,0.999
+Santiago,Santander,327.663,491.538,501.0,1,False,504.0,1,False,0.654,False,0.692,0.621,0.65,False,0.689,0.617
+Santiago,Bilbao,390.647,584.179,579.0,1,False,590.0,1,False,0.675,False,0.74,0.64,0.662,False,0.727,0.628
+Santiago,San Sebastián,457.817,678.131,537.0,1,False,545.0,1,False,0.853,False,0.913,0.809,0.84,False,0.901,0.797
+Santiago,Pamplona,454.613,691.582,434.0,1,False,428.0,1,False,1.047,True,1.109,0.994,1.062,True,1.124,1.008
+A Coruña,Vigo,107.133,157.332,86.0,0,False,86.0,0,False,1.246,True,0.924,1.182,1.246,True,0.924,1.182
+A Coruña,Badajoz,461.523,650.256,566.0,2,False,577.0,2,False,0.815,False,0.875,0.774,0.8,False,0.859,0.759
+A Coruña,Teruel,603.687,903.058,551.0,2,False,551.0,2,False,1.096,True,1.211,1.04,1.096,True,1.211,1.04
+A Coruña,Almería,745.145,1132.109,721.0,2,False,718.0,2,False,1.033,True,1.152,0.981,1.038,True,1.157,0.985
+A Coruña,Jaén,597.058,921.128,494.0,1,False,524.0,1,False,1.209,True,1.292,1.147,1.139,True,1.222,1.081
+A Coruña,Huelva,612.638,947.201,593.0,2,False,574.0,2,False,1.033,True,1.144,0.98,1.067,True,1.18,1.013
+A Coruña,Santander,299.775,452.306,536.0,1,False,539.0,1,False,0.559,False,0.6,0.531,0.556,False,0.597,0.528
+A Coruña,Bilbao,365.498,546.814,610.0,1,False,637.0,2,False,0.599,False,0.665,0.569,0.574,False,0.638,0.544
+A Coruña,San Sebastián,431.34,639.913,577.0,1,False,585.0,1,False,0.748,False,0.809,0.709,0.737,False,0.799,0.7
+A Coruña,Pamplona,444.883,685.638,469.0,1,False,479.0,2,False,0.949,False,1.012,0.9,0.929,False,0.992,0.881
+Vigo,Badajoz,367.073,498.152,564.0,1,False,575.0,1,False,0.651,False,0.719,0.618,0.638,False,0.706,0.606
+Vigo,Teruel,613.763,903.598,639.0,2,False,639.0,2,False,0.961,False,1.067,0.911,0.961,False,1.067,0.911
+Vigo,Almería,754.003,1131.858,720.0,1,False,710.0,1,False,1.047,True,1.165,0.994,1.062,True,1.181,1.008
+Vigo,Jaén,605.917,920.877,549.0,2,False,552.0,2,False,1.104,True,1.219,1.047,1.098,True,1.213,1.042
+Vigo,Huelva,518.075,799.211,686.0,2,False,674.0,2,False,0.755,False,0.835,0.717,0.769,False,0.85,0.729
+Vigo,Santander,380.678,576.274,591.0,1,False,575.0,1,False,0.644,False,0.71,0.611,0.662,False,0.728,0.628
+Vigo,Bilbao,446.025,669.022,653.0,1,False,650.0,1,False,0.683,False,0.741,0.648,0.686,False,0.744,0.651
+Vigo,San Sebastián,499.235,751.373,602.0,1,False,590.0,1,False,0.829,False,0.917,0.787,0.846,False,0.934,0.803
+Vigo,Pamplona,490.853,751.679,475.0,1,False,489.0,1,False,1.033,True,1.13,0.981,1.004,True,1.1,0.952
+Badajoz,Teruel,468.555,687.934,622.0,2,False,622.0,2,False,0.753,False,0.811,0.715,0.753,False,0.811,0.715
+Badajoz,Almería,433.528,615.217,778.0,1,False,801.0,1,False,0.557,False,0.611,0.529,0.541,False,0.594,0.514
+Badajoz,Jaén,298.302,375.384,504.0,2,False,505.0,2,False,0.592,False,0.634,0.562,0.591,False,0.632,0.561
+Badajoz,Huelva,193.847,239.431,428.0,2,False,442.0,2,False,0.453,False,0.467,0.43,0.439,False,0.453,0.416
+Badajoz,Santander,439.508,655.716,643.0,1,False,557.0,1,False,0.684,False,0.742,0.649,0.789,False,0.851,0.749
+Badajoz,Bilbao,461.863,690.597,843.0,1,False,862.0,1,False,0.548,False,0.598,0.52,0.536,False,0.585,0.508
+Badajoz,San Sebastián,499.787,745.54,720.0,2,False,731.0,2,False,0.694,False,0.773,0.659,0.684,False,0.762,0.649
+Badajoz,Pamplona,492.073,741.578,581.0,1,False,604.0,2,False,0.847,False,0.936,0.804,0.815,False,0.902,0.773
+Teruel,Almería,367.66,539.957,742.0,2,False,746.0,2,False,0.495,False,0.554,0.47,0.493,False,0.551,0.468
+Teruel,Jaén,325.703,485.925,581.0,2,False,621.0,2,False,0.561,False,0.599,0.532,0.524,False,0.562,0.498
+Teruel,Huelva,521.767,778.049,628.0,2,False,641.0,2,False,0.831,False,0.915,0.788,0.814,False,0.897,0.772
+Teruel,Santander,372.77,571.76,585.0,2,False,569.0,2,False,0.637,False,0.704,0.605,0.655,False,0.722,0.622
+Teruel,Bilbao,307.253,475.195,583.0,1,False,583.0,1,False,0.527,False,0.566,0.5,0.527,False,0.566,0.5
+Teruel,San Sebastián,287.24,435.25,597.0,1,False,597.0,1,False,0.481,False,0.522,0.457,0.481,False,0.522,0.457
+Teruel,Pamplona,232.575,352.752,314.0,1,False,314.0,1,False,0.741,False,0.734,0.703,0.741,False,0.734,0.703
+Almería,Jaén,156.603,216.564,360.0,1,False,311.0,1,False,0.435,False,0.453,0.413,0.504,False,0.518,0.478
+Almería,Huelva,342.65,500.803,506.0,2,False,520.0,2,False,0.677,False,0.714,0.643,0.659,False,0.696,0.625
+Almería,Santander,659.728,933.298,846.0,2,False,835.0,2,False,0.78,False,0.867,0.74,0.79,False,0.878,0.75
+Almería,Bilbao,630.155,934.191,847.0,2,False,847.0,2,False,0.744,False,0.833,0.706,0.744,False,0.833,0.706
+Almería,San Sebastián,652.133,973.641,886.0,1,False,894.0,1,False,0.736,False,0.821,0.698,0.729,False,0.814,0.692
+Almería,Pamplona,597.468,891.143,726.0,2,False,680.0,1,False,0.823,False,0.896,0.781,0.879,False,0.954,0.834
+Jaén,Huelva,244.215,345.639,296.0,1,False,307.0,1,True,0.825,False,0.872,0.783,0.795,False,0.843,0.755
+Jaén,Santander,512.825,723.423,528.0,2,False,534.0,2,False,0.971,False,1.062,0.922,0.96,False,1.051,0.911
+Jaén,Bilbao,482.357,723.996,677.0,2,False,585.0,2,False,0.712,False,0.795,0.676,0.825,False,0.914,0.782
+Jaén,San Sebastián,519.028,778.182,674.0,1,False,672.0,2,False,0.77,False,0.851,0.731,0.772,False,0.853,0.733
+Jaén,Pamplona,498.462,713.616,461.0,2,False,464.0,2,False,1.081,True,1.178,1.026,1.074,True,1.171,1.019
+Huelva,Santander,587.112,912.184,604.0,1,False,579.0,1,False,0.972,False,1.052,0.922,1.014,True,1.095,0.962
+Huelva,Bilbao,609.093,946.371,697.0,2,False,740.0,2,False,0.874,False,0.975,0.829,0.823,False,0.921,0.781
+Huelva,San Sebastián,647.39,1002.008,661.0,2,False,674.0,2,False,0.979,False,1.082,0.929,0.961,False,1.062,0.911
+Huelva,Pamplona,639.677,998.046,536.0,2,False,564.0,2,False,1.193,True,1.307,1.132,1.134,True,1.245,1.076
+Santander,Bilbao,77.202,103.725,506.0,2,False,490.0,2,False,0.153,False,0.144,0.145,0.158,False,0.148,0.15
+Santander,San Sebastián,143.765,198.054,514.0,1,False,497.0,1,False,0.28,False,0.301,0.265,0.289,False,0.311,0.274
+Santander,Pamplona,174.403,250.702,482.0,1,False,481.0,1,False,0.362,False,0.38,0.343,0.363,False,0.38,0.344
+Bilbao,San Sebastián,73.207,97.958,284.0,1,False,285.0,1,False,0.258,False,0.233,0.245,0.257,False,0.232,0.244
+Bilbao,Pamplona,105.252,153.114,258.0,1,False,258.0,1,False,0.408,False,0.365,0.387,0.408,False,0.365,0.387
+San Sebastián,Pamplona,60.537,80.772,125.0,0,False,125.0,0,False,0.484,False,0.391,0.46,0.484,False,0.391,0.46

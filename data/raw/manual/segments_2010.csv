@@ -1,0 +1,73 @@
+city_a,city_b,minutes,train,depart,arrive,from_station,itinerary,pdf_page,note
+Madrid,A Coruña,376,Alvia,,,,,,estimate: 2018 time (294) plus 24 min (2015) plus 58 min (Dec 2011) savings
+Madrid,Albacete,90,AVE 02913,11:05,12:35,Madrid,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,Alicante,190,Alvia via Albacete,,,,,,before Alicante HSL (18 Jun 2013): AVE 2 h 20 plus 50 min saving (UIC eNews 352)
+Madrid,Almería,386,Talgo 278,17.02,23.28,Madrid-Atocha Cercanias,LR 16,69,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 400; rule of 19 Nov 2026)"
+Madrid,Badajoz,307,Talgo 41,15.30,20.37,Madrid-Atocha Cercanias,LR 23,77,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 308; rule of 19 Nov 2026)"
+Madrid,Barcelona,158,AVE,,,,,,nonstop AVE 2 h 38 at the Feb 2008 opening (estimate for end 2010)
+Madrid,Bilbao,306,Alvia,,,,published or derived time,,"before Venta de Banos to Burgos HSL (22 Jul 2022): 4 h 28 plus up to 38 min (railwaypro, skift)"
+Madrid,Ciudad Real,50,AVE 9664,7.30,8.20,Madrid-Puerta de Atocha,LR 21,74,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 54; rule of 19 Nov 2026)"
+Madrid,Cádiz,258,ALVIA 02175,18:10,22:28,Cádiz,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,Córdoba,101,AVE 9614,7.00,8.41,Madrid-Puerta de Atocha,LR 21,74,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 104; rule of 19 Nov 2026)"
+Madrid,Granada,265,Altaria,,,,,,before 2019 AVE: 3 h 05 plus about 1 h 20 saving (2019 press)
+Madrid,Huelva,237,ALVIA 02285,08:00,11:57,Huelva,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,Jaén,235,MD 18033,08:32,12:27,Jaén,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,León,170,Alvia,,,,,,"before León HSL (29 Sep 2015): 2 h 06 plus 44 min saving (Wikipedia, Madrid-León HSR)"
+Madrid,Lleida,122,AVE 02591,12:27,14:29,Madrid,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,Murcia,215,Alvia,,,,published or derived time,,"estimate: Alvia via Albacete and the conventional Chinchilla line; arithmetic from the 2022 pre-HSL time (2 h 45 + 30 + 20, Moncloa 19 Dec 2022)"
+Madrid,Málaga,140,AVE,,,,,,"2025 timetable slower than 2018 best: nonstop AVE 2 h 20 (acprail, doc.surf HSR in Spain)"
+Madrid,Ourense,262,Alvia,,,,,,before Olmedo to Zamora HSL (2015): 2018 time (223) plus 39 min saving
+Madrid,Oviedo,280,Alvia,,,,,,before León HSL: 4 h 40 (press reports at the 2015 opening)
+Madrid,Pamplona,185,ALVIA 00601,07:32,10:37,Madrid,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,San Sebastián,323,Alvia,,,,published or derived time,,"before Burgos HSL: 5 h 23 (railwaypro, hosteltur)"
+Madrid,Santander,256,ALVIA 04142,13:58,18:14,Santander,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,Santiago,355,Alvia,,,,,,"estimate: 2018 time (261) plus 41 min (2015) plus 53 min (Ourense-Santiago HSL, Dec 2011) savings"
+Madrid,Sevilla,135,AVE 9616,8.00,10.15,Madrid-Puerta de Atocha,LR 21,74,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 140; rule of 19 Nov 2026)"
+Madrid,Tarragona,124,AVE 03091,08:57,11:01,Madrid,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Madrid,Valencia,95,AVE,,,,,,"AVE 1 h 35 at opening, Dec 2010 (Renfe 2010 annual report)"
+Madrid,Valladolid,56,AVE,,,,,,"Madrid-Valladolid HSL from 23 Dec 2007: 56 min (Moncloa press note, 22 Dec 2007)"
+Madrid,Vigo,341,Alvia,,,,,,estimate: 2018 time (310) plus 31 min (2015) saving
+Madrid,Zaragoza,78,AVE 02591,12:27,13:45,Madrid,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Albacete,Murcia,101,Talgo 226,21.25,23.06,Albacete,LR 15,68,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 120; rule of 19 Nov 2026)"
+Albacete,Valencia,82,Alaris 1445,14.15,15.37,Valencia-Estacio del Nord,LR 11,63,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 115; rule of 19 Nov 2026)"
+Alicante,Murcia,64,Euromed 1171,22.31,23.35,Alacant-Terminal,T (Barcelona-Valencia),41,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 90; rule of 19 Nov 2026)"
+Barcelona,Bilbao,423,ALVIA 00438,08:50,15:53,Barcelona,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Barcelona,Girona,67,Arco 1152,18.38,19.45,Barcelona-Sants,LR 11,63,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 90; rule of 19 Nov 2026)"
+Barcelona,Lleida,58,AVE 03308,14:00,14:58,Barcelona,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Barcelona,Tarragona,30,AVE 03308,14:00,14:30,Barcelona,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Barcelona,Valencia,170,Euromed 1071,7.00,9.50,Barcelona-Sants,T (Barcelona-Valencia),41,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 200; rule of 19 Nov 2026)"
+Barcelona,Zaragoza,82,AVE 03212,21:05,22:27,Barcelona,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Bilbao,Santander,156,Ligero 4606 (FEVE),18.55,21.31,Bilbao-Concordia,406 (1985),166 (1985 guide),"2001 guide time kept (line unchanged, 2001 faster than the backcast value 190; rule of 19 Nov 2026)"
+Ciudad Real,Badajoz,269,REG.EXP. 18770,11:36,16:05,Ciudad Real,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Córdoba,Huelva,120,ALVIA 02285,08:00,10:00,Huelva,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Córdoba,Málaga,47,AVE 02123,12:01,12:48,Málaga,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Granada,Córdoba,161,Altaria,,,,,,estimate: Madrid to Granada 2010 (265) minus Madrid to Córdoba (104)
+León,Ourense,240,ALVIA 00622,16:59,20:59,León,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+León,Oviedo,107,Talgo 79,19.00,20.47,León,LR 4,54,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 141; rule of 19 Nov 2026)"
+Lleida,Zaragoza,40,AVE 03882,09:01,09:41,Lleida,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Ourense,Santiago,81,Talgo 74,9.54,11.15,Santiago,LR 1,50,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 94; rule of 19 Nov 2026)"
+Ourense,Vigo,87,Alvia,,,,published or derived time,,estimate: Madrid to Vigo 2018 (310) minus Madrid to Ourense 2018 (223)
+Pamplona,San Sebastián,103,Talgo 530,10.45,12.28,San Sebastián,T (Barcelona-Pamplona-Irun),35,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 125; rule of 19 Nov 2026)"
+Santiago,A Coruña,33,Regional,,,,,,before Atlantic Axis completion (Apr 2015): average 33 min (Railway Gazette)
+Santiago,Vigo,95,Reg.Exp 2071,8.40,10.15,Santiago,109 (1993),99 (1993 guide),"2001 guide time kept (line unchanged, 2001 faster than the backcast value 97; rule of 19 Nov 2026)"
+Sevilla,Cádiz,84,ALVIA 02124,15:17,16:41,Sevilla,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Sevilla,Córdoba,41,AVE 02081,08:32,09:13,Sevilla,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Sevilla,Huelva,68,Talgo 9110,13.27,14.35,Sevilla Santa Justa,M-16 (1993),65 (1993 guide),"2001 guide time kept (line unchanged, 2001 faster than the backcast value 82; rule of 19 Nov 2026)"
+Sevilla,Málaga,119,AVANT 08195,20:16,22:15,Sevilla,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Tarragona,Valencia,121,Euromed 1501,21.19,23.20,Tarragona,T (Barcelona-Valencia),41,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 134; rule of 19 Nov 2026)"
+Teruel,Zaragoza,168,MD 18504,14:57,17:45,Teruel,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Valencia,Alicante,115,EUROMED 01192,16:37,18:32,Alicante,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Valencia,Teruel,137,MD 18515,20:38,22:55,Teruel,"Renfe GTFS 18 Dec 2025, Wed 14 Jan 2026",,unchanged since 2010: kept from 2025 timetable
+Valladolid,Bilbao,238,Alvia,,,,published or derived time,,estimate: 2025 time plus the 31 min Madrid to Bilbao difference (Burgos HSL)
+Valladolid,León,84,Talgo 131,10.26,11.50,Valladolid,LR 3,52,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 110; rule of 19 Nov 2026)"
+Valladolid,San Sebastián,229,Intercity 202,8.32,12.21,San Sebastián,LR 6,56,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 262; rule of 19 Nov 2026)"
+Valladolid,Santander,180,Talgo 60,15.45,18.45,Santander,LR 5,55,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 183; rule of 19 Nov 2026)"
+Zaragoza,Bilbao,280,Talgo 533,17.00,21.40,Zaragoza-El Portillo,T (Barcelona-Bilbao),35,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 287; rule of 19 Nov 2026)"
+Zaragoza,Pamplona,101,Intercity 104,20.14,21.55,Zaragoza-El Portillo,LR 7,57,"2001 guide time kept (line unchanged, 2001 faster than the backcast value 103; rule of 19 Nov 2026)"
+Sevilla,Granada,245,Reg.Exp 3031,8.15,12.20,Sevilla Santa Justa,314 (1993),167 (1993 guide),carried over from 2001 file (no change to the line by 2010)
+Granada,Almería,162,Regional 3805,13.10,16.05,Granada,304 (1993),153 (1993 guide),carried over from 2001 file (no change to the line by 2010)
+Granada,Málaga,175,Aut 4380/4381 + Exp 997,7.55,10.50,Granada,319 (1985),154 (1985 guide),carried over from 2001 file (no change to the line by 2010)
+Bilbao,San Sebastián,155,Euskotren E1,,,Bilbao-Matiko,,,"Euskotren E1 Bilbao Matiko to Donostia Amara, about 2 h 35 (everyrail.com, Nov 2026); not in any Renfe guide, same constant used in every era (estimate)"
+Córdoba,Jaén,102,MD,,,Jaén,,,"estimate: conventional line via Espeluy unchanged; 2025 Renfe GTFS time (MD 13073, 102 min) used"
+Albacete,Alicante,88,,,,,,,"2001 value kept (line unchanged until the 2013 HSL, 2001 faster than the arithmetic 100; rule of 19 Nov 2026)"
+Ciudad Real,Córdoba,51,,,,,,,estimate: Madrid to Córdoba minus Madrid to Ciudad Real (2010 table); trains run through Ciudad Real

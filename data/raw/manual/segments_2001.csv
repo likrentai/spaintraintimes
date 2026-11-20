@@ -1,0 +1,73 @@
+city_a,city_b,minutes,train,depart,arrive,from_station,itinerary,pdf_page,note
+Madrid,Valladolid,143,Talgo 61,9.00,11.23,Madrid-Chamartin,LR 3,52,also Talgo 77 at 143
+Madrid,León,230,Talgo 131,8.00,11.50,Madrid-Chamartin,LR 3,52,
+Madrid,Oviedo,345,Talgo 131,8.00,13.45,Madrid-Chamartin,LR 4,54,
+Madrid,Santander,330,Talgo 77,16.30,22.00,Madrid-Chamartin,LR 5,55,
+Madrid,Bilbao,335,Talgo 200,16.30,22.05,Bilbao-Abando,LR 6,56,direction Bilbao to Madrid-Chamartin
+Madrid,San Sebastián,352,Talgo 201,15.45,21.37,Madrid-Chamartin,LR 6,56,
+Madrid,Pamplona,288,Intercity 100,8.00,12.48,Madrid-Chamartin,LR 7,57,
+Madrid,Ourense,350,Talgo 151,14.00,19.50,Madrid-Chamartin,LR 1,50,
+Madrid,Santiago,439,Talgo 151,14.00,21.19,Madrid-Chamartin,LR 1,50,
+Madrid,A Coruña,500,Talgo 151,14.00,22.20,Madrid-Chamartin,LR 1,50,
+Madrid,Vigo,485,Talgo 151,14.00,22.05,Madrid-Chamartin,LR 1,50,also Talgo 74 Vigo to Madrid at 485
+Madrid,Zaragoza,175,Talgo 378,15.30,18.25,Madrid-Chamartin,LR 8,58,
+Madrid,Lleida,280,Talgo 378,15.30,20.10,Madrid-Chamartin,LR 8 + LR 9,58 and 61,same train continues (Zaragoza 18.30)
+Madrid,Tarragona,355,Talgo 178,7.00,12.55,Madrid-Chamartin,LR 8 + LR 9,58 and 61,same train continues (Zaragoza 10.00)
+Madrid,Barcelona,395,Talgo 378,15.30,22.05,Madrid-Chamartin,LR 8 + LR 9,58 and 61,same train continues (Zaragoza 18.30)
+Madrid,Valencia,205,Alaris 1174,17.00,20.25,Madrid-Puerta de Atocha,LR 12,64,also Alaris 1504 at 205
+Madrid,Albacete,119,Alaris 1174,17.00,18.59,Madrid-Puerta de Atocha,LR 12,64,also Alaris 1504 at 119
+Madrid,Alicante,207,Alaria 1167,16.00,19.27,Alacant-Terminal,LR 14,67,direction Alicante to Madrid-Atocha
+Madrid,Murcia,226,Talgo 228,12.55,16.41,Madrid-Atocha,LR 15,68,also Talgo 226 at 226
+Madrid,Ciudad Real,50,AVE 9664,7.30,8.20,Madrid-Puerta de Atocha,LR 21,74,also AVE 9618 at 50
+Madrid,Badajoz,307,Talgo 41,15.30,20.37,Madrid-Atocha Cercanias,LR 23,77,
+Madrid,Córdoba,101,AVE 9614,7.00,8.41,Madrid-Puerta de Atocha,LR 21,74,also AVE 9666 at 101
+Madrid,Sevilla,135,AVE 9616,8.00,10.15,Madrid-Puerta de Atocha,LR 21,74,nonstop
+Madrid,Cádiz,287,Talgo 200 9233,16.25,21.12,Cádiz-Cortadura,LR 22,76,direction Cadiz to Madrid-Puerta de Atocha
+Madrid,Jaén,266,Reg.Exp 8030,19.00,23.26,Madrid-Chamartin,M-12 (1993),60 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Madrid,Huelva,252,Talgo 200 9233,17.00,21.12,Huelva-Termino,LR 22,76,direction Huelva to Madrid-Puerta de Atocha
+Madrid,Málaga,242,Talgo 200 9140,20.10,0.12,Madrid-Puerta de Atocha,LR 20,73,
+Madrid,Granada,340,Talgo 276,8.25,14.05,Madrid-Atocha Cercanias,LR 16,69,
+Madrid,Almería,386,Talgo 278,17.02,23.28,Madrid-Atocha Cercanias,LR 16,69,
+Barcelona,Girona,67,Arco 1152,18.38,19.45,Barcelona-Sants,LR 11,63,
+Barcelona,Tarragona,48,Euromed 1071,7.00,7.48,Barcelona-Sants,T (Barcelona-Valencia),41,
+Tarragona,Valencia,121,Euromed 1501,21.19,23.20,Tarragona,T (Barcelona-Valencia),41,
+Barcelona,Valencia,170,Euromed 1071,7.00,9.50,Barcelona-Sants,T (Barcelona-Valencia),41,also Euromed 1501 at 170
+Valencia,Alicante,116,Euromed 1171,20.35,22.31,Valencia-Estacio del Nord,T (Barcelona-Valencia),41,
+Alicante,Murcia,64,Euromed 1171,22.31,23.35,Alacant-Terminal,T (Barcelona-Valencia),41,approximate: arrival Alicante 22.31 used as departure
+Barcelona,Lleida,106,Talgo 41,8.30,10.16,Barcelona-Sants,LR 9,60,
+Lleida,Zaragoza,91,Talgo 177,8.56,10.27,Lleida,LR 9,60,
+Barcelona,Zaragoza,201,Talgo 41,8.30,11.51,Barcelona-Sants,LR 9,60,
+Zaragoza,Pamplona,101,Intercity 104,20.14,21.55,Zaragoza-El Portillo,LR 7,57,
+Pamplona,San Sebastián,103,Talgo 530,10.45,12.28,San Sebastián,T (Barcelona-Pamplona-Irun),35,direction San Sebastian to Pamplona
+Zaragoza,Bilbao,280,Talgo 533,17.00,21.40,Zaragoza-El Portillo,T (Barcelona-Bilbao),35,
+Barcelona,Bilbao,520,Talgo 533,13.00,21.40,Barcelona-Sants,T (Barcelona-Bilbao),35,
+Valencia,Teruel,176,Regional 8502,9.40,12.36,Valencia-Termino,202 (1993),118 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Teruel,Zaragoza,170,Regional 8503,9.45,12.35,Zaragoza-El Portillo,202 (1993),117 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Albacete,Valencia,82,Alaris 1445,14.15,15.37,Valencia-Estacio del Nord,LR 11,63,direction Valencia to Albacete
+Albacete,Murcia,101,Talgo 226,21.25,23.06,Albacete,LR 15,68,
+Valladolid,León,84,Talgo 131,10.26,11.50,Valladolid,LR 3,52,
+León,Oviedo,107,Talgo 79,19.00,20.47,León,LR 4,54,also Talgo 130 Oviedo to Leon at 107
+León,Ourense,244,Talgo 280,11.12,15.16,Ourense,T (Vigo-Irun),26,direction Ourense to Leon
+Ourense,Santiago,81,Talgo 74,9.54,11.15,Santiago,LR 1,50,direction Santiago to Ourense
+Santiago,A Coruña,52,Talgo 152,12.55,13.47,A Coruña,LR 1,50,direction A Coruna to Santiago
+Santiago,Vigo,95,Reg.Exp 2071,8.40,10.15,Santiago,109 (1993),99 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Ourense,Vigo,100,Talgo 152,13.25,15.05,Vigo,LR 1,50,direction Vigo to Ourense
+Valladolid,San Sebastián,229,Intercity 202,8.32,12.21,San Sebastián,LR 6,56,direction San Sebastian to Valladolid
+Valladolid,Bilbao,295,Estrella 204,23.05,4.00,Bilbao-Abando,LR 6,56,night train; direction Bilbao to Valladolid (Estrella 940 at 225 runs Fridays only)
+Valladolid,Santander,180,Talgo 60,15.45,18.45,Santander,LR 5,55,direction Santander to Valladolid
+Bilbao,Santander,156,Ligero 4606 (FEVE),18.55,21.31,Bilbao-Concordia,406 (1985),166 (1985 guide),carried over from 1985: FEVE not in the Renfe guides
+Sevilla,Córdoba,41,AVE 9664,9.19,10.00,Córdoba Central,LR 21,74,also AVE 9632 at 41
+Sevilla,Cádiz,92,Talgo 200 9233,16.25,17.57,Cádiz-Cortadura,LR 22,76,direction Cadiz to Sevilla
+Sevilla,Huelva,68,Talgo 9110,13.27,14.35,Sevilla Santa Justa,M-16 (1993),65 (1993 guide),carried over from 1993: no Sevilla to Huelva train in the 2001 long-distance guide
+Córdoba,Huelva,122,Talgo 200 9233,17.00,19.02,Huelva-Termino,LR 22,76,direction Huelva to Cordoba (route via Sevilla without stop)
+Sevilla,Málaga,185,Reg.Exp 3020,8.15,11.20,Sevilla Santa Justa,314 (1993),167 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Córdoba,Málaga,123,Talgo 200 9140,22.09,0.12,Córdoba Central,LR 20,73,
+Sevilla,Granada,245,Reg.Exp 3031,8.15,12.20,Sevilla Santa Justa,314 (1993),167 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Granada,Almería,162,Regional 3805,13.10,16.05,Granada,304 (1993),153 (1993 guide),carried over from 1993: regional service not in the 2001 long-distance guide
+Granada,Málaga,175,Aut 4380/4381 + Exp 997,7.55,10.50,Granada,319 (1985),154 (1985 guide),carried over from 1985
+Granada,Córdoba,245,Aut 4382/4383 + Semid 4339,17.40,21.45,Granada,319 (1985),154 (1985 guide),carried over from 1985
+Ciudad Real,Badajoz,289,Talgo 697,16.36,21.25,Ciudad Real,T (Barcelona-Badajoz),48,
+Bilbao,San Sebastián,155,Euskotren E1,,,Bilbao-Matiko,,,"Euskotren E1 Bilbao Matiko to Donostia Amara, about 2 h 35 (everyrail.com, Nov 2026); not in any Renfe guide, same constant used in every era (estimate)"
+Córdoba,Jaén,102,MD,,,Jaén,,,"estimate: conventional line via Espeluy unchanged; 2025 Renfe GTFS time (MD 13073, 102 min) used; link was not transcribed from the guide"
+Albacete,Alicante,88,,,,,,,estimate: Madrid to Alicante minus Madrid to Albacete (2001 table); trains run through Albacete
+Ciudad Real,Córdoba,51,,,,,,,estimate: Madrid to Córdoba minus Madrid to Ciudad Real (2001 table); trains run through Ciudad Real

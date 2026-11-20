@@ -1,0 +1,3 @@
+city_a,city_b,minutes,train,depart,arrive,from_station,itinerary,pdf_page,note
+Bilbao,Santander,190,FEVE,,,Bilbao-Concordia,,,"FEVE is not in the Renfe GTFS feed. Renfe Cercanias AM (FEVE) Santander to Bilbao-Concordia fastest 3 h 10 (Omio timetable, 2026)"
+Bilbao,San Sebastián,155,Euskotren E1,,,Bilbao-Matiko,,,"Euskotren E1 Bilbao Matiko to Donostia Amara, about 2 h 35 (everyrail.com, Nov 2026); not in any Renfe guide, same constant used in every era (estimate)"

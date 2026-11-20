@@ -1,0 +1,70 @@
+city_a,city_b,minutes,train,depart,arrive,from_station,itinerary,pdf_page,note
+Madrid,Valladolid,170.0,Talgo 161,15.35,18.25,Madrid-Chamartin,109,90,
+Madrid,León,259.0,Talgo 131,14.40,18.59,Madrid-Chamartin,112,92,
+Madrid,Oviedo,405.0,Talgo 131,14.40,21.25,Madrid-Chamartin,112,92,
+Madrid,Santander,369.0,Talgo 160,15.10,21.19,Santander,109,90,direction Santander to Madrid-Chamartin (Talgo 161 the other way: 370)
+Madrid,Bilbao,346.0,Talgo 201,15.15,21.01,Madrid-Chamartin,101,82,via Aranda and Miranda
+Madrid,San Sebastián,373.0,Talgo 201,15.15,21.28,Madrid-Chamartin,101,82,via Aranda and Miranda
+Madrid,Pamplona,371.0,TER 504/505,15.15,21.26,Madrid-Atocha,127,104,via Soria and Castejon
+Madrid,Ourense,365.0,Talgo 151,13.10,19.15,Madrid-Principe Pio,117,95,
+Madrid,Santiago,472.0,Talgo 151,13.10,21.02,Madrid-Principe Pio,117,95,
+Madrid,A Coruña,530.0,Talgo 151,13.10,22.00,Madrid-Principe Pio,117,95,
+Madrid,Vigo,494.0,Talgo 11151,13.10,21.24,Madrid-Principe Pio,118,96,through coaches of Talgo 151
+Madrid,Zaragoza,202.0,Talgo 170,14.40,18.02,Madrid-Chamartin,200,106,
+Madrid,Lleida,325.0,Talgo 170,14.40,20.05,Madrid-Chamartin,200,106,
+Madrid,Tarragona,421.0,Talgo 174,11.25,18.26,Madrid-Chamartin,200,106,
+Madrid,Barcelona,441.0,Talgo 170,14.40,22.01,Madrid-Chamartin,200,106,arrival Barcelona-Sants
+Madrid,Valencia,282.0,Intercity 180,7.15,11.57,Madrid-Chamartin,219,131,also Inter 182 and 186 at 282
+Madrid,Albacete,158.0,Talgo 122/123,17.34,20.12,Albacete,220,132,direction Albacete to Madrid-Atocha
+Madrid,Alicante,283.0,Talgo 122/123,15.29,20.12,Alicante,220,132,direction Alicante to Madrid-Atocha
+Madrid,Murcia,293.0,Talgo 124,15.45,20.38,Madrid-Chamartin,226,137,via Chinchilla
+Madrid,Ciudad Real,117.0,TER 592,15.10,17.07,Madrid-Atocha,301,141,
+Madrid,Badajoz,401.0,TER 590,8.15,14.56,Madrid-Atocha,301,141,
+Madrid,Córdoba,280.0,Talgo 110,14.42,19.22,Madrid-Atocha,303,143,
+Madrid,Sevilla,356.0,Talgo 110,14.42,20.38,Madrid-Atocha,303,143,arrival Sevilla-San Bernardo
+Madrid,Cádiz,460.0,Talgo 110,14.42,22.22,Madrid-Atocha,303,143,
+Madrid,Jaén,239.0,Elec 540,19.00,22.59,Madrid-Atocha,308,146,
+Madrid,Huelva,453.0,Talgo 11110,14.42,22.15,Madrid-Atocha,309,147,through coaches of Talgo 110
+Madrid,Málaga,439.0,Talgo 140,14.05,21.24,Madrid-Atocha,311,148,
+Madrid,Granada,367.0,Talgo 178,15.05,21.12,Madrid-Atocha,314,150,
+Madrid,Almería,432.0,Talgo 11178,15.05,22.17,Madrid-Atocha,314,150,
+Barcelona,Girona,70.0,Talgo 476/477,7.28,8.38,Girona,208,117,direction Girona to Barcelona-Sants (Talgo 462 also 70)
+Barcelona,Tarragona,66.0,Rap 693,7.00,8.06,Barcelona-Sants,216,128,also Elec 631 at 66
+Tarragona,Valencia,173.0,Rap 693,8.08,11.01,Tarragona,216,128,
+Barcelona,Valencia,241.0,Rap 693,7.00,11.01,Barcelona-Sants,216,128,Talgo 462 Mare Nostrum 258
+Valencia,Alicante,147.0,Talgo 462/463,16.41,19.08,Valencia-Termino,216,128,
+Alicante,Murcia,72.0,Talgo 462/463,19.08,20.20,Alicante-Termino,216,128,approximate: arrival Alicante 19.08 used as departure
+Barcelona,Lleida,118.0,Elec 627,7.40,9.38,Barcelona-Sants,T5,54,
+Lleida,Zaragoza,109.0,Elec 627,9.40,11.29,Lleida,T5,54,
+Barcelona,Zaragoza,229.0,Elec 627,7.40,11.29,Barcelona-Sants,T5,54,
+Zaragoza,Pamplona,151.0,TER 450/451,14.36,17.07,Zaragoza-El Portillo,T9,56,
+Pamplona,San Sebastián,121.0,TER 450/451,17.09,19.10,Pamplona,T9,56,
+Zaragoza,Bilbao,287.0,Elec 630,10.40,15.27,Bilbao-Abando,T2,52,direction Bilbao to Zaragoza
+Barcelona,Bilbao,547.0,Elec 631,12.26,21.33,Barcelona-Sants,T2,52,
+Valencia,Teruel,161.0,TER 453/452,18.15,20.56,Teruel,217,130,direction Teruel to Valencia
+Teruel,Zaragoza,158.0,TER 450/451,10.56,13.34,Teruel,T9,56,departure Teruel taken as arrival 10.56
+Albacete,Valencia,116.0,Inter 180,10.01,11.57,Albacete,219,131,also Inter 182 at 116
+Albacete,Murcia,119.0,Talgo 124,18.39,20.38,Albacete,226,137,
+Valladolid,León,118.0,Talgo 131,17.01,18.59,Valladolid,112,92,
+León,Oviedo,142.0,Talgo 131,19.03,21.25,León,112,92,
+León,Ourense,237.0,Elec 627,17.30,21.27,León,T5,54,via Monforte
+Ourense,Santiago,102.0,Talgo 151,19.20,21.02,Ourense,117,95,
+Santiago,A Coruña,54.0,Talgo 151,21.06,22.00,Santiago,117,95,
+Santiago,Vigo,110.0,Aut 3707,20.20,22.10,Santiago,120,101,also Aut 3702 Vigo to Santiago 110
+Ourense,Vigo,107.0,TER 681/680,18.18,20.05,Ourense,118,96,
+Valladolid,San Sebastián,264.0,Elec 203,11.04,15.28,Valladolid,100,78-79,
+Valladolid,Bilbao,301.0,Exp 484/485,3.20,8.21,Valladolid,100/105,78-79,night train (through coaches to Bilbao)
+Valladolid,Santander,198.0,Talgo 161,18.27,21.45,Valladolid,109,90,
+Bilbao,Santander,156.0,Ligero 4606 (FEVE),18.55,21.31,Bilbao-Concordia,406,166,narrow gauge FEVE
+Sevilla,Córdoba,71.0,Talgo 110,19.27,20.38,Córdoba,303,143,direction Cordoba to Sevilla-San Bernardo
+Sevilla,Cádiz,92.0,Talgo 110,20.50,22.22,Sevilla-San Bernardo,303,143,
+Sevilla,Huelva,85.0,Talgo 11110,20.50,22.15,Sevilla-San Bernardo,309,147,
+Sevilla,Málaga,202.0,Aut 4385/6384,8.05,11.27,Sevilla-San Bernardo,317,153,
+Córdoba,Málaga,148.0,Talgo 140,18.56,21.24,Córdoba,311,148,
+Sevilla,Granada,265.0,Aut 4385/4384,8.05,12.30,Sevilla-San Bernardo,318,153,
+Granada,Almería,200.0,Aut 7385/7384,18.40,22.00,Granada,315,151,
+Granada,Málaga,175.0,Aut 4380/4381 + Exp 997,7.55,10.50,Granada,319,154,timed connection at Bobadilla (listed in itinerary 319)
+Granada,Córdoba,245.0,Aut 4382/4383 + Semid 4339,17.40,21.45,Granada,319,154,timed connection at Bobadilla (listed in itinerary 319)
+Bilbao,San Sebastián,155.0,Euskotren E1,,,Bilbao-Matiko,,,"Euskotren E1 Bilbao Matiko to Donostia Amara, about 2 h 35 (everyrail.com, Nov 2026); not in any Renfe guide, same constant used in every era (estimate)"
+Córdoba,Jaén,102.0,MD,,,Jaén,,,"estimate: conventional line via Espeluy unchanged; 2025 Renfe GTFS time (MD 13073, 102 min) used; link was not transcribed from the guide"
+Albacete,Alicante,125.0,,,,,,,estimate: Madrid to Alicante minus Madrid to Albacete (1985 table); trains run through Albacete

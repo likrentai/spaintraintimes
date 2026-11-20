@@ -1,0 +1,33 @@
+city,group,main_stop_id,main_stop_name,stop_ids,stop_names,lat,lon,spread_km,trips_in_feed
+Madrid,hub,60000,Madrid-Puerta de Atocha-Almudena Grandes,60000;17000,Madrid-Puerta de Atocha-Almudena Grandes;Madrid-Chamartín-Clara Campoamor,40.406442,-3.690886,7.2,2656
+Sevilla,hsr,51003,Sevilla-Santa Justa,51003,Sevilla-Santa Justa,37.392496,-5.974927,0.0,511
+Córdoba,hsr,50500,Córdoba-Julio Anguita,50500,Córdoba-Julio Anguita,37.888291,-4.789453,0.0,653
+Ciudad Real,hsr,37200,Ciudad Real,37200,Ciudad Real,38.9853,-3.913633,0.0,336
+Cádiz,hsr,51405,Cádiz,51405,Cádiz,36.528935,-6.287972,0.0,191
+Málaga,hsr,54413,Málaga María Zambrano,54413,Málaga María Zambrano,36.711339,-4.431389,0.0,172
+Granada,hsr,05000,Granada,05000,Granada,37.184038,-3.609154,0.0,94
+Zaragoza,hsr,04040,Zaragoza Delicias,04040,Zaragoza Delicias,41.658658,-0.911269,0.0,552
+Lleida,hsr,78400,Lleida-Pirineus,78400,Lleida-Pirineus,41.62013,0.633653,0.0,275
+Tarragona,hsr,04104,Camp de Tarragona,04104;71500,Camp de Tarragona;Tarragona,41.192066,1.272666,9.1,405
+Barcelona,hsr,71801,Barcelona-Sants,71801,Barcelona-Sants,41.379863,2.141017,0.0,796
+Girona,hsr,79300,Girona,79300,Girona,41.979363,2.816937,0.0,291
+Valencia,hsr,03216,València-Joaquín Sorolla,03216;65000,València-Joaquín Sorolla;València-Estació del Nord,39.459051,-0.382923,1.0,712
+Albacete,hsr,60600,Albacete-Los Llanos,60600,Albacete-Los Llanos,38.999384,-1.84845,0.0,372
+Alicante,hsr,60911,Alicante/Alacant-Terminal,60911,Alicante/Alacant-Terminal,38.344713,-0.495524,0.0,617
+Murcia,hsr,61200,Murcia del Carmen,61200,Murcia del Carmen,37.974824,-1.131508,0.0,265
+Valladolid,hsr,10600,Valladolid-Campo Grande,10600,Valladolid-Campo Grande,41.642167,-4.726986,0.0,944
+León,hsr,15100,León,15100,León,42.596048,-5.582428,0.0,311
+Oviedo,hsr,15211,Oviedo,15211,Oviedo,43.366358,-5.854838,0.0,137
+Ourense,hsr,22100,Ourense,22100,Ourense,42.350389,-7.872777,0.0,378
+Santiago,hsr,31400,Santiago de Compostela-Daniel Castelao,31400,Santiago de Compostela-Daniel Castelao,42.870842,-8.544697,0.0,348
+A Coruña,hsr,31412,A Coruña,31412,A Coruña,43.349693,-8.415563,0.0,271
+Vigo,hsr,08223,Vigo Urzaiz,08223;22308,Vigo Urzaiz;Vigo-Guixar,42.234189,-8.713728,0.6,178
+Badajoz,left,37606,Badajoz,37606,Badajoz,38.890696,-6.981753,0.0,241
+Teruel,left,67200,Teruel,67200,Teruel,40.341029,-1.110284,0.0,15
+Almería,left,56312,Almería,56312,Almería,36.834951,-2.455519,0.0,36
+Jaén,left,03100,Jaén,03100,Jaén,37.779827,-3.790798,0.0,196
+Huelva,left,43019,Huelva,43019,Huelva,37.252592,-6.944815,0.0,38
+Santander,left,14223,Santander,14223,Santander,43.458398,-3.810953,0.0,73
+Bilbao,left,13200,Bilbao-Intermod. Abando Indalecio Prieto,13200,Bilbao-Intermod. Abando Indalecio Prieto,43.26013,-2.928559,0.0,44
+San Sebastián,left,11511,San Sebastián-Donostia,11511,San Sebastián-Donostia,43.317696,-1.976717,0.0,69
+Pamplona,left,80100,Pamplona/Iruña,80100,Pamplona/Iruña,42.824877,-1.661419,0.0,131

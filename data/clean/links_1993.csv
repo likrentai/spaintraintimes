@@ -1,0 +1,73 @@
+city_a,city_b,minutes,train,depart,arrive,from_station,itinerary,pdf_page,note
+Madrid,Valladolid,146.0,Talgo 61,9.00,11.26,Madrid-Chamartin,M-4,52,
+Madrid,León,243.0,Talgo 131,8.00,12.03,Madrid-Chamartin,M-3,51,
+Madrid,Oviedo,373.0,Talgo 131,8.00,14.13,Madrid-Chamartin,M-3,51,
+Madrid,Santander,330.0,Talgo 61,9.00,14.30,Madrid-Chamartin,M-4,52,also Talgo 77 at 330
+Madrid,Bilbao,335.0,Talgo 11201,15.40,21.15,Madrid-Chamartin,M-5,53,
+Madrid,San Sebastián,347.0,Talgo 201,15.40,21.27,Madrid-Chamartin,M-5,53,
+Madrid,Pamplona,305.0,TALGO 100,9.00,14.05,Madrid-Chamartin,M-6,54,
+Madrid,Ourense,345.0,Talgo 151,14.00,19.45,Madrid-Chamartin,M-1,48,
+Madrid,Santiago,440.0,Talgo 151,14.00,21.20,Madrid-Chamartin,M-1,48,
+Madrid,A Coruña,495.0,Talgo 151,14.00,22.15,Madrid-Chamartin,M-1,48,
+Madrid,Vigo,475.0,Talgo 11151,14.00,21.55,Madrid-Chamartin,M-1,48,
+Madrid,Zaragoza,182.0,TALGO 2,7.00,10.02,Madrid-Chamartin,M-6,54,
+Madrid,Lleida,275.0,Talgo 378,16.00,20.35,Madrid-Chamartin,M-8,56,
+Madrid,Tarragona,376.0,Talgo 374,11.00,17.16,Madrid-Chamartin,M-8,56,
+Madrid,Barcelona,395.0,Talgo 378,16.00,22.35,Madrid-Chamartin,M-8,56,also Talgo 43 at 395
+Madrid,Girona,529.0,Talgo 374,11.00,19.49,Madrid-Chamartin,M-8,56,
+Madrid,Valencia,235.0,TALGO 80,7.15,11.10,Madrid-Puerta de Atocha,M-9,57,also 82 and 86 at 235
+Madrid,Albacete,126.0,TALGO 180,18.45,20.51,Madrid-Puerta de Atocha,M-9,57,also 182 at 126
+Madrid,Alicante,225.0,Talgo 22,10.15,14.00,Madrid-Atocha,M-10,58,
+Madrid,Murcia,255.0,Talgo 222,16.15,20.30,Madrid-Atocha,M-11,59,
+Madrid,Ciudad Real,49.0,AVE 9614,7.00,7.49,Madrid-Puerta de Atocha,M-14,62,
+Madrid,Badajoz,312.0,Talgo 190,16.00,21.12,Madrid-Puerta de Atocha,M-17,66,
+Madrid,Córdoba,98.0,AVE 9616,8.00,9.38,Madrid-Puerta de Atocha,M-14,62,
+Madrid,Sevilla,145.0,AVE 9616,8.00,10.25,Madrid-Puerta de Atocha,M-14,62,
+Madrid,Cádiz,300.0,Talgo 9110,10.00,15.00,Madrid-Puerta de Atocha,M-15,64,
+Madrid,Jaén,266.0,Reg.Exp 8030,19.00,23.26,Madrid-Chamartin,M-12,60,
+Madrid,Huelva,275.0,Talgo 9110,10.00,14.35,Madrid-Puerta de Atocha,M-16,65,
+Madrid,Málaga,280.0,Talgo 9142,15.25,20.05,Madrid-Puerta de Atocha,M-13,61,
+Madrid,Granada,350.0,Talgo 270,15.35,21.25,Madrid-Puerta de Atocha,M-12,60,
+Madrid,Almería,414.0,Talgo 11270,15.35,22.29,Madrid-Puerta de Atocha,M-12,60,
+Barcelona,Girona,74.0,Regional 5090,9.10,10.24,Barcelona-Sants,208,130,
+Barcelona,Tarragona,61.0,TALGO 62,10.29,11.30,Tarragona,B-5 (211),135,direction Tarragona to Barcelona-Sants
+Tarragona,Valencia,178.0,TALGO 62,7.30,10.28,Valencia-Terminal,211,135,direction Valencia to Tarragona
+Barcelona,Valencia,240.0,TALGO 62,7.30,11.30,Valencia-Terminal,211,135,direction Valencia to Barcelona-Sants
+Valencia,Alicante,114.0,Talgo 261,7.30,9.24,Alacant-Terminal,218,144,direction Alicante to Valencia
+Alicante,Murcia,60.0,Talgo 461,10.00,11.00,Murcia del Carmen,218,144,direction Murcia to Alicante
+Barcelona,Lleida,115.0,Talgo 43,18.40,20.35,Lleida,M-8,56,departure Lleida taken as 18.40 (arrival 18.38)
+Lleida,Zaragoza,90.0,Talgo 378,19.05,20.35,Zaragoza-El Portillo,M-8,56,
+Barcelona,Zaragoza,210.0,Talgo 43,17.05,20.35,Zaragoza-El Portillo,M-8,56,also Talgo 378 at 210
+Zaragoza,Pamplona,110.0,TALGO 100,12.15,14.05,Zaragoza-El Portillo,M-6,54,
+Pamplona,San Sebastián,106.0,Diurno 535,19.34,21.20,Pamplona,B-2,69,
+Zaragoza,Bilbao,270.0,Diurno 533,17.50,22.20,Zaragoza-El Portillo,B-2,69,
+Barcelona,Bilbao,530.0,Diurno 533,13.30,22.20,Barcelona-Sants,B-2,69,
+Valencia,Teruel,176.0,Regional 8502,9.40,12.36,Valencia-Termino,202,118,
+Teruel,Zaragoza,170.0,Regional 8503,9.45,12.35,Zaragoza-El Portillo,202,117,
+Albacete,Valencia,109.0,TALGO 80,9.21,11.10,Albacete,M-9,57,
+Albacete,Murcia,108.0,Talgo 222,18.42,20.30,Albacete,M-11,59,
+Valladolid,León,94.0,Talgo 131,10.29,12.03,Valladolid,M-3,51,
+León,Oviedo,122.0,Talgo 79,19.12,21.14,León,M-3,51,
+León,Ourense,242.0,Diurno 282,14.03,18.05,León,M-1,48,
+Ourense,Santiago,87.0,Talgo 153,13.28,14.55,Santiago,M-1,48,direction Santiago to Ourense
+Santiago,A Coruña,51.0,Talgo 153,12.35,13.26,A Coruña,109,99,direction A Coruna to Santiago
+Santiago,Vigo,95.0,Reg.Exp 2071,8.40,10.15,Santiago,109,99,
+Ourense,Vigo,115.0,Talgo 151,20.00,21.55,Ourense,M-1,48,
+Valladolid,San Sebastián,229.0,Talgo 203,12.32,16.21,Valladolid,M-5,53,
+Valladolid,Bilbao,290.0,Diurno 11411,10.55,15.45,Valladolid,M-5,53,
+Valladolid,Santander,180.0,Talgo 77,18.30,21.30,Valladolid,M-4,52,
+Bilbao,Santander,156.0,Ligero 4606 (FEVE),18.55,21.31,Bilbao-Concordia,406 (1985),166 (1985 guide),carried over from 1985: FEVE not in the 1993 Renfe guide
+Sevilla,Córdoba,45.0,AVE 9616,9.40,10.25,Córdoba,M-14,62,departure Cordoba taken as 9.40 (arrival 9.38)
+Sevilla,Cádiz,93.0,Talgo 9110,13.27,15.00,Sevilla Santa Justa,M-15,64,
+Sevilla,Huelva,68.0,Talgo 9110,13.27,14.35,Sevilla Santa Justa,M-16,65,departure Sevilla from M-15 (13.27)
+Sevilla,Málaga,185.0,Reg.Exp 3020,8.15,11.20,Sevilla Santa Justa,314,167,
+Córdoba,Málaga,151.0,Talgo 9140,12.14,14.45,Córdoba Central,M-13,61,
+Sevilla,Granada,245.0,Reg.Exp 3031,8.15,12.20,Sevilla Santa Justa,314,167,
+Granada,Almería,162.0,Regional 3805,13.10,16.05,Granada,304,153,
+Granada,Málaga,175.0,Aut 4380/4381 + Exp 997,7.55,10.50,Granada,319 (1985),154 (1985 guide),carried over from 1985: no faster Granada to Malaga service found in the 1993 guide
+Granada,Córdoba,245.0,Aut 4382/4383 + Semid 4339,17.40,21.45,Granada,319 (1985),154 (1985 guide),carried over from 1985: no faster Granada to Cordoba service found in the 1993 guide
+Ciudad Real,Badajoz,300.0,Regional 7830,18.30,23.30,Ciudad Real,M-17,66,
+Bilbao,San Sebastián,155.0,Euskotren E1,,,Bilbao-Matiko,,,"Euskotren E1 Bilbao Matiko to Donostia Amara, about 2 h 35 (everyrail.com, Nov 2026); not in any Renfe guide, same constant used in every era (estimate)"
+Córdoba,Jaén,102.0,MD,,,Jaén,,,"estimate: conventional line via Espeluy unchanged; 2025 Renfe GTFS time (MD 13073, 102 min) used; link was not transcribed from the guide"
+Albacete,Alicante,99.0,,,,,,,estimate: Madrid to Alicante minus Madrid to Albacete (1993 table); trains run through Albacete
+Ciudad Real,Córdoba,49.0,,,,,,,estimate: Madrid to Córdoba minus Madrid to Ciudad Real (1993 table); trains run through Ciudad Real

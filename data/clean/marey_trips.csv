@@ -1,0 +1,301 @@
+operator,train,trip_id,direction,seq,stop_id,stop_name,station,arr_min,dep_min
+Renfe,03052,0305212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,340.0,340.0
+Renfe,03052,0305212026-11-15,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,426.0,429.0
+Renfe,03052,0305212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,537.0,537.0
+Renfe,03060,0306012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,380.0,380.0
+Renfe,03060,0306012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,562.0,562.0
+Renfe,03062,0306212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,350.0,350.0
+Renfe,03062,0306212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,382.0,384.0
+Renfe,03062,0306212026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,411.0,413.0
+Renfe,03062,0306212026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,456.0,459.0
+Renfe,03062,0306212026-11-15,to Madrid,4,70600,Calatayud,Calatayud,485.0,486.0
+Renfe,03062,0306212026-11-15,to Madrid,5,04007,Guadalajara-Yebes,Guadalajara,540.0,541.0
+Renfe,03062,0306212026-11-15,to Madrid,6,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,580.0,580.0
+Renfe,03063,0306312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,387.0,387.0
+Renfe,03063,0306312026-11-15,to Barcelona,1,70600,Calatayud,Calatayud,461.0,462.0
+Renfe,03063,0306312026-11-15,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,490.0,491.0
+Renfe,03063,0306312026-11-15,to Barcelona,3,71801,Barcelona-Sants,Barcelona Sants,590.0,590.0
+Renfe,03070,0307012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,420.0,420.0
+Renfe,03070,0307012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,602.0,602.0
+Renfe,03071,0307112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,417.0,417.0
+Renfe,03071,0307112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,599.0,599.0
+Renfe,03073,0307312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,447.0,447.0
+Renfe,03073,0307312026-11-15,to Barcelona,1,04007,Guadalajara-Yebes,Guadalajara,477.0,478.0
+Renfe,03073,0307312026-11-15,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,549.0,550.0
+Renfe,03073,0307312026-11-15,to Barcelona,3,78400,Lleida-Pirineus,Lleida,598.0,600.0
+Renfe,03073,0307312026-11-15,to Barcelona,4,04104,Camp de Tarragona,Tarragona,628.0,630.0
+Renfe,03073,0307312026-11-15,to Barcelona,5,71801,Barcelona-Sants,Barcelona Sants,671.0,687.0
+Renfe,03080,0308012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,505.0,505.0
+Renfe,03080,0308012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,687.0,687.0
+Renfe,03081,0308112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,477.0,477.0
+Renfe,03081,0308112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,659.0,659.0
+Renfe,03082,0308212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,480.0,480.0
+Renfe,03082,0308212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,511.0,513.0
+Renfe,03082,0308212026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,540.0,542.0
+Renfe,03082,0308212026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,585.0,588.0
+Renfe,03082,0308212026-11-15,to Madrid,4,70600,Calatayud,Calatayud,614.0,615.0
+Renfe,03082,0308212026-11-15,to Madrid,5,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,704.0,704.0
+Renfe,03083,0308312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,507.0,507.0
+Renfe,03083,0308312026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,603.0,604.0
+Renfe,03083,0308312026-11-15,to Barcelona,2,71801,Barcelona-Sants,Barcelona Sants,704.0,704.0
+Renfe,03091,0309112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,537.0,537.0
+Renfe,03091,0309112026-11-15,to Barcelona,1,04104,Camp de Tarragona,Tarragona,685.0,687.0
+Renfe,03091,0309112026-11-15,to Barcelona,2,71801,Barcelona-Sants,Barcelona Sants,726.0,726.0
+Renfe,03092,0309212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,530.0,540.0
+Renfe,03092,0309212026-11-15,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,625.0,628.0
+Renfe,03092,0309212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,737.0,737.0
+Renfe,03093,0309312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,567.0,567.0
+Renfe,03093,0309312026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,662.0,663.0
+Renfe,03093,0309312026-11-15,to Barcelona,2,78400,Lleida-Pirineus,Lleida,711.0,713.0
+Renfe,03093,0309312026-11-15,to Barcelona,3,04104,Camp de Tarragona,Tarragona,741.0,743.0
+Renfe,03093,0309312026-11-15,to Barcelona,4,71801,Barcelona-Sants,Barcelona Sants,784.0,794.0
+Renfe,03112,0311212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,660.0,660.0
+Renfe,03112,0311212026-11-15,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,748.0,751.0
+Renfe,03112,0311212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,857.0,857.0
+Renfe,03113,0311312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,687.0,687.0
+Renfe,03113,0311312026-11-15,to Barcelona,1,70600,Calatayud,Calatayud,760.0,761.0
+Renfe,03113,0311312026-11-15,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,789.0,790.0
+Renfe,03113,0311312026-11-15,to Barcelona,3,78400,Lleida-Pirineus,Lleida,838.0,840.0
+Renfe,03113,0311312026-11-15,to Barcelona,4,04104,Camp de Tarragona,Tarragona,868.0,870.0
+Renfe,03113,0311312026-11-15,to Barcelona,5,71801,Barcelona-Sants,Barcelona Sants,911.0,911.0
+Renfe,03122,0312212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,720.0,720.0
+Renfe,03122,0312212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,751.0,753.0
+Renfe,03122,0312212026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,780.0,782.0
+Renfe,03122,0312212026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,826.0,829.0
+Renfe,03122,0312212026-11-15,to Madrid,4,04007,Guadalajara-Yebes,Guadalajara,902.0,903.0
+Renfe,03122,0312212026-11-15,to Madrid,5,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,944.0,944.0
+Renfe,03123,0312312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,747.0,747.0
+Renfe,03123,0312312026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,842.0,843.0
+Renfe,03123,0312312026-11-15,to Barcelona,2,78400,Lleida-Pirineus,Lleida,890.0,892.0
+Renfe,03123,0312312026-11-15,to Barcelona,3,04104,Camp de Tarragona,Tarragona,920.0,920.0
+Renfe,03123,0312312026-11-15,to Barcelona,4,71801,Barcelona-Sants,Barcelona Sants,969.0,969.0
+Renfe,03130,0313012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,807.0,807.0
+Renfe,03130,0313012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,989.0,989.0
+Renfe,03141,0314112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,837.0,837.0
+Renfe,03141,0314112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,1019.0,1019.0
+Renfe,03143,0314312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,867.0,867.0
+Renfe,03143,0314312026-11-15,to Barcelona,1,70600,Calatayud,Calatayud,940.0,941.0
+Renfe,03143,0314312026-11-15,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,969.0,970.0
+Renfe,03143,0314312026-11-15,to Barcelona,3,71801,Barcelona-Sants,Barcelona Sants,1069.0,1079.0
+Renfe,03150,0315012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,925.0,925.0
+Renfe,03150,0315012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1107.0,1107.0
+Renfe,03151,0315112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,897.0,897.0
+Renfe,03151,0315112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,1079.0,1079.0
+Renfe,03152,0315212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,900.0,900.0
+Renfe,03152,0315212026-11-15,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,986.0,989.0
+Renfe,03152,0315212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1097.0,1097.0
+Renfe,03160,0316012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,985.0,985.0
+Renfe,03160,0316012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1167.0,1167.0
+Renfe,03161,0316112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,957.0,957.0
+Renfe,03161,0316112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,1139.0,1139.0
+Renfe,03162,0316212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,950.0,960.0
+Renfe,03162,0316212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,991.0,993.0
+Renfe,03162,0316212026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,1021.0,1023.0
+Renfe,03162,0316212026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,1065.0,1068.0
+Renfe,03162,0316212026-11-15,to Madrid,4,70600,Calatayud,Calatayud,1094.0,1095.0
+Renfe,03162,0316212026-11-15,to Madrid,5,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1184.0,1184.0
+Renfe,03163,0316312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,987.0,987.0
+Renfe,03163,0316312026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,1083.0,1084.0
+Renfe,03163,0316312026-11-15,to Barcelona,2,71801,Barcelona-Sants,Barcelona Sants,1184.0,1194.0
+Renfe,03170,0317012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1045.0,1045.0
+Renfe,03170,0317012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1227.0,1227.0
+Renfe,03171,0317112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1017.0,1017.0
+Renfe,03171,0317112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,1199.0,1199.0
+Renfe,03172,0317212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1018.0,1018.0
+Renfe,03172,0317212026-11-15,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,1105.0,1108.0
+Renfe,03172,0317212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1216.0,1216.0
+Renfe,03173,0317312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1047.0,1047.0
+Renfe,03173,0317312026-11-15,to Barcelona,1,04007,Guadalajara-Yebes,Guadalajara,1076.0,1077.0
+Renfe,03173,0317312026-11-15,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,1147.0,1148.0
+Renfe,03173,0317312026-11-15,to Barcelona,3,78400,Lleida-Pirineus,Lleida,1196.0,1198.0
+Renfe,03173,0317312026-11-15,to Barcelona,4,04104,Camp de Tarragona,Tarragona,1226.0,1228.0
+Renfe,03173,0317312026-11-15,to Barcelona,5,71801,Barcelona-Sants,Barcelona Sants,1271.0,1271.0
+Renfe,03180,0318012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1105.0,1105.0
+Renfe,03180,0318012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1287.0,1287.0
+Renfe,03181,0318112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1077.0,1077.0
+Renfe,03181,0318112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,1259.0,1274.0
+Renfe,03182,0318212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1080.0,1080.0
+Renfe,03182,0318212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,1112.0,1114.0
+Renfe,03182,0318212026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,1140.0,1142.0
+Renfe,03182,0318212026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,1185.0,1188.0
+Renfe,03182,0318212026-11-15,to Madrid,4,70600,Calatayud,Calatayud,1214.0,1215.0
+Renfe,03182,0318212026-11-15,to Madrid,5,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1304.0,1304.0
+Renfe,03183,0318312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1107.0,1107.0
+Renfe,03183,0318312026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,1202.0,1203.0
+Renfe,03183,0318312026-11-15,to Barcelona,2,04104,Camp de Tarragona,Tarragona,1268.0,1270.0
+Renfe,03183,0318312026-11-15,to Barcelona,3,71801,Barcelona-Sants,Barcelona Sants,1309.0,1309.0
+Renfe,03190,0319012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1165.0,1165.0
+Renfe,03190,0319012026-11-15,to Madrid,1,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1347.0,1347.0
+Renfe,03191,0319112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1137.0,1137.0
+Renfe,03191,0319112026-11-15,to Barcelona,1,71801,Barcelona-Sants,Barcelona Sants,1319.0,1319.0
+Renfe,03192,0319212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1110.0,1120.0
+Renfe,03192,0319212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,1152.0,1154.0
+Renfe,03192,0319212026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,1181.0,1183.0
+Renfe,03192,0319212026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,1226.0,1229.0
+Renfe,03192,0319212026-11-15,to Madrid,4,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1337.0,1337.0
+Renfe,03201,0320112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1230.0,1230.0
+Renfe,03201,0320112026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,1326.0,1327.0
+Renfe,03201,0320112026-11-15,to Barcelona,2,71801,Barcelona-Sants,Barcelona Sants,1427.0,1427.0
+Renfe,03301,0330112026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,376.0,376.0
+Renfe,03301,0330112026-11-15,to Barcelona,1,04104,Camp de Tarragona,Tarragona,523.0,525.0
+Renfe,03301,0330112026-11-15,to Barcelona,2,71801,Barcelona-Sants,Barcelona Sants,564.0,564.0
+Renfe,03302,0330212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,385.0,395.0
+Renfe,03302,0330212026-11-15,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,481.0,484.0
+Renfe,03302,0330212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,592.0,592.0
+Renfe,03303,0330312026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,627.0,627.0
+Renfe,03303,0330312026-11-15,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,723.0,724.0
+Renfe,03303,0330312026-11-15,to Barcelona,2,71801,Barcelona-Sants,Barcelona Sants,824.0,824.0
+Renfe,03304,0330412026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,595.0,595.0
+Renfe,03304,0330412026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,626.0,628.0
+Renfe,03304,0330412026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,655.0,657.0
+Renfe,03304,0330412026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,700.0,703.0
+Renfe,03304,0330412026-11-15,to Madrid,4,70600,Calatayud,Calatayud,730.0,731.0
+Renfe,03304,0330412026-11-15,to Madrid,5,04007,Guadalajara-Yebes,Guadalajara,784.0,785.0
+Renfe,03304,0330412026-11-15,to Madrid,6,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,824.0,824.0
+Renfe,03305,0330512026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,927.0,927.0
+Renfe,03305,0330512026-11-15,to Barcelona,1,70600,Calatayud,Calatayud,1000.0,1001.0
+Renfe,03305,0330512026-11-15,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,1028.0,1029.0
+Renfe,03305,0330512026-11-15,to Barcelona,3,78400,Lleida-Pirineus,Lleida,1076.0,1078.0
+Renfe,03305,0330512026-11-15,to Barcelona,4,04104,Camp de Tarragona,Tarragona,1109.0,1111.0
+Renfe,03305,0330512026-11-15,to Barcelona,5,71801,Barcelona-Sants,Barcelona Sants,1154.0,1154.0
+Renfe,03308,0330812026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,840.0,840.0
+Renfe,03308,0330812026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,871.0,873.0
+Renfe,03308,0330812026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,900.0,902.0
+Renfe,03308,0330812026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,945.0,947.0
+Renfe,03308,0330812026-11-15,to Madrid,4,70600,Calatayud,Calatayud,974.0,975.0
+Renfe,03308,0330812026-11-15,to Madrid,5,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1064.0,1064.0
+Renfe,03309,0330912026-11-15,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1174.0,1174.0
+Renfe,03309,0330912026-11-15,to Barcelona,1,04007,Guadalajara-Yebes,Guadalajara,1204.0,1205.0
+Renfe,03309,0330912026-11-15,to Barcelona,2,70600,Calatayud,Calatayud,1253.0,1254.0
+Renfe,03309,0330912026-11-15,to Barcelona,3,04040,Zaragoza Delicias,Zaragoza,1281.0,1282.0
+Renfe,03309,0330912026-11-15,to Barcelona,4,78400,Lleida-Pirineus,Lleida,1328.0,1330.0
+Renfe,03309,0330912026-11-15,to Barcelona,5,04104,Camp de Tarragona,Tarragona,1357.0,1359.0
+Renfe,03309,0330912026-11-15,to Barcelona,6,71801,Barcelona-Sants,Barcelona Sants,1400.0,1400.0
+Renfe,03310,0331012026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,1200.0,1200.0
+Renfe,03310,0331012026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,1232.0,1234.0
+Renfe,03310,0331012026-11-15,to Madrid,2,78400,Lleida-Pirineus,Lleida,1261.0,1263.0
+Renfe,03310,0331012026-11-15,to Madrid,3,04040,Zaragoza Delicias,Zaragoza,1306.0,1309.0
+Renfe,03310,0331012026-11-15,to Madrid,4,04007,Guadalajara-Yebes,Guadalajara,1383.0,1384.0
+Renfe,03310,0331012026-11-15,to Madrid,5,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,1424.0,1424.0
+Renfe,03662,0366212026-11-15,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,435.0,447.0
+Renfe,03662,0366212026-11-15,to Madrid,1,04104,Camp de Tarragona,Tarragona,478.0,480.0
+Renfe,03662,0366212026-11-15,to Madrid,2,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,637.0,637.0
+Renfe,09725,0972512026-11-24,to Barcelona,0,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,770.0,770.0
+Renfe,09725,0972512026-11-24,to Barcelona,1,04007,Guadalajara-Yebes,Guadalajara,800.0,802.0
+Renfe,09725,0972512026-11-24,to Barcelona,2,04040,Zaragoza Delicias,Zaragoza,873.0,876.0
+Renfe,09725,0972512026-11-24,to Barcelona,3,04104,Camp de Tarragona,Tarragona,938.0,940.0
+Renfe,09725,0972512026-11-24,to Barcelona,4,71801,Barcelona-Sants,Barcelona Sants,979.0,991.0
+Renfe,09730,0973012026-11-23,to Madrid,0,71801,Barcelona-Sants,Barcelona Sants,756.0,770.0
+Renfe,09730,0973012026-11-23,to Madrid,1,04104,Camp de Tarragona,Tarragona,802.0,804.0
+Renfe,09730,0973012026-11-23,to Madrid,2,04040,Zaragoza Delicias,Zaragoza,865.0,868.0
+Renfe,09730,0973012026-11-23,to Madrid,3,60000,Madrid-Puerta de Atocha-Almudena Grandes,Madrid Atocha,978.0,978.0
+Ouigo,TGV 6471,11,to Barcelona,0,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,382.0,382.0
+Ouigo,TGV 6471,11,to Barcelona,1,007104040,ZARAGOZA-DELICIAS,Zaragoza,481.0,484.0
+Ouigo,TGV 6471,11,to Barcelona,2,007171801,BARCELONA-SANTS,Barcelona Sants,585.0,585.0
+Ouigo,TGV 6501,13,to Barcelona,0,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,571.0,571.0
+Ouigo,TGV 6501,13,to Barcelona,1,007104040,ZARAGOZA-DELICIAS,Zaragoza,669.0,672.0
+Ouigo,TGV 6501,13,to Barcelona,2,007104104,CAMP DE TARRAGONA,Tarragona,735.0,738.0
+Ouigo,TGV 6501,13,to Barcelona,3,007171801,BARCELONA-SANTS,Barcelona Sants,778.0,778.0
+Ouigo,TGV 6541,14,to Barcelona,0,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,822.0,822.0
+Ouigo,TGV 6541,14,to Barcelona,1,007171801,BARCELONA-SANTS,Barcelona Sants,1004.0,1004.0
+Ouigo,TGV 6571,15,to Barcelona,0,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,982.0,982.0
+Ouigo,TGV 6571,15,to Barcelona,1,007171801,BARCELONA-SANTS,Barcelona Sants,1164.0,1164.0
+Ouigo,TGV 6410,18,to Madrid,0,007171801,BARCELONA-SANTS,Barcelona Sants,455.0,455.0
+Ouigo,TGV 6410,18,to Madrid,1,007104040,ZARAGOZA-DELICIAS,Zaragoza,547.0,550.0
+Ouigo,TGV 6410,18,to Madrid,2,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,665.0,665.0
+Ouigo,TGV 6500,20,to Madrid,0,007171801,BARCELONA-SANTS,Barcelona Sants,640.0,640.0
+Ouigo,TGV 6500,20,to Madrid,1,007104040,ZARAGOZA-DELICIAS,Zaragoza,726.0,729.0
+Ouigo,TGV 6500,20,to Madrid,2,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,837.0,837.0
+Ouigo,TGV 6540,22,to Madrid,0,007171801,BARCELONA-SANTS,Barcelona Sants,830.0,830.0
+Ouigo,TGV 6540,22,to Madrid,1,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,1012.0,1012.0
+Ouigo,TGV 6570,25,to Madrid,0,007171801,BARCELONA-SANTS,Barcelona Sants,1060.0,1060.0
+Ouigo,TGV 6570,25,to Madrid,1,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,1242.0,1242.0
+Ouigo,TGV 6610,28,to Madrid,0,007171801,BARCELONA-SANTS,Barcelona Sants,1220.0,1220.0
+Ouigo,TGV 6610,28,to Madrid,1,007104104,CAMP DE TARRAGONA,Tarragona,1251.0,1254.0
+Ouigo,TGV 6610,28,to Madrid,2,007104040,ZARAGOZA-DELICIAS,Zaragoza,1316.0,1319.0
+Ouigo,TGV 6610,28,to Madrid,3,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,1428.0,1428.0
+Ouigo,TGV 6415,9,to Barcelona,0,007160000,MADRID-PUERTA DE ATOCHA,Madrid Atocha,1210.0,1210.0
+Ouigo,TGV 6415,9,to Barcelona,1,007104040,ZARAGOZA-DELICIAS,Zaragoza,1307.0,1310.0
+Ouigo,TGV 6415,9,to Barcelona,2,007171801,BARCELONA-SANTS,Barcelona Sants,1408.0,1408.0
+Iryo,06011,06011_fcf7332f,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,571.0,597.0
+Iryo,06011,06011_fcf7332f,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,694.0,695.0
+Iryo,06011,06011_fcf7332f,to Barcelona,2,04104,Tarragona Camp de Tarragona,Tarragona,759.0,761.0
+Iryo,06011,06011_fcf7332f,to Barcelona,3,71801,Barcelona Sants,Barcelona Sants,801.0,801.0
+Iryo,06012,06012_95a7d9ae,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,552.0,552.0
+Iryo,06012,06012_95a7d9ae,to Madrid,1,04104,Tarragona Camp de Tarragona,Tarragona,583.0,584.0
+Iryo,06012,06012_95a7d9ae,to Madrid,2,04040,Zaragoza Delicias,Zaragoza,648.0,649.0
+Iryo,06012,06012_95a7d9ae,to Madrid,3,60000,Madrid Atocha,Madrid Atocha,760.0,785.0
+Iryo,06014,06014_77dbc44f,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,793.0,793.0
+Iryo,06014,06014_77dbc44f,to Madrid,1,04104,Tarragona Camp de Tarragona,Tarragona,824.0,826.0
+Iryo,06014,06014_77dbc44f,to Madrid,2,04040,Zaragoza Delicias,Zaragoza,887.0,888.0
+Iryo,06014,06014_77dbc44f,to Madrid,3,60000,Madrid Atocha,Madrid Atocha,997.0,1020.0
+Iryo,06015,06015_78f3a7de,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,1144.0,1169.0
+Iryo,06015,06015_78f3a7de,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,1264.0,1265.0
+Iryo,06015,06015_78f3a7de,to Barcelona,2,04104,Tarragona Camp de Tarragona,Tarragona,1329.0,1330.0
+Iryo,06015,06015_78f3a7de,to Barcelona,3,71801,Barcelona Sants,Barcelona Sants,1370.0,1370.0
+Iryo,06020,06020_5c8bb9dd,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,678.0,678.0
+Iryo,06020,06020_5c8bb9dd,to Madrid,1,04104,Tarragona Camp de Tarragona,Tarragona,709.0,711.0
+Iryo,06020,06020_5c8bb9dd,to Madrid,2,04040,Zaragoza Delicias,Zaragoza,772.0,773.0
+Iryo,06020,06020_5c8bb9dd,to Madrid,3,60000,Madrid Atocha,Madrid Atocha,882.0,905.0
+Iryo,06021,06021_ff6a499e,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,862.0,882.0
+Iryo,06021,06021_ff6a499e,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,980.0,981.0
+Iryo,06021,06021_ff6a499e,to Barcelona,2,04104,Tarragona Camp de Tarragona,Tarragona,1047.0,1049.0
+Iryo,06021,06021_ff6a499e,to Barcelona,3,71801,Barcelona Sants,Barcelona Sants,1093.0,1093.0
+Iryo,06060,06060_a09b8199,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,345.0,345.0
+Iryo,06060,06060_a09b8199,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,432.0,433.0
+Iryo,06060,06060_a09b8199,to Madrid,2,60000,Madrid Atocha,Madrid Atocha,542.0,542.0
+Iryo,06070,06070_ba828d0d,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,425.0,425.0
+Iryo,06070,06070_ba828d0d,to Madrid,1,60000,Madrid Atocha,Madrid Atocha,607.0,607.0
+Iryo,06071,06071_c563d5ea,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,442.0,442.0
+Iryo,06071,06071_c563d5ea,to Barcelona,1,71801,Barcelona Sants,Barcelona Sants,624.0,624.0
+Iryo,06080,06080_18fda262,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,470.0,470.0
+Iryo,06080,06080_18fda262,to Madrid,1,04104,Tarragona Camp de Tarragona,Tarragona,501.0,503.0
+Iryo,06080,06080_18fda262,to Madrid,2,04040,Zaragoza Delicias,Zaragoza,565.0,566.0
+Iryo,06080,06080_18fda262,to Madrid,3,60000,Madrid Atocha,Madrid Atocha,675.0,675.0
+Iryo,06081,06081_2f4294d9,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,502.0,502.0
+Iryo,06081,06081_2f4294d9,to Barcelona,1,71801,Barcelona Sants,Barcelona Sants,684.0,684.0
+Iryo,06091,06091_f8c54af2,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,552.0,552.0
+Iryo,06091,06091_f8c54af2,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,647.0,648.0
+Iryo,06091,06091_f8c54af2,to Barcelona,2,71801,Barcelona Sants,Barcelona Sants,749.0,749.0
+Iryo,06110,06110_e1b57414,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,645.0,645.0
+Iryo,06110,06110_e1b57414,to Madrid,1,60000,Madrid Atocha,Madrid Atocha,829.0,829.0
+Iryo,06111,06111_27d43933,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,682.0,682.0
+Iryo,06111,06111_27d43933,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,777.0,778.0
+Iryo,06111,06111_27d43933,to Barcelona,2,71801,Barcelona Sants,Barcelona Sants,879.0,879.0
+Iryo,06121,06121_96d8bfbe,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,742.0,742.0
+Iryo,06121,06121_96d8bfbe,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,837.0,838.0
+Iryo,06121,06121_96d8bfbe,to Barcelona,2,71801,Barcelona Sants,Barcelona Sants,939.0,939.0
+Iryo,06130,06130_982fcee0,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,786.0,786.0
+Iryo,06130,06130_982fcee0,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,873.0,874.0
+Iryo,06130,06130_982fcee0,to Madrid,2,60000,Madrid Atocha,Madrid Atocha,983.0,983.0
+Iryo,06150,06150_9a284641,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,890.0,890.0
+Iryo,06150,06150_9a284641,to Madrid,1,60000,Madrid Atocha,Madrid Atocha,1072.0,1072.0
+Iryo,06151,06151_6e340579,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,952.0,952.0
+Iryo,06151,06151_6e340579,to Barcelona,1,71801,Barcelona Sants,Barcelona Sants,1134.0,1134.0
+Iryo,06161,06161_64e04778,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,997.0,997.0
+Iryo,06161,06161_64e04778,to Barcelona,1,71801,Barcelona Sants,Barcelona Sants,1179.0,1179.0
+Iryo,06171,06171_037b50b8,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,1042.0,1042.0
+Iryo,06171,06171_037b50b8,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,1137.0,1138.0
+Iryo,06171,06171_037b50b8,to Barcelona,2,71801,Barcelona Sants,Barcelona Sants,1242.0,1242.0
+Iryo,06180,06180_b884fdee,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,1040.0,1040.0
+Iryo,06180,06180_b884fdee,to Madrid,1,60000,Madrid Atocha,Madrid Atocha,1222.0,1222.0
+Iryo,06181,06181_27dd4804,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,1112.0,1112.0
+Iryo,06181,06181_27dd4804,to Barcelona,1,04104,Tarragona Camp de Tarragona,Tarragona,1260.0,1262.0
+Iryo,06181,06181_27dd4804,to Barcelona,2,71801,Barcelona Sants,Barcelona Sants,1304.0,1304.0
+Iryo,06190,06190_f0ee5f55,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,1133.0,1133.0
+Iryo,06190,06190_f0ee5f55,to Madrid,1,04040,Zaragoza Delicias,Zaragoza,1220.0,1221.0
+Iryo,06190,06190_f0ee5f55,to Madrid,2,60000,Madrid Atocha,Madrid Atocha,1330.0,1330.0
+Iryo,06200,06200_155dc832,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,1180.0,1180.0
+Iryo,06200,06200_155dc832,to Madrid,1,60000,Madrid Atocha,Madrid Atocha,1362.0,1362.0
+Iryo,06261,06261_a1efa600,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,369.0,369.0
+Iryo,06261,06261_a1efa600,to Barcelona,1,04040,Zaragoza Delicias,Zaragoza,464.0,465.0
+Iryo,06261,06261_a1efa600,to Barcelona,2,04104,Tarragona Camp de Tarragona,Tarragona,530.0,532.0
+Iryo,06261,06261_a1efa600,to Barcelona,3,71801,Barcelona Sants,Barcelona Sants,575.0,575.0
+Iryo,06281,06281_d7f41f1a,to Barcelona,0,60000,Madrid Atocha,Madrid Atocha,530.0,530.0
+Iryo,06281,06281_d7f41f1a,to Barcelona,1,71801,Barcelona Sants,Barcelona Sants,712.0,712.0
+Iryo,06320,06320_47098159,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,734.0,734.0
+Iryo,06320,06320_47098159,to Madrid,1,60000,Madrid Atocha,Madrid Atocha,916.0,916.0
+Iryo,06360,06360_9d9bd3a3,to Madrid,0,71801,Barcelona Sants,Barcelona Sants,952.0,952.0
+Iryo,06360,06360_9d9bd3a3,to Madrid,1,04104,Tarragona Camp de Tarragona,Tarragona,983.0,985.0
+Iryo,06360,06360_9d9bd3a3,to Madrid,2,04040,Zaragoza Delicias,Zaragoza,1046.0,1047.0
+Iryo,06360,06360_9d9bd3a3,to Madrid,3,60000,Madrid Atocha,Madrid Atocha,1156.0,1156.0

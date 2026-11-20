@@ -1,0 +1,21 @@
+key,value,note
+trains_total,89,"Wed 2026-11-25, both directions"
+trains_renfe,51,
+trains_iryo,28,
+trains_ouigo,10,
+share_new_operators,0.427,Iryo + Ouigo
+nonstop_trains,32,
+fastest_min,182.0,3:02
+median_min,197.0,3:17
+slowest_min,230.0,3:50
+fastest_min_before,157.0,"Renfe, 2026-01-14, 2:37"
+median_min_before_renfe,173.0,"Renfe only, 2026-01-14"
+median_min_renfe,197.0,"Renfe only, 2026-11-25"
+nonstop_kmh,205,average speed of the fastest train
+nonstop_kmh_before,237,
+busiest_hour_barcelona,6:00,5 departures
+shortest_gap_barcelona,4.0,minutes between two departures
+overtakes_barcelona,9,"later departure, earlier arrival"
+busiest_hour_madrid,7:00,5 departures
+shortest_gap_madrid,5.0,minutes between two departures
+overtakes_madrid,8,"later departure, earlier arrival"

@@ -1,0 +1,993 @@
+origin,destination,road_min,road_km
+Madrid,Sevilla,347.7,532.1
+Madrid,Córdoba,266.8,392.8
+Madrid,Ciudad Real,149.0,190.3
+Madrid,Cádiz,425.7,649.4
+Madrid,Málaga,359.7,531.8
+Madrid,Granada,280.9,415.9
+Madrid,Zaragoza,212.2,312.1
+Madrid,Lleida,306.3,463.1
+Madrid,Tarragona,357.5,536.3
+Madrid,Barcelona,405.4,615.5
+Madrid,Girona,455.4,686.1
+Madrid,Valencia,236.2,353.9
+Madrid,Albacete,170.0,253.7
+Madrid,Alicante,273.7,417.6
+Madrid,Murcia,259.3,396.7
+Madrid,Valladolid,148.3,190.6
+Madrid,León,231.1,340.3
+Madrid,Oviedo,305.0,449.2
+Madrid,Ourense,336.2,504.3
+Madrid,Santiago,399.0,595.7
+Madrid,A Coruña,388.3,592.8
+Madrid,Vigo,400.5,593.7
+Madrid,Badajoz,263.3,402.4
+Madrid,Teruel,219.3,309.1
+Madrid,Almería,372.1,541.6
+Madrid,Jaén,224.0,330.6
+Madrid,Huelva,399.4,618.0
+Madrid,Santander,296.7,396.0
+Madrid,Bilbao,267.1,396.9
+Madrid,San Sebastián,307.9,452.8
+Madrid,Pamplona,289.9,392.0
+Sevilla,Madrid,346.9,532.0
+Sevilla,Córdoba,96.9,139.9
+Sevilla,Ciudad Real,226.9,325.7
+Sevilla,Cádiz,87.8,121.7
+Sevilla,Málaga,149.5,209.3
+Sevilla,Granada,176.7,247.6
+Sevilla,Zaragoza,547.4,840.9
+Sevilla,Lleida,641.4,991.9
+Sevilla,Tarragona,592.9,910.0
+Sevilla,Barcelona,650.9,992.9
+Sevilla,Girona,707.5,1086.7
+Sevilla,Valencia,431.1,653.4
+Sevilla,Albacete,333.9,483.2
+Sevilla,Alicante,404.7,596.1
+Sevilla,Murcia,356.4,524.7
+Sevilla,Valladolid,379.0,581.8
+Sevilla,León,433.6,668.0
+Sevilla,Oviedo,507.6,776.9
+Sevilla,Ourense,526.2,787.7
+Sevilla,Santiago,577.1,823.4
+Sevilla,A Coruña,590.8,920.5
+Sevilla,Vigo,525.1,746.5
+Sevilla,Badajoz,161.6,211.2
+Sevilla,Teruel,456.1,681.5
+Sevilla,Almería,275.7,405.0
+Sevilla,Jaén,177.7,249.3
+Sevilla,Huelva,70.3,98.5
+Sevilla,Santander,535.1,826.4
+Sevilla,Bilbao,555.3,860.0
+Sevilla,San Sebastián,596.1,915.9
+Sevilla,Pamplona,586.4,910.5
+Córdoba,Madrid,267.2,392.9
+Córdoba,Sevilla,96.6,138.3
+Córdoba,Ciudad Real,139.9,192.7
+Córdoba,Cádiz,172.4,251.4
+Córdoba,Málaga,114.6,161.6
+Córdoba,Granada,128.7,161.1
+Córdoba,Zaragoza,464.2,696.8
+Córdoba,Lleida,558.3,847.8
+Córdoba,Tarragona,505.9,776.9
+Córdoba,Barcelona,563.9,859.8
+Córdoba,Girona,620.5,953.7
+Córdoba,Valencia,344.1,520.4
+Córdoba,Albacete,246.9,350.2
+Córdoba,Alicante,350.6,514.0
+Córdoba,Murcia,306.0,435.6
+Córdoba,Valladolid,401.7,581.6
+Córdoba,León,484.5,731.3
+Córdoba,Oviedo,558.4,840.2
+Córdoba,Ourense,584.4,843.1
+Córdoba,Santiago,635.4,878.8
+Córdoba,A Coruña,641.7,983.8
+Córdoba,Vigo,583.4,801.9
+Córdoba,Badajoz,217.9,266.4
+Córdoba,Teruel,369.1,548.4
+Córdoba,Almería,225.4,315.9
+Córdoba,Jaén,90.7,116.3
+Córdoba,Huelva,162.1,234.2
+Córdoba,Santander,553.5,786.2
+Córdoba,Bilbao,524.0,787.1
+Córdoba,San Sebastián,564.8,843.1
+Córdoba,Pamplona,541.9,776.7
+Ciudad Real,Madrid,146.9,189.9
+Ciudad Real,Sevilla,224.8,324.2
+Ciudad Real,Córdoba,137.1,190.1
+Ciudad Real,Cádiz,300.6,437.2
+Ciudad Real,Málaga,244.0,346.1
+Ciudad Real,Granada,190.3,274.1
+Ciudad Real,Zaragoza,344.0,506.0
+Ciudad Real,Lleida,438.0,656.9
+Ciudad Real,Tarragona,390.4,607.3
+Ciudad Real,Barcelona,448.4,690.2
+Ciudad Real,Girona,505.0,784.1
+Ciudad Real,Valencia,228.6,350.8
+Ciudad Real,Albacete,142.2,213.1
+Ciudad Real,Alicante,245.9,377.0
+Ciudad Real,Murcia,231.5,356.2
+Ciudad Real,Valladolid,278.0,373.9
+Ciudad Real,León,360.7,523.6
+Ciudad Real,Oviedo,434.7,632.5
+Ciudad Real,Ourense,465.9,687.7
+Ciudad Real,Santiago,528.7,779.0
+Ciudad Real,A Coruña,518.0,776.2
+Ciudad Real,Vigo,530.1,777.0
+Ciudad Real,Badajoz,231.2,310.6
+Ciudad Real,Teruel,253.5,378.8
+Ciudad Real,Almería,281.4,399.8
+Ciudad Real,Jaén,133.4,188.8
+Ciudad Real,Huelva,290.3,420.0
+Ciudad Real,Santander,433.3,595.4
+Ciudad Real,Bilbao,403.7,596.3
+Ciudad Real,San Sebastián,444.5,652.2
+Ciudad Real,Pamplona,421.7,585.9
+Cádiz,Madrid,427.8,650.2
+Cádiz,Sevilla,89.2,121.9
+Cádiz,Córdoba,173.7,252.6
+Cádiz,Ciudad Real,303.6,438.5
+Cádiz,Málaga,166.3,232.0
+Cádiz,Granada,237.1,290.5
+Cádiz,Zaragoza,628.0,942.6
+Cádiz,Lleida,722.1,1093.5
+Cádiz,Tarragona,669.7,1022.7
+Cádiz,Barcelona,727.7,1105.6
+Cádiz,Girona,784.3,1199.5
+Cádiz,Valencia,507.9,766.2
+Cádiz,Albacete,410.7,595.9
+Cádiz,Alicante,465.1,639.0
+Cádiz,Murcia,416.8,567.6
+Cádiz,Valladolid,459.9,700.0
+Cádiz,León,514.5,786.2
+Cádiz,Oviedo,588.5,895.1
+Cádiz,Ourense,607.1,905.9
+Cádiz,Santiago,658.0,941.6
+Cádiz,A Coruña,671.7,1038.7
+Cádiz,Vigo,606.0,864.7
+Cádiz,Badajoz,242.5,329.5
+Cádiz,Teruel,532.9,794.2
+Cádiz,Almería,310.8,436.9
+Cádiz,Jaén,244.7,324.3
+Cádiz,Huelva,149.1,214.2
+Cádiz,Santander,616.0,944.6
+Cádiz,Bilbao,636.2,978.2
+Cádiz,San Sebastián,677.0,1034.2
+Cádiz,Pamplona,667.3,1028.8
+Málaga,Madrid,362.0,532.5
+Málaga,Sevilla,150.4,210.6
+Málaga,Córdoba,114.4,163.1
+Málaga,Ciudad Real,245.8,348.9
+Málaga,Cádiz,169.6,230.8
+Málaga,Granada,96.3,128.6
+Málaga,Zaragoza,559.0,836.4
+Málaga,Lleida,635.6,963.7
+Málaga,Tarragona,580.0,880.0
+Málaga,Barcelona,638.0,962.9
+Málaga,Girona,694.6,1056.8
+Málaga,Valencia,406.4,605.3
+Málaga,Albacete,323.9,459.2
+Málaga,Alicante,324.2,477.0
+Málaga,Murcia,275.9,405.6
+Málaga,Valladolid,496.5,721.1
+Málaga,León,579.2,870.9
+Málaga,Oviedo,653.2,979.8
+Málaga,Ourense,672.6,996.7
+Málaga,Santiago,723.5,1032.5
+Málaga,A Coruña,736.4,1123.4
+Málaga,Vigo,671.5,955.6
+Málaga,Badajoz,308.0,420.3
+Málaga,Teruel,463.8,688.0
+Málaga,Almería,152.1,204.2
+Málaga,Jaén,142.2,190.0
+Málaga,Huelva,217.8,307.9
+Málaga,Santander,648.3,925.8
+Málaga,Bilbao,618.7,926.7
+Málaga,San Sebastián,659.5,982.6
+Málaga,Pamplona,636.7,916.3
+Granada,Madrid,283.1,414.7
+Granada,Sevilla,177.7,247.2
+Granada,Córdoba,127.8,161.7
+Granada,Ciudad Real,198.2,275.1
+Granada,Cádiz,238.9,291.3
+Granada,Málaga,97.2,127.3
+Granada,Zaragoza,480.1,718.6
+Granada,Lleida,555.7,836.3
+Granada,Tarragona,500.1,752.6
+Granada,Barcelona,558.1,835.5
+Granada,Girona,614.7,929.4
+Granada,Valencia,326.5,477.9
+Granada,Albacete,245.1,341.4
+Granada,Alicante,244.3,349.6
+Granada,Murcia,196.0,278.2
+Granada,Valladolid,417.6,603.3
+Granada,León,500.3,753.1
+Granada,Oviedo,574.3,862.0
+Granada,Ourense,605.5,917.1
+Granada,Santiago,668.3,1008.5
+Granada,A Coruña,657.6,1005.6
+Granada,Vigo,669.7,1006.5
+Granada,Badajoz,335.3,456.9
+Granada,Teruel,385.0,570.2
+Granada,Almería,115.4,158.5
+Granada,Jaén,66.3,91.3
+Granada,Huelva,245.2,344.5
+Granada,Santander,569.4,808.0
+Granada,Bilbao,539.8,808.9
+Granada,San Sebastián,580.6,864.8
+Granada,Pamplona,557.8,798.5
+Zaragoza,Madrid,212.0,313.9
+Zaragoza,Sevilla,550.1,843.0
+Zaragoza,Córdoba,463.0,698.0
+Zaragoza,Ciudad Real,345.4,508.5
+Zaragoza,Cádiz,626.6,945.1
+Zaragoza,Málaga,556.0,837.0
+Zaragoza,Granada,477.2,721.1
+Zaragoza,Lleida,105.2,156.1
+Zaragoza,Tarragona,156.5,229.3
+Zaragoza,Barcelona,204.3,308.6
+Zaragoza,Girona,254.3,379.2
+Zaragoza,Valencia,213.4,310.8
+Zaragoza,Albacete,284.0,390.9
+Zaragoza,Alicante,324.6,469.4
+Zaragoza,Murcia,349.4,509.1
+Zaragoza,Valladolid,281.2,420.6
+Zaragoza,León,310.5,467.3
+Zaragoza,Oviedo,384.4,581.3
+Zaragoza,Ourense,486.7,745.8
+Zaragoza,Santiago,515.1,776.2
+Zaragoza,A Coruña,504.4,773.4
+Zaragoza,Vigo,551.0,835.2
+Zaragoza,Badajoz,465.7,713.2
+Zaragoza,Teruel,117.2,172.7
+Zaragoza,Almería,482.1,711.1
+Zaragoza,Jaén,420.2,635.8
+Zaragoza,Huelva,601.8,928.9
+Zaragoza,Santander,264.5,398.7
+Zaragoza,Bilbao,195.0,300.6
+Zaragoza,San Sebastián,179.1,262.4
+Zaragoza,Pamplona,122.3,179.0
+Lleida,Madrid,304.6,463.1
+Lleida,Sevilla,642.7,992.1
+Lleida,Córdoba,555.6,847.2
+Lleida,Ciudad Real,438.0,657.6
+Lleida,Cádiz,719.2,1094.3
+Lleida,Málaga,638.9,957.0
+Lleida,Granada,557.0,831.0
+Lleida,Zaragoza,104.2,155.7
+Lleida,Tarragona,70.6,91.7
+Lleida,Barcelona,114.0,151.1
+Lleida,Girona,156.9,226.5
+Lleida,Valencia,238.4,345.9
+Lleida,Albacete,352.8,505.9
+Lleida,Alicante,355.9,529.6
+Lleida,Murcia,379.4,569.1
+Lleida,Valladolid,375.3,570.0
+Lleida,León,404.6,616.7
+Lleida,Oviedo,478.6,730.7
+Lleida,Ourense,580.9,895.2
+Lleida,Santiago,609.2,925.6
+Lleida,A Coruña,598.5,922.8
+Lleida,Vigo,645.1,984.5
+Lleida,Badajoz,558.3,862.4
+Lleida,Teruel,210.7,325.7
+Lleida,Almería,512.1,771.1
+Lleida,Jaén,512.8,784.9
+Lleida,Huelva,694.4,1078.0
+Lleida,Santander,358.7,548.1
+Lleida,Bilbao,289.2,449.9
+Lleida,San Sebastián,270.6,359.7
+Lleida,Pamplona,213.8,276.3
+Tarragona,Madrid,357.8,536.9
+Tarragona,Sevilla,600.1,911.0
+Tarragona,Córdoba,512.3,776.9
+Tarragona,Ciudad Real,398.0,608.3
+Tarragona,Cádiz,675.9,1024.1
+Tarragona,Málaga,585.0,878.8
+Tarragona,Granada,503.2,752.7
+Tarragona,Zaragoza,157.4,229.5
+Tarragona,Lleida,71.5,91.3
+Tarragona,Barcelona,84.0,104.1
+Tarragona,Girona,140.6,198.0
+Tarragona,Valencia,184.5,267.6
+Tarragona,Albacete,299.0,427.6
+Tarragona,Alicante,302.1,451.3
+Tarragona,Murcia,325.5,490.9
+Tarragona,Valladolid,428.6,643.8
+Tarragona,León,457.8,690.5
+Tarragona,Oviedo,531.8,804.5
+Tarragona,Ourense,634.1,969.0
+Tarragona,Santiago,662.4,999.4
+Tarragona,A Coruña,651.7,996.6
+Tarragona,Vigo,698.3,1058.4
+Tarragona,Badajoz,611.5,936.2
+Tarragona,Teruel,236.8,339.7
+Tarragona,Almería,458.3,692.8
+Tarragona,Jaén,469.5,714.7
+Tarragona,Huelva,665.6,1006.9
+Tarragona,Santander,411.9,621.9
+Tarragona,Bilbao,342.4,523.7
+Tarragona,San Sebastián,326.4,485.6
+Tarragona,Pamplona,269.6,402.1
+Barcelona,Madrid,406.4,616.4
+Barcelona,Sevilla,655.3,992.5
+Barcelona,Córdoba,567.5,858.4
+Barcelona,Ciudad Real,453.2,689.7
+Barcelona,Cádiz,731.1,1105.5
+Barcelona,Málaga,640.2,960.2
+Barcelona,Granada,558.3,834.2
+Barcelona,Zaragoza,206.0,309.1
+Barcelona,Lleida,114.8,151.4
+Barcelona,Tarragona,81.7,103.4
+Barcelona,Girona,82.4,103.6
+Barcelona,Valencia,239.7,349.1
+Barcelona,Albacete,354.2,509.1
+Barcelona,Alicante,357.3,532.8
+Barcelona,Murcia,380.7,572.3
+Barcelona,Valladolid,477.1,723.3
+Barcelona,León,506.4,770.0
+Barcelona,Oviedo,580.4,884.0
+Barcelona,Ourense,682.7,1048.5
+Barcelona,Santiago,711.0,1079.0
+Barcelona,A Coruña,700.3,1076.1
+Barcelona,Vigo,746.9,1137.9
+Barcelona,Badajoz,660.1,1015.7
+Barcelona,Teruel,292.0,421.2
+Barcelona,Almería,513.5,774.3
+Barcelona,Jaén,524.7,796.2
+Barcelona,Huelva,720.8,1088.3
+Barcelona,Santander,460.4,701.4
+Barcelona,Bilbao,390.9,603.3
+Barcelona,San Sebastián,373.8,510.6
+Barcelona,Pamplona,317.0,427.2
+Girona,Madrid,453.7,688.9
+Girona,Sevilla,713.1,1087.0
+Girona,Córdoba,625.3,952.9
+Girona,Ciudad Real,511.0,784.2
+Girona,Cádiz,788.9,1200.0
+Girona,Málaga,698.0,1054.7
+Girona,Granada,616.1,928.7
+Girona,Zaragoza,253.3,381.6
+Girona,Lleida,155.4,224.8
+Girona,Tarragona,139.5,197.9
+Girona,Barcelona,81.8,103.5
+Girona,Valencia,297.5,443.6
+Girona,Albacete,412.0,603.6
+Girona,Alicante,415.0,627.3
+Girona,Murcia,438.5,666.8
+Girona,Valladolid,524.4,795.8
+Girona,León,553.7,842.6
+Girona,Oviedo,627.7,956.5
+Girona,Ourense,730.0,1121.1
+Girona,Santiago,758.3,1151.5
+Girona,A Coruña,747.6,1148.7
+Girona,Vigo,794.2,1210.4
+Girona,Badajoz,707.4,1088.3
+Girona,Teruel,349.7,515.7
+Girona,Almería,571.3,868.8
+Girona,Jaén,582.5,890.7
+Girona,Huelva,778.6,1182.8
+Girona,Santander,507.8,774.0
+Girona,Bilbao,438.3,675.8
+Girona,San Sebastián,395.4,637.4
+Girona,Pamplona,357.7,500.6
+Valencia,Madrid,233.7,353.9
+Valencia,Sevilla,430.8,654.7
+Valencia,Córdoba,343.0,520.6
+Valencia,Ciudad Real,228.7,351.9
+Valencia,Cádiz,506.6,767.7
+Valencia,Málaga,402.9,603.4
+Valencia,Granada,321.0,477.4
+Valencia,Zaragoza,215.4,317.3
+Valencia,Lleida,233.3,350.1
+Valencia,Tarragona,177.7,266.3
+Valencia,Barcelona,235.7,349.3
+Valencia,Girona,292.3,443.1
+Valencia,Albacete,126.1,185.1
+Valencia,Alicante,119.9,176.0
+Valencia,Murcia,143.4,215.5
+Valencia,Valladolid,379.4,545.7
+Valencia,León,462.2,695.5
+Valencia,Oviedo,536.2,804.4
+Valencia,Ourense,567.3,859.5
+Valencia,Santiago,630.2,950.8
+Valencia,A Coruña,619.4,948.0
+Valencia,Vigo,631.6,948.9
+Valencia,Badajoz,457.0,661.7
+Valencia,Teruel,103.5,142.0
+Valencia,Almería,276.2,417.5
+Valencia,Jaén,300.2,458.4
+Valencia,Huelva,496.3,750.5
+Valencia,Santander,471.7,711.1
+Valencia,Bilbao,402.2,612.9
+Valencia,San Sebastián,386.3,574.7
+Valencia,Pamplona,329.5,491.3
+Albacete,Madrid,170.5,253.3
+Albacete,Sevilla,335.1,480.2
+Albacete,Córdoba,247.3,346.1
+Albacete,Ciudad Real,146.4,214.7
+Albacete,Cádiz,410.9,593.2
+Albacete,Málaga,324.4,456.0
+Albacete,Granada,245.6,340.1
+Albacete,Zaragoza,286.8,406.2
+Albacete,Lleida,346.9,509.6
+Albacete,Tarragona,291.3,425.8
+Albacete,Barcelona,349.2,508.8
+Albacete,Girona,405.9,602.6
+Albacete,Valencia,128.0,185.4
+Albacete,Alicante,114.4,167.0
+Albacete,Murcia,100.0,146.2
+Albacete,Valladolid,316.2,445.2
+Albacete,León,399.0,595.0
+Albacete,Oviedo,473.0,703.9
+Albacete,Ourense,504.1,759.0
+Albacete,Santiago,567.0,850.3
+Albacete,A Coruña,556.2,847.5
+Albacete,Vigo,568.4,848.3
+Albacete,Badajoz,374.7,524.5
+Albacete,Teruel,168.9,227.8
+Albacete,Almería,232.7,348.1
+Albacete,Jaén,189.4,261.7
+Albacete,Huelva,400.6,576.0
+Albacete,Santander,451.8,639.2
+Albacete,Bilbao,422.2,640.1
+Albacete,San Sebastián,457.8,663.6
+Albacete,Pamplona,401.0,580.2
+Alicante,Madrid,270.9,417.0
+Alicante,Sevilla,403.4,595.4
+Alicante,Córdoba,349.8,509.9
+Alicante,Ciudad Real,246.8,378.3
+Alicante,Cádiz,464.7,639.5
+Alicante,Málaga,322.9,475.5
+Alicante,Granada,241.0,349.5
+Alicante,Zaragoza,327.6,476.6
+Alicante,Lleida,349.1,533.3
+Alicante,Tarragona,293.5,449.6
+Alicante,Barcelona,351.5,532.5
+Alicante,Girona,408.1,626.4
+Alicante,Valencia,120.0,174.9
+Alicante,Albacete,113.2,166.8
+Alicante,Murcia,59.1,81.8
+Alicante,Valladolid,416.6,608.8
+Alicante,León,499.4,758.6
+Alicante,Oviedo,573.4,867.5
+Alicante,Ourense,604.5,922.6
+Alicante,Santiago,667.4,1013.9
+Alicante,A Coruña,656.6,1011.1
+Alicante,Vigo,668.8,1011.9
+Alicante,Badajoz,475.1,688.1
+Alicante,Teruel,209.7,298.2
+Alicante,Almería,196.2,289.6
+Alicante,Jaén,282.5,407.5
+Alicante,Huelva,470.9,692.7
+Alicante,Santander,552.2,802.8
+Alicante,Bilbao,514.5,772.3
+Alicante,San Sebastián,498.5,734.1
+Alicante,Pamplona,441.7,650.7
+Murcia,Madrid,257.2,396.9
+Murcia,Sevilla,357.4,524.8
+Murcia,Córdoba,306.8,436.6
+Murcia,Ciudad Real,233.1,358.2
+Murcia,Cádiz,418.7,568.9
+Murcia,Málaga,276.9,404.9
+Murcia,Granada,195.0,278.9
+Murcia,Zaragoza,354.0,517.2
+Murcia,Lleida,374.8,574.2
+Murcia,Tarragona,319.2,490.4
+Murcia,Barcelona,377.2,573.3
+Murcia,Girona,433.8,667.2
+Murcia,Valencia,145.7,215.7
+Murcia,Albacete,99.6,146.8
+Murcia,Alicante,59.3,81.6
+Murcia,Valladolid,403.0,588.7
+Murcia,León,485.7,738.5
+Murcia,Oviedo,559.7,847.4
+Murcia,Ourense,590.9,902.5
+Murcia,Santiago,653.7,993.8
+Murcia,A Coruña,643.0,991.0
+Murcia,Vigo,655.1,991.9
+Murcia,Badajoz,461.4,668.0
+Murcia,Teruel,236.1,338.8
+Murcia,Almería,150.1,219.0
+Murcia,Jaén,236.5,336.9
+Murcia,Huelva,424.9,622.1
+Murcia,Santander,538.6,782.7
+Murcia,Bilbao,509.0,783.6
+Murcia,San Sebastián,524.9,774.6
+Murcia,Pamplona,468.1,691.2
+Valladolid,Madrid,149.3,191.1
+Valladolid,Sevilla,381.7,583.5
+Valladolid,Córdoba,399.9,581.0
+Valladolid,Ciudad Real,279.2,374.1
+Valladolid,Cádiz,459.7,700.8
+Valladolid,Málaga,492.8,720.0
+Valladolid,Granada,414.1,604.1
+Valladolid,Zaragoza,281.3,420.2
+Valladolid,Lleida,376.8,570.8
+Valladolid,Tarragona,428.1,644.0
+Valladolid,Barcelona,476.0,723.2
+Valladolid,Girona,526.0,793.8
+Valladolid,Valencia,381.8,546.3
+Valladolid,Albacete,315.7,446.1
+Valladolid,Alicante,419.4,610.0
+Valladolid,Murcia,405.0,589.1
+Valladolid,León,125.8,140.3
+Valladolid,Oviedo,200.0,293.1
+Valladolid,Ourense,231.2,348.3
+Valladolid,Santiago,294.0,439.6
+Valladolid,A Coruña,283.3,436.8
+Valladolid,Vigo,295.5,437.6
+Valladolid,Badajoz,285.9,412.9
+Valladolid,Teruel,341.9,423.6
+Valladolid,Almería,505.2,729.8
+Valladolid,Jaén,357.1,518.8
+Valladolid,Huelva,433.5,669.4
+Valladolid,Santander,170.0,247.4
+Valladolid,Bilbao,190.1,281.1
+Valladolid,San Sebastián,230.9,337.0
+Valladolid,Pamplona,221.3,331.6
+León,Madrid,230.5,339.7
+León,Sevilla,434.2,667.6
+León,Córdoba,481.1,729.6
+León,Ciudad Real,360.3,522.7
+León,Cádiz,512.2,784.9
+León,Málaga,574.0,868.6
+León,Granada,495.2,752.7
+León,Zaragoza,311.7,472.9
+León,Lleida,407.3,623.4
+León,Tarragona,458.5,696.6
+León,Barcelona,506.4,775.9
+León,Girona,556.4,846.4
+León,Valencia,462.9,694.9
+León,Albacete,396.8,594.7
+León,Alicante,500.5,758.6
+León,Murcia,486.1,737.7
+León,Valladolid,125.0,183.1
+León,Oviedo,92.9,124.4
+León,Ourense,198.2,297.8
+León,Santiago,216.6,315.8
+León,A Coruña,205.9,312.9
+León,Vigo,262.4,387.1
+León,Badajoz,338.3,497.0
+León,Teruel,413.6,546.2
+León,Almería,586.4,878.4
+León,Jaén,438.3,667.4
+León,Huelva,485.9,753.5
+León,Santander,180.9,266.5
+León,Bilbao,220.6,333.7
+León,San Sebastián,261.4,389.6
+León,Pamplona,251.7,384.2
+Oviedo,Madrid,302.2,449.5
+Oviedo,Sevilla,505.9,777.4
+Oviedo,Córdoba,552.8,839.5
+Oviedo,Ciudad Real,432.0,632.5
+Oviedo,Cádiz,583.9,894.7
+Oviedo,Málaga,645.7,978.5
+Oviedo,Granada,566.9,862.6
+Oviedo,Zaragoza,383.2,580.1
+Oviedo,Lleida,478.8,730.6
+Oviedo,Tarragona,530.0,803.8
+Oviedo,Barcelona,577.9,883.1
+Oviedo,Girona,627.9,953.6
+Oviedo,Valencia,534.6,804.8
+Oviedo,Albacete,468.5,704.6
+Oviedo,Alicante,572.2,868.4
+Oviedo,Murcia,557.8,847.6
+Oviedo,Valladolid,196.7,292.9
+Oviedo,León,89.4,122.0
+Oviedo,Ourense,231.6,322.4
+Oviedo,Santiago,220.1,327.9
+Oviedo,A Coruña,191.9,285.9
+Oviedo,Vigo,272.8,409.9
+Oviedo,Badajoz,410.0,606.9
+Oviedo,Teruel,489.9,662.6
+Oviedo,Almería,658.0,988.3
+Oviedo,Jaén,510.0,777.3
+Oviedo,Huelva,557.6,863.3
+Oviedo,Santander,134.9,193.9
+Oviedo,Bilbao,197.9,286.6
+Oviedo,San Sebastián,265.1,380.5
+Oviedo,Pamplona,295.1,433.6
+Ourense,Madrid,333.2,502.9
+Ourense,Sevilla,524.9,787.3
+Ourense,Córdoba,581.4,841.8
+Ourense,Ciudad Real,463.1,685.9
+Ourense,Cádiz,602.8,904.6
+Ourense,Málaga,669.7,995.0
+Ourense,Granada,598.0,916.0
+Ourense,Zaragoza,486.0,750.1
+Ourense,Lleida,581.5,900.7
+Ourense,Tarragona,632.7,973.9
+Ourense,Barcelona,680.6,1053.1
+Ourense,Girona,730.6,1123.7
+Ourense,Valencia,565.7,858.2
+Ourense,Albacete,499.6,758.0
+Ourense,Alicante,603.3,921.8
+Ourense,Murcia,588.9,901.0
+Ourense,Valladolid,227.8,346.3
+Ourense,León,197.1,298.8
+Ourense,Oviedo,230.6,323.8
+Ourense,Santiago,70.3,98.7
+Ourense,A Coruña,114.6,168.9
+Ourense,Vigo,72.1,94.1
+Ourense,Badajoz,393.7,564.5
+Ourense,Teruel,548.9,813.4
+Ourense,Almería,689.1,1041.7
+Ourense,Jaén,541.0,830.7
+Ourense,Huelva,556.7,859.2
+Ourense,Santander,342.1,491.7
+Ourense,Bilbao,394.8,611.0
+Ourense,San Sebastián,435.6,666.9
+Ourense,Pamplona,426.0,661.5
+Santiago,Madrid,397.1,594.6
+Santiago,Sevilla,577.1,824.7
+Santiago,Córdoba,633.7,879.1
+Santiago,Ciudad Real,526.9,777.6
+Santiago,Cádiz,655.1,942.0
+Santiago,Málaga,721.9,1032.4
+Santiago,Granada,661.8,1007.6
+Santiago,Zaragoza,514.6,780.2
+Santiago,Lleida,610.1,930.8
+Santiago,Tarragona,661.4,1004.0
+Santiago,Barcelona,709.3,1083.2
+Santiago,Girona,759.3,1153.8
+Santiago,Valencia,629.6,949.8
+Santiago,Albacete,563.4,849.6
+Santiago,Alicante,667.1,1013.5
+Santiago,Murcia,652.7,992.7
+Santiago,Valladolid,291.6,438.0
+Santiago,León,214.4,314.6
+Santiago,Oviedo,216.1,323.7
+Santiago,Ourense,71.8,102.3
+Santiago,A Coruña,53.4,72.6
+Santiago,Vigo,63.8,87.2
+Santiago,Badajoz,418.2,580.2
+Santiago,Teruel,612.7,905.1
+Santiago,Almería,753.0,1133.3
+Santiago,Jaén,604.9,922.4
+Santiago,Huelva,569.3,877.1
+Santiago,Santander,327.7,491.5
+Santiago,Bilbao,390.6,584.2
+Santiago,San Sebastián,457.8,678.1
+Santiago,Pamplona,454.6,691.6
+A Coruña,Madrid,389.3,593.4
+A Coruña,Sevilla,593.0,921.3
+A Coruña,Córdoba,639.8,983.3
+A Coruña,Ciudad Real,519.1,776.4
+A Coruña,Cádiz,671.0,1038.6
+A Coruña,Málaga,732.8,1122.3
+A Coruña,Granada,654.0,1006.4
+A Coruña,Zaragoza,506.8,779.0
+A Coruña,Lleida,602.3,929.5
+A Coruña,Tarragona,653.6,1002.7
+A Coruña,Barcelona,701.4,1082.0
+A Coruña,Girona,751.4,1152.5
+A Coruña,Valencia,621.7,948.6
+A Coruña,Albacete,555.6,848.4
+A Coruña,Alicante,659.3,1012.3
+A Coruña,Murcia,644.9,991.4
+A Coruña,Valladolid,283.8,436.7
+A Coruña,León,206.6,313.4
+A Coruña,Oviedo,191.0,286.3
+A Coruña,Ourense,115.7,172.4
+A Coruña,Santiago,54.4,75.4
+A Coruña,Vigo,107.1,157.3
+A Coruña,Badajoz,461.5,650.3
+A Coruña,Teruel,604.9,903.8
+A Coruña,Almería,745.1,1132.1
+A Coruña,Jaén,597.1,921.1
+A Coruña,Huelva,612.6,947.2
+A Coruña,Santander,302.5,454.2
+A Coruña,Bilbao,365.5,546.8
+A Coruña,San Sebastián,432.7,640.8
+A Coruña,Pamplona,446.8,690.3
+Vigo,Madrid,398.1,593.1
+Vigo,Sevilla,526.0,742.7
+Vigo,Córdoba,582.5,797.1
+Vigo,Ciudad Real,528.0,776.1
+Vigo,Cádiz,604.0,860.0
+Vigo,Málaga,670.8,950.4
+Vigo,Granada,662.9,1006.2
+Vigo,Zaragoza,550.8,840.3
+Vigo,Lleida,646.4,990.9
+Vigo,Tarragona,697.6,1064.1
+Vigo,Barcelona,745.5,1143.3
+Vigo,Girona,795.5,1213.9
+Vigo,Valencia,630.6,948.4
+Vigo,Albacete,564.5,848.2
+Vigo,Alicante,668.2,1012.0
+Vigo,Murcia,653.8,991.2
+Vigo,Valladolid,292.7,436.5
+Vigo,León,262.0,389.0
+Vigo,Oviedo,271.5,408.5
+Vigo,Ourense,72.5,94.6
+Vigo,Santiago,65.1,87.3
+Vigo,A Coruña,108.8,157.5
+Vigo,Badajoz,367.1,498.2
+Vigo,Teruel,613.8,903.6
+Vigo,Almería,754.0,1131.9
+Vigo,Jaén,605.9,920.9
+Vigo,Huelva,518.2,795.1
+Vigo,Santander,383.0,576.4
+Vigo,Bilbao,446.0,669.0
+Vigo,San Sebastián,500.5,757.1
+Vigo,Pamplona,490.9,751.7
+Badajoz,Madrid,264.2,402.8
+Badajoz,Sevilla,162.5,211.8
+Badajoz,Córdoba,217.2,266.0
+Badajoz,Ciudad Real,231.6,310.9
+Badajoz,Cádiz,240.5,329.1
+Badajoz,Málaga,307.3,419.5
+Badajoz,Granada,334.5,457.8
+Badajoz,Zaragoza,464.7,711.7
+Badajoz,Lleida,558.8,862.6
+Badajoz,Tarragona,610.0,935.8
+Badajoz,Barcelona,657.9,1015.1
+Badajoz,Girona,707.9,1085.6
+Badajoz,Valencia,457.4,661.4
+Badajoz,Albacete,371.1,523.7
+Badajoz,Alicante,474.8,687.6
+Badajoz,Murcia,460.4,666.8
+Badajoz,Valladolid,285.6,412.4
+Badajoz,León,340.2,498.5
+Badajoz,Oviedo,414.2,607.4
+Badajoz,Ourense,399.4,564.9
+Badajoz,Santiago,419.9,579.4
+Badajoz,A Coruña,463.5,649.6
+Badajoz,Vigo,367.9,502.5
+Badajoz,Teruel,468.6,687.9
+Badajoz,Almería,433.5,615.2
+Badajoz,Jaén,298.3,375.4
+Badajoz,Huelva,194.8,239.7
+Badajoz,Santander,441.7,657.0
+Badajoz,Bilbao,461.9,690.6
+Badajoz,San Sebastián,502.7,746.5
+Badajoz,Pamplona,493.0,741.1
+Teruel,Madrid,217.9,308.9
+Teruel,Sevilla,456.3,682.2
+Teruel,Córdoba,368.5,548.1
+Teruel,Ciudad Real,254.2,379.5
+Teruel,Cádiz,532.1,795.2
+Teruel,Málaga,461.4,687.1
+Teruel,Granada,382.6,571.2
+Teruel,Zaragoza,120.4,179.5
+Teruel,Lleida,210.6,320.4
+Teruel,Tarragona,229.5,339.3
+Teruel,Barcelona,287.5,422.2
+Teruel,Girona,344.1,516.1
+Teruel,Valencia,104.5,142.5
+Teruel,Albacete,169.6,219.8
+Teruel,Alicante,210.1,298.3
+Teruel,Murcia,234.9,338.0
+Teruel,Valladolid,340.6,423.8
+Teruel,León,413.8,545.1
+Teruel,Oviedo,492.6,662.2
+Teruel,Ourense,551.6,814.5
+Teruel,Santiago,614.4,905.9
+Teruel,A Coruña,603.7,903.1
+Teruel,Vigo,615.9,903.9
+Teruel,Badajoz,468.6,687.5
+Teruel,Almería,367.7,540.0
+Teruel,Jaén,325.7,485.9
+Teruel,Huelva,521.8,778.0
+Teruel,Santander,376.7,573.4
+Teruel,Bilbao,307.3,475.2
+Teruel,San Sebastián,291.3,437.0
+Teruel,Pamplona,234.5,353.6
+Almería,Madrid,373.4,540.0
+Almería,Sevilla,277.5,404.5
+Almería,Córdoba,226.9,316.3
+Almería,Ciudad Real,288.6,400.4
+Almería,Cádiz,314.3,437.3
+Almería,Málaga,150.9,203.5
+Almería,Granada,115.1,158.6
+Almería,Zaragoza,486.6,721.1
+Almería,Lleida,507.4,778.1
+Almería,Tarragona,451.8,694.4
+Almería,Barcelona,509.8,777.3
+Almería,Girona,566.4,871.1
+Almería,Valencia,278.2,419.7
+Almería,Albacete,232.1,350.7
+Almería,Alicante,196.0,291.4
+Almería,Murcia,147.7,220.0
+Almería,Valladolid,507.9,728.6
+Almería,León,590.7,878.4
+Almería,Oviedo,664.6,987.3
+Almería,Ourense,695.8,1042.4
+Almería,Santiago,758.6,1133.7
+Almería,A Coruña,747.9,1130.9
+Almería,Vigo,760.1,1131.8
+Almería,Badajoz,435.2,614.2
+Almería,Teruel,368.7,542.7
+Almería,Jaén,156.6,216.6
+Almería,Huelva,345.0,501.7
+Almería,Santander,659.7,933.3
+Almería,Bilbao,630.2,934.2
+Almería,San Sebastián,657.5,978.6
+Almería,Pamplona,600.7,895.1
+Jaén,Madrid,226.5,330.1
+Jaén,Sevilla,178.7,249.8
+Jaén,Córdoba,90.9,115.7
+Jaén,Ciudad Real,141.7,190.5
+Jaén,Cádiz,245.8,324.5
+Jaén,Málaga,144.6,188.9
+Jaén,Granada,66.0,91.1
+Jaén,Zaragoza,423.5,634.0
+Jaén,Lleida,517.6,785.0
+Jaén,Tarragona,465.2,714.1
+Jaén,Barcelona,523.2,797.0
+Jaén,Girona,579.8,890.9
+Jaén,Valencia,303.4,457.6
+Jaén,Albacete,189.4,263.7
+Jaén,Alicante,286.2,407.9
+Jaén,Murcia,237.8,336.4
+Jaén,Valladolid,361.0,518.7
+Jaén,León,443.8,668.5
+Jaén,Oviedo,517.7,777.4
+Jaén,Ourense,548.9,832.5
+Jaén,Santiago,611.7,923.9
+Jaén,A Coruña,601.0,921.0
+Jaén,Vigo,613.2,921.9
+Jaén,Badajoz,298.5,373.8
+Jaén,Teruel,328.4,485.6
+Jaén,Almería,157.2,216.8
+Jaén,Huelva,244.2,345.6
+Jaén,Santander,512.8,723.4
+Jaén,Bilbao,483.3,724.3
+Jaén,San Sebastián,524.0,780.2
+Jaén,Pamplona,501.2,713.9
+Huelva,Madrid,400.7,618.3
+Huelva,Sevilla,70.6,97.6
+Huelva,Córdoba,163.6,235.7
+Huelva,Ciudad Real,293.6,421.6
+Huelva,Cádiz,147.0,211.3
+Huelva,Málaga,216.4,305.1
+Huelva,Granada,243.6,343.4
+Huelva,Zaragoza,601.2,927.3
+Huelva,Lleida,695.2,1078.2
+Huelva,Tarragona,659.6,1005.8
+Huelva,Barcelona,717.6,1088.7
+Huelva,Girona,774.2,1182.6
+Huelva,Valencia,497.8,749.3
+Huelva,Albacete,400.6,579.1
+Huelva,Alicante,471.6,691.9
+Huelva,Murcia,423.3,620.5
+Huelva,Valladolid,432.8,668.1
+Huelva,León,487.4,754.3
+Huelva,Oviedo,561.4,863.2
+Huelva,Ourense,555.5,859.4
+Huelva,Santiago,570.1,876.1
+Huelva,A Coruña,613.7,946.3
+Huelva,Vigo,518.1,799.2
+Huelva,Badajoz,193.8,239.4
+Huelva,Teruel,522.8,777.3
+Huelva,Almería,342.6,500.8
+Huelva,Jaén,244.4,345.2
+Huelva,Santander,588.9,912.8
+Huelva,Bilbao,609.1,946.4
+Huelva,San Sebastián,649.9,1002.3
+Huelva,Pamplona,640.3,996.9
+Santander,Madrid,303.1,423.2
+Santander,Sevilla,535.4,826.3
+Santander,Córdoba,557.0,846.5
+Santander,Ciudad Real,436.2,639.5
+Santander,Cádiz,613.4,943.6
+Santander,Málaga,649.9,985.4
+Santander,Granada,571.1,869.5
+Santander,Zaragoza,262.6,397.2
+Santander,Lleida,358.1,547.8
+Santander,Tarragona,409.4,621.0
+Santander,Barcelona,457.2,700.3
+Santander,Girona,507.2,770.8
+Santander,Valencia,468.9,709.8
+Santander,Albacete,457.8,667.3
+Santander,Alicante,561.5,831.2
+Santander,Murcia,547.1,810.3
+Santander,Valladolid,169.2,247.0
+Santander,León,177.7,264.2
+Santander,Oviedo,132.1,193.0
+Santander,Ourense,339.5,488.7
+Santander,Santiago,328.0,494.3
+Santander,A Coruña,299.8,452.3
+Santander,Vigo,380.7,576.3
+Santander,Badajoz,439.5,655.7
+Santander,Teruel,372.8,571.8
+Santander,Almería,662.3,995.2
+Santander,Jaén,514.2,784.2
+Santander,Huelva,587.1,912.2
+Santander,Bilbao,77.2,103.7
+Santander,San Sebastián,144.4,197.7
+Santander,Pamplona,174.4,250.7
+Bilbao,Madrid,268.4,397.9
+Bilbao,Sevilla,559.0,861.9
+Bilbao,Córdoba,525.1,786.2
+Bilbao,Ciudad Real,407.5,596.7
+Bilbao,Cádiz,637.0,979.2
+Bilbao,Málaga,618.1,925.2
+Bilbao,Granada,539.3,809.3
+Bilbao,Zaragoza,197.6,301.4
+Bilbao,Lleida,293.1,451.9
+Bilbao,Tarragona,344.4,525.1
+Bilbao,Barcelona,392.3,604.4
+Bilbao,Girona,442.3,674.9
+Bilbao,Valencia,404.0,613.9
+Bilbao,Albacete,423.2,642.0
+Bilbao,Alicante,515.2,772.6
+Bilbao,Murcia,512.5,785.1
+Bilbao,Valladolid,192.8,282.6
+Bilbao,León,222.0,329.3
+Bilbao,Oviedo,200.3,284.2
+Bilbao,Ourense,398.3,607.8
+Bilbao,Santiago,396.2,585.5
+Bilbao,A Coruña,368.0,543.4
+Bilbao,Vigo,448.9,667.4
+Bilbao,Badajoz,463.1,691.4
+Bilbao,Teruel,307.8,475.9
+Bilbao,Almería,630.4,935.0
+Bilbao,Jaén,482.4,724.0
+Bilbao,Huelva,610.7,947.8
+Bilbao,Santander,80.4,101.6
+Bilbao,San Sebastián,78.3,103.1
+Bilbao,Pamplona,109.4,154.8
+San Sebastián,Madrid,305.1,452.1
+San Sebastián,Sevilla,595.7,916.1
+San Sebastián,Córdoba,561.8,840.4
+San Sebastián,Ciudad Real,444.2,650.8
+San Sebastián,Cádiz,673.7,1033.4
+San Sebastián,Málaga,654.8,979.4
+San Sebastián,Granada,576.0,863.5
+San Sebastián,Zaragoza,177.0,260.7
+San Sebastián,Lleida,268.4,358.3
+San Sebastián,Tarragona,323.8,484.5
+San Sebastián,Barcelona,370.8,509.3
+San Sebastián,Girona,391.6,636.4
+San Sebastián,Valencia,383.4,573.3
+San Sebastián,Albacete,454.0,653.5
+San Sebastián,Alicante,494.6,731.9
+San Sebastián,Murcia,519.4,771.7
+San Sebastián,Valladolid,229.5,336.8
+San Sebastián,León,258.7,383.5
+San Sebastián,Oviedo,263.7,380.6
+San Sebastián,Ourense,435.0,662.0
+San Sebastián,Santiago,459.5,681.9
+San Sebastián,A Coruña,431.3,639.9
+San Sebastián,Vigo,499.2,751.4
+San Sebastián,Badajoz,499.8,745.5
+San Sebastián,Teruel,287.2,435.2
+San Sebastián,Almería,652.1,973.6
+San Sebastián,Jaén,519.0,778.2
+San Sebastián,Huelva,647.4,1002.0
+San Sebastián,Santander,143.8,198.1
+San Sebastián,Bilbao,73.2,98.0
+San Sebastián,Pamplona,60.5,80.8
+Pamplona,Madrid,290.2,391.7
+Pamplona,Sevilla,588.0,912.1
+Pamplona,Córdoba,541.3,775.8
+Pamplona,Ciudad Real,423.6,586.3
+Pamplona,Cádiz,666.0,1029.4
+Pamplona,Málaga,634.2,914.8
+Pamplona,Granada,555.4,798.9
+Pamplona,Zaragoza,122.4,178.2
+Pamplona,Lleida,213.8,275.8
+Pamplona,Tarragona,269.2,402.0
+Pamplona,Barcelona,316.1,426.8
+Pamplona,Girona,359.0,502.2
+Pamplona,Valencia,328.7,490.8
+Pamplona,Albacete,399.4,571.0
+Pamplona,Alicante,439.9,649.4
+Pamplona,Murcia,464.7,689.2
+Pamplona,Valladolid,221.7,332.8
+Pamplona,León,251.0,379.5
+Pamplona,Oviedo,294.7,433.8
+Pamplona,Ourense,427.3,658.0
+Pamplona,Santiago,455.6,688.5
+Pamplona,A Coruña,444.9,685.6
+Pamplona,Vigo,491.5,747.4
+Pamplona,Badajoz,492.1,741.6
+Pamplona,Teruel,232.6,352.8
+Pamplona,Almería,597.5,891.1
+Pamplona,Jaén,498.5,713.6
+Pamplona,Huelva,639.7,998.0
+Pamplona,Santander,174.7,251.3
+Pamplona,Bilbao,105.3,153.1
+Pamplona,San Sebastián,62.8,82.1

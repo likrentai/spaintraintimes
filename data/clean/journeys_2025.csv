@@ -1,0 +1,993 @@
+origin,destination,minutes,depart,arrive,changes,trains,change_at
+Madrid,Ciudad Real,54.0,21:05,21:59,0,AVE 02210,
+Madrid,Valladolid,54.0,19:54,20:48,0,AVE 05171,
+Madrid,Zaragoza,78.0,18:27,19:45,0,AVE 03183,
+Madrid,Barcelona,157.0,18:57,21:34,0,AVE 03191,
+Madrid,Sevilla,159.0,19:00,21:39,0,AVE 02190,
+Madrid,Córdoba,104.0,19:50,21:34,0,AVE 02196,
+Madrid,Valencia,114.0,20:30,22:24,0,AVE 05200,
+Madrid,Málaga,159.0,17:30,20:09,0,AVE 02172,
+Madrid,León,120.0,20:30,22:30,0,AVE 05183,
+Madrid,Lleida,122.0,12:27,14:29,0,AVE 02591,
+Madrid,Tarragona,124.0,08:57,11:01,0,AVE 03091,
+Madrid,Ourense,134.0,10:04,12:18,0,AVE 05273,
+Madrid,Santiago,182.0,20:23,23:25,0,AVLO 04405,
+Madrid,A Coruña,216.0,20:23,23:59,0,AVLO 04405,
+Madrid,Albacete,90.0,11:05,12:35,0,AVE 02913,
+Madrid,Alicante,143.0,18:00,20:23,0,AVE 05182,
+Madrid,Granada,194.0,13:35,16:49,0,AVE 02136,
+Madrid,Pamplona,185.0,07:32,10:37,0,ALVIA 00601,
+Madrid,Girona,208.0,18:57,22:25,0,AVE 03191,
+Madrid,Jaén,226.0,19:00,22:46,1,AVE 02190 + MD 13017,Cordoba
+Madrid,Murcia,166.0,10:00,12:46,0,AVE 05962,
+Madrid,Santander,260.0,19:08,23:28,0,ALVIA 04193,
+Madrid,Cádiz,262.0,16:05,20:27,0,ALVIA 02164,
+Madrid,Oviedo,191.0,16:37,19:48,0,AVE 04161,
+Madrid,Badajoz,279.0,16:17,20:56,0,ALVIA 00192,
+Madrid,Vigo,233.0,16:05,19:58,0,AVE 04565,
+Madrid,Huelva,237.0,18:05,22:02,0,ALVIA 02384,
+Madrid,Bilbao,287.0,07:20,12:07,0,ALVIA 04187,
+Madrid,San Sebastián,300.0,14:46,19:46,0,Intercity 04257,
+Madrid,Teruel,292.0,06:27,11:19,1,AVE 03063 + MD 18511,Zaragoza-Delicias
+Madrid,Almería,392.0,07:20,13:52,1,AVE 02076 + MD 13940,Granada
+Sevilla,Cádiz,84.0,15:17,16:41,0,ALVIA 02124,
+Sevilla,Córdoba,41.0,16:31,17:12,0,AVE 02361,
+Sevilla,Madrid,158.0,14:30,17:08,0,AVE 02141,
+Sevilla,Ciudad Real,104.0,07:18,09:02,0,AVE 02071,
+Sevilla,Málaga,119.0,20:16,22:15,0,AVANT 08195,
+Sevilla,Huelva,82.0,12:40,14:02,0,Intercity 02494,
+Sevilla,Granada,152.0,19:20,21:52,0,AVANT 08395,
+Sevilla,Jaén,177.0,13:15,16:12,1,AVLO 02137 + MD 13009,Cordoba
+Sevilla,Zaragoza,237.0,08:37,12:34,0,AVE 03943,
+Sevilla,Barcelona,342.0,15:52,21:34,1,AVE 02861 + AVE 03191,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Valladolid,257.0,16:31,20:48,1,AVE 02361 + AVE 05171,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Almería,354.0,12:17,18:11,1,AVANT 08335 + MD 13942,Granada
+Sevilla,Valencia,269.0,16:37,21:06,0,AVE 03981,
+Sevilla,Albacete,266.0,11:32,15:58,1,AVE 02111 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Alicante,322.0,11:32,16:54,1,AVE 02111 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Lleida,280.0,08:37,13:17,0,AVE 03943,
+Sevilla,Tarragona,306.0,08:37,13:43,0,AVE 03943,
+Sevilla,Girona,393.0,15:52,22:25,1,AVE 02861 + AVE 03191,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,León,331.0,06:30,12:01,1,AVE 02261 + AVE 05071,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Ourense,345.0,15:52,21:37,1,AVE 02861 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Santiago,387.0,15:52,22:19,1,AVE 02861 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,A Coruña,422.0,15:52,22:54,1,AVE 02861 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Pamplona,381.0,16:31,22:52,1,AVE 02361 + ALVIA 00801,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Murcia,376.0,06:30,12:46,1,AVE 02261 + AVE 05962,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Oviedo,401.0,11:32,18:13,1,AVE 02111 + AVE 05721,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Badajoz,389.0,14:57,21:26,1,ALVIA 02135 + MD 18330,Puertollano
+Sevilla,Santander,510.0,09:34,18:04,1,AVE 02591 + ALVIA 04143,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Vigo,466.0,07:40,15:26,2,AVANT 08275 + AVE 02913 + AVE 04515,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Sevilla,Teruel,479.0,14:30,22:29,2,AVE 02141 + AVE 03173 + REGIONAL 18517,Madrid Pta.Atocha - Almudena Grandes / Zaragoza-Delicias
+Sevilla,Bilbao,553.0,13:15,22:28,1,AVLO 02137 + ALVIA 04267,Madrid Pta.Atocha - Almudena Grandes
+Sevilla,San Sebastián,556.0,10:30,19:46,1,AVE 02101 + Intercity 04257,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Sevilla,52.0,18:12,19:04,0,AVE 03830,
+Córdoba,Málaga,58.0,13:21,14:19,0,AVE 03882,
+Córdoba,Madrid,114.0,08:42,10:36,0,AVE 02913,
+Córdoba,Ciudad Real,54.0,09:33,10:27,0,AVE 03943,
+Córdoba,Granada,88.0,15:21,16:49,0,AVE 02136,
+Córdoba,Jaén,105.0,21:01,22:46,0,MD 13017,
+Córdoba,Cádiz,157.0,14:04,16:41,0,ALVIA 02124,
+Córdoba,Huelva,128.0,19:54,22:02,0,ALVIA 02384,
+Córdoba,Zaragoza,180.0,16:58,19:58,0,AVE 03931,
+Córdoba,Barcelona,289.0,15:45,20:34,0,AVE 02553,
+Córdoba,Valladolid,214.0,17:14,20:48,1,AVE 02361 + AVE 05171,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Almería,285.0,09:07,13:52,1,AVE 02076 + MD 13940,Granada
+Córdoba,Valencia,222.0,17:24,21:06,0,AVE 03981,
+Córdoba,Albacete,223.0,12:15,15:58,1,AVE 02111 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Alicante,279.0,12:15,16:54,1,AVE 02111 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Lleida,224.0,09:33,13:17,0,AVE 03943,
+Córdoba,Tarragona,250.0,09:33,13:43,0,AVE 03943,
+Córdoba,Girona,342.0,16:43,22:25,1,AVE 02163 + AVE 03191,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,León,288.0,07:13,12:01,1,AVE 02261 + AVE 05071,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Ourense,297.0,08:42,13:39,1,AVE 02913 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Santiago,339.0,08:42,14:21,1,AVE 02913 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,A Coruña,378.0,16:36,22:54,1,AVE 02861 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Pamplona,338.0,17:14,22:52,1,AVE 02361 + ALVIA 00801,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Murcia,333.0,16:36,22:09,1,AVE 02861 + AVE 05792,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Oviedo,358.0,12:15,18:13,1,AVE 02111 + AVE 05721,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Badajoz,327.0,15:59,21:26,1,ALVIA 02135 + MD 18330,Puertollano
+Córdoba,Santander,449.0,15:59,23:28,1,ALVIA 02135 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Vigo,404.0,08:42,15:26,1,AVE 02913 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,Teruel,436.0,15:13,22:29,2,AVE 02141 + AVE 03173 + REGIONAL 18517,Madrid Pta.Atocha - Almudena Grandes / Zaragoza-Delicias
+Córdoba,Bilbao,509.0,13:59,22:28,1,AVLO 02137 + ALVIA 04267,Madrid Pta.Atocha - Almudena Grandes
+Córdoba,San Sebastián,481.0,11:45,19:46,1,AVLO 02109 + Intercity 04257,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Madrid,62.0,08:22,09:24,0,AVANT 08081,
+Ciudad Real,Sevilla,116.0,22:01,23:57,0,AVE 02210,
+Ciudad Real,Córdoba,56.0,19:18,20:14,0,AVE 03942,
+Ciudad Real,Málaga,130.0,17:26,19:36,0,AVE 02162,
+Ciudad Real,Granada,195.0,09:56,13:11,1,AVLO 02096 + AVE 03930,Cordoba
+Ciudad Real,Jaén,189.0,13:03,16:12,1,ALVIA 02124 + MD 13009,Cordoba
+Ciudad Real,Zaragoza,125.0,10:29,12:34,0,AVE 03943,
+Ciudad Real,Barcelona,236.0,10:29,14:25,0,AVE 03943,
+Ciudad Real,Valladolid,168.0,07:37,10:25,1,AVANT 08271 + AVE 05763,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Cádiz,218.0,13:03,16:41,0,ALVIA 02124,
+Ciudad Real,Valencia,155.0,18:31,21:06,0,AVE 03981,
+Ciudad Real,Albacete,136.0,10:02,12:18,0,MD 18081,
+Ciudad Real,Alicante,209.0,10:02,13:31,1,MD 18081 + AVE 02913,Albacete-Los Llanos
+Ciudad Real,Lleida,168.0,10:29,13:17,0,AVE 03943,
+Ciudad Real,Tarragona,194.0,10:29,13:43,0,AVE 03943,
+Ciudad Real,Girona,308.0,15:06,20:14,1,AVLO 02137 + AVE 03163,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Huelva,246.0,17:56,22:02,1,AVLO 02176 + ALVIA 02384,Cordoba
+Ciudad Real,León,246.0,07:55,12:01,1,AVE 02063 + AVE 05071,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Ourense,236.0,08:22,12:18,1,AVANT 08081 + AVE 05273,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Santiago,293.0,12:49,17:42,1,AVLO 02109 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,A Coruña,328.0,12:49,18:17,1,AVLO 02109 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Pamplona,291.0,09:04,13:55,1,AVE 02071 + ALVIA 00605,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Almería,396.0,11:35,18:11,2,AVE 03982 + AVANT 08335 + MD 13942,Cordoba / Granada
+Ciudad Real,Murcia,277.0,10:02,14:39,1,MD 18081 + AVE 02913,Albacete-Los Llanos
+Ciudad Real,Oviedo,324.0,16:58,22:22,1,ALVIA 02135 + ALVIA 04181,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Santander,388.0,11:36,18:04,1,AVE 02093 + ALVIA 04143,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Badajoz,269.0,11:36,16:05,0,REG.EXP. 18770,
+Ciudad Real,Vigo,382.0,09:04,15:26,1,AVE 02071 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,Teruel,380.0,08:22,14:42,2,AVANT 08081 + AVE 05890 + MD 18504,Madrid Pta.Atocha - Almudena Grandes / Valencia Joaquin Sorolla
+Ciudad Real,Bilbao,427.0,15:21,22:28,1,AVANT 08151 + ALVIA 04267,Madrid Pta.Atocha - Almudena Grandes
+Ciudad Real,San Sebastián,417.0,12:49,19:46,1,AVLO 02109 + Intercity 04257,Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Sevilla,84.0,13:30,14:54,0,ALVIA 02135,
+Cádiz,Madrid,258.0,18:10,22:28,0,ALVIA 02175,
+Cádiz,Córdoba,147.0,13:30,15:57,0,ALVIA 02135,
+Cádiz,Ciudad Real,206.0,13:30,16:56,0,ALVIA 02135,
+Cádiz,Málaga,236.0,13:30,17:26,1,ALVIA 02135 + AVE 02142,Cordoba
+Cádiz,Huelva,220.0,18:40,22:20,1,MD 13031 + MD 13095,Sevilla-Santa Justa
+Cádiz,Granada,300.0,07:35,12:35,1,ALVIA 00694 + AVANT 08295,Sevilla-Santa Justa
+Cádiz,Jaén,322.0,17:24,22:46,0,MD 13017,
+Cádiz,Zaragoza,359.0,06:35,12:34,1,ALVIA 02075 + AVE 03943,Sevilla-Santa Justa
+Cádiz,Barcelona,470.0,06:35,14:25,1,ALVIA 02075 + AVE 03943,Sevilla-Santa Justa
+Cádiz,Valladolid,383.0,13:30,19:53,1,ALVIA 02135 + ALVIA 04181,Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Valencia,386.0,14:40,21:06,1,MD 13013 + AVE 03981,Sevilla-Santa Justa
+Cádiz,Albacete,427.0,13:30,20:37,1,ALVIA 02135 + AVE 05382,Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Alicante,478.0,13:30,21:28,1,ALVIA 02135 + AVE 05382,Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Almería,511.0,09:40,18:11,2,MD 13007 + AVANT 08335 + MD 13942,Sevilla-Santa Justa / Granada
+Cádiz,Lleida,402.0,06:35,13:17,1,ALVIA 02075 + AVE 03943,Sevilla-Santa Justa
+Cádiz,Tarragona,428.0,06:35,13:43,1,ALVIA 02075 + AVE 03943,Sevilla-Santa Justa
+Cádiz,Girona,525.0,13:40,22:25,2,MD 13393 + AVE 02861 + AVE 03191,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Murcia,509.0,13:40,22:09,2,MD 13393 + AVE 02861 + AVE 05792,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,León,457.0,07:35,15:12,2,ALVIA 00694 + AVE 02591 + AVE 05101,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Ourense,477.0,13:40,21:37,2,MD 13393 + AVE 02861 + AVE 04395,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Santiago,519.0,13:40,22:19,2,MD 13393 + AVE 02861 + AVE 04395,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,A Coruña,554.0,13:40,22:54,2,MD 13393 + AVE 02861 + AVE 04395,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Pamplona,531.0,06:35,15:26,2,ALVIA 02075 + AVE 03943 + REG.EXP. 18021,Sevilla-Santa Justa / Zaragoza-Delicias
+Cádiz,Oviedo,532.0,13:30,22:22,1,ALVIA 02135 + ALVIA 04181,Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Badajoz,476.0,13:30,21:26,1,ALVIA 02135 + MD 18330,Puertollano
+Cádiz,Santander,598.0,13:30,23:28,1,ALVIA 02135 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Vigo,678.0,08:40,19:58,2,MD 13005 + AVE 02111 + AVE 04565,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Bilbao,698.0,10:50,22:28,2,MD 13009 + AVLO 02137 + ALVIA 04267,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,San Sebastián,722.0,10:50,22:52,2,MD 13009 + AVLO 02137 + ALVIA 04167,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Cádiz,Teruel,668.0,06:35,17:43,2,ALVIA 02075 + AVE 05120 + MD 18506,Madrid Pta.Atocha - Almudena Grandes / Valencia Joaquin Sorolla
+Málaga,Granada,77.0,20:20,21:37,0,AVANT 08855,
+Málaga,Almería,267.0,09:25,13:52,1,AVANT 08815 + MD 13940,Granada
+Málaga,Madrid,159.0,07:05,09:44,0,AVE 02073,
+Málaga,Sevilla,119.0,17:57,19:56,1,AVE 02883 + AVLO 02176,Cordoba
+Málaga,Córdoba,47.0,17:57,18:44,0,AVE 02883,
+Málaga,Ciudad Real,107.0,20:05,21:52,0,AVE 02203,
+Málaga,Cádiz,230.0,07:53,11:43,1,AVE 02913 + ALVIA 02074,Cordoba
+Málaga,Jaén,192.0,07:53,11:05,1,AVE 02913 + MD 13001,Cordoba
+Málaga,Huelva,224.0,18:18,22:02,1,AVANT 08784 + ALVIA 02384,Cordoba
+Málaga,Zaragoza,252.0,08:22,12:34,0,AVE 03993,
+Málaga,Barcelona,338.0,14:56,20:34,0,AVE 02553,
+Málaga,Valladolid,262.0,17:04,21:26,1,AVE 02173 + AVE 05183,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Lleida,295.0,08:22,13:17,0,AVE 03993,
+Málaga,Tarragona,321.0,08:22,13:43,0,AVE 03993,
+Málaga,Valencia,311.0,15:55,21:06,1,AVE 03991 + AVE 03981,Cordoba
+Málaga,León,326.0,17:04,22:30,1,AVE 02173 + AVE 05183,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Girona,402.0,15:43,22:25,1,AVE 02163 + AVE 03191,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Albacete,282.0,07:53,12:35,0,AVE 02913,
+Málaga,Alicante,338.0,07:53,13:31,0,AVE 02913,
+Málaga,Ourense,346.0,07:53,13:39,1,AVE 02913 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Santiago,388.0,07:53,14:21,1,AVE 02913 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Málaga,A Coruña,446.0,07:53,15:19,2,AVE 02913 + AVE 04515 + MD 09132,Madrid Pta.Atocha - Almudena Grandes / Santiago de Compostela
+Málaga,Pamplona,410.0,07:05,13:55,1,AVE 02073 + ALVIA 00605,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Murcia,406.0,07:53,14:39,0,AVE 02913,
+Málaga,Oviedo,418.0,07:53,14:51,1,AVE 02913 + AVLO 04121,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Badajoz,390.0,14:56,21:26,2,AVE 02553 + ALVIA 02135 + MD 18330,Cordoba / Puertollano
+Málaga,Santander,512.0,14:56,23:28,1,AVE 02553 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Vigo,453.0,07:53,15:26,1,AVE 02913 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Málaga,Teruel,502.0,12:01,20:23,2,AVE 02123 + AVE 03305 + MD 18515,Madrid Pta.Atocha - Almudena Grandes / Zaragoza-Delicias
+Málaga,Bilbao,627.0,12:01,22:28,1,AVE 02123 + ALVIA 04267,Madrid Pta.Atocha - Almudena Grandes
+Málaga,San Sebastián,541.0,10:45,19:46,1,AVLO 02109 + Intercity 04257,Madrid Pta.Atocha - Almudena Grandes
+Granada,Almería,159.0,11:13,13:52,0,MD 13940,
+Granada,Madrid,202.0,06:14,09:36,0,AVE 02067,
+Granada,Sevilla,160.0,06:27,09:07,0,AVANT 08475,
+Granada,Córdoba,84.0,15:30,16:54,0,AVE 03931,
+Granada,Ciudad Real,165.0,15:30,18:15,1,AVE 03931 + AVE 03941,Cordoba
+Granada,Málaga,84.0,07:36,09:00,0,AVANT 08915,
+Granada,Cádiz,290.0,12:40,17:30,1,AVANT 08525 + MD 13032,Sevilla-Santa Justa
+Granada,Jaén,264.0,18:22,22:46,1,AVANT 08505 + MD 13017,Cordoba
+Granada,Zaragoza,268.0,15:30,19:58,0,AVE 03931,
+Granada,Barcelona,385.0,15:09,21:34,1,AVE 02167 + AVE 03191,Madrid Pta.Atocha - Almudena Grandes
+Granada,Valladolid,318.0,15:30,20:48,2,AVE 03931 + AVE 02361 + AVE 05171,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,Huelva,342.0,16:20,22:02,1,AVANT 08575 + ALVIA 02384,Cordoba
+Granada,Lleida,318.0,15:30,20:48,0,AVE 03931,
+Granada,Tarragona,346.0,15:30,21:16,0,AVE 03931,
+Granada,Girona,436.0,15:09,22:25,1,AVE 02167 + AVE 03191,Madrid Pta.Atocha - Almudena Grandes
+Granada,Valencia,336.0,15:30,21:06,1,AVE 03931 + AVE 03981,Cordoba
+Granada,Albacete,364.0,06:14,12:18,2,AVE 02067 + AVE 02071 + MD 18081,Cordoba / Ciudad Real
+Granada,Alicante,424.0,06:27,13:31,1,AVANT 08475 + AVE 02913,Cordoba
+Granada,León,420.0,15:30,22:30,2,AVE 03931 + AVE 02361 + AVE 05183,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,Ourense,432.0,06:27,13:39,2,AVANT 08475 + AVE 02913 + AVE 04515,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,Santiago,474.0,06:27,14:21,2,AVANT 08475 + AVE 02913 + AVE 04515,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,A Coruña,509.0,15:30,23:59,2,AVE 03931 + AVE 02361 + AVLO 04405,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,Pamplona,442.0,15:30,22:52,2,AVE 03931 + AVE 02361 + ALVIA 00801,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,Murcia,492.0,06:27,14:39,1,AVANT 08475 + AVE 02913,Cordoba
+Granada,Oviedo,504.0,06:27,14:51,2,AVANT 08475 + AVE 02913 + AVLO 04121,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Granada,Vigo,530.0,11:08,19:58,1,ALVIA 02087 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Granada,Badajoz,509.0,07:36,16:05,2,AVANT 08915 + AVE 02093 + REG.EXP. 18770,Malaga Maria Zambrano / Puertollano
+Granada,Santander,628.0,07:36,18:04,2,AVANT 08915 + AVE 02093 + ALVIA 04143,Malaga Maria Zambrano / Madrid Pta.Atocha - Almudena Grandes
+Granada,Teruel,555.0,11:08,20:23,2,ALVIA 02087 + AVE 03305 + MD 18515,Madrid Pta.Atocha - Almudena Grandes / Zaragoza-Delicias
+Granada,Bilbao,680.0,11:08,22:28,1,ALVIA 02087 + ALVIA 04267,Madrid Pta.Atocha - Almudena Grandes
+Granada,San Sebastián,704.0,11:08,22:52,1,ALVIA 02087 + ALVIA 04167,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Madrid,86.0,20:26,21:52,0,AVE 03192,
+Zaragoza,Barcelona,91.0,11:48,13:19,0,AVE 03303,
+Zaragoza,Lleida,40.0,12:37,13:17,0,AVE 03943,
+Zaragoza,Tarragona,54.0,14:43,15:37,0,AVE INT 09725,
+Zaragoza,Girona,148.0,17:46,20:14,0,AVE 03163,
+Zaragoza,Ciudad Real,115.0,10:20,12:15,0,AVE 03940,
+Zaragoza,Pamplona,119.0,11:06,13:05,0,ALVIA 00622,
+Zaragoza,Teruel,178.0,17:25,20:23,0,MD 18515,
+Zaragoza,Valencia,222.0,08:01,11:43,1,AVE 03302 + AVE 05890,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Sevilla,242.0,10:20,14:22,0,AVE 03940,
+Zaragoza,Córdoba,175.0,10:20,13:15,0,AVE 03940,
+Zaragoza,Málaga,272.0,13:45,18:17,1,AVE 03122 + AVE 02152,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Valladolid,186.0,14:25,17:31,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Granada,273.0,08:38,13:11,0,AVE 03930,
+Zaragoza,Albacete,212.0,12:26,15:58,1,AVE 03112 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Alicante,268.0,12:26,16:54,1,AVE 03112 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,León,258.0,14:25,18:43,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Ourense,274.0,12:26,17:00,1,AVE 03112 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Santiago,316.0,12:26,17:42,1,AVE 03112 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,A Coruña,351.0,12:26,18:17,1,AVE 03112 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Cádiz,367.0,10:20,16:27,1,AVE 03940 + MD 13010,Sevilla-Santa Justa
+Zaragoza,Jaén,334.0,17:12,22:46,1,AVE 03942 + MD 13017,Cordoba
+Zaragoza,San Sebastián,265.0,16:36,21:01,0,ALVIA 00530,
+Zaragoza,Murcia,310.0,07:36,12:46,1,AVE 03862 + AVE 05962,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Oviedo,323.0,14:25,19:48,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Santander,422.0,16:26,23:28,1,AVE 03152 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Vigo,373.0,13:45,19:58,1,AVE 03122 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Badajoz,431.0,13:45,20:56,1,AVE 03122 + ALVIA 00192,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Huelva,378.0,15:44,22:02,1,AVE 03308 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Almería,541.0,14:25,23:26,1,AVE INT 09730 + ALVIA 02366,Madrid Pta.Atocha - Almudena Grandes
+Zaragoza,Bilbao,305.0,10:48,15:53,0,ALVIA 00438,
+Lleida,Tarragona,24.0,13:19,13:43,0,AVE 03943,
+Lleida,Barcelona,66.0,22:42,23:48,0,AVE 03203,
+Lleida,Girona,116.0,11:34,13:30,0,AVE 02561,
+Lleida,Madrid,130.0,19:42,21:52,0,AVE 03192,
+Lleida,Zaragoza,40.0,09:01,09:41,0,AVE 03882,
+Lleida,Ciudad Real,161.0,09:34,12:15,0,AVE 03940,
+Lleida,Valencia,212.0,17:37,21:09,1,AVE 03305 + EUROMED 01181,Camp Tarragona
+Lleida,Alicante,323.0,15:00,20:23,1,AVE 03308 + AVE 05182,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Sevilla,288.0,09:34,14:22,0,AVE 03940,
+Lleida,Córdoba,221.0,09:34,13:15,0,AVE 03940,
+Lleida,Málaga,316.0,13:01,18:17,1,AVE 03122 + AVE 02152,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Granada,323.0,07:48,13:11,0,AVE 03930,
+Lleida,Albacete,271.0,15:00,19:31,1,AVE 03308 + AVE 05182,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Valladolid,241.0,06:52,10:53,1,AVE 03862 + AVE 05071,Madrid Pta.Atocha - Almudena Grandes
+Lleida,León,309.0,06:52,12:01,1,AVE 03862 + AVE 05071,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Ourense,324.0,13:01,18:25,1,AVE 03122 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Santiago,384.0,17:01,23:25,1,AVE 03162 + AVLO 04405,Madrid Pta.Atocha - Almudena Grandes
+Lleida,A Coruña,418.0,17:01,23:59,1,AVE 03162 + AVLO 04405,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Teruel,237.0,16:26,20:23,1,AVE 03942 + MD 18515,Zaragoza-Delicias
+Lleida,Pamplona,172.0,10:13,13:05,0,ALVIA 00622,
+Lleida,Cádiz,413.0,09:34,16:27,1,AVE 03940 + MD 13010,Sevilla-Santa Justa
+Lleida,Jaén,380.0,16:26,22:46,1,AVE 03942 + MD 13017,Cordoba
+Lleida,San Sebastián,319.0,15:42,21:01,0,ALVIA 00530,
+Lleida,Murcia,354.0,06:52,12:46,1,AVE 03862 + AVE 05962,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Oviedo,407.0,13:01,19:48,1,AVE 03122 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Vigo,417.0,13:01,19:58,1,AVE 03122 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Badajoz,475.0,13:01,20:56,1,AVE 03122 + ALVIA 00192,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Huelva,422.0,15:00,22:02,1,AVE 03308 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Santander,508.0,15:00,23:28,1,AVE 03308 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Lleida,Almería,604.0,10:56,21:00,2,AVE 03304 + AVE 02136 + MD 13944,Madrid Pta.Atocha - Almudena Grandes / Granada
+Lleida,Bilbao,354.0,09:59,15:53,0,ALVIA 00438,
+Tarragona,Barcelona,36.0,12:33,13:09,0,ALVIA 00533,
+Tarragona,Girona,88.0,12:02,13:30,0,AVE 02561,
+Tarragona,Valencia,131.0,16:51,19:02,0,EUROMED 01161,
+Tarragona,Madrid,133.0,07:59,10:12,0,AVE 03662,
+Tarragona,Zaragoza,59.0,13:23,14:22,0,AVE INT 09730,
+Tarragona,Lleida,25.0,20:34,20:59,0,AVE 03310,
+Tarragona,Ciudad Real,190.0,09:05,12:15,0,AVE 03940,
+Tarragona,Alicante,282.0,16:51,21:33,0,EUROMED 01161,
+Tarragona,Albacete,276.0,07:59,12:35,1,AVE 03662 + AVE 02913,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Murcia,359.0,16:51,22:50,1,EUROMED 01161 + AVANT 09215,Alicante/Alacant
+Tarragona,Sevilla,317.0,09:05,14:22,0,AVE 03940,
+Tarragona,Córdoba,250.0,09:05,13:15,0,AVE 03940,
+Tarragona,Málaga,343.0,12:34,18:17,1,AVE 03122 + AVE 02152,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Granada,352.0,07:19,13:11,0,AVE 03930,
+Tarragona,Valladolid,248.0,13:23,17:31,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,León,320.0,13:23,18:43,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Ourense,340.0,07:59,13:39,1,AVE 03662 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Santiago,382.0,07:59,14:21,1,AVE 03662 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,A Coruña,440.0,07:59,15:19,2,AVE 03662 + AVE 04515 + MD 09132,Madrid Pta.Atocha - Almudena Grandes / Santiago de Compostela
+Tarragona,Teruel,271.0,15:52,20:23,1,AVE 03942 + MD 18515,Zaragoza-Delicias
+Tarragona,Pamplona,204.0,09:41,13:05,0,ALVIA 00622,
+Tarragona,Cádiz,442.0,09:05,16:27,1,AVE 03940 + MD 13010,Sevilla-Santa Justa
+Tarragona,Jaén,414.0,15:52,22:46,1,AVE 03942 + MD 13017,Cordoba
+Tarragona,San Sebastián,351.0,15:10,21:01,0,ALVIA 00530,
+Tarragona,Oviedo,385.0,13:23,19:48,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Vigo,444.0,12:34,19:58,1,AVE 03122 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Badajoz,502.0,12:34,20:56,1,AVE 03122 + ALVIA 00192,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Huelva,450.0,14:32,22:02,1,AVE 03308 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Santander,536.0,14:32,23:28,1,AVE 03308 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Almería,603.0,13:23,23:26,1,AVE INT 09730 + ALVIA 02366,Madrid Pta.Atocha - Almudena Grandes
+Tarragona,Bilbao,386.0,09:27,15:53,0,ALVIA 00438,
+Barcelona,Girona,40.0,11:02,11:42,0,AVE 03073,
+Barcelona,Tarragona,30.0,14:00,14:30,0,AVE 03308,
+Barcelona,Madrid,157.0,18:25,21:02,0,AVE 03180,
+Barcelona,Zaragoza,82.0,21:05,22:27,0,AVE 03212,
+Barcelona,Valencia,167.0,16:15,19:02,0,EUROMED 01161,
+Barcelona,Lleida,58.0,14:00,14:58,0,AVE 03308,
+Barcelona,Ciudad Real,225.0,08:30,12:15,0,AVE 03940,
+Barcelona,Alicante,318.0,16:15,21:33,0,EUROMED 01161,
+Barcelona,Sevilla,340.0,07:00,12:40,1,AVE 03070 + AVE 02100,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Córdoba,285.0,08:30,13:15,0,AVE 03940,
+Barcelona,Málaga,354.0,08:25,14:19,1,AVE 03080 + AVE 03882,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Valladolid,268.0,15:25,19:53,1,AVE 03150 + ALVIA 04181,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Teruel,284.0,06:35,11:19,1,AVE 03302 + MD 18511,Zaragoza-Delicias
+Barcelona,Pamplona,240.0,09:05,13:05,0,ALVIA 00622,
+Barcelona,Albacete,298.0,11:00,15:58,1,AVE 03112 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Murcia,395.0,16:15,22:50,1,EUROMED 01161 + AVANT 09215,Alicante/Alacant
+Barcelona,Granada,386.0,06:45,13:11,0,AVE 03930,
+Barcelona,León,346.0,15:25,21:11,1,AVE 03150 + ALVIA 04181,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Ourense,360.0,11:00,17:00,1,AVE 03112 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Santiago,402.0,11:00,17:42,1,AVE 03112 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,A Coruña,437.0,11:00,18:17,1,AVE 03112 + AVE 04345,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Cádiz,477.0,08:30,16:27,1,AVE 03940 + MD 13010,Sevilla-Santa Justa
+Barcelona,Oviedo,417.0,15:25,22:22,1,AVE 03150 + ALVIA 04181,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Jaén,441.0,15:25,22:46,2,AVE 03150 + AVLO 02188 + MD 13017,Madrid Pta.Atocha - Almudena Grandes / Cordoba
+Barcelona,Santander,483.0,15:25,23:28,1,AVE 03150 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,San Sebastián,389.0,14:32,21:01,0,ALVIA 00530,
+Barcelona,Vigo,478.0,12:00,19:58,1,AVE 03122 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Badajoz,536.0,12:00,20:56,1,AVE 03122 + ALVIA 00192,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Huelva,482.0,14:00,22:02,1,AVE 03308 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Almería,636.0,12:50,23:26,1,AVE INT 09730 + ALVIA 02366,Madrid Pta.Atocha - Almudena Grandes
+Barcelona,Bilbao,413.0,09:00,15:53,1,AVE 03092 + ALVIA 00438,Zaragoza-Delicias
+Girona,Barcelona,39.0,17:51,18:30,0,AVANT 34192,
+Girona,Tarragona,81.0,15:11,16:32,0,AVE 03162,
+Girona,Madrid,216.0,17:26,21:02,1,AVANT 34182 + AVE 03180,Barcelona-Sants
+Girona,Zaragoza,134.0,08:09,10:23,0,AVE 03092,
+Girona,Lleida,108.0,15:11,16:59,0,AVE 03162,
+Girona,Valencia,228.0,09:25,13:13,0,EUROMED 01101,
+Girona,Ciudad Real,292.0,07:23,12:15,1,EUROMED 01081 + AVE 03940,Barcelona-Sants
+Girona,Alicante,375.0,09:25,15:40,0,EUROMED 01101,
+Girona,Sevilla,416.0,05:44,12:40,1,AVE 03302 + AVE 02100,Madrid Pta.Atocha - Almudena Grandes
+Girona,Córdoba,349.0,05:44,11:33,1,AVE 03302 + AVE 03930,Barcelona-Sants
+Girona,Málaga,416.0,07:23,14:19,2,EUROMED 01081 + AVE 03080 + AVE 03882,Barcelona-Sants / Madrid Pta.Atocha - Almudena Grandes
+Girona,Granada,447.0,05:44,13:11,1,AVE 03302 + AVE 03930,Barcelona-Sants
+Girona,Albacete,361.0,06:34,12:35,1,AVE 03662 + AVE 02913,Madrid Pta.Atocha - Almudena Grandes
+Girona,Murcia,459.0,15:11,22:50,2,AVE 03162 + EUROMED 01161 + AVANT 09215,Barcelona-Sants / Alicante/Alacant
+Girona,Valladolid,336.0,05:44,11:20,1,AVE 03302 + AVANT 08109,Madrid Pta.Atocha - Almudena Grandes
+Girona,León,409.0,11:54,18:43,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Girona,Ourense,425.0,06:34,13:39,1,AVE 03662 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Girona,Santiago,467.0,06:34,14:21,1,AVE 03662 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Girona,A Coruña,525.0,06:34,15:19,2,AVE 03662 + AVE 04515 + MD 09132,Madrid Pta.Atocha - Almudena Grandes / Santiago de Compostela
+Girona,Teruel,335.0,05:44,11:19,1,AVE 03302 + MD 18511,Zaragoza-Delicias
+Girona,Pamplona,296.0,08:09,13:05,1,AVE 03092 + ALVIA 00622,Barcelona-Sants
+Girona,Cádiz,544.0,07:23,16:27,2,EUROMED 01081 + AVE 03940 + MD 13010,Barcelona-Sants / Sevilla-Santa Justa
+Girona,Oviedo,474.0,11:54,19:48,1,AVE INT 09730 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Girona,Vigo,532.0,06:34,15:26,1,AVE 03662 + AVE 04515,Madrid Pta.Atocha - Almudena Grandes
+Girona,Badajoz,621.0,05:44,16:05,2,AVE 03302 + AVANT 08100 + REG.EXP. 18770,Madrid Pta.Atocha - Almudena Grandes / Ciudad Real
+Girona,Almería,692.0,11:54,23:26,1,AVE INT 09730 + ALVIA 02366,Madrid Pta.Atocha - Almudena Grandes
+Girona,Jaén,529.0,07:23,16:12,2,EUROMED 01081 + AVE 03940 + MD 13009,Barcelona-Sants / Cordoba
+Girona,Huelva,608.0,11:54,22:02,1,AVE INT 09730 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes
+Girona,Santander,595.0,08:09,18:04,1,AVE 03092 + ALVIA 04143,Madrid Pta.Atocha - Almudena Grandes
+Girona,Bilbao,464.0,08:09,15:53,1,AVE 03092 + ALVIA 00438,Zaragoza-Delicias
+Girona,San Sebastián,517.0,08:09,16:46,2,AVE 03092 + ALVIA 00438 + MD 18061,Zaragoza-Delicias / Miranda De Ebro
+Valencia,Alicante,137.0,16:28,18:45,0,MD 35623,
+Valencia,Madrid,116.0,19:42,21:38,0,AVE 05191,
+Valencia,Albacete,121.0,11:43,13:44,0,ALVIA 00697,
+Valencia,Murcia,218.0,19:12,22:50,1,EUROMED 01161 + AVANT 09215,Alicante/Alacant
+Valencia,Tarragona,143.0,09:06,11:29,0,EUROMED 01092,
+Valencia,Barcelona,189.0,06:30,09:39,0,Intercity 01072,
+Valencia,Girona,256.0,15:02,19:18,0,EUROMED 01152,
+Valencia,Ciudad Real,139.0,09:15,11:34,0,AVE 03982,
+Valencia,Valladolid,186.0,17:42,20:48,0,AVE 05171,
+Valencia,Sevilla,260.0,09:15,13:35,0,AVE 03982,
+Valencia,Córdoba,202.0,09:15,12:37,0,AVE 03982,
+Valencia,Málaga,304.0,09:15,14:19,1,AVE 03982 + AVE 03882,Cordoba
+Valencia,Zaragoza,231.0,06:55,10:46,1,AVE 05871 + AVE 02561,Madrid Pta.Atocha - Almudena Grandes
+Valencia,Lleida,203.0,15:36,18:59,1,EUROMED 01162 + AVE 03182,Camp Tarragona
+Valencia,León,259.0,07:42,12:01,0,AVE 05071,
+Valencia,Ourense,276.0,07:42,12:18,1,AVE 05071 + AVE 05273,Madrid-Chamartín-Clara Campoamor
+Valencia,Santiago,336.0,07:42,13:18,2,AVE 05071 + AVE 05273 + AVANT 09120,Madrid-Chamartín-Clara Campoamor / Ourense
+Valencia,A Coruña,371.0,07:42,13:53,2,AVE 05071 + AVE 05273 + AVANT 09120,Madrid-Chamartín-Clara Campoamor / Ourense
+Valencia,Granada,336.0,09:15,14:51,1,AVE 03982 + AVANT 08335,Cordoba
+Valencia,Jaén,387.0,11:43,18:10,1,ALVIA 00697 + MD 13011,Espeluy
+Valencia,Santander,413.0,16:35,23:28,1,AVE 05161 + ALVIA 04193,Madrid-Chamartín-Clara Campoamor
+Valencia,Pamplona,370.0,06:55,13:05,2,AVE 05871 + AVE 02561 + ALVIA 00622,Madrid Pta.Atocha - Almudena Grandes / Zaragoza-Delicias
+Valencia,Teruel,147.0,12:15,14:42,0,MD 18504,
+Valencia,Cádiz,432.0,09:15,16:27,1,AVE 03982 + MD 13010,Sevilla-Santa Justa
+Valencia,Oviedo,342.0,12:31,18:13,0,AVE 05721,
+Valencia,Vigo,386.0,13:32,19:58,1,AVE 05131 + AVE 04565,Madrid-Chamartín-Clara Campoamor
+Valencia,Badajoz,444.0,13:32,20:56,1,AVE 05131 + ALVIA 00192,Madrid-Chamartín-Clara Campoamor
+Valencia,Huelva,413.0,15:09,22:02,1,AVE 05951 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes
+Valencia,Almería,536.0,09:15,18:11,2,AVE 03982 + AVANT 08335 + MD 13942,Cordoba / Granada
+Valencia,Bilbao,536.0,13:32,22:28,1,AVE 05131 + ALVIA 04267,Madrid-Chamartín-Clara Campoamor
+Valencia,San Sebastián,544.0,07:42,16:46,1,AVE 05071 + MD 18061,Valladolid
+Albacete,Madrid,92.0,10:36,12:08,0,AVE 05093,
+Albacete,Alicante,49.0,20:39,21:28,0,AVE 05382,
+Albacete,Valencia,103.0,17:41,19:24,1,AVE 05862 + AVE 05170,Cuenca Fernando Zobel
+Albacete,Murcia,113.0,16:00,17:53,0,AVE 05742,
+Albacete,Sevilla,304.0,17:41,22:45,1,AVE 05862 + AVE 03874,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Córdoba,233.0,17:41,21:34,0,AVE 05862,
+Albacete,Ciudad Real,146.0,11:52,14:18,0,MD 18183,
+Albacete,Jaén,232.0,17:38,21:30,1,MD 18043 + MD 18034,Alcazar de San Juan
+Albacete,Zaragoza,201.0,17:41,21:02,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Barcelona,302.0,05:32,10:34,1,AVANT 08072 + AVE 03081,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Valladolid,168.0,12:30,15:18,0,AVLO 05817,
+Albacete,León,239.0,18:31,22:30,0,AVE 05183,
+Albacete,Ourense,244.0,08:14,12:18,0,AVE 05273,
+Albacete,Santiago,294.0,18:31,23:25,1,AVE 05183 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Albacete,A Coruña,328.0,18:31,23:59,1,AVE 05183 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Albacete,Málaga,299.0,17:41,22:40,0,AVE 05862,
+Albacete,Granada,334.0,17:41,23:15,1,AVE 05862 + AVE 02196,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Lleida,245.0,17:41,21:46,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Tarragona,274.0,17:41,22:15,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Girona,365.0,17:41,23:46,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Pamplona,311.0,17:41,22:52,1,AVE 05862 + ALVIA 00801,Madrid Pta.Atocha - Almudena Grandes
+Albacete,Oviedo,320.0,09:31,14:51,1,AVE 05083 + AVLO 04121,Madrid-Chamartín-Clara Campoamor
+Albacete,Santander,400.0,11:24,18:04,0,ALVIA 04143,
+Albacete,Cádiz,430.0,09:31,16:41,1,AVE 05083 + ALVIA 02124,Madrid-Chamartín-Clara Campoamor
+Albacete,Vigo,416.0,12:30,19:26,2,AVLO 05817 + AVE 04345 + MD 09183,Madrid-Chamartín-Clara Campoamor / Santiago de Compostela
+Albacete,Badajoz,450.0,15:31,23:01,1,AVE 05143 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+Albacete,Huelva,391.0,15:31,22:02,1,AVE 05143 + ALVIA 02384,Madrid-Chamartín-Clara Campoamor
+Albacete,Bilbao,417.0,15:31,22:28,1,AVE 05143 + ALVIA 04267,Madrid-Chamartín-Clara Campoamor
+Albacete,San Sebastián,436.0,12:30,19:46,1,AVLO 05817 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Albacete,Teruel,311.0,09:31,14:42,2,AVE 05083 + AVE 05890 + MD 18504,Cuenca Fernando Zobel / Valencia Joaquin Sorolla
+Albacete,Almería,563.0,06:05,15:28,1,MD 18041 + Intercity 00276,Alcazar de San Juan
+Alicante,Murcia,51.0,17:02,17:53,0,AVE 05742,
+Alicante,Madrid,148.0,17:40,20:08,0,AVE 05183,
+Alicante,Albacete,48.0,07:24,08:12,0,AVE 05273,
+Alicante,Valencia,115.0,16:37,18:32,0,EUROMED 01192,
+Alicante,Sevilla,358.0,16:47,22:45,1,AVE 05862 + AVE 03874,Madrid Pta.Atocha - Almudena Grandes
+Alicante,Córdoba,287.0,16:47,21:34,0,AVE 05862,
+Alicante,Ciudad Real,232.0,10:26,14:18,1,ALVIA 04143 + MD 18183,Albacete-Los Llanos
+Alicante,Zaragoza,255.0,16:47,21:02,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Alicante,Barcelona,325.0,06:55,12:20,0,EUROMED 01092,
+Alicante,Valladolid,222.0,11:36,15:18,0,AVLO 05817,
+Alicante,León,290.0,17:40,22:30,0,AVE 05183,
+Alicante,Ourense,294.0,07:24,12:18,0,AVE 05273,
+Alicante,Santiago,345.0,17:40,23:25,1,AVE 05183 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Alicante,A Coruña,379.0,17:40,23:59,1,AVE 05183 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Alicante,Jaén,364.0,15:26,21:30,2,ALVIA 04181 + MD 18043 + MD 18034,Albacete-Los Llanos / Alcazar de San Juan
+Alicante,Málaga,353.0,16:47,22:40,0,AVE 05862,
+Alicante,Granada,388.0,16:47,23:15,1,AVE 05862 + AVE 02196,Madrid Pta.Atocha - Almudena Grandes
+Alicante,Lleida,299.0,16:47,21:46,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Alicante,Tarragona,274.0,06:55,11:29,0,EUROMED 01092,
+Alicante,Girona,395.0,06:55,13:30,1,EUROMED 01092 + AVE 02561,Camp Tarragona
+Alicante,Pamplona,365.0,16:47,22:52,1,AVE 05862 + ALVIA 00801,Madrid Pta.Atocha - Almudena Grandes
+Alicante,Oviedo,376.0,08:35,14:51,1,AVE 05083 + AVLO 04121,Madrid-Chamartín-Clara Campoamor
+Alicante,Santander,458.0,10:26,18:04,0,ALVIA 04143,
+Alicante,Cádiz,486.0,08:35,16:41,1,AVE 05083 + ALVIA 02124,Madrid-Chamartín-Clara Campoamor
+Alicante,Vigo,470.0,11:36,19:26,2,AVLO 05817 + AVE 04345 + MD 09183,Madrid-Chamartín-Clara Campoamor / Santiago de Compostela
+Alicante,Badajoz,506.0,14:35,23:01,1,AVE 05143 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+Alicante,Huelva,447.0,14:35,22:02,1,AVE 05143 + ALVIA 02384,Madrid-Chamartín-Clara Campoamor
+Alicante,Bilbao,473.0,14:35,22:28,1,AVE 05143 + ALVIA 04267,Madrid-Chamartín-Clara Campoamor
+Alicante,San Sebastián,490.0,11:36,19:46,1,AVLO 05817 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Alicante,Teruel,325.0,09:17,14:42,1,MD 35604 + MD 18504,Valencia-Estaciò Del Nord
+Alicante,Almería,680.0,09:40,21:00,2,AVE 05093 + AVE 02136 + MD 13944,Madrid-Chamartín-Clara Campoamor / Granada
+Murcia,Alicante,51.0,15:44,16:35,0,AVE 05862,
+Murcia,Madrid,165.0,06:26,09:11,0,AVE 05763,
+Murcia,Valencia,214.0,14:58,18:32,1,AVANT 09157 + EUROMED 01192,Alicante/Alacant
+Murcia,Albacete,115.0,15:44,17:39,0,AVE 05862,
+Murcia,Sevilla,374.0,06:26,12:40,1,AVE 05763 + AVE 02100,Madrid-Chamartín-Clara Campoamor
+Murcia,Córdoba,319.0,06:26,11:45,1,AVE 05763 + AVE 02100,Madrid-Chamartín-Clara Campoamor
+Murcia,Ciudad Real,283.0,06:26,11:09,1,AVE 05763 + AVANT 08100,Madrid-Chamartín-Clara Campoamor
+Murcia,Zaragoza,299.0,13:52,18:51,1,AVE 05843 + AVE 03173,Madrid-Chamartín-Clara Campoamor
+Murcia,Barcelona,402.0,13:52,20:34,1,AVE 05843 + AVE 02553,Madrid-Chamartín-Clara Campoamor
+Murcia,Valladolid,239.0,06:26,10:25,0,AVE 05763,
+Murcia,León,335.0,06:26,12:01,1,AVE 05763 + AVE 05071,Madrid-Chamartín-Clara Campoamor
+Murcia,Ourense,345.0,13:52,19:37,1,AVE 05843 + AVE 04375,Madrid-Chamartín-Clara Campoamor
+Murcia,Santiago,386.0,13:52,20:18,1,AVE 05843 + AVE 04375,Madrid-Chamartín-Clara Campoamor
+Murcia,A Coruña,422.0,13:52,20:54,1,AVE 05843 + AVE 04375,Madrid-Chamartín-Clara Campoamor
+Murcia,Jaén,454.0,15:50,23:24,2,Intercity 11183 + MD 18083 + MD 18036,Albacete-Los Llanos / Alcazar de San Juan
+Murcia,Málaga,377.0,13:52,20:09,1,AVE 05843 + AVE 02172,Madrid-Chamartín-Clara Campoamor
+Murcia,Granada,451.0,15:44,23:15,1,AVE 05862 + AVE 02196,Madrid Pta.Atocha - Almudena Grandes
+Murcia,Lleida,343.0,13:52,19:35,1,AVE 05843 + AVE 03173,Madrid-Chamartín-Clara Campoamor
+Murcia,Tarragona,372.0,13:52,20:04,1,AVE 05843 + AVE 03173,Madrid-Chamartín-Clara Campoamor
+Murcia,Girona,482.0,15:44,23:46,1,AVE 05862 + AVE 03309,Madrid Pta.Atocha - Almudena Grandes
+Murcia,Pamplona,428.0,15:44,22:52,1,AVE 05862 + ALVIA 00801,Madrid Pta.Atocha - Almudena Grandes
+Murcia,Cádiz,595.0,10:32,20:27,1,AVLO 05817 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+Murcia,Oviedo,461.0,10:32,18:13,1,AVLO 05817 + AVE 05721,Cuenca Fernando Zobel
+Murcia,Vigo,517.0,13:52,22:29,1,AVE 05843 + AVLO 04975,Madrid-Chamartín-Clara Campoamor
+Murcia,Badajoz,549.0,13:52,23:01,1,AVE 05843 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+Murcia,Teruel,410.0,07:52,14:42,1,MD 35604 + MD 18504,Valencia-Estaciò Del Nord
+Murcia,Huelva,490.0,13:52,22:02,1,AVE 05843 + ALVIA 02384,Madrid-Chamartín-Clara Campoamor
+Murcia,Santander,517.0,13:52,22:29,2,AVE 05843 + AVANT 08179 + REG.EXP. 18105,Madrid-Chamartín-Clara Campoamor / Valladolid
+Murcia,Bilbao,516.0,13:52,22:28,1,AVE 05843 + ALVIA 04267,Madrid-Chamartín-Clara Campoamor
+Murcia,San Sebastián,540.0,13:52,22:52,1,AVE 05843 + ALVIA 04167,Madrid-Chamartín-Clara Campoamor
+Murcia,Almería,774.0,10:32,23:26,1,AVLO 05817 + ALVIA 02366,Madrid-Chamartín-Clara Campoamor
+Valladolid,Madrid,54.0,15:50,16:44,0,AVLO 05178,
+Valladolid,León,62.0,21:28,22:30,0,AVE 05183,
+Valladolid,Santander,184.0,15:00,18:04,0,ALVIA 04143,
+Valladolid,Ciudad Real,156.0,07:18,09:54,1,AVE 05080 + AVLO 02096,Madrid-Chamartín-Clara Campoamor
+Valladolid,Oviedo,132.0,16:01,18:13,0,AVE 05721,
+Valladolid,Sevilla,262.0,18:23,22:45,1,ALVIA 04140 + AVE 03874,Madrid-Chamartín-Clara Campoamor
+Valladolid,Córdoba,207.0,18:23,21:50,1,ALVIA 04140 + AVE 03874,Madrid-Chamartín-Clara Campoamor
+Valladolid,Zaragoza,181.0,15:50,18:51,1,AVLO 05178 + AVE 03173,Madrid-Chamartín-Clara Campoamor
+Valladolid,Barcelona,258.0,16:16,20:34,1,AVE 05170 + AVE 02553,Madrid-Chamartín-Clara Campoamor
+Valladolid,Valencia,186.0,07:18,10:24,0,AVE 05080,
+Valladolid,Ourense,193.0,07:55,11:08,1,AVANT 08278 + AVLO 04295,Segovia Guiomar
+Valladolid,Santiago,235.0,07:55,11:50,1,AVANT 08278 + AVLO 04295,Segovia Guiomar
+Valladolid,A Coruña,272.0,07:55,12:27,1,AVANT 08278 + AVLO 04295,Segovia Guiomar
+Valladolid,Bilbao,221.0,08:26,12:07,0,ALVIA 04187,
+Valladolid,San Sebastián,239.0,15:47,19:46,0,Intercity 04257,
+Valladolid,Málaga,259.0,15:50,20:09,1,AVLO 05178 + AVE 02172,Madrid-Chamartín-Clara Campoamor
+Valladolid,Lleida,225.0,15:50,19:35,1,AVLO 05178 + AVE 03173,Madrid-Chamartín-Clara Campoamor
+Valladolid,Tarragona,223.0,07:18,11:01,1,AVE 05080 + AVE 03091,Madrid-Chamartín-Clara Campoamor
+Valladolid,Albacete,167.0,15:50,18:37,0,AVLO 05178,
+Valladolid,Alicante,224.0,15:50,19:34,0,AVLO 05178,
+Valladolid,Granada,299.0,11:50,16:49,1,ALVIA 04080 + AVE 02136,Madrid-Chamartín-Clara Campoamor
+Valladolid,Murcia,245.0,08:41,12:46,1,AVE 04060 + AVE 05962,Madrid-Chamartín-Clara Campoamor
+Valladolid,Jaén,324.0,18:00,23:24,1,AVE 05792 + MD 18036,Madrid-Chamartín-Clara Campoamor
+Valladolid,Pamplona,228.0,13:34,17:22,0,ALVIA 00631,
+Valladolid,Cádiz,377.0,14:10,20:27,1,AVANT 08148 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+Valladolid,Girona,322.0,17:03,22:25,1,ALVIA 04142 + AVE 03191,Madrid-Chamartín-Clara Campoamor
+Valladolid,Vigo,332.0,07:55,13:27,2,AVANT 08278 + AVLO 04295 + MD 09123,Segovia Guiomar / Santiago de Compostela
+Valladolid,Badajoz,368.0,07:18,13:26,1,AVE 05080 + ALVIA 00190,Madrid-Chamartín-Clara Campoamor
+Valladolid,Huelva,346.0,16:16,22:02,1,AVE 05170 + ALVIA 02384,Madrid-Chamartín-Clara Campoamor
+Valladolid,Teruel,399.0,15:50,22:29,2,AVLO 05178 + AVE 03173 + REGIONAL 18517,Madrid-Chamartín-Clara Campoamor / Zaragoza-Delicias
+Valladolid,Almería,545.0,06:23,15:28,1,AVANT 08058 + Intercity 00276,Madrid-Chamartín-Clara Campoamor
+León,Oviedo,61.0,17:12,18:13,0,AVE 05721,
+León,Madrid,116.0,06:43,08:39,0,AVE 05092,
+León,Valladolid,60.0,06:43,07:43,0,AVE 05092,
+León,Ciudad Real,233.0,12:46,16:39,1,AVE 05750 + AVANT 08150,Madrid-Chamartín-Clara Campoamor
+León,Santander,232.0,08:14,12:06,1,Intercity 04088 + ALVIA 04073,Palencia
+León,Sevilla,326.0,15:13,20:39,1,AVE 05170 + AVE 02180,Madrid-Chamartín-Clara Campoamor
+León,Córdoba,271.0,15:13,19:44,1,AVE 05170 + AVE 02180,Madrid-Chamartín-Clara Campoamor
+León,Zaragoza,243.0,06:43,10:46,1,AVE 05092 + AVE 02561,Madrid-Chamartín-Clara Campoamor
+León,Barcelona,321.0,15:13,20:34,1,AVE 05170 + AVE 02553,Madrid-Chamartín-Clara Campoamor
+León,Valencia,251.0,15:13,19:24,0,AVE 05170,
+León,Ourense,240.0,16:59,20:59,0,ALVIA 00622,
+León,Santiago,295.0,16:59,21:54,1,ALVIA 00622 + AVANT 09610,Ourense
+León,A Coruña,330.0,16:59,22:29,1,ALVIA 00622 + AVANT 09610,Ourense
+León,Málaga,345.0,06:43,12:28,1,AVE 05092 + AVE 03862,Madrid-Chamartín-Clara Campoamor
+León,Lleida,289.0,06:43,11:32,1,AVE 05092 + AVE 02561,Madrid-Chamartín-Clara Campoamor
+León,Tarragona,317.0,06:43,12:00,1,AVE 05092 + AVE 02561,Madrid-Chamartín-Clara Campoamor
+León,Albacete,234.0,06:43,10:37,0,AVE 05092,
+León,Alicante,287.0,06:43,11:30,0,AVE 05092,
+León,Bilbao,287.0,13:35,18:22,1,ALVIA 00625 + Intercity 00280,Miranda De Ebro
+León,San Sebastián,315.0,13:35,18:50,1,ALVIA 00625 + Intercity 00282,Vitoria/Gasteiz
+León,Vigo,352.0,16:59,22:51,0,ALVIA 00622,
+León,Granada,376.0,10:33,16:49,1,ALVIA 04080 + AVE 02136,Madrid-Chamartín-Clara Campoamor
+León,Murcia,310.0,07:36,12:46,1,AVE 04060 + AVE 05962,Madrid-Chamartín-Clara Campoamor
+León,Jaén,405.0,06:43,13:28,1,AVE 05092 + MD 18030,Madrid-Chamartín-Clara Campoamor
+León,Cádiz,461.0,12:46,20:27,1,AVE 05750 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+León,Girona,407.0,06:43,13:30,1,AVE 05092 + AVE 02561,Madrid-Chamartín-Clara Campoamor
+León,Badajoz,468.0,15:13,23:01,1,AVE 05170 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+León,Huelva,409.0,15:13,22:02,1,AVE 05170 + ALVIA 02384,Madrid-Chamartín-Clara Campoamor
+León,Pamplona,227.0,13:35,17:22,0,ALVIA 00625,
+León,Teruel,479.0,06:43,14:42,2,AVE 05092 + AVE 05890 + MD 18504,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+León,Almería,627.0,10:33,21:00,2,ALVIA 04080 + AVE 02136 + MD 13944,Madrid-Chamartín-Clara Campoamor / Granada
+Oviedo,Madrid,188.0,06:29,09:37,0,AVE 04060,
+Oviedo,Valladolid,130.0,06:29,08:39,0,AVE 04060,
+Oviedo,León,64.0,11:40,12:44,0,AVE 05750,
+Oviedo,Ciudad Real,299.0,11:40,16:39,1,AVE 05750 + AVANT 08150,Madrid-Chamartín-Clara Campoamor
+Oviedo,Santander,337.0,06:29,12:06,1,AVE 04060 + ALVIA 04073,Valladolid
+Oviedo,Sevilla,408.0,15:57,22:45,1,ALVIA 04140 + AVE 03874,Madrid-Chamartín-Clara Campoamor
+Oviedo,Córdoba,353.0,15:57,21:50,1,ALVIA 04140 + AVE 03874,Madrid-Chamartín-Clara Campoamor
+Oviedo,Málaga,458.0,15:57,23:35,1,ALVIA 04140 + AVE 02202,Madrid-Chamartín-Clara Campoamor
+Oviedo,Zaragoza,318.0,06:29,11:47,1,AVE 04060 + AVE 03303,Madrid-Chamartín-Clara Campoamor
+Oviedo,Lleida,403.0,15:57,22:40,1,ALVIA 04140 + AVE 03203,Madrid-Chamartín-Clara Campoamor
+Oviedo,Tarragona,430.0,15:57,23:07,1,ALVIA 04140 + AVE 03203,Madrid-Chamartín-Clara Campoamor
+Oviedo,Barcelona,410.0,06:29,13:19,1,AVE 04060 + AVE 03303,Madrid-Chamartín-Clara Campoamor
+Oviedo,Valencia,351.0,11:40,17:31,0,AVE 05750,
+Oviedo,Albacete,351.0,15:57,21:48,0,ALVIA 04140,
+Oviedo,Alicante,414.0,11:40,18:34,1,AVE 05750 + AVE 05162,Madrid-Chamartín-Clara Campoamor
+Oviedo,Ourense,349.0,06:29,12:18,1,AVE 04060 + AVE 05273,Madrid-Chamartín-Clara Campoamor
+Oviedo,Santiago,409.0,06:29,13:18,2,AVE 04060 + AVE 05273 + AVANT 09120,Madrid-Chamartín-Clara Campoamor / Ourense
+Oviedo,A Coruña,444.0,06:29,13:53,2,AVE 04060 + AVE 05273 + AVANT 09120,Madrid-Chamartín-Clara Campoamor / Ourense
+Oviedo,Bilbao,391.0,15:57,22:28,1,ALVIA 04140 + ALVIA 04267,Valladolid
+Oviedo,San Sebastián,415.0,15:57,22:52,1,ALVIA 04140 + ALVIA 04167,Valladolid
+Oviedo,Cádiz,527.0,11:40,20:27,1,AVE 05750 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+Oviedo,Granada,446.0,09:23,16:49,1,ALVIA 04080 + AVE 02136,Madrid-Chamartín-Clara Campoamor
+Oviedo,Girona,514.0,11:40,20:14,1,AVE 05750 + AVE 03163,Madrid-Chamartín-Clara Campoamor
+Oviedo,Murcia,377.0,06:29,12:46,1,AVE 04060 + AVE 05962,Madrid-Chamartín-Clara Campoamor
+Oviedo,Vigo,498.0,11:40,19:58,1,AVE 05750 + AVE 04565,Madrid-Chamartín-Clara Campoamor
+Oviedo,Badajoz,556.0,11:40,20:56,1,AVE 05750 + ALVIA 00192,Madrid-Chamartín-Clara Campoamor
+Oviedo,Teruel,649.0,11:40,22:29,2,AVE 05750 + AVE 03163 + REGIONAL 18517,Madrid-Chamartín-Clara Campoamor / Zaragoza-Delicias
+Oviedo,Almería,697.0,09:23,21:00,2,ALVIA 04080 + AVE 02136 + MD 13944,Madrid-Chamartín-Clara Campoamor / Granada
+Oviedo,Jaén,499.0,11:40,19:59,1,AVE 05750 + MD 18032,Madrid-Chamartín-Clara Campoamor
+Oviedo,Huelva,550.0,09:23,18:33,2,ALVIA 04080 + AVE 02140 + MD 13039,Madrid-Chamartín-Clara Campoamor / Sevilla-Santa Justa
+Oviedo,Pamplona,342.0,11:40,17:22,1,AVE 05750 + ALVIA 00625,Leon
+Ourense,Santiago,38.0,21:16,21:54,0,AVANT 09610,
+Ourense,A Coruña,73.0,22:46,23:59,0,AVLO 04405,
+Ourense,Vigo,90.0,18:28,19:58,0,AVE 04565,
+Ourense,Madrid,135.0,16:25,18:40,0,AVE 05382,
+Ourense,Ciudad Real,254.0,12:25,16:39,1,AVE 04314 + AVANT 08150,Madrid-Chamartín-Clara Campoamor
+Ourense,Sevilla,375.0,07:26,13:41,1,AVE 04464 + AVE 03872,Madrid-Chamartín-Clara Campoamor
+Ourense,Córdoba,294.0,08:25,13:19,1,AVE 04364 + AVE 03882,Madrid-Chamartín-Clara Campoamor
+Ourense,Málaga,352.0,12:25,18:17,1,AVE 04314 + AVE 02152,Madrid-Chamartín-Clara Campoamor
+Ourense,Zaragoza,272.0,15:13,19:45,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Ourense,Barcelona,367.0,11:27,17:34,1,AVLO 04494 + AVE 03151,Madrid-Chamartín-Clara Campoamor
+Ourense,Valencia,306.0,12:25,17:31,1,AVE 04314 + AVE 05750,Madrid-Chamartín-Clara Campoamor
+Ourense,Valladolid,212.0,17:04,20:36,1,AVLO 04334 + AVANT 08199,Segovia Guiomar
+Ourense,León,245.0,09:25,13:30,0,ALVIA 00625,
+Ourense,Granada,410.0,16:25,23:15,1,AVE 05382 + AVE 02196,Madrid-Chamartín-Clara Campoamor
+Ourense,Lleida,321.0,16:25,21:46,1,AVE 05382 + AVE 03309,Madrid-Chamartín-Clara Campoamor
+Ourense,Tarragona,331.0,15:13,20:44,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Ourense,Girona,432.0,15:13,22:25,1,AVE 04254 + AVE 03191,Madrid-Chamartín-Clara Campoamor
+Ourense,Albacete,252.0,16:25,20:37,0,AVE 05382,
+Ourense,Alicante,303.0,16:25,21:28,0,AVE 05382,
+Ourense,Murcia,344.0,16:25,22:09,1,AVE 05382 + AVE 05792,Madrid-Chamartín-Clara Campoamor
+Ourense,Jaén,419.0,16:25,23:24,1,AVE 05382 + MD 18036,Madrid-Chamartín-Clara Campoamor
+Ourense,Santander,423.0,16:25,23:28,1,AVE 05382 + ALVIA 04193,Madrid-Chamartín-Clara Campoamor
+Ourense,Pamplona,387.0,16:25,22:52,1,AVE 05382 + ALVIA 00801,Madrid-Chamartín-Clara Campoamor
+Ourense,Cádiz,482.0,12:25,20:27,1,AVE 04314 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+Ourense,Oviedo,380.0,06:24,12:44,1,AVLO 04154 + ALVIA 04091,Madrid-Chamartín-Clara Campoamor
+Ourense,Badajoz,468.0,15:13,23:01,1,AVE 04254 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+Ourense,Teruel,498.0,06:24,14:42,2,AVLO 04154 + AVE 05890 + MD 18504,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+Ourense,Almería,631.0,12:55,23:26,1,ALVIA 04114 + ALVIA 02366,Madrid-Chamartín-Clara Campoamor
+Ourense,Huelva,547.0,12:55,22:02,1,ALVIA 04114 + ALVIA 02384,Madrid-Chamartín-Clara Campoamor
+Ourense,Bilbao,537.0,09:25,18:22,1,ALVIA 00625 + Intercity 00280,Miranda De Ebro
+Ourense,San Sebastián,499.0,11:27,19:46,1,AVLO 04494 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Santiago,A Coruña,31.0,23:28,23:59,0,AVLO 04405,
+Santiago,Vigo,53.0,18:33,19:26,0,MD 09183,
+Santiago,Ourense,33.0,14:37,15:10,0,AVE 04254,
+Santiago,Madrid,180.0,14:37,17:37,0,AVE 04254,
+Santiago,Ciudad Real,291.0,11:48,16:39,1,AVE 04314 + AVANT 08150,Madrid-Chamartín-Clara Campoamor
+Santiago,Sevilla,413.0,05:47,12:40,1,AVLO 04154 + AVE 02100,Madrid-Chamartín-Clara Campoamor
+Santiago,Córdoba,331.0,07:48,13:19,1,AVE 04364 + AVE 03882,Madrid-Chamartín-Clara Campoamor
+Santiago,Málaga,389.0,11:48,18:17,1,AVE 04314 + AVE 02152,Madrid-Chamartín-Clara Campoamor
+Santiago,Zaragoza,308.0,14:37,19:45,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Santiago,Barcelona,405.0,10:49,17:34,1,AVLO 04494 + AVE 03151,Madrid-Chamartín-Clara Campoamor
+Santiago,Valencia,343.0,11:48,17:31,1,AVE 04314 + AVE 05750,Madrid-Chamartín-Clara Campoamor
+Santiago,Valladolid,250.0,16:26,20:36,1,AVLO 04334 + AVANT 08199,Segovia Guiomar
+Santiago,León,287.0,08:43,13:30,0,ALVIA 00625,
+Santiago,Cádiz,519.0,11:48,20:27,1,AVE 04314 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+Santiago,Granada,499.0,11:58,20:17,2,AVANT 09111 + ALVIA 04114 + ALVIA 02366,Ourense / Madrid-Chamartín-Clara Campoamor
+Santiago,Lleida,371.0,14:37,20:48,2,AVE 04254 + AVE 03183 + AVE 03931,Madrid-Chamartín-Clara Campoamor / Zaragoza-Delicias
+Santiago,Tarragona,367.0,14:37,20:44,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Santiago,Girona,468.0,14:37,22:25,1,AVE 04254 + AVE 03191,Madrid-Chamartín-Clara Campoamor
+Santiago,Albacete,294.0,14:37,19:31,1,AVE 04254 + AVE 05182,Madrid-Chamartín-Clara Campoamor
+Santiago,Alicante,346.0,14:37,20:23,1,AVE 04254 + AVE 05182,Madrid-Chamartín-Clara Campoamor
+Santiago,Murcia,419.0,05:47,12:46,1,AVLO 04154 + AVE 05962,Madrid-Chamartín-Clara Campoamor
+Santiago,Oviedo,417.0,05:47,12:44,1,AVLO 04154 + ALVIA 04091,Madrid-Chamartín-Clara Campoamor
+Santiago,Badajoz,504.0,14:37,23:01,1,AVE 04254 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+Santiago,Jaén,461.0,05:47,13:28,1,AVLO 04154 + MD 18030,Madrid-Chamartín-Clara Campoamor
+Santiago,Santander,531.0,14:37,23:28,1,AVE 04254 + ALVIA 04193,Madrid-Chamartín-Clara Campoamor
+Santiago,Pamplona,452.0,06:23,13:55,2,AVANT 09061 + AVE 04464 + ALVIA 00605,Ourense / Madrid-Chamartín-Clara Campoamor
+Santiago,Almería,688.0,11:58,23:26,2,AVANT 09111 + ALVIA 04114 + ALVIA 02366,Ourense / Madrid-Chamartín-Clara Campoamor
+Santiago,Huelva,604.0,11:58,22:02,2,AVANT 09111 + ALVIA 04114 + ALVIA 02384,Ourense / Madrid-Chamartín-Clara Campoamor
+Santiago,Bilbao,579.0,08:43,18:22,1,ALVIA 00625 + Intercity 00280,Miranda De Ebro
+Santiago,San Sebastián,537.0,10:49,19:46,1,AVLO 04494 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Santiago,Teruel,535.0,05:47,14:42,2,AVLO 04154 + AVE 05890 + MD 18504,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+A Coruña,Santiago,29.0,21:00,21:29,0,AVANT 09201,
+A Coruña,Vigo,86.0,18:00,19:26,0,MD 09183,
+A Coruña,Ourense,67.0,19:33,20:40,0,AVE 04404,
+A Coruña,Madrid,214.0,19:33,23:07,0,AVE 04404,
+A Coruña,Ciudad Real,324.0,11:15,16:39,1,AVE 04314 + AVANT 08150,Madrid-Chamartín-Clara Campoamor
+A Coruña,Sevilla,446.0,05:14,12:40,1,AVLO 04154 + AVE 02100,Madrid-Chamartín-Clara Campoamor
+A Coruña,Córdoba,364.0,07:15,13:19,1,AVE 04364 + AVE 03882,Madrid-Chamartín-Clara Campoamor
+A Coruña,Málaga,422.0,11:15,18:17,1,AVE 04314 + AVE 02152,Madrid-Chamartín-Clara Campoamor
+A Coruña,Zaragoza,370.0,13:35,19:45,2,AVANT 09131 + AVE 04254 + AVE 03183,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Barcelona,469.0,13:35,21:24,2,AVANT 09131 + AVE 04254 + AVE 03183,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Valencia,376.0,11:15,17:31,1,AVE 04314 + AVE 05750,Madrid-Chamartín-Clara Campoamor
+A Coruña,Valladolid,282.0,15:54,20:36,1,AVLO 04334 + AVANT 08199,Segovia Guiomar
+A Coruña,León,318.0,08:12,13:30,0,ALVIA 00625,
+A Coruña,Granada,532.0,11:25,20:17,2,AVANT 09111 + ALVIA 04114 + ALVIA 02366,Ourense / Madrid-Chamartín-Clara Campoamor
+A Coruña,Lleida,434.0,07:15,14:29,1,AVE 04364 + AVE 02591,Madrid-Chamartín-Clara Campoamor
+A Coruña,Tarragona,429.0,13:35,20:44,2,AVANT 09131 + AVE 04254 + AVE 03183,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Girona,530.0,13:35,22:25,2,AVANT 09131 + AVE 04254 + AVE 03191,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Albacete,356.0,13:35,19:31,2,AVANT 09131 + AVE 04254 + AVE 05182,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Alicante,408.0,13:35,20:23,2,AVANT 09131 + AVE 04254 + AVE 05182,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Murcia,452.0,05:14,12:46,1,AVLO 04154 + AVE 05962,Madrid-Chamartín-Clara Campoamor
+A Coruña,Oviedo,450.0,05:14,12:44,1,AVLO 04154 + ALVIA 04091,Madrid-Chamartín-Clara Campoamor
+A Coruña,Badajoz,566.0,13:35,23:01,2,AVANT 09131 + AVE 04254 + ALVIA 00194,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Jaén,494.0,05:14,13:28,1,AVLO 04154 + MD 18030,Madrid-Chamartín-Clara Campoamor
+A Coruña,Santander,592.0,08:12,18:04,1,ALVIA 00625 + ALVIA 04143,Palencia
+A Coruña,Pamplona,485.0,05:50,13:55,2,AVANT 09061 + AVE 04464 + ALVIA 00605,Ourense / Madrid-Chamartín-Clara Campoamor
+A Coruña,Almería,721.0,11:25,23:26,2,AVANT 09111 + ALVIA 04114 + ALVIA 02366,Ourense / Madrid-Chamartín-Clara Campoamor
+A Coruña,Huelva,637.0,11:25,22:02,2,AVANT 09111 + ALVIA 04114 + ALVIA 02384,Ourense / Madrid-Chamartín-Clara Campoamor
+A Coruña,Bilbao,610.0,08:12,18:22,1,ALVIA 00625 + Intercity 00280,Miranda De Ebro
+A Coruña,San Sebastián,607.0,09:39,19:46,2,REGIONAL 12421 + AVLO 04494 + Intercity 04257,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+A Coruña,Cádiz,552.0,11:15,20:27,1,AVE 04314 + ALVIA 02164,Madrid-Chamartín-Clara Campoamor
+A Coruña,Teruel,568.0,05:14,14:42,2,AVLO 04154 + AVE 05890 + MD 18504,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+Vigo,Santiago,52.0,17:40,18:32,0,MD 09172,
+Vigo,A Coruña,88.0,17:40,19:08,0,MD 09172,
+Vigo,Ourense,83.0,06:00,07:23,0,AVE 04464,
+Vigo,Madrid,230.0,06:00,09:50,0,AVE 04464,
+Vigo,Ciudad Real,349.0,17:25,23:14,1,AVE 04384 + AVANT 08220,Madrid-Chamartín-Clara Campoamor
+Vigo,Sevilla,461.0,06:00,13:41,1,AVE 04464 + AVE 03872,Madrid-Chamartín-Clara Campoamor
+Vigo,Córdoba,406.0,06:00,12:46,1,AVE 04464 + AVE 03872,Madrid-Chamartín-Clara Campoamor
+Vigo,Málaga,462.0,10:35,18:17,2,MD 09112 + AVE 04314 + AVE 02152,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+Vigo,Zaragoza,368.0,13:37,19:45,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Vigo,Barcelona,467.0,13:37,21:24,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Vigo,Valencia,394.0,06:00,12:34,1,AVE 04464 + AVE 05100,Madrid-Chamartín-Clara Campoamor
+Vigo,Valladolid,320.0,06:00,11:20,1,AVE 04464 + AVANT 08109,Madrid-Chamartín-Clara Campoamor
+Vigo,León,400.0,06:50,13:30,1,REGIONAL 12480 + ALVIA 00625,Santiago de Compostela
+Vigo,Cádiz,592.0,10:35,20:27,2,MD 09112 + AVE 04314 + ALVIA 02164,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+Vigo,Granada,531.0,06:00,14:51,2,AVE 04464 + AVE 03872 + AVANT 08335,Madrid-Chamartín-Clara Campoamor / Cordoba
+Vigo,Lleida,431.0,13:37,20:48,2,AVE 04254 + AVE 03183 + AVE 03931,Madrid-Chamartín-Clara Campoamor / Zaragoza-Delicias
+Vigo,Tarragona,427.0,13:37,20:44,1,AVE 04254 + AVE 03183,Madrid-Chamartín-Clara Campoamor
+Vigo,Girona,528.0,13:37,22:25,1,AVE 04254 + AVE 03191,Madrid-Chamartín-Clara Campoamor
+Vigo,Albacete,354.0,13:37,19:31,1,AVE 04254 + AVE 05182,Madrid-Chamartín-Clara Campoamor
+Vigo,Alicante,406.0,13:37,20:23,1,AVE 04254 + AVE 05182,Madrid-Chamartín-Clara Campoamor
+Vigo,Murcia,512.0,13:37,22:09,1,AVE 04254 + AVE 05792,Madrid-Chamartín-Clara Campoamor
+Vigo,Oviedo,509.0,09:44,18:13,1,AVLO 04494 + AVE 05721,Madrid-Chamartín-Clara Campoamor
+Vigo,Badajoz,564.0,13:37,23:01,1,AVE 04254 + ALVIA 00194,Madrid-Chamartín-Clara Campoamor
+Vigo,Jaén,549.0,13:37,22:46,2,AVE 04254 + AVLO 02188 + MD 13017,Madrid-Chamartín-Clara Campoamor / Cordoba
+Vigo,Santander,591.0,13:37,23:28,1,AVE 04254 + ALVIA 04193,Madrid-Chamartín-Clara Campoamor
+Vigo,Pamplona,475.0,06:00,13:55,1,AVE 04464 + ALVIA 00605,Madrid-Chamartín-Clara Campoamor
+Vigo,Almería,771.0,10:35,23:26,2,MD 09112 + AVE 04314 + ALVIA 02366,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+Vigo,Huelva,687.0,10:35,22:02,2,MD 09112 + AVE 04314 + ALVIA 02384,Santiago de Compostela / Madrid-Chamartín-Clara Campoamor
+Vigo,Bilbao,692.0,06:50,18:22,2,REGIONAL 12480 + ALVIA 00625 + Intercity 00280,Santiago de Compostela / Miranda De Ebro
+Vigo,San Sebastián,602.0,09:44,19:46,1,AVLO 04494 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Vigo,Teruel,639.0,09:44,20:23,2,AVLO 04494 + AVE 03305 + MD 18515,Madrid-Chamartín-Clara Campoamor / Zaragoza-Delicias
+Badajoz,Madrid,271.0,06:36,11:07,0,ALVIA 00291,
+Badajoz,Sevilla,263.0,06:54,11:17,1,MD 18331 + REG.EXP. 18773,Mérida
+Badajoz,Córdoba,319.0,06:54,12:13,2,MD 18331 + REG.EXP. 18773 + AVE 02111,Mérida / Sevilla-Santa Justa
+Badajoz,Ciudad Real,277.0,06:54,11:31,0,MD 18331,
+Badajoz,Málaga,445.0,06:54,14:19,2,MD 18331 + AVE 03982 + AVE 03882,Puertollano / Cordoba
+Badajoz,Granada,477.0,06:54,14:51,2,MD 18331 + REG.EXP. 18773 + AVANT 08335,Mérida / Sevilla-Santa Justa
+Badajoz,Jaén,504.0,14:22,22:46,2,REG.EXP. 18777 + AVLO 02188 + MD 13017,Puertollano / Cordoba
+Badajoz,Cádiz,456.0,06:54,14:30,2,MD 18331 + REG.EXP. 18773 + MD 13008,Mérida / Sevilla-Santa Justa
+Badajoz,Zaragoza,429.0,06:36,13:45,1,ALVIA 00291 + AVE 02591,Madrid-Chamartín-Clara Campoamor
+Badajoz,Lleida,473.0,06:36,14:29,1,ALVIA 00291 + AVE 02591,Madrid-Chamartín-Clara Campoamor
+Badajoz,Tarragona,496.0,07:21,15:37,1,ALVIA 00293 + AVE INT 09725,Madrid-Chamartín-Clara Campoamor
+Badajoz,Barcelona,538.0,07:21,16:19,1,ALVIA 00293 + AVE INT 09725,Madrid-Chamartín-Clara Campoamor
+Badajoz,Girona,591.0,07:21,17:12,1,ALVIA 00293 + AVE INT 09725,Madrid-Chamartín-Clara Campoamor
+Badajoz,Valencia,433.0,07:21,14:34,1,ALVIA 00293 + AVE 05120,Madrid-Chamartín-Clara Campoamor
+Badajoz,Albacete,417.0,06:36,13:33,1,ALVIA 00291 + ALVIA 04072,Madrid-Chamartín-Clara Campoamor
+Badajoz,Alicante,489.0,06:36,14:45,1,ALVIA 00291 + ALVIA 04072,Madrid-Chamartín-Clara Campoamor
+Badajoz,Murcia,632.0,07:21,17:53,1,ALVIA 00293 + AVE 05742,Madrid-Chamartín-Clara Campoamor
+Badajoz,Valladolid,347.0,06:36,12:23,1,ALVIA 00291 + AVLO 04121,Madrid-Chamartín-Clara Campoamor
+Badajoz,León,425.0,06:36,13:41,1,ALVIA 00291 + AVLO 04121,Madrid-Chamartín-Clara Campoamor
+Badajoz,Oviedo,495.0,06:36,14:51,1,ALVIA 00291 + AVLO 04121,Madrid-Chamartín-Clara Campoamor
+Badajoz,Ourense,534.0,07:21,16:15,1,ALVIA 00293 + ALVIA 04325,Madrid-Chamartín-Clara Campoamor
+Badajoz,Santiago,597.0,07:21,17:18,2,ALVIA 00293 + ALVIA 04325 + AVANT 09160,Madrid-Chamartín-Clara Campoamor / Ourense
+Badajoz,A Coruña,632.0,07:21,17:53,2,ALVIA 00293 + ALVIA 04325 + AVANT 09160,Madrid-Chamartín-Clara Campoamor / Ourense
+Badajoz,Vigo,725.0,07:21,19:26,2,ALVIA 00293 + AVE 04345 + MD 09183,Madrid-Chamartín-Clara Campoamor / Santiago de Compostela
+Badajoz,Teruel,622.0,07:21,17:43,2,ALVIA 00293 + AVE 05120 + MD 18506,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+Badajoz,Almería,819.0,07:21,21:00,2,ALVIA 00293 + AVE 02136 + MD 13944,Madrid-Chamartín-Clara Campoamor / Granada
+Badajoz,Huelva,428.0,06:54,14:02,2,MD 18331 + REG.EXP. 18773 + Intercity 02494,Mérida / Sevilla-Santa Justa
+Badajoz,Santander,643.0,07:21,18:04,1,ALVIA 00293 + ALVIA 04143,Madrid-Chamartín-Clara Campoamor
+Badajoz,Bilbao,907.0,07:21,22:28,1,ALVIA 00293 + ALVIA 04267,Madrid-Chamartín-Clara Campoamor
+Badajoz,San Sebastián,745.0,07:21,19:46,1,ALVIA 00293 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Badajoz,Pamplona,646.0,06:36,17:22,2,ALVIA 00291 + AVLO 04121 + ALVIA 00625,Madrid-Chamartín-Clara Campoamor / Palencia
+Teruel,Valencia,137.0,20:38,22:55,0,MD 18515,
+Teruel,Madrid,288.0,11:04,15:52,1,MD 18502 + AVE INT 09730,Zaragoza-Delicias
+Teruel,Zaragoza,168.0,14:57,17:45,0,MD 18504,
+Teruel,Lleida,278.0,14:57,19:35,1,MD 18504 + AVE 03173,Zaragoza-Delicias
+Teruel,Tarragona,273.0,11:04,15:37,1,MD 18502 + AVE INT 09725,Zaragoza-Delicias
+Teruel,Barcelona,309.0,06:10,11:19,1,REGIONAL 18500 + AVE 03083,Zaragoza-Delicias
+Teruel,Sevilla,468.0,14:57,22:45,1,MD 18504 + AVE 03874,Zaragoza-Delicias
+Teruel,Córdoba,413.0,14:57,21:50,1,MD 18504 + AVE 03874,Zaragoza-Delicias
+Teruel,Ciudad Real,365.0,06:10,12:15,1,REGIONAL 18500 + AVE 03940,Zaragoza-Delicias
+Teruel,Málaga,489.0,06:10,14:19,1,REGIONAL 18500 + AVE 03882,Zaragoza-Delicias
+Teruel,Girona,368.0,11:04,17:12,1,MD 18502 + AVE INT 09725,Zaragoza-Delicias
+Teruel,Valladolid,387.0,11:04,17:31,2,MD 18502 + AVE INT 09730 + AVE 04161,Zaragoza-Delicias / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Pamplona,415.0,06:10,13:05,1,REGIONAL 18500 + ALVIA 00622,Zaragoza-Delicias
+Teruel,Granada,553.0,11:04,20:17,2,MD 18502 + AVE INT 09730 + ALVIA 02366,Zaragoza-Delicias / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Albacete,294.0,13:43,18:37,2,MD 18523 + AVE 05161 + AVLO 05178,Valencia-Estaciò Del Nord / Cuenca Fernando Zobel
+Teruel,Alicante,302.0,13:43,18:45,1,MD 18523 + MD 35623,Valencia-Estaciò Del Nord
+Teruel,Murcia,393.0,13:43,20:16,1,MD 18523 + MD 35623,Valencia-Estaciò Del Nord
+Teruel,León,459.0,11:04,18:43,2,MD 18502 + AVE INT 09730 + AVE 04161,Zaragoza-Delicias / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Ourense,474.0,13:43,21:37,2,MD 18523 + AVE 05161 + AVE 04395,Valencia-Estaciò Del Nord / Madrid-Chamartín-Clara Campoamor
+Teruel,Santiago,516.0,13:43,22:19,2,MD 18523 + AVE 05161 + AVE 04395,Valencia-Estaciò Del Nord / Madrid-Chamartín-Clara Campoamor
+Teruel,A Coruña,551.0,13:43,22:54,2,MD 18523 + AVE 05161 + AVE 04395,Valencia-Estaciò Del Nord / Madrid-Chamartín-Clara Campoamor
+Teruel,Jaén,581.0,13:43,23:24,2,MD 18523 + AVE 05161 + MD 18036,Valencia-Estaciò Del Nord / Madrid-Chamartín-Clara Campoamor
+Teruel,Santander,585.0,13:43,23:28,2,MD 18523 + AVE 05161 + ALVIA 04193,Valencia-Estaciò Del Nord / Madrid-Chamartín-Clara Campoamor
+Teruel,Oviedo,524.0,11:04,19:48,2,MD 18502 + AVE INT 09730 + AVE 04161,Zaragoza-Delicias / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Vigo,655.0,11:34,22:29,2,MD 18511 + AVE 05951 + AVLO 04975,Valencia-Estaciò Del Nord / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Badajoz,687.0,11:34,23:01,2,MD 18511 + AVE 05951 + ALVIA 00194,Valencia-Estaciò Del Nord / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Huelva,628.0,11:34,22:02,2,MD 18511 + AVE 05951 + ALVIA 02384,Valencia-Estaciò Del Nord / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Cádiz,617.0,06:10,16:27,2,REGIONAL 18500 + AVE 03940 + MD 13010,Zaragoza-Delicias / Sevilla-Santa Justa
+Teruel,Almería,742.0,11:04,23:26,2,MD 18502 + AVE INT 09730 + ALVIA 02366,Zaragoza-Delicias / Madrid Pta.Atocha - Almudena Grandes
+Teruel,Bilbao,583.0,06:10,15:53,1,REGIONAL 18500 + ALVIA 00438,Zaragoza-Delicias
+Teruel,San Sebastián,597.0,11:04,21:01,1,MD 18502 + ALVIA 00530,Zaragoza-Delicias
+Almería,Granada,167.0,05:59,08:46,0,MD 13951,
+Almería,Madrid,400.0,07:58,14:38,0,ALVIA 02087,
+Almería,Jaén,360.0,15:30,21:30,1,Intercity 00279 + MD 18034,Vilches
+Almería,Sevilla,364.0,13:10,19:14,1,MD 13955 + AVANT 08575,Granada
+Almería,Córdoba,278.0,07:58,12:36,0,ALVIA 02087,
+Almería,Ciudad Real,426.0,07:58,15:04,1,ALVIA 02087 + AVLO 02137,Cordoba
+Almería,Cádiz,482.0,13:10,21:12,2,MD 13955 + AVANT 08575 + MD 13394,Granada / Sevilla-Santa Justa
+Almería,Málaga,330.0,09:19,14:49,1,MD 13953 + AVANT 08935,Granada
+Almería,Zaragoza,532.0,07:58,16:50,1,ALVIA 02087 + AVE 03305,Madrid Pta.Atocha - Almudena Grandes
+Almería,Barcelona,576.0,07:58,17:34,1,ALVIA 02087 + AVE 03151,Madrid Pta.Atocha - Almudena Grandes
+Almería,Huelva,532.0,13:10,22:02,2,MD 13955 + AVANT 08575 + ALVIA 02384,Granada / Cordoba
+Almería,Lleida,577.0,07:58,17:35,1,ALVIA 02087 + AVE 03305,Madrid Pta.Atocha - Almudena Grandes
+Almería,Tarragona,605.0,07:58,18:03,1,ALVIA 02087 + AVE 03305,Madrid Pta.Atocha - Almudena Grandes
+Almería,Girona,680.0,07:58,19:18,2,ALVIA 02087 + AVE 03151 + EUROMED 01152,Madrid Pta.Atocha - Almudena Grandes / Barcelona-Sants
+Almería,Valencia,573.0,07:58,17:31,1,ALVIA 02087 + AVE 05750,Madrid Pta.Atocha - Almudena Grandes
+Almería,Albacete,579.0,07:58,17:37,1,ALVIA 02087 + AVE 05162,Madrid Pta.Atocha - Almudena Grandes
+Almería,Alicante,636.0,07:58,18:34,1,ALVIA 02087 + AVE 05162,Madrid Pta.Atocha - Almudena Grandes
+Almería,Valladolid,527.0,07:58,16:45,1,ALVIA 02087 + AVANT 08359,Madrid Pta.Atocha - Almudena Grandes
+Almería,León,645.0,07:58,18:43,1,ALVIA 02087 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Almería,Ourense,627.0,07:58,18:25,1,ALVIA 02087 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Almería,Santiago,700.0,07:58,19:38,2,ALVIA 02087 + AVE 04565 + AVANT 09590,Madrid Pta.Atocha - Almudena Grandes / Ourense
+Almería,A Coruña,735.0,07:58,20:13,2,ALVIA 02087 + AVE 04565 + AVANT 09590,Madrid Pta.Atocha - Almudena Grandes / Ourense
+Almería,Pamplona,813.0,09:19,22:52,2,MD 13953 + AVE 02167 + ALVIA 00801,Granada / Madrid Pta.Atocha - Almudena Grandes
+Almería,Murcia,738.0,07:58,20:16,2,ALVIA 02087 + AVE 05162 + MD 35623,Madrid Pta.Atocha - Almudena Grandes / Alicante/Alacant
+Almería,Oviedo,710.0,07:58,19:48,1,ALVIA 02087 + AVE 04161,Madrid Pta.Atocha - Almudena Grandes
+Almería,Vigo,720.0,07:58,19:58,1,ALVIA 02087 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Almería,Badajoz,778.0,07:58,20:56,1,ALVIA 02087 + ALVIA 00192,Madrid Pta.Atocha - Almudena Grandes
+Almería,Teruel,745.0,07:58,20:23,2,ALVIA 02087 + AVE 03305 + MD 18515,Madrid Pta.Atocha - Almudena Grandes / Zaragoza-Delicias
+Almería,Santander,871.0,07:58,22:29,2,ALVIA 02087 + AVANT 08359 + REG.EXP. 18105,Madrid Pta.Atocha - Almudena Grandes / Valladolid
+Almería,Bilbao,870.0,07:58,22:28,1,ALVIA 02087 + ALVIA 04267,Madrid Pta.Atocha - Almudena Grandes
+Almería,San Sebastián,894.0,07:58,22:52,1,ALVIA 02087 + ALVIA 04167,Madrid Pta.Atocha - Almudena Grandes
+Jaén,Madrid,235.0,08:32,12:27,0,MD 18033,
+Jaén,Sevilla,188.0,18:18,21:26,1,MD 13073 + AVE 03942,Cordoba
+Jaén,Córdoba,102.0,18:18,20:00,0,MD 13073,
+Jaén,Ciudad Real,178.0,07:29,10:27,1,MD 13079 + AVE 03943,Cordoba
+Jaén,Cádiz,320.0,07:29,12:49,0,MD 13079,
+Jaén,Málaga,210.0,18:18,21:48,1,MD 13073 + AVLO 02188,Cordoba
+Jaén,Granada,292.0,17:00,21:52,1,MD 13035 + AVANT 08395,Cordoba
+Jaén,Albacete,226.0,08:32,12:18,1,MD 18033 + MD 18081,Alcazar de San Juan
+Jaén,Alicante,299.0,08:32,13:31,2,MD 18033 + MD 18081 + AVE 02913,Alcazar de San Juan / Albacete-Los Llanos
+Jaén,Huelva,302.0,17:00,22:02,1,MD 13035 + ALVIA 02384,Cordoba
+Jaén,Zaragoza,305.0,07:29,12:34,1,MD 13079 + AVE 03943,Cordoba
+Jaén,Lleida,348.0,07:29,13:17,1,MD 13079 + AVE 03943,Cordoba
+Jaén,Tarragona,374.0,07:29,13:43,1,MD 13079 + AVE 03943,Cordoba
+Jaén,Barcelona,416.0,07:29,14:25,1,MD 13079 + AVE 03943,Cordoba
+Jaén,Valencia,391.0,14:35,21:06,1,MD 13083 + AVE 03981,Cordoba
+Jaén,Valladolid,326.0,15:22,20:48,1,MD 18035 + AVE 05171,Madrid-Chamartín-Clara Campoamor
+Jaén,León,400.0,08:32,15:12,1,MD 18033 + AVE 05101,Madrid-Chamartín-Clara Campoamor
+Jaén,Ourense,441.0,15:22,22:43,1,MD 18035 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Jaén,Santiago,483.0,15:22,23:25,1,MD 18035 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Jaén,A Coruña,517.0,15:22,23:59,1,MD 18035 + AVLO 04405,Madrid-Chamartín-Clara Campoamor
+Jaén,Girona,470.0,14:35,22:25,2,MD 13083 + AVE 02163 + AVE 03191,Cordoba / Madrid Pta.Atocha - Almudena Grandes
+Jaén,Almería,416.0,08:32,15:28,1,MD 18033 + Intercity 00276,Vilches
+Jaén,Pamplona,477.0,07:29,15:26,2,MD 13079 + AVE 03943 + REG.EXP. 18021,Cordoba / Zaragoza-Delicias
+Jaén,Murcia,367.0,08:32,14:39,2,MD 18033 + MD 18081 + AVE 02913,Alcazar de San Juan / Albacete-Los Llanos
+Jaén,Oviedo,519.0,06:12,14:51,1,MD 18031 + AVLO 04121,Madrid-Chamartín-Clara Campoamor
+Jaén,Vigo,554.0,06:12,15:26,1,MD 18031 + AVE 04515,Madrid-Chamartín-Clara Campoamor
+Jaén,Badajoz,516.0,07:29,16:05,2,MD 13079 + AVE 03943 + REG.EXP. 18770,Cordoba / Ciudad Real
+Jaén,Teruel,691.0,06:12,17:43,2,MD 18031 + AVE 05120 + MD 18506,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+Jaén,Santander,572.0,08:32,18:04,1,MD 18033 + ALVIA 04143,Madrid-Chamartín-Clara Campoamor
+Jaén,Bilbao,836.0,08:32,22:28,1,MD 18033 + ALVIA 04267,Madrid-Chamartín-Clara Campoamor
+Jaén,San Sebastián,674.0,08:32,19:46,1,MD 18033 + Intercity 04257,Madrid-Chamartín-Clara Campoamor
+Huelva,Madrid,237.0,08:00,11:57,0,ALVIA 02285,
+Huelva,Sevilla,84.0,17:50,19:14,0,Intercity 02375,
+Huelva,Córdoba,120.0,08:00,10:00,0,ALVIA 02285,
+Huelva,Ciudad Real,214.0,08:00,11:34,1,ALVIA 02285 + AVE 02093,Cordoba
+Huelva,Cádiz,202.0,17:50,21:12,1,Intercity 02375 + MD 13394,Sevilla-Santa Justa
+Huelva,Málaga,195.0,08:00,11:15,1,ALVIA 02285 + AVE 02082,Cordoba
+Huelva,Granada,275.0,08:00,12:35,1,ALVIA 02285 + AVANT 08295,Cordoba
+Huelva,Jaén,296.0,17:50,22:46,1,Intercity 02375 + MD 13017,Cordoba
+Huelva,Zaragoza,345.0,08:00,13:45,1,ALVIA 02285 + AVE 02591,Cordoba
+Huelva,Barcelona,464.0,08:00,15:44,1,ALVIA 02285 + AVE 02591,Cordoba
+Huelva,Valladolid,366.0,08:00,14:06,1,ALVIA 02285 + AVE 05101,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Almería,506.0,15:00,23:26,2,MD 13043 + AVANT 08175 + ALVIA 02366,Sevilla-Santa Justa / Cordoba
+Huelva,Lleida,389.0,08:00,14:29,1,ALVIA 02285 + AVE 02591,Cordoba
+Huelva,Tarragona,433.0,06:30,13:43,1,MD 13041 + AVE 03943,Sevilla-Santa Justa
+Huelva,Girona,515.0,08:00,16:35,1,ALVIA 02285 + AVE 02591,Cordoba
+Huelva,Valencia,484.0,06:30,14:34,2,MD 13041 + AVE 02081 + AVE 05120,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Huelva,Albacete,414.0,08:00,14:54,1,ALVIA 02285 + ALVIA 00694,Cordoba
+Huelva,Alicante,508.0,08:00,16:28,1,ALVIA 02285 + AVE 05142,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Murcia,593.0,08:00,17:53,1,ALVIA 02285 + AVE 05742,Madrid Pta.Atocha - Almudena Grandes
+Huelva,León,432.0,08:00,15:12,1,ALVIA 02285 + AVE 05101,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Oviedo,613.0,08:00,18:13,1,ALVIA 02285 + AVE 05721,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Ourense,495.0,08:00,16:15,1,ALVIA 02285 + ALVIA 04325,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Santiago,558.0,08:00,17:18,2,ALVIA 02285 + ALVIA 04325 + AVANT 09160,Madrid Pta.Atocha - Almudena Grandes / Ourense
+Huelva,A Coruña,593.0,08:00,17:53,2,ALVIA 02285 + ALVIA 04325 + AVANT 09160,Madrid Pta.Atocha - Almudena Grandes / Ourense
+Huelva,Vigo,686.0,08:00,19:26,2,ALVIA 02285 + AVE 04345 + MD 09183,Madrid Pta.Atocha - Almudena Grandes / Santiago de Compostela
+Huelva,Badajoz,485.0,08:00,16:05,2,ALVIA 02285 + AVE 02093 + REG.EXP. 18770,Cordoba / Puertollano
+Huelva,Santander,604.0,08:00,18:04,1,ALVIA 02285 + ALVIA 04143,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Bilbao,697.0,10:51,22:28,2,MD 13045 + AVLO 02137 + ALVIA 04267,Sevilla-Santa Justa / Madrid Pta.Atocha - Almudena Grandes
+Huelva,San Sebastián,706.0,08:00,19:46,1,ALVIA 02285 + Intercity 04257,Madrid Pta.Atocha - Almudena Grandes
+Huelva,Pamplona,536.0,06:30,15:26,2,MD 13041 + AVE 03943 + REG.EXP. 18021,Sevilla-Santa Justa / Zaragoza-Delicias
+Huelva,Teruel,743.0,08:00,20:23,2,ALVIA 02285 + AVE 02591 + MD 18515,Cordoba / Zaragoza-Delicias
+Santander,Madrid,256.0,13:58,18:14,0,ALVIA 04142,
+Santander,Valladolid,183.0,13:58,17:01,0,ALVIA 04142,
+Santander,León,210.0,19:00,22:30,1,ALVIA 04192 + AVE 05183,Palencia
+Santander,Sevilla,461.0,13:58,21:39,1,ALVIA 04142 + AVE 02190,Madrid-Chamartín-Clara Campoamor
+Santander,Córdoba,406.0,13:58,20:44,1,ALVIA 04142 + AVE 02190,Madrid-Chamartín-Clara Campoamor
+Santander,Ciudad Real,371.0,13:58,20:09,1,ALVIA 04142 + AVANT 08190,Madrid-Chamartín-Clara Campoamor
+Santander,Cádiz,593.0,06:48,16:41,1,ALVIA 04072 + ALVIA 02124,Madrid-Chamartín-Clara Campoamor
+Santander,Málaga,497.0,13:58,22:15,2,ALVIA 04142 + AVE 02190 + AVANT 08195,Madrid-Chamartín-Clara Campoamor / Cordoba
+Santander,Granada,557.0,13:58,23:15,1,ALVIA 04142 + AVE 02196,Madrid-Chamartín-Clara Campoamor
+Santander,Zaragoza,404.0,13:58,20:42,1,ALVIA 04142 + AVE 02861,Madrid-Chamartín-Clara Campoamor
+Santander,Lleida,461.0,06:48,14:29,1,ALVIA 04072 + AVE 02591,Madrid-Chamartín-Clara Campoamor
+Santander,Tarragona,497.0,13:58,22:15,1,ALVIA 04142 + AVE 03309,Madrid-Chamartín-Clara Campoamor
+Santander,Barcelona,456.0,13:58,21:34,1,ALVIA 04142 + AVE 03191,Madrid-Chamartín-Clara Campoamor
+Santander,Girona,507.0,13:58,22:25,1,ALVIA 04142 + AVE 03191,Madrid-Chamartín-Clara Campoamor
+Santander,Valencia,396.0,13:58,20:34,1,ALVIA 04142 + AVLO 05184,Madrid-Chamartín-Clara Campoamor
+Santander,Albacete,399.0,13:58,20:37,1,ALVIA 04142 + AVE 05382,Madrid-Chamartín-Clara Campoamor
+Santander,Alicante,450.0,13:58,21:28,1,ALVIA 04142 + AVE 05382,Madrid-Chamartín-Clara Campoamor
+Santander,Murcia,491.0,13:58,22:09,1,ALVIA 04142 + AVE 05792,Valladolid
+Santander,Oviedo,331.0,09:20,14:51,1,REG.EXP. 18102 + AVLO 04121,Palencia
+Santander,Ourense,459.0,13:58,21:37,1,ALVIA 04142 + AVE 04395,Madrid-Chamartín-Clara Campoamor
+Santander,Santiago,501.0,13:58,22:19,1,ALVIA 04142 + AVE 04395,Madrid-Chamartín-Clara Campoamor
+Santander,A Coruña,536.0,13:58,22:54,1,ALVIA 04142 + AVE 04395,Madrid-Chamartín-Clara Campoamor
+Santander,Jaén,528.0,13:58,22:46,2,ALVIA 04142 + AVE 02190 + MD 13017,Madrid-Chamartín-Clara Campoamor / Cordoba
+Santander,Bilbao,510.0,13:58,22:28,1,ALVIA 04142 + ALVIA 04267,Valladolid
+Santander,San Sebastián,534.0,13:58,22:52,1,ALVIA 04142 + ALVIA 04167,Valladolid
+Santander,Pamplona,482.0,09:20,17:22,1,REG.EXP. 18102 + ALVIA 00625,Palencia
+Santander,Vigo,638.0,09:20,19:58,2,REG.EXP. 18102 + AVE 05750 + AVE 04565,Palencia / Madrid-Chamartín-Clara Campoamor
+Santander,Badajoz,696.0,09:20,20:56,2,REG.EXP. 18102 + AVE 05750 + ALVIA 00192,Palencia / Madrid-Chamartín-Clara Campoamor
+Santander,Almería,846.0,09:20,23:26,2,REG.EXP. 18102 + AVE 05750 + ALVIA 02366,Palencia / Madrid-Chamartín-Clara Campoamor
+Santander,Huelva,705.0,06:48,18:33,2,ALVIA 04072 + ALVIA 02124 + MD 13039,Madrid-Chamartín-Clara Campoamor / Sevilla-Santa Justa
+Santander,Teruel,655.0,06:48,17:43,2,ALVIA 04072 + AVE 05120 + MD 18506,Madrid-Chamartín-Clara Campoamor / Valencia Joaquin Sorolla
+Bilbao,Madrid,275.0,06:53,11:28,0,ALVIA 04186,
+Bilbao,Valladolid,207.0,06:53,10:20,0,ALVIA 04186,
+Bilbao,León,296.0,11:58,16:54,1,Intercity 00283 + ALVIA 00622,Miranda De Ebro
+Bilbao,San Sebastián,284.0,15:02,19:46,1,ALVIA 00437 + Intercity 04257,Miranda De Ebro
+Bilbao,Sevilla,530.0,06:53,15:43,1,ALVIA 04186 + AVE 02130,Madrid-Chamartín-Clara Campoamor
+Bilbao,Córdoba,446.0,06:53,14:19,1,ALVIA 04186 + AVE 02122,Madrid-Chamartín-Clara Campoamor
+Bilbao,Ciudad Real,417.0,15:02,21:59,2,ALVIA 00437 + Intercity 04786 + AVE 02210,Miranda De Ebro / Madrid-Chamartín-Clara Campoamor
+Bilbao,Zaragoza,287.0,15:02,19:49,0,ALVIA 00437,
+Bilbao,Lleida,354.0,15:02,20:56,0,ALVIA 00437,
+Bilbao,Tarragona,388.0,15:02,21:30,0,ALVIA 00437,
+Bilbao,Barcelona,431.0,15:02,22:13,0,ALVIA 00437,
+Bilbao,Girona,524.0,15:02,23:46,1,ALVIA 00437 + AVE 03309,Zaragoza-Delicias
+Bilbao,Valencia,442.0,15:02,22:24,2,ALVIA 00437 + Intercity 04786 + AVE 05200,Miranda De Ebro / Madrid-Chamartín-Clara Campoamor
+Bilbao,Oviedo,375.0,11:58,18:13,2,Intercity 00283 + ALVIA 00622 + AVE 05721,Miranda De Ebro / Palencia
+Bilbao,Santander,506.0,15:02,23:28,2,ALVIA 00437 + Intercity 04786 + ALVIA 04193,Miranda De Ebro / Valladolid
+Bilbao,Pamplona,258.0,06:53,11:11,1,ALVIA 04186 + REG.EXP. 16019,Miranda De Ebro
+Bilbao,Albacete,400.0,06:53,13:33,1,ALVIA 04186 + ALVIA 04072,Madrid-Chamartín-Clara Campoamor
+Bilbao,Alicante,472.0,06:53,14:45,1,ALVIA 04186 + ALVIA 04072,Madrid-Chamartín-Clara Campoamor
+Bilbao,Murcia,611.0,11:58,22:09,2,Intercity 00283 + ALVIA 00622 + AVE 05792,Miranda De Ebro / Burgos Rosa Manzano
+Bilbao,Ourense,541.0,11:58,20:59,1,Intercity 00283 + ALVIA 00622,Miranda De Ebro
+Bilbao,Santiago,596.0,11:58,21:54,2,Intercity 00283 + ALVIA 00622 + AVANT 09610,Miranda De Ebro / Ourense
+Bilbao,A Coruña,631.0,11:58,22:29,2,Intercity 00283 + ALVIA 00622 + AVANT 09610,Miranda De Ebro / Ourense
+Bilbao,Vigo,653.0,11:58,22:51,1,Intercity 00283 + ALVIA 00622,Miranda De Ebro
+Bilbao,Teruel,631.0,11:58,22:29,2,Intercity 00283 + REG.EXP. 18029 + REGIONAL 18517,Miranda De Ebro / Zaragoza-Delicias
+Bilbao,Cádiz,692.0,06:53,18:25,2,ALVIA 04186 + AVE 02130 + MD 13014,Madrid-Chamartín-Clara Campoamor / Sevilla-Santa Justa
+Bilbao,Málaga,507.0,06:53,15:20,1,ALVIA 04186 + AVE 02122,Madrid-Chamartín-Clara Campoamor
+Bilbao,Granada,596.0,06:53,16:49,1,ALVIA 04186 + AVE 02136,Madrid-Chamartín-Clara Campoamor
+Bilbao,Badajoz,843.0,06:53,20:56,1,ALVIA 04186 + ALVIA 00192,Madrid-Chamartín-Clara Campoamor
+Bilbao,Almería,847.0,06:53,21:00,2,ALVIA 04186 + AVE 02136 + MD 13944,Madrid-Chamartín-Clara Campoamor / Granada
+Bilbao,Jaén,677.0,06:53,18:10,2,ALVIA 04186 + AVE 02122 + MD 13011,Madrid-Chamartín-Clara Campoamor / Cordoba
+Bilbao,Huelva,700.0,06:53,18:33,2,ALVIA 04186 + AVE 02130 + MD 13039,Madrid-Chamartín-Clara Campoamor / Sevilla-Santa Justa
+San Sebastián,Madrid,305.0,04:55,10:00,0,Intercity 04056,
+San Sebastián,Zaragoza,253.0,06:53,11:06,0,ALVIA 00533,
+San Sebastián,Valladolid,240.0,04:55,08:55,0,Intercity 04056,
+San Sebastián,León,324.0,11:30,16:54,1,Intercity 00281 + ALVIA 00622,Vitoria/Gasteiz
+San Sebastián,Bilbao,292.0,11:01,15:53,1,MD 18012 + ALVIA 00438,Miranda De Ebro
+San Sebastián,Pamplona,125.0,06:53,08:58,0,ALVIA 00533,
+San Sebastián,Sevilla,526.0,04:55,13:41,1,Intercity 04056 + AVE 03872,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Córdoba,464.0,08:40,16:24,1,ALVIA 04086 + AVE 02142,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Ciudad Real,434.0,08:40,15:54,1,ALVIA 04086 + AVLO 02156,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Lleida,305.0,06:53,11:58,0,ALVIA 00533,
+San Sebastián,Tarragona,338.0,06:53,12:31,0,ALVIA 00533,
+San Sebastián,Barcelona,376.0,06:53,13:09,0,ALVIA 00533,
+San Sebastián,Girona,522.0,06:53,15:35,1,ALVIA 00533 + MD 15097,Barcelona-Sants
+San Sebastián,Valencia,459.0,04:55,12:34,1,Intercity 04056 + AVE 05100,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Oviedo,403.0,11:30,18:13,2,Intercity 00281 + ALVIA 00622 + AVE 05721,Vitoria/Gasteiz / Palencia
+San Sebastián,Santander,514.0,13:55,22:29,1,MD 18014 + REG.EXP. 18105,Venta De Baños
+San Sebastián,Albacete,460.0,04:55,12:35,1,Intercity 04056 + AVE 02913,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Alicante,516.0,04:55,13:31,1,Intercity 04056 + AVE 02913,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Murcia,584.0,04:55,14:39,1,Intercity 04056 + AVE 02913,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Ourense,500.0,08:40,17:00,1,ALVIA 04086 + AVE 04345,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Santiago,542.0,08:40,17:42,1,ALVIA 04086 + AVE 04345,Madrid-Chamartín-Clara Campoamor
+San Sebastián,A Coruña,577.0,08:40,18:17,1,ALVIA 04086 + AVE 04345,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Vigo,631.0,04:55,15:26,1,Intercity 04056 + AVE 04515,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Teruel,659.0,11:30,22:29,2,Intercity 00281 + REG.EXP. 18029 + REGIONAL 18517,Vitoria/Gasteiz / Zaragoza-Delicias
+San Sebastián,Málaga,526.0,08:40,17:26,1,ALVIA 04086 + AVE 02142,Madrid-Chamartín-Clara Campoamor
+San Sebastián,Granada,596.0,06:53,16:49,2,ALVIA 00533 + AVE 03304 + AVE 02136,Zaragoza-Delicias / Madrid Pta.Atocha - Almudena Grandes
+San Sebastián,Badajoz,720.0,11:01,23:01,2,MD 18012 + AVE 05170 + ALVIA 00194,Valladolid / Madrid-Chamartín-Clara Campoamor
+San Sebastián,Jaén,677.0,04:55,16:12,2,Intercity 04056 + AVE 03872 + MD 13009,Madrid-Chamartín-Clara Campoamor / Cordoba
+San Sebastián,Huelva,661.0,11:01,22:02,2,MD 18012 + AVE 05170 + ALVIA 02384,Valladolid / Madrid-Chamartín-Clara Campoamor
+San Sebastián,Cádiz,692.0,04:55,16:27,2,Intercity 04056 + AVE 03872 + MD 13010,Madrid-Chamartín-Clara Campoamor / Sevilla-Santa Justa
+San Sebastián,Almería,886.0,08:40,23:26,1,ALVIA 04086 + ALVIA 02366,Madrid-Chamartín-Clara Campoamor
+Pamplona,Zaragoza,103.0,06:05,07:48,0,REG.EXP. 18046,
+Pamplona,Madrid,199.0,11:15,14:34,0,ALVIA 00602,
+Pamplona,San Sebastián,135.0,18:46,21:01,0,ALVIA 00530,
+Pamplona,Ciudad Real,275.0,07:40,12:15,1,REG.EXP. 18074 + AVE 03940,Zaragoza-Delicias
+Pamplona,Lleida,169.0,17:25,20:14,0,ALVIA 00625,
+Pamplona,Tarragona,199.0,17:25,20:44,1,ALVIA 00625 + AVE 03183,Zaragoza-Delicias
+Pamplona,Barcelona,239.0,17:25,21:24,1,ALVIA 00625 + AVE 03183,Zaragoza-Delicias
+Pamplona,Girona,300.0,17:25,22:25,2,ALVIA 00625 + AVE 03183 + AVE 03191,Zaragoza-Delicias / Barcelona-Sants
+Pamplona,Teruel,314.0,06:05,11:19,1,REG.EXP. 18046 + MD 18511,Zaragoza-Delicias
+Pamplona,Valladolid,230.0,13:08,16:58,0,ALVIA 00632,
+Pamplona,León,226.0,13:08,16:54,0,ALVIA 00622,
+Pamplona,Bilbao,314.0,13:08,18:22,1,ALVIA 00622 + Intercity 00280,Miranda De Ebro
+Pamplona,Sevilla,394.0,15:05,21:39,1,ALVIA 00606 + AVE 02190,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Córdoba,328.0,06:05,11:33,1,REG.EXP. 18046 + AVE 03930,Zaragoza-Delicias
+Pamplona,Cádiz,527.0,07:40,16:27,2,REG.EXP. 18074 + AVE 03940 + MD 13010,Zaragoza-Delicias / Sevilla-Santa Justa
+Pamplona,Málaga,422.0,11:15,18:17,1,ALVIA 00602 + AVE 02152,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Granada,426.0,06:05,13:11,1,REG.EXP. 18046 + AVE 03930,Zaragoza-Delicias
+Pamplona,Valencia,376.0,11:15,17:31,1,ALVIA 00602 + AVE 05750,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Albacete,363.0,06:32,12:35,1,ALVIA 00802 + AVE 02913,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Alicante,419.0,06:32,13:31,1,ALVIA 00802 + AVE 02913,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Murcia,424.0,15:05,22:09,1,ALVIA 00606 + AVE 05792,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Ourense,392.0,15:05,21:37,1,ALVIA 00606 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Santiago,434.0,15:05,22:19,1,ALVIA 00606 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,A Coruña,469.0,15:05,22:54,1,ALVIA 00606 + AVE 04395,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Jaén,461.0,15:05,22:46,2,ALVIA 00606 + AVE 02190 + MD 13017,Madrid Pta.Atocha - Almudena Grandes / Cordoba
+Pamplona,Santander,503.0,15:05,23:28,1,ALVIA 00606 + ALVIA 04193,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Oviedo,305.0,13:08,18:13,1,ALVIA 00622 + AVE 05721,Palencia
+Pamplona,Vigo,523.0,11:15,19:58,1,ALVIA 00602 + AVE 04565,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Badajoz,581.0,11:15,20:56,1,ALVIA 00602 + ALVIA 00192,Madrid Pta.Atocha - Almudena Grandes
+Pamplona,Almería,726.0,06:05,18:11,2,REG.EXP. 18046 + AVE 03930 + MD 13942,Zaragoza-Delicias / Granada
+Pamplona,Huelva,647.0,11:15,22:02,1,ALVIA 00602 + ALVIA 02384,Madrid Pta.Atocha - Almudena Grandes

@@ -1,0 +1,32 @@
+city,access,train,evidence
+Albacete,full,AVE 02913,direct AVE from Madrid
+Alicante,full,AVE 05182,direct AVE from Madrid
+A Coruña,full,AVE 04404,direct AVE from Madrid
+Barcelona,full,AVE 02553,direct AVE from Madrid
+Ciudad Real,full,AVE 02070,direct AVE from Madrid
+Córdoba,full,AVE 02080,direct AVE from Madrid
+Girona,full,AVE 03191,direct AVE from Madrid
+Granada,full,AVE 02136,direct AVE from Madrid
+León,full,AVE 05092,direct AVE from Madrid
+Lleida,full,AVE 02591,direct AVE from Madrid
+Málaga,full,AVE 02073,direct AVE from Madrid
+Murcia,full,AVE 05763,direct AVE from Madrid
+Ourense,full,AVE 05273,direct AVE from Madrid
+Oviedo,full,AVE 04060,direct AVE from Madrid
+Santiago,full,AVE 04254,direct AVE from Madrid
+Sevilla,full,AVE 02141,direct AVE from Madrid
+Tarragona,full,AVE 03091,direct AVE from Madrid
+Valencia,full,AVE 05080,direct AVE from Madrid
+Valladolid,full,AVE 04161,direct AVE from Madrid
+Vigo,full,AVE 04464,direct AVE from Madrid
+Zaragoza,full,AVE 02591,direct AVE from Madrid
+Pamplona,part,ALVIA 00601,"Madrid 07:32 to Tudela 09:33 on the Zaragoza high-speed line, then the conventional line via Castejon and Tafalla"
+Huelva,part,ALVIA 02285,"conventional line Huelva to Cordoba (08:00 to 10:02), then the high-speed line to Madrid (11:57)"
+Cádiz,part,ALVIA 02175,"conventional line Cadiz to Sevilla via Jerez, then the high-speed line to Madrid"
+Badajoz,part,ALVIA 00291,"new Extremadura line Badajoz to Plasencia (06:36 to 08:03), then the conventional line via Talavera to Madrid"
+Santander,part,ALVIA 04142,"conventional line Santander to Valladolid via Palencia (13:58 to 17:03), then the high-speed line to Madrid (18:14)"
+Bilbao,part,ALVIA 04186,"conventional line Bilbao to Burgos (06:53 to 09:34), then the high-speed line via Valladolid to Madrid (11:28)"
+San Sebastián,part,Intercity 04257,"high-speed line Madrid to Burgos (14:46 to 16:29), then the conventional line via Vitoria (20:22)"
+Almería,part,ALVIA 02087,"conventional line Almeria to Granada via Guadix (07:58 to 11:08), then the high-speed line via Antequera and Cordoba to Madrid (14:38)"
+Teruel,part,AVE 02591 + MD 18504,"AVE Madrid to Zaragoza, change, then the conventional line to Teruel"
+Jaén,none,MD 18033,"conventional line all the way (Linares-Baeza, Alcazar de San Juan); no high-speed track used"
